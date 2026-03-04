@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="蔗糖溶解实验" 
+    goal="观察蔗糖在水中的溶解过程，并判断是否形成均一透明的糖水溶液" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="25ml"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Sucrose" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="Distilled_Water" volume="20 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="beaker_1" volume="20 mL"/>
+      <Add vessel="beaker_1" reagent="Sucrose" mass="5 g" tool="spatula_1"/>
+      <Insert tool="glass_rod_1" vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Fe(SCN)²⁺配离子的生成与观察" 
+    goal="通过混合溶液并观察颜色变化，验证[Fe(SCN)]²⁺配离子的生成" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="50ml"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Fe3_solution" state="liquid"/>
+      <Reagent name="SCN_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Fe3_solution" volume="5 mL" tool="measuring_cylinder_1"/>
+      <Add vessel="test_tube_1" reagent="SCN_solution" volume="2 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

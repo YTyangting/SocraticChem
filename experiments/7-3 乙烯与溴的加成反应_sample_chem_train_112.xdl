@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="乙烯与溴的四氯化碳溶液反应实验" 
+    goal="观察乙烯气体与溴的四氯化碳溶液反应时颜色由橙色逐渐褪色至无色，验证乙烯的加成反应特性。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="25mL"/>
+      <Component id="ethylene_generator" type="gas_generator"/>
+      <Component id="rubber_stop_1" type="rubber_stop"/>
+      <Component id="delivery_tube_1" type="delivery_tube"/>
+      <Component id="stand" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Bromine_CCl4_Solution" state="liquid"/>
+      <Reagent name="Ethylene_Gas" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="Bromine_CCl4_Solution" volume="7 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="7 mL"/>
+      <Attach vessel="test_tube_1" support="stand"/>
+      <Insert tool="delivery_tube_1" vessel="test_tube_1"/>
+      <Insert tool="rubber_stop_1" vessel="test_tube_1"/>
+      <Attach vessel="delivery_tube_1" support="ethylene_generator"/>
+      <Transfer from_vessel="ethylene_generator" to_vessel="test_tube_1" volume="sufficient" tool="delivery_tube_1"/>
+      <Wait time="2 min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

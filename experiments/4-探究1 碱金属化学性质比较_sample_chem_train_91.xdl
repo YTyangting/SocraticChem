@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="钾的燃烧与与水反应实验" 
+    goal="观察钾在空气中燃烧及与水反应的现象，理解钾的化学性质。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="crucible_1" type="crucible" capacity="50ml"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="crucible_tongs_1" type="crucible_tongs"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="filter_paper_1" type="filter_paper"/>
+      <Component id="stirring_rod_1" type="stirring_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Potassium" state="solid"/>
+      <Reagent name="Kerosene" state="liquid"/>
+      <Reagent name="Phenolphthalein_Solution" state="liquid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Tap_Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="filter_paper_1" reagent="Potassium" mass="0.1 g"/>
+      <Add vessel="filter_paper_1" reagent="Kerosene" volume="2 mL"/>
+      <Attach vessel="crucible_1" support="crucible_tongs_1"/>
+      <Transfer from_vessel="filter_paper_1" to_vessel="crucible_1" volume="0.1 g"/>
+      <Insert tool="alcohol_lamp_1" vessel="crucible_1"/>
+      <Heat vessel="crucible_1"/>
+      <Wait time="30s"/>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="50 mL"/>
+      <Add vessel="beaker_1" reagent="Phenolphthalein_Solution" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="beaker_1" reagent="Potassium" mass="0.1 g"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

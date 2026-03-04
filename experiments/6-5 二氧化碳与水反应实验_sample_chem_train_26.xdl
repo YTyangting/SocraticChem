@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="二氧化碳对石蕊染色纸花颜色影响的实验" 
+    goal="探究二氧化碳气体对石蕊染色纸花颜色的影响及水分的作用" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100mL"/>
+      <Component id="spray_bottle" type="sprayer" capacity="50mL"/>
+      <Component id="drying_rack" type="rack"/>
+      <Component id="paper_flower_1" type="paper_flower"/>
+      <Component id="paper_flower_2" type="paper_flower"/>
+      <Component id="paper_flower_3" type="paper_flower"/>
+      <Component id="gas_jar" type="gas_jar" capacity="500mL"/>
+      <Component id="glass_plate" type="glass_plate"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="litmus_solution" state="liquid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="carbon_dioxide" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <!-- 染色纸花 -->
+      <Add vessel="beaker_1" reagent="litmus_solution" volume="20 mL"/>
+      <Insert tool="paper_flower_1" vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Insert tool="paper_flower_2" vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Insert tool="paper_flower_3" vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="beaker_1" to_vessel="drying_rack" volume="all"/>
+      <Wait time="10min"/>
+      <!-- 收集二氧化碳 -->
+      <Attach vessel="gas_jar" support="stand_1"/>
+      <CollectGas source_vessel="beaker_1" collector="gas_jar"/>
+      <Insert tool="glass_plate" vessel="gas_jar"/>
+      <Wait time="30s"/>
+      <!-- 1号纸花喷水实验 -->
+      <Insert tool="paper_flower_1" vessel="drying_rack"/>
+      <Add vessel="paper_flower_1" reagent="distilled_water" volume="2 mL" tool="spray_bottle"/>
+      <Wait time="30s"/>
+      <!-- 2号纸花直接放入CO2 -->
+      <Insert tool="paper_flower_2" vessel="gas_jar"/>
+      <Wait time="1min"/>
+      <!-- 3号纸花喷水后立即放入CO2 -->
+      <Add vessel="paper_flower_3" reagent="distilled_water" volume="2 mL" tool="spray_bottle"/>
+      <Insert tool="paper_flower_3" vessel="gas_jar"/>
+      <Wait time="1min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

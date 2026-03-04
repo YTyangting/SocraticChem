@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="氯化钠的物理性质观察实验" 
+    goal="观察氯化钠的颜色、状态及其在水中的溶解性和温度变化" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="tweezers_1" type="tweezers"/>
+      <Component id="white_paper_1" type="paper"/>
+      <Component id="watch_glass_1" type="watch_glass"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10mL"/>
+      <Component id="thermometer_1" type="thermometer"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaCl" state="solid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. 用镊子夹取一小片氯化钠，放在白纸上，观察其颜色和状态 -->
+      <Add vessel="white_paper_1" reagent="NaCl" mass="1 g" tool="tweezers_1"/>
+      <!-- 2. 用镊子将一小片氯化钠放在表面皿上，静置几分钟，观察表面变化 -->
+      <Add vessel="watch_glass_1" reagent="NaCl" mass="1 g" tool="tweezers_1"/>
+      <!-- 3. 用镊子将一小片氯化钠放入试管中 -->
+      <Add vessel="test_tube_1" reagent="NaCl" mass="1 g" tool="tweezers_1"/>
+      <!-- 4. 用量筒量取2 mL水加入试管 -->
+      <Add vessel="graduated_cylinder_1" reagent="Water" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <!-- 5. 用温度计测量并记录反应前后的温度变化 -->
+      <Insert tool="thermometer_1" vessel="test_tube_1"/>
+      <Wait time="2min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

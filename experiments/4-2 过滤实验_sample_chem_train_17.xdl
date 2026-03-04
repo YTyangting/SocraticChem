@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="过滤操作与滤纸装置实验" 
+    goal="通过正确装置和使用滤纸与漏斗，过滤实验液体，比较过滤前后水的清澈程度，记录不同处理程度水的过滤效果。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="filter_paper_1" type="filter_paper"/>
+      <Component id="glass_funnel_1" type="funnel"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="iron_ring_1" type="ring"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="sample_liquid" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Insert tool="filter_paper_1" vessel="glass_funnel_1"/>
+      <Add vessel="glass_funnel_1" reagent="distilled_water" volume="2 mL"/>
+      <Wait time="10s"/>
+      <Attach vessel="glass_funnel_1" support="iron_ring_1"/>
+      <Attach vessel="iron_ring_1" support="stand_1"/>
+      <Transfer from_vessel="glass_funnel_1" to_vessel="beaker_1" volume="0.5 mL"/>
+      <Insert tool="glass_rod_1" vessel="beaker_1"/>
+      <Transfer from_vessel="beaker_1" to_vessel="glass_funnel_1" volume="30 mL" tool="glass_rod_1"/>
+      <Wait time="60s"/>
+      <Filter from_vessel="glass_funnel_1" to_vessel="beaker_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

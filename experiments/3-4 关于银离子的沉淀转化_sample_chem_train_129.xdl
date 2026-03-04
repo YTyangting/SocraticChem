@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="试管中逐步加入不同液体的实验" goal="在一支干净的试管中，依次加入2 mL液体、4滴液体和8滴液体，观察混合过程。" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Solution_A" state="liquid"/>
+      <Reagent name="Solution_B" state="liquid"/>
+      <Reagent name="Solution_C" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Solution_A" volume="2 ml" tool="measuring_cylinder_1"/>
+      <Add vessel="test_tube_1" reagent="Solution_B" volume="4 ml" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="Solution_C" volume="8 ml" tool="dropper_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

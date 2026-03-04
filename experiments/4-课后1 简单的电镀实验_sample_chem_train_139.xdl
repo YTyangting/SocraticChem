@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata
+    title="铁制镍件电镀铜实验"
+    goal="在铁制镍件表面电镀一层铜并观察其表面变化"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="beaker_2" type="beaker" capacity="100ml"/>
+      <Component id="beaker_3" type="beaker" capacity="100ml"/>
+      <Component id="beaker_4" type="beaker" capacity="100ml"/>
+      <Component id="iron_nickel_piece" type="solid"/>
+      <Component id="copper_sheet" type="solid"/>
+      <Component id="sandpaper_1" type="sandpaper"/>
+      <Component id="dc_power" type="dc_power_supply"/>
+      <Component id="wire_1" type="wire"/>
+      <Component id="wire_2" type="wire"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="HCl_solution" state="liquid"/>
+      <Reagent name="CuSO4_plating_solution" state="liquid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. 打磨铁制镍件 -->
+      <Insert tool="sandpaper_1" vessel="iron_nickel_piece"/>
+      <Wait time="2min"/>
+      <!-- 2. NaOH脱脂 -->
+      <Add vessel="beaker_2" reagent="NaOH_solution" volume="50 mL"/>
+      <Insert tool="iron_nickel_piece" vessel="beaker_2"/>
+      <Wait time="3min"/>
+      <!-- 3. 蒸馏水洗净 -->
+      <Add vessel="beaker_3" reagent="distilled_water" volume="50 mL"/>
+      <Transfer from_vessel="beaker_2" to_vessel="beaker_3" volume="50 mL"/>
+      <Insert tool="iron_nickel_piece" vessel="beaker_3"/>
+      <Wait time="1min"/>
+      <!-- 4. 盐酸除锈 -->
+      <Add vessel="beaker_4" reagent="HCl_solution" volume="50 mL"/>
+      <Insert tool="iron_nickel_piece" vessel="beaker_4"/>
+      <Wait time="3min"/>
+      <!-- 5. 再次蒸馏水洗净 -->
+      <Add vessel="beaker_3" reagent="distilled_water" volume="50 mL"/>
+      <Insert tool="iron_nickel_piece" vessel="beaker_3"/>
+      <Wait time="1min"/>
+      <!-- 6. 电镀准备 -->
+      <Add vessel="beaker_1" reagent="CuSO4_plating_solution" volume="100 mL"/>
+      <Attach vessel="beaker_1" support="stand_1"/>
+      <Insert tool="iron_nickel_piece" vessel="beaker_1"/>
+      <Insert tool="copper_sheet" vessel="beaker_1"/>
+      <Insert tool="wire_1" vessel="iron_nickel_piece"/>
+      <Insert tool="wire_2" vessel="copper_sheet"/>
+      <Insert tool="wire_1" vessel="dc_power"/>
+      <Insert tool="wire_2" vessel="dc_power"/>
+      <Wait time="5min"/>
+      <!-- 7. 断开电源，取出铁制镍件，观察表面变化 -->
+    </Procedure>
+  </Synthesis>
+</XDL>

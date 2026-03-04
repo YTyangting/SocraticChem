@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="品红溶液加热变色实验"
+    goal="观察品红溶液在加热前后颜色的变化，以探究其热稳定性和性质变化"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Exp5_1_Solution" state="liquid"/>
+      <Reagent name="Fuchsin_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="Exp5_1_Solution" volume="2 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="Fuchsin_Solution" volume="0.1 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

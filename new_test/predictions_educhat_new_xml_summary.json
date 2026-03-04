@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_educhat_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 11.674159446217072,
+        "ROUGE-1": 31.941805021831264,
+        "ROUGE-2": 13.477430772044352,
+        "ROUGE-L": 20.481627210626172,
+        "BERTScore_Mean": 69.63415741920471
+    }
+}

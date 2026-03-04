@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Electrolysis of Copper(II) Chloride Solution in a U-tube"
+    goal="To observe and identify the products formed at the electrodes during the electrolysis of 25% CuCl₂ solution using graphite electrodes, including copper deposition and chlorine gas evolution."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="utube_1" type="U-tube" capacity="50ml"/>
+      <Component id="graphite_1" type="electrode"/>
+      <Component id="graphite_2" type="electrode"/>
+      <Component id="rubber_stop_1" type="rubber_stop"/>
+      <Component id="rubber_stop_2" type="rubber_stop"/>
+      <Component id="dc_power" type="DC_power_supply"/>
+      <Component id="wire_1" type="wire"/>
+      <Component id="wire_2" type="wire"/>
+      <Component id="starch_paper_1" type="KI_starch_test_paper"/>
+      <Component id="starch_paper_2" type="KI_starch_test_paper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="CuCl2_solution_25pct" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="utube_1" reagent="CuCl2_solution_25pct" volume="30 mL"/>
+      <Insert tool="graphite_1" vessel="utube_1"/>
+      <Insert tool="graphite_2" vessel="utube_1"/>
+      <Insert tool="rubber_stop_1" vessel="utube_1"/>
+      <Insert tool="rubber_stop_2" vessel="utube_1"/>
+      <Attach vessel="graphite_1" support="rubber_stop_1"/>
+      <Attach vessel="graphite_2" support="rubber_stop_2"/>
+      <Attach vessel="wire_1" support="graphite_1"/>
+      <Attach vessel="wire_2" support="graphite_2"/>
+      <Attach vessel="wire_1" support="dc_power"/>
+      <Attach vessel="wire_2" support="dc_power"/>
+      <Insert tool="starch_paper_1" vessel="graphite_1"/>
+      <Insert tool="starch_paper_2" vessel="graphite_2"/>
+      <Wait time="2 min"/>
+      <Wait time="observe color change on starch_paper_1 and starch_paper_2"/>
+      <Wait time="observe solid deposition or bubble formation on graphite_1 and graphite_2"/>
+      <Wait time="record observations: red solid on graphite_2 (cathode, copper), blue color on starch_paper_1 (anode, chlorine gas)"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

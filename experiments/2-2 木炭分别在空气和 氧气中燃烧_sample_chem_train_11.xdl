@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Comparison of Charcoal Combustion in Air and Oxygen"
+    goal="Observe and compare the combustion characteristics of charcoal in air versus pure oxygen, focusing on flame color, burning rate, and brightness."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="crucible_tongs_1" type="crucible_tongs"/>
+      <Component id="charcoal_piece_1" type="solid_sample"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="gas_jar_1" type="gas_jar" capacity="500ml"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Charcoal" state="solid"/>
+      <Reagent name="Oxygen" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Insert tool="charcoal_piece_1" vessel="crucible_tongs_1"/>
+      <Heat vessel="crucible_tongs_1" target_temperature="500" tool="alcohol_lamp_1"/>
+      <Wait time="30s"/>
+      <Insert tool="charcoal_piece_1" vessel="gas_jar_1"/>
+      <Add vessel="gas_jar_1" reagent="Oxygen" volume="500 mL"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

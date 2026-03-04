@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_chatglm3-6b_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 3.589410629661738,
+        "ROUGE-1": 29.057948037812775,
+        "ROUGE-2": 9.823792942387774,
+        "ROUGE-L": 18.713594711898313,
+        "BERTScore_Mean": 68.15748810768127
+    }
+}

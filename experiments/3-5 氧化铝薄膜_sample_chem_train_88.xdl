@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铝与氢氧化钠溶液反应及气体性质的探究"
+    goal="比较打磨与未打磨铝片在NaOH溶液中的反应现象，并检验产生气体的性质"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="sandpaper_1" type="sandpaper"/>
+      <Component id="wooden_stick_1" type="wooden_stick"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="Al_piece_1" state="solid"/>
+      <Reagent name="Al_piece_2" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="NaOH_solution" volume="7 ml"/>
+      <Add vessel="test_tube_2" reagent="NaOH_solution" volume="7 ml"/>
+      <Wait time="10s"/>
+      <Insert tool="sandpaper_1" vessel="test_tube_2"/>
+      <Wait time="20s"/>
+      <MeasureMass reagent="Al_piece_2"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_1" reagent="Al_piece_1" mass="1 g"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_2" reagent="Al_piece_2" mass="1 g"/>
+      <Wait time="10s"/>
+      <Insert tool="wooden_stick_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Insert tool="wooden_stick_1" vessel="test_tube_2"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

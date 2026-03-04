@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="氢氧化钠与氯化钡溶液分别与硫酸铜溶液反应的实验"
+    goal="比较氢氧化钠溶液和氯化钡溶液与硫酸铜溶液反应时沉淀的生成及其颜色，验证相关化学反应方程式。"
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="measuring_cylinder" type="measuring_cylinder" capacity="50ml"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="BaCl2_solution" state="liquid"/>
+      <Reagent name="CuSO4_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="NaOH_solution" volume="5 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_2" reagent="BaCl2_solution" volume="5 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_1" reagent="CuSO4_solution" volume="2 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="CuSO4_solution" volume="2 mL" tool="dropper"/>
+      <Wait time="30s"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

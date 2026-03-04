@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Fe(OH)₃胶体的制备及丁达尔效应观察实验" 
+    goal="制备Fe(OH)₃胶体并通过红色激光笔照射，观察丁达尔效应与NaCl溶液的对比现象" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="flask" capacity="100 mL"/>
+      <Component id="beaker_2" type="flask" capacity="100 mL"/>
+      <Component id="alcohol_lamp" type="heater"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="laser_pointer_red" type="laser_pointer"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="NaCl_Solution" state="liquid"/>
+      <Reagent name="FeCl3_Saturated_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="40 mL"/>
+      <Add vessel="beaker_2" reagent="NaCl_Solution" volume="40 mL"/>
+      <Attach vessel="beaker_1" support="stand_1"/>
+      <Heat vessel="beaker_1" tool="alcohol_lamp_1"/>
+      <Add vessel="beaker_1" reagent="FeCl3_Saturated_Solution" volume="0.3 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Heat vessel="beaker_1" tool="alcohol_lamp_1"/>
+      <Wait time="60s"/>
+      <Insert tool="laser_pointer_red" vessel="beaker_1"/>
+      <Wait time="10s"/>
+      <Insert tool="laser_pointer_red" vessel="beaker_2"/>
+      <Wait time="10s"/>
+      <!-- 记录现象 -->
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Copper Wire Reaction with Concentrated and Dilute Sulfuric Acid"
+    goal="To observe the chemical changes of copper wire when exposed to concentrated and dilute sulfuric acid, and detect any gas evolution using NaOH solution."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube" />
+      <Component id="copper_wire" type="wire" />
+      <Component id="glass_rod" type="glass_rod" />
+      <Component id="tweezers" type="tweezers" />
+      <Component id="beaker_naoh" type="beaker" capacity="50ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="conc_H2SO4" state="liquid"/>
+      <Reagent name="dil_H2SO4" state="liquid"/>
+      <Reagent name="NaOH_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Insert tool="copper_wire" vessel="glass_rod"/>
+      <Insert tool="copper_wire" vessel="tweezers"/>
+      <Wait time="10s"/>
+      <Insert tool="copper_wire" vessel="rubber_stop_cu"/>
+      <Wait time="10s"/>
+      <Add vessel="graduated_cylinder" reagent="conc_H2SO4" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="graduated_cylinder" reagent="dil_H2SO4" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_2" volume="2 mL"/>
+      <Add vessel="beaker_naoh" reagent="NaOH_solution" volume="20 mL"/>
+      <Insert tool="test_tube_1" support="rubber_stopper_with_tube"/>
+      <Insert tool="test_tube_2" support="rubber_stopper_with_tube"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

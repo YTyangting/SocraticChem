@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铁与盐酸反应的温度变化实验" 
+    goal="观察铁与盐酸反应过程中温度的变化，并记录反应前后盐酸的温度以分析反应是否放热，同时观察是否有气泡产生。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="iron_stand_1" type="stand"/>
+      <Component id="thermometer_1" type="thermometer"/>
+      <Component id="tweezers_1" type="tweezers"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="HCl_2M" state="liquid"/>
+      <Reagent name="Iron_strip" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="HCl_2M" volume="2 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Attach vessel="test_tube_1" support="iron_stand_1"/>
+      <Insert tool="thermometer_1" vessel="test_tube_1"/>
+      <Add vessel="test_tube_1" reagent="Iron_strip" mass="1 g" tool="tweezers_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

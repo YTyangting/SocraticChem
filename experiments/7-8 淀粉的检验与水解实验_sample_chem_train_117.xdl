@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="淀粉和还原性糖的检验实验"
+    goal="通过碘液检测淀粉、酸水解生成还原性糖并用新制Cu(OH)₂检验其还原性，观察颜色变化以分析物质成分。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="pH_paper_1" type="pH_paper"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="mantou_or_potato" state="solid"/>
+      <Reagent name="iodine_solution" state="liquid"/>
+      <Reagent name="dilute_H2SO4_2M" state="liquid"/>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="CuSO4_solution" state="liquid"/>
+      <Reagent name="fresh_CuOH2_precipitate" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. 取一片馒头或土豆，滴加几滴碘液，观察颜色变化 -->
+      <Add vessel="beaker_1" reagent="mantou_or_potato" mass="approx. 2 g"/>
+      <Add vessel="beaker_1" reagent="iodine_solution" volume="2 drops" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <!-- 2. 用量筒量取4 mL 2 mol/L 稀硫酸（H₂SO₄）溶液，倒入试管中 -->
+      <Add vessel="graduated_cylinder_1" reagent="dilute_H2SO4_2M" volume="4 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="4 mL"/>
+      <!-- 3. 再用药匙加入馒头/土豆 -->
+      <Add vessel="test_tube_1" reagent="mantou_or_potato" mass="approx. 2 g" tool="spatula_1"/>
+      <!-- 4. 用试管夹夹住试管，在酒精灯上加热，摇动至澄清 -->
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="2 min"/>
+      <Wait time="until solution is clear"/>
+      <!-- 5. 自然冷却 -->
+      <Wait time="3 min"/>
+      <!-- 6. 滴加NaOH溶液至中性，用pH试纸检测 -->
+      <Add vessel="test_tube_1" reagent="NaOH_solution" volume="dropwise" tool="dropper_1"/>
+      <Insert tool="pH_paper_1" vessel="test_tube_1"/>
+      <Wait time="until neutral pH"/>
+      <!-- 7. 用玻璃棒搅拌 -->
+      <Stir vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <!-- 8. 向试管中加入少量新制Cu(OH)₂沉淀 -->
+      <Add vessel="test_tube_1" reagent="fresh_CuOH2_precipitate" mass="small amount"/>
+      <!-- 9. 再次加热，观察颜色变化 -->
+      <Heat vessel="test_tube_1"/>
+      <Wait time="2 min"/>
+      <Wait time="observe color change"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

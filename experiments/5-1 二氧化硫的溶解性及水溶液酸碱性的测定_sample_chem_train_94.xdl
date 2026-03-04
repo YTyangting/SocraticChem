@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="SO₂气体在水中溶解性及酸碱性测试" 
+    goal="观察SO₂气体在水中的溶解性，并用pH试纸检测溶液的酸碱性" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="50ml"/>
+      <Component id="rubber_stop_1" type="rubber_stop"/>
+      <Component id="water_bath_1" type="beaker" capacity="400ml"/>
+      <Component id="pH_paper_1" type="pH_paper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="SO2_gas" state="gas"/>
+      <Reagent name="distilled_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="SO2_gas" volume="50 mL"/>
+      <Insert tool="rubber_stop_1" vessel="test_tube_1"/>
+      <Add vessel="water_bath_1" reagent="distilled_water" volume="300 mL"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="water_bath_1" volume="0 mL"/>
+      <Wait time="30s"/>
+      <Insert tool="pH_paper_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

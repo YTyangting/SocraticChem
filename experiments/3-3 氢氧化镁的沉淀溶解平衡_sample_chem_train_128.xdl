@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Mg(OH)₂在蒸馏水与稀盐酸中的溶解性比较实验"
+    goal="比较Mg(OH)₂在蒸馏水和稀盐酸中的溶解性，并观察其变化现象"
+    difficulty="Easy"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="tube_clamp_1" type="test_tube_clamp"/>
+      <Component id="tube_clamp_2" type="test_tube_clamp"/>
+      <Component id="dropper_water" type="dropper"/>
+      <Component id="dropper_acid" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Mg(OH)2" state="solid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Dilute_HCl" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Mg(OH)2" mass="0.2g"/>
+      <Add vessel="test_tube_2" reagent="Mg(OH)2" mass="0.2g"/>
+      <Attach vessel="test_tube_1" support="tube_clamp_1"/>
+      <Attach vessel="test_tube_2" support="tube_clamp_2"/>
+      <Add vessel="test_tube_1" reagent="Distilled_Water" volume="2.5 mL" tool="dropper_water"/>
+      <Wait time="30s"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_2" reagent="Dilute_HCl" volume="2.5 mL" tool="dropper_acid"/>
+      <Wait time="30s"/>
+      <Stir vessel="test_tube_2"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="金属与稀盐酸、稀硫酸反应生成氢气的实验" 
+    goal="比较锌、铁、铜、镁与稀盐酸和稀硫酸反应生成氢气的能力，并通过气体检验确认氢气的产生。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_zn_hcl" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_fe_hcl" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_cu_hcl" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_mg_hcl" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_zn_h2so4" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_fe_h2so4" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_cu_h2so4" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_mg_h2so4" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="test_tube_holder_3" type="test_tube_holder"/>
+      <Component id="test_tube_holder_4" type="test_tube_holder"/>
+      <Component id="test_tube_holder_5" type="test_tube_holder"/>
+      <Component id="test_tube_holder_6" type="test_tube_holder"/>
+      <Component id="test_tube_holder_7" type="test_tube_holder"/>
+      <Component id="test_tube_holder_8" type="test_tube_holder"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="50ml"/>
+      <Component id="burning_wooden_stick" type="wooden_stick"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="zinc" state="solid"/>
+      <Reagent name="iron" state="solid"/>
+      <Reagent name="copper" state="solid"/>
+      <Reagent name="magnesium" state="solid"/>
+      <Reagent name="dilute_HCl" state="liquid"/>
+      <Reagent name="dilute_H2SO4" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 装入金属 -->
+      <Add vessel="test_tube_zn_hcl" reagent="zinc" mass="0.2 g"/>
+      <Add vessel="test_tube_fe_hcl" reagent="iron" mass="0.2 g"/>
+      <Add vessel="test_tube_cu_hcl" reagent="copper" mass="0.2 g"/>
+      <Add vessel="test_tube_mg_hcl" reagent="magnesium" mass="0.2 g"/>
+      <Add vessel="test_tube_zn_h2so4" reagent="zinc" mass="0.2 g"/>
+      <Add vessel="test_tube_fe_h2so4" reagent="iron" mass="0.2 g"/>
+      <Add vessel="test_tube_cu_h2so4" reagent="copper" mass="0.2 g"/>
+      <Add vessel="test_tube_mg_h2so4" reagent="magnesium" mass="0.2 g"/>
+      <!-- 固定试管 -->
+      <Attach vessel="test_tube_zn_hcl" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_fe_hcl" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_cu_hcl" support="test_tube_holder_3"/>
+      <Attach vessel="test_tube_mg_hcl" support="test_tube_holder_4"/>
+      <Attach vessel="test_tube_zn_h2so4" support="test_tube_holder_5"/>
+      <Attach vessel="test_tube_fe_h2so4" support="test_tube_holder_6"/>
+      <Attach vessel="test_tube_cu_h2so4" support="test_tube_holder_7"/>
+      <Attach vessel="test_tube_mg_h2so4" support="test_tube_holder_8"/>
+      <!-- 加入稀盐酸 -->
+      <Add vessel="graduated_cylinder" reagent="dilute_HCl" volume="40 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_zn_hcl" volume="5 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_fe_hcl" volume="5 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_cu_hcl" volume="5 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_mg_hcl" volume="5 mL"/>
+      <!-- 观察气泡产生 -->
+      <Wait time="30s"/>
+      <!-- 检验气体（稀盐酸组） -->
+      <Insert tool="burning_wooden_stick" vessel="test_tube_zn_hcl"/>
+      <Wait time="5s"/>
+      <Insert tool="burning_wooden_stick" vessel="test_tube_fe_hcl"/>
+      <Wait time="5s"/>
+      <Insert tool="burning_wooden_stick" vessel="test_tube_cu_hcl"/>
+      <Wait time="5s"/>
+      <Insert tool="burning_wooden_stick" vessel="test_tube_mg_hcl"/>
+      <Wait time="5s"/>
+      <!-- 加入稀硫酸 -->
+      <Add vessel="graduated_cylinder" reagent="dilute_H2SO4" volume="40 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_zn_h2so4" volume="5 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_fe_h2so4" volume="5 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_cu_h2so4" volume="5 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_mg_h2so4" volume="5 mL"/>
+      <!-- 观察气泡产生 -->
+      <Wait time="30s"/>
+      <!-- 检验气体（稀硫酸组） -->
+      <Insert tool="burning_wooden_stick" vessel="test_tube_zn_h2so4"/>
+      <Wait time="5s"/>
+      <Insert tool="burning_wooden_stick" vessel="test_tube_fe_h2so4"/>
+      <Wait time="5s"/>
+      <Insert tool="burning_wooden_stick" vessel="test_tube_cu_h2so4"/>
+      <Wait time="5s"/>
+      <Insert tool="burning_wooden_stick" vessel="test_tube_mg_h2so4"/>
+      <Wait time="5s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

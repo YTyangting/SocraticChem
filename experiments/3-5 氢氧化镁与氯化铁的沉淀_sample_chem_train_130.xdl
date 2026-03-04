@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="滴加实验" goal="用量筒量取2 mL液体并用滴管向试管中滴加4滴" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Sample_Liquid" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="Sample_Liquid" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="Sample_Liquid" volume="4 drops" tool="dropper_1"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="苯酚与甲醛缩合反应的酸催化与非酸催化条件对比"
+    goal="比较酸催化与非酸催化条件下苯酚与甲醛缩合反应产物的颜色和状态差异"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="50ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="50ml"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="glass_rod" type="glass_rod"/>
+      <Component id="test_tube_holder" type="test_tube_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Phenol" state="solid"/>
+      <Reagent name="Formaldehyde_40pct" state="liquid"/>
+      <Reagent name="Concentrated_HCl" state="liquid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 酸催化条件 -->
+      <Add vessel="test_tube_1" reagent="Phenol" mass="2 g"/>
+      <Add vessel="test_tube_1" reagent="Formaldehyde_40pct" volume="3 mL"/>
+      <Add vessel="test_tube_1" reagent="Concentrated_HCl" volume="0.15 mL" tool="dropper"/>
+      <Stir vessel="test_tube_1"/>
+      <Add vessel="beaker_1" reagent="Water" volume="100 mL"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="beaker_1"/>
+      <Heat vessel="beaker_1"/>
+      <Wait time="until near boiling"/>
+      <Attach support="test_tube_holder" vessel="test_tube_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="observe color and state"/>
+      <!-- 非酸催化条件 -->
+      <Add vessel="test_tube_2" reagent="Phenol" mass="2 g"/>
+      <Add vessel="test_tube_2" reagent="Formaldehyde_40pct" volume="3 mL"/>
+      <Transfer from_vessel="test_tube_2" to_vessel="beaker_1"/>
+      <Heat vessel="beaker_1"/>
+      <Wait time="short heating"/>
+      <Stir vessel="test_tube_2"/>
+      <Wait time="observe color and state"/>
+      <!-- 比较产物 -->
+      <Wait time="compare products in test_tube_1 and test_tube_2"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

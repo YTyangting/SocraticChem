@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="Na2S与氧化剂反应及气体收集实验" goal="探究Na2S与不同氧化剂反应生成的气体性质，并通过收集气体观察对品红溶液的褪色作用" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_4" type="test_tube" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Na2S_solution" state="liquid"/>
+      <Reagent name="H2SO3_solution" state="liquid"/>
+      <Reagent name="Acidic_KMnO4_solution" state="liquid"/>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="Concentrated_H2SO4" state="liquid"/>
+      <Reagent name="Copper_piece" state="solid"/>
+      <Reagent name="Fuchsin_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Na2S_solution" volume="1 mL"/>
+      <Add vessel="test_tube_2" reagent="Na2S_solution" volume="1 mL"/>
+      <Add vessel="test_tube_4" reagent="Concentrated_H2SO4" volume="1 mL"/>
+      <Add vessel="test_tube_4" reagent="Copper_piece" mass="0.5 g"/>
+      <Add vessel="test_tube_1" reagent="H2SO3_solution" volume="0.5 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_2" reagent="Acidic_KMnO4_solution" volume="0.5 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_1" reagent="NaOH_solution" volume="0.2 mL"/>
+      <Add vessel="test_tube_2" reagent="NaOH_solution" volume="0.2 mL"/>
+      <Wait time="30s"/>
+      <Attach vessel="test_tube_4" support="stand_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_4"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_3"/>
+      <Heat vessel="test_tube_4" target_temperature="100"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

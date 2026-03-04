@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Preparation of 100 mL Sodium Chloride Standard Solution" 
+    goal="To prepare 100 mL of NaCl aqueous solution of known concentration by dissolving a weighed amount of NaCl and diluting to the mark in a volumetric flask." 
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="volumetric_flask_1" type="volumetric_flask" capacity="100ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="100ml"/>
+      <Component id="stopper_1" type="stopper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaCl" state="solid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="NaCl"/>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="40 ml"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="beaker_1" to_vessel="volumetric_flask_1" tool="glass_rod_1"/>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="10 ml"/>
+      <Stir vessel="beaker_1"/>
+      <Transfer from_vessel="beaker_1" to_vessel="volumetric_flask_1" volume="10 ml"/>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="10 ml"/>
+      <Stir vessel="beaker_1"/>
+      <Transfer from_vessel="beaker_1" to_vessel="volumetric_flask_1" volume="10 ml"/>
+      <Add vessel="volumetric_flask_1" reagent="Distilled_Water" tool="dropper_1"/>
+      <Insert tool="stopper_1" vessel="volumetric_flask_1"/>
+      <Stir vessel="volumetric_flask_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="volumetric_flask_1" to_vessel="graduated_cylinder_1"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

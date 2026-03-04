@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="Purification of Crude Salt by Precipitation and Filtration" goal="Remove sulfate and calcium impurities from crude salt solution to obtain purified salt crystals." difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="flask_1" type="flask" capacity="250ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="funnel_1" type="funnel"/>
+      <Component id="filter_paper_1" type="filter_paper"/>
+      <Component id="evaporating_dish_1" type="evaporating_dish" capacity="100ml"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="ph_paper_1" type="ph_paper"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="crude_salt_solution" state="liquid"/>
+      <Reagent name="BaCl2_solution" state="liquid"/>
+      <Reagent name="NaOH_solution_20pct" state="liquid"/>
+      <Reagent name="Na2CO3_saturated_solution" state="liquid"/>
+      <Reagent name="CaCO3_precipitate" state="solid"/>
+      <Reagent name="purified_salt_crystals" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <MeasureMass reagent="crude_salt_solution"/>
+      <Add vessel="flask_1" reagent="crude_salt_solution" volume="50 mL" tool="dropper_1"/>
+      <Add vessel="flask_1" reagent="BaCl2_solution" volume="2 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Add vessel="flask_1" reagent="BaCl2_solution" volume="1 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Add vessel="flask_1" reagent="NaOH_solution_20pct" volume="2 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Add vessel="flask_1" reagent="Na2CO3_saturated_solution" volume="3 mL" tool="dropper_1"/>
+      <Wait time="1min"/>
+      <Stir vessel="flask_1"/>
+      <Wait time="2min"/>
+      <Attach vessel="funnel_1" support="stand_1"/>
+      <Insert tool="filter_paper_1" vessel="funnel_1"/>
+      <Filter from_vessel="flask_1" to_vessel="beaker_1"/>
+      <Wait time="2min"/>
+      <Insert tool="ph_paper_1" vessel="beaker_1"/>
+      <Wait time="10s"/>
+      <Transfer from_vessel="beaker_1" to_vessel="evaporating_dish_1" volume="40 mL"/>
+      <Attach vessel="evaporating_dish_1" support="stand_1"/>
+      <Heat vessel="evaporating_dish_1" target_temperature="100"/>
+      <Stir vessel="evaporating_dish_1"/>
+      <Wait time="5min"/>
+      <MeasureMass vessel="evaporating_dish_1"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Carboxylic Acid Acidity Comparison via Litmus and Reaction with Bases"
+    goal="Compare the acidity of formic acid, benzoic acid, and acetic acid by observing litmus color change and reaction vigor with sodium carbonate, sodium bicarbonate, and sodium phenoxide solutions."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube"/>
+      <Component id="test_tube_2" type="test_tube"/>
+      <Component id="test_tube_3" type="test_tube"/>
+      <Component id="litmus_dropper" type="dropper"/>
+      <Component id="flask_1" type="erlenmeyer_flask" capacity="100ml"/>
+      <Component id="flask_2" type="erlenmeyer_flask" capacity="100ml"/>
+      <Component id="flask_3" type="erlenmeyer_flask" capacity="100ml"/>
+      <Component id="separatory_funnel_1" type="separatory_funnel"/>
+      <Component id="separatory_funnel_2" type="separatory_funnel"/>
+      <Component id="separatory_funnel_3" type="separatory_funnel"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="formic_acid_solution" state="liquid"/>
+      <Reagent name="benzoic_acid_solution" state="liquid"/>
+      <Reagent name="acetic_acid_solution" state="liquid"/>
+      <Reagent name="litmus_solution" state="liquid"/>
+      <Reagent name="sodium_carbonate_solution" state="liquid"/>
+      <Reagent name="sodium_bicarbonate_solution" state="liquid"/>
+      <Reagent name="sodium_phenoxide_solution" state="liquid"/>
+      <Reagent name="water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Add carboxylic acid solutions to test tubes -->
+      <Add vessel="test_tube_1" reagent="formic_acid_solution" volume="2 mL"/>
+      <Add vessel="test_tube_2" reagent="benzoic_acid_solution" volume="2 mL"/>
+      <Add vessel="test_tube_3" reagent="acetic_acid_solution" volume="2 mL"/>
+      <!-- Add litmus solution to each test tube -->
+      <Add vessel="test_tube_1" reagent="litmus_solution" volume="3 drops" tool="litmus_dropper"/>
+      <Add vessel="test_tube_2" reagent="litmus_solution" volume="3 drops" tool="litmus_dropper"/>
+      <Add vessel="test_tube_3" reagent="litmus_solution" volume="3 drops" tool="litmus_dropper"/>
+      <!-- Observe color change in each test tube -->
+      <Wait time="30s"/>
+      <!-- Prepare base solutions in flasks -->
+      <Add vessel="flask_1" reagent="sodium_carbonate_solution" volume="20 mL"/>
+      <Add vessel="flask_2" reagent="sodium_bicarbonate_solution" volume="20 mL"/>
+      <Add vessel="flask_3" reagent="sodium_phenoxide_solution" volume="20 mL"/>
+      <!-- Attach separatory funnels to each flask -->
+      <Attach vessel="separatory_funnel_1" support="flask_1"/>
+      <Attach vessel="separatory_funnel_2" support="flask_2"/>
+      <Attach vessel="separatory_funnel_3" support="flask_3"/>
+      <!-- Add acetic acid solution to each flask via separatory funnel -->
+      <Add vessel="separatory_funnel_1" reagent="acetic_acid_solution" volume="20 mL"/>
+      <Add vessel="separatory_funnel_2" reagent="acetic_acid_solution" volume="20 mL"/>
+      <Add vessel="separatory_funnel_3" reagent="acetic_acid_solution" volume="20 mL"/>
+      <!-- Compare reaction vigor and record -->
+      <Wait time="30s"/>
+      
+    </Procedure>
+  </Synthesis>
+</XDL>

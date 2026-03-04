@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="浓度与温度对NO₂/N₂O₄化学平衡的影响实验" 
+    goal="通过改变溶液浓度和温度，观察NO₂与N₂O₄混合气体颜色变化，分析浓度和温度对化学平衡的影响。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_a" type="test_tube" capacity="15mL"/>
+      <Component id="test_tube_b" type="test_tube" capacity="15mL"/>
+      <Component id="test_tube_c" type="test_tube" capacity="5mL"/>
+      <Component id="test_tube_d" type="test_tube" capacity="5mL"/>
+      <Component id="bottle_NO2" type="bottle" capacity="10mL"/>
+      <Component id="bottle_N2O4" type="bottle" capacity="10mL"/>
+      <Component id="cold_water_bath" type="water_bath" capacity="200mL"/>
+      <Component id="hot_water_bath" type="water_bath" capacity="200mL"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="NO2_N2O4_Mixture" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <!-- 浓度影响部分 -->
+      <Add vessel="test_tube_a" reagent="Distilled_Water" volume="10 mL"/>
+      <Add vessel="test_tube_b" reagent="Distilled_Water" volume="10 mL"/>
+      <Add vessel="test_tube_a" reagent="NO2_N2O4_Mixture" volume="5 drops"/>
+      <Add vessel="test_tube_b" reagent="NO2_N2O4_Mixture" volume="5 drops"/>
+      <Add vessel="test_tube_a" reagent="Distilled_Water" volume="2 mL"/>
+      <Add vessel="test_tube_b" reagent="Distilled_Water" volume="2 mL"/>
+      <Wait time="30s"/>
+      <!-- 观察并记录溶液颜色变化 -->
+      <Wait time="30s"/>
+      <!-- 温度影响部分 -->
+      <Add vessel="test_tube_c" reagent="Distilled_Water" volume="2 mL"/>
+      <Add vessel="test_tube_d" reagent="Distilled_Water" volume="2 mL"/>
+      <Insert tool="bottle_NO2" vessel="test_tube_c"/>
+      <Insert tool="bottle_N2O4" vessel="test_tube_d"/>
+      <Insert tool="test_tube_c" vessel="cold_water_bath"/>
+      <Insert tool="test_tube_d" vessel="hot_water_bath"/>
+      <Wait time="1 min"/>
+      <!-- 观察并记录瓶内气体颜色变化，比较冷水和热水中气体颜色深浅 -->
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

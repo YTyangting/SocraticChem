@@ -1,0 +1,3002 @@
+{
+  "H2O": {
+    "molar_mass": 18.0,
+    "state": "l",
+    "type": "solvent",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "is_transparent": true,
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0
+    }
+  },
+  "KMnO4": {
+    "molar_mass": 158.0,
+    "state": "s",
+    "type": "salt",
+    "solubility": 6.38,
+    "visual": {
+      "state_solid_desc": "紫黑色晶体",
+      "base_color": "紫红",
+      "solution_rgb": [
+        128,
+        0,
+        128
+      ],
+      "intensity_factor": 10.0,
+      "thresholds": [
+        0.001,
+        0.05
+      ]
+    }
+  },
+  "K2MnO4": {
+    "molar_mass": 197.1,
+    "state": "s",
+    "type": "salt",
+    "solubility": 20.0,
+    "visual": {
+      "state_solid_desc": "墨绿色固体",
+      "base_color": "墨绿",
+      "solution_rgb": [
+        0,
+        100,
+        0
+      ],
+      "intensity_factor": 5.0,
+      "thresholds": [
+        0.01,
+        0.1
+      ]
+    }
+  },
+  "MnO2": {
+    "molar_mass": 86.9,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "state_solid_desc": "黑色粉末",
+      "base_color": "黑",
+      "solution_rgb": [
+        0,
+        0,
+        0
+      ],
+      "intensity_factor": 0.0,
+      "thresholds": []
+    }
+  },
+  "CuSO4": {
+    "molar_mass": 159.6,
+    "state": "l",
+    "type": "salt",
+    "solubility": 20.7,
+    "visual": {
+      "state_solid_desc": "白色粉末",
+      "base_color": "蓝",
+      "solution_rgb": [
+        0,
+        0,
+        255
+      ],
+      "intensity_factor": 2.0,
+      "thresholds": [
+        0.05,
+        0.5
+      ]
+    }
+  },
+  "Na": {
+    "molar_mass": 22.99,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白色",
+      "state_solid_desc": "银白色金属，表面易氧化变暗",
+      "solution_rgb": [
+        200,
+        200,
+        200
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "CH3COOH": {
+    "molar_mass": 60.05,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体，有刺激性气味",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C17H35COONa": {
+    "molar_mass": 306.46,
+    "state": "l",
+    "type": "salt",
+    "solubility": 6.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色固体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Litmus": {
+    "molar_mass": 330.25,
+    "state": "l",
+    "type": "indicator",
+    "solubility": 0.5,
+    "visual": {
+      "base_color": "紫色",
+      "state_solid_desc": "紫色粉末",
+      "solution_rgb": [
+        120,
+        0,
+        180
+      ],
+      "intensity_factor": 5.0,
+      "is_transparent": true
+    }
+  },
+  "C20H14O4": {
+    "molar_mass": 318.32,
+    "state": "l",
+    "type": "indicator",
+    "solubility": 0.001,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色或无色粉末",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C25H52": {
+    "molar_mass": 352.68,
+    "state": "s",
+    "type": "solvent",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色蜡状固体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "AgCl": {
+    "molar_mass": 143.32,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.00019,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色细腻沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "NH3": {
+    "molar_mass": 17.03,
+    "state": "l",
+    "type": "base",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体溶于水",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "[Ag(NH3)2]Cl": {
+    "molar_mass": 197.57,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C20H19N3·HCl": {
+    "molar_mass": 337.85,
+    "state": "s",
+    "type": "dye",
+    "solubility": 0.1,
+    "visual": {
+      "base_color": "紫红色",
+      "state_solid_desc": "紫红色结晶",
+      "solution_rgb": [
+        180,
+        0,
+        80
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": false
+    }
+  },
+  "CH3COONa": {
+    "molar_mass": 82.03,
+    "state": "l",
+    "type": "salt",
+    "solubility": 119.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "H2": {
+    "molar_mass": 2.02,
+    "state": "g",
+    "type": "gas",
+    "solubility": 0.0016,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Na2O": {
+    "molar_mass": 61.98,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 10.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色固体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "Na2O2": {
+    "molar_mass": 77.98,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.1,
+    "visual": {
+      "base_color": "淡黄色",
+      "state_solid_desc": "淡黄色固体",
+      "solution_rgb": [
+        255,
+        255,
+        180
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "CO2": {
+    "molar_mass": 44.01,
+    "state": "g",
+    "type": "oxide",
+    "solubility": 0.169,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        240,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C4H8O2": {
+    "molar_mass": 88.11,
+    "state": "l",
+    "type": "ester",
+    "solubility": 8.3,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "H2O2": {
+    "molar_mass": 34.01,
+    "state": "l",
+    "type": "oxide",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        245,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Na2CO3": {
+    "molar_mass": 105.99,
+    "state": "l",
+    "type": "salt",
+    "solubility": 21.5,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色粉末/无色溶液",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaCl": {
+    "molar_mass": 58.44,
+    "state": "l",
+    "type": "salt",
+    "solubility": 36.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶/无色溶液",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "KAl(SO4)2·12H2O": {
+    "molar_mass": 474.39,
+    "state": "s",
+    "type": "salt",
+    "solubility": 14.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色晶体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "KCr(SO4)2·12H2O": {
+    "molar_mass": 499.36,
+    "state": "s",
+    "type": "salt",
+    "solubility": 16.0,
+    "visual": {
+      "base_color": "紫红",
+      "state_solid_desc": "紫红色晶体",
+      "solution_rgb": [
+        140,
+        0,
+        120
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "C2H5OH": {
+    "molar_mass": 46.07,
+    "state": "l",
+    "type": "organic",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体，有酒精气味",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Br2": {
+    "molar_mass": 159.8,
+    "state": "l",
+    "type": "halogen",
+    "solubility": 3.5,
+    "visual": {
+      "base_color": "橙红",
+      "state_solid_desc": "橙红色液体",
+      "solution_rgb": [
+        255,
+        120,
+        0
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": false
+    }
+  },
+  "C2H4": {
+    "molar_mass": 28.05,
+    "state": "g",
+    "type": "organic",
+    "solubility": 0.001,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C6H12O6": {
+    "molar_mass": 180.16,
+    "state": "s",
+    "type": "organic",
+    "solubility": 91.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C12H22O11": {
+    "molar_mass": 342.3,
+    "state": "s",
+    "type": "organic",
+    "solubility": 200.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "[Ag(NH3)2]OH": {
+    "molar_mass": 156.91,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "H2SO4": {
+    "molar_mass": 98.08,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Ag": {
+    "molar_mass": 107.87,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白",
+      "state_solid_desc": "银白色金属",
+      "solution_rgb": [
+        200,
+        200,
+        210
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "Cu": {
+    "molar_mass": 63.55,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "红色",
+      "state_solid_desc": "红色金属丝",
+      "solution_rgb": [
+        180,
+        80,
+        40
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "CH3CHO": {
+    "molar_mass": 44.05,
+    "state": "l",
+    "type": "organic",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体，有刺激性气味",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "HBr": {
+    "molar_mass": 80.91,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C2H4Br2": {
+    "molar_mass": 187.86,
+    "state": "l",
+    "type": "organic",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Cu2O": {
+    "molar_mass": 143.09,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "红色",
+      "state_solid_desc": "红色固体",
+      "solution_rgb": [
+        180,
+        80,
+        40
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "AgNO3": {
+    "molar_mass": 169.87,
+    "state": "s",
+    "type": "salt",
+    "solubility": 215,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色晶体",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "HNO3": {
+    "molar_mass": 63.01,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Zn": {
+    "molar_mass": 65.38,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白色",
+      "state_solid_desc": "银白色金属片",
+      "solution_rgb": [
+        200,
+        200,
+        210
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "Fe2(SO4)3": {
+    "molar_mass": 399.88,
+    "state": "s",
+    "type": "salt",
+    "solubility": 20.5,
+    "visual": {
+      "base_color": "黄褐色",
+      "state_solid_desc": "黄褐色粉末",
+      "solution_rgb": [
+        180,
+        120,
+        40
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "KSCN": {
+    "molar_mass": 97.18,
+    "state": "s",
+    "type": "salt",
+    "solubility": 177,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色晶体",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "K3[Fe(CN)6]": {
+    "molar_mass": 329.24,
+    "state": "s",
+    "type": "salt",
+    "solubility": 33,
+    "visual": {
+      "base_color": "黄绿色",
+      "state_solid_desc": "黄绿色晶体",
+      "solution_rgb": [
+        180,
+        220,
+        80
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "Al": {
+    "molar_mass": 26.98,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白色",
+      "state_solid_desc": "银白色金属片",
+      "solution_rgb": [
+        200,
+        200,
+        210
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "NaNO3": {
+    "molar_mass": 84.99,
+    "state": "s",
+    "type": "salt",
+    "solubility": 91.2,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色晶体",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaHCO3": {
+    "molar_mass": 84.01,
+    "state": "s",
+    "type": "salt",
+    "solubility": 9.6,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色粉末",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "ZnSO4": {
+    "molar_mass": 161.47,
+    "state": "s",
+    "type": "salt",
+    "solubility": 57.7,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色晶体",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "AlCl3": {
+    "molar_mass": 133.34,
+    "state": "s",
+    "type": "salt",
+    "solubility": 45.8,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色晶体",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "FeSCN2+": {
+    "molar_mass": 162.98,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "血红色",
+      "state_solid_desc": "血红色溶液",
+      "solution_rgb": [
+        180,
+        0,
+        0
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": true
+    }
+  },
+  "[Cu(NH3)4]2+": {
+    "molar_mass": 170.63,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "深蓝色",
+      "state_solid_desc": "深蓝色溶液",
+      "solution_rgb": [
+        0,
+        0,
+        180
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": true
+    }
+  },
+  "Fe4[Fe(CN)6]3": {
+    "molar_mass": 859.23,
+    "state": "s",
+    "type": "complex",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "蓝色",
+      "state_solid_desc": "蓝色沉淀",
+      "solution_rgb": [
+        0,
+        60,
+        180
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": false
+    }
+  },
+  "BaCl2": {
+    "molar_mass": 208.23,
+    "state": "l",
+    "type": "salt",
+    "solubility": 37.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "(NH4)2SO4": {
+    "molar_mass": 132.14,
+    "state": "l",
+    "type": "salt",
+    "solubility": 70.6,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Albumin": {
+    "molar_mass": 66000.0,
+    "state": "l",
+    "type": "protein",
+    "solubility": 35.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色胶状",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NH4Cl": {
+    "molar_mass": 53.49,
+    "state": "l",
+    "type": "salt",
+    "solubility": 37.2,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NH4NO3": {
+    "molar_mass": 80.04,
+    "state": "l",
+    "type": "salt",
+    "solubility": 190.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "BaSO4": {
+    "molar_mass": 233.39,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.0002,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Cu(NH3)4^2+": {
+    "molar_mass": 170.7,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "深蓝色",
+      "state_solid_desc": "无色",
+      "solution_rgb": [
+        30,
+        60,
+        180
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "NH3_gas": {
+    "molar_mass": 17.03,
+    "state": "g",
+    "type": "base",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "CuSO4·5H2O": {
+    "molar_mass": 249.68,
+    "state": "s",
+    "type": "salt",
+    "solubility": 23.1,
+    "visual": {
+      "base_color": "蓝色",
+      "state_solid_desc": "蓝色晶体",
+      "solution_rgb": [
+        60,
+        120,
+        220
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Fe(NO3)3": {
+    "molar_mass": 241.86,
+    "state": "l",
+    "type": "salt",
+    "solubility": 150,
+    "visual": {
+      "base_color": "黄色",
+      "state_solid_desc": "淡紫色结晶",
+      "solution_rgb": [
+        255,
+        255,
+        153
+      ],
+      "intensity_factor": 0.5,
+      "is_transparent": true
+    }
+  },
+  "[Fe(SCN)]2+": {
+    "molar_mass": 162.98,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "血红",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        180,
+        0,
+        40
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": false
+    }
+  },
+  "KNO3": {
+    "molar_mass": 101.1,
+    "state": "l",
+    "type": "salt",
+    "solubility": 31.6,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NO": {
+    "molar_mass": 30.01,
+    "state": "g",
+    "type": "oxide",
+    "solubility": 0.0066,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NO2": {
+    "molar_mass": 46.01,
+    "state": "g",
+    "type": "oxide",
+    "solubility": 0.1,
+    "visual": {
+      "base_color": "红棕色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        180,
+        60,
+        30
+      ],
+      "intensity_factor": 2.0,
+      "is_transparent": false
+    }
+  },
+  "Fe": {
+    "molar_mass": 55.85,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白色",
+      "state_solid_desc": "银白色金属条",
+      "solution_rgb": [
+        200,
+        200,
+        200
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "CH4": {
+    "molar_mass": 16.04,
+    "state": "g",
+    "type": "hydrocarbon",
+    "solubility": 0.0023,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Ca(OH)2": {
+    "molar_mass": 74.09,
+    "state": "l",
+    "type": "base",
+    "solubility": 0.173,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色粉末",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "CaCO3": {
+    "molar_mass": 100.09,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.0013,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.5,
+      "is_transparent": false
+    }
+  },
+  "Na2S": {
+    "molar_mass": 78.045,
+    "state": "l",
+    "type": "salt",
+    "solubility": 20.6,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "H2SO3": {
+    "molar_mass": 82.07,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体（溶液）",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "FeCl3": {
+    "molar_mass": 162.204,
+    "state": "l",
+    "type": "salt",
+    "solubility": 92,
+    "visual": {
+      "base_color": "黄棕",
+      "state_solid_desc": "黄棕色结晶",
+      "solution_rgb": [
+        180,
+        120,
+        30
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "SO2": {
+    "molar_mass": 64.066,
+    "state": "l",
+    "type": "oxide",
+    "solubility": 11.3,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "S": {
+    "molar_mass": 32.065,
+    "state": "s",
+    "type": "element",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "黄色",
+      "state_solid_desc": "黄色粉末",
+      "solution_rgb": [
+        255,
+        255,
+        0
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "NaMnO4": {
+    "molar_mass": 141.93,
+    "state": "l",
+    "type": "salt",
+    "solubility": 20,
+    "visual": {
+      "base_color": "紫色",
+      "state_solid_desc": "紫色结晶",
+      "solution_rgb": [
+        128,
+        0,
+        128
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": false
+    }
+  },
+  "Na2SO3": {
+    "molar_mass": 126.04,
+    "state": "l",
+    "type": "salt",
+    "solubility": 28.6,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaHSO4": {
+    "molar_mass": 120.06,
+    "state": "l",
+    "type": "salt",
+    "solubility": 42,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaCH3COO": {
+    "molar_mass": 82.03,
+    "state": "l",
+    "type": "salt",
+    "solubility": 119,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "H2CO3": {
+    "molar_mass": 62.03,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体（溶液）",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Al(OH)4-": {
+    "molar_mass": 95.98,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Mg": {
+    "molar_mass": 24.31,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白色",
+      "state_solid_desc": "银白色金属条",
+      "solution_rgb": [
+        220,
+        220,
+        220
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "NaOH": {
+    "molar_mass": 40.0,
+    "state": "l",
+    "type": "base",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        240,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Al(OH)3": {
+    "molar_mass": 78.0,
+    "state": "s",
+    "type": "base",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色胶状沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "Mg(OH)2": {
+    "molar_mass": 58.32,
+    "state": "s",
+    "type": "base",
+    "solubility": 0.0009,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "Na2SO4": {
+    "molar_mass": 142.04,
+    "state": "l",
+    "type": "salt",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        240,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Cu(OH)2": {
+    "molar_mass": 97.56,
+    "state": "s",
+    "type": "base",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "蓝色",
+      "state_solid_desc": "蓝色絮状沉淀",
+      "solution_rgb": [
+        0,
+        120,
+        255
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "NaBr": {
+    "molar_mass": 102.89,
+    "state": "l",
+    "type": "salt",
+    "solubility": 94.6,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaI": {
+    "molar_mass": 149.89,
+    "state": "l",
+    "type": "salt",
+    "solubility": 184,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Cl2": {
+    "molar_mass": 70.9,
+    "state": "g",
+    "type": "nonmetal",
+    "solubility": 0.7,
+    "visual": {
+      "base_color": "黄绿色",
+      "state_solid_desc": "黄绿色气体",
+      "solution_rgb": [
+        200,
+        255,
+        120
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Al2Si2O5(OH)4": {
+    "molar_mass": 258.16,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "灰白色",
+      "state_solid_desc": "灰白色陶土网",
+      "solution_rgb": [
+        220,
+        220,
+        220
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "MgO": {
+    "molar_mass": 40.3,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.086,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色粉末",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C6H6": {
+    "molar_mass": 78.11,
+    "state": "l",
+    "type": "solvent",
+    "solubility": 0.18,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C7H8": {
+    "molar_mass": 92.14,
+    "state": "l",
+    "type": "solvent",
+    "solubility": 0.05,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "CuCl2": {
+    "molar_mass": 134.45,
+    "state": "l",
+    "type": "salt",
+    "solubility": 75.7,
+    "visual": {
+      "base_color": "蓝绿色",
+      "state_solid_desc": "黄棕色结晶",
+      "solution_rgb": [
+        60,
+        180,
+        180
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "CuCl2·2H2O": {
+    "molar_mass": 170.48,
+    "state": "l",
+    "type": "salt",
+    "solubility": 75.7,
+    "visual": {
+      "base_color": "蓝绿色",
+      "state_solid_desc": "蓝绿色结晶",
+      "solution_rgb": [
+        60,
+        180,
+        180
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "CuBr2": {
+    "molar_mass": 223.35,
+    "state": "l",
+    "type": "salt",
+    "solubility": 13.5,
+    "visual": {
+      "base_color": "棕色",
+      "state_solid_desc": "棕色结晶",
+      "solution_rgb": [
+        120,
+        80,
+        40
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "K2SO4": {
+    "molar_mass": 174.26,
+    "state": "l",
+    "type": "salt",
+    "solubility": 11.1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "KBr": {
+    "molar_mass": 119.0,
+    "state": "l",
+    "type": "salt",
+    "solubility": 53.5,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "I2": {
+    "molar_mass": 253.8,
+    "state": "s",
+    "type": "nonmetal",
+    "solubility": 0.03,
+    "visual": {
+      "base_color": "紫黑色",
+      "state_solid_desc": "紫黑色晶体",
+      "solution_rgb": [
+        90,
+        0,
+        120
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Br-": {
+    "molar_mass": 79.9,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色离子",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "I-": {
+    "molar_mass": 126.9,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色离子",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Cl-": {
+    "molar_mass": 35.45,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色离子",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Cl- ": {
+    "molar_mass": 35.45,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色离子",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "I2 ": {
+    "molar_mass": 253.8,
+    "state": "l",
+    "type": "nonmetal",
+    "solubility": 0.03,
+    "visual": {
+      "base_color": "紫色",
+      "state_solid_desc": "紫色溶液",
+      "solution_rgb": [
+        120,
+        0,
+        120
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "SO4^2-": {
+    "molar_mass": 96.06,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色离子",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "N2O4": {
+    "molar_mass": 92.01,
+    "state": "g",
+    "type": "oxide",
+    "solubility": 6.8,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        240,
+        240,
+        240
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "CaCl2": {
+    "molar_mass": 110.98,
+    "state": "l",
+    "type": "salt",
+    "solubility": 74.5,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaCl_aq": {
+    "molar_mass": 58.44,
+    "state": "l",
+    "type": "salt",
+    "solubility": 35.9,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "CaO": {
+    "molar_mass": 56.08,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 1.73,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色块状或粉末",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "CuO": {
+    "molar_mass": 79.55,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "黑色",
+      "state_solid_desc": "黑色粉末",
+      "solution_rgb": [
+        30,
+        30,
+        30
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "CH3COOC2H5": {
+    "molar_mass": 88.11,
+    "state": "l",
+    "type": "ester",
+    "solubility": 8.7,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色油状液体，有水果香味",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "FeSO4": {
+    "molar_mass": 151.91,
+    "state": "l",
+    "type": "salt",
+    "solubility": 29.8,
+    "visual": {
+      "base_color": "浅绿色",
+      "state_solid_desc": "浅绿色结晶",
+      "solution_rgb": [
+        120,
+        200,
+        120
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": true
+    }
+  },
+  "C6H5OH": {
+    "molar_mass": 94.11,
+    "state": "l",
+    "type": "other",
+    "solubility": 8.3,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色晶体",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "HCHO": {
+    "molar_mass": 30.03,
+    "state": "l",
+    "type": "other",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C2H5Br": {
+    "molar_mass": 108.97,
+    "state": "l",
+    "type": "organic",
+    "solubility": 0.87,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C6H12O7": {
+    "molar_mass": 196.16,
+    "state": "l",
+    "type": "organic",
+    "solubility": 91,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "AgBr": {
+    "molar_mass": 187.77,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.00014,
+    "visual": {
+      "base_color": "淡黄色",
+      "state_solid_desc": "淡黄色沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        180
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Ca(NO3)2": {
+    "molar_mass": 164.1,
+    "state": "l",
+    "type": "salt",
+    "solubility": 102,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "K": {
+    "molar_mass": 39.1,
+    "state": "s",
+    "type": "metal",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "银白色",
+      "state_solid_desc": "银白色金属，表面常有灰黑色氧化层",
+      "solution_rgb": [
+        200,
+        200,
+        200
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "C12H26": {
+    "molar_mass": 170.34,
+    "state": "l",
+    "type": "solvent",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色油状液体",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Fe2+": {
+    "molar_mass": 55.85,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "浅绿色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        180,
+        255,
+        180
+      ],
+      "intensity_factor": 0.2,
+      "is_transparent": true
+    }
+  },
+  "Zn2+": {
+    "molar_mass": 65.38,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "KOH": {
+    "molar_mass": 56.11,
+    "state": "l",
+    "type": "base",
+    "solubility": 112.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色固体",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "O2": {
+    "molar_mass": 32.0,
+    "state": "g",
+    "type": "gas",
+    "solubility": 0.004,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "K2O": {
+    "molar_mass": 94.2,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 1.3,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色固体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "NH4OH": {
+    "molar_mass": 35.05,
+    "state": "l",
+    "type": "base",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C4H9Br": {
+    "molar_mass": 137.02,
+    "state": "l",
+    "type": "solvent",
+    "solubility": 0.273,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体，有刺激性气味",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "SiO2": {
+    "molar_mass": 60.08,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "无色或白色固体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "Al2(SO4)3": {
+    "molar_mass": 342.15,
+    "state": "l",
+    "type": "salt",
+    "solubility": 31.2,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色粉末",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C2H5COOC2H5": {
+    "molar_mass": 116.16,
+    "state": "l",
+    "type": "ester",
+    "solubility": 1.7,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体，有水果香味",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C2H5OC(O)CH3": {
+    "molar_mass": 88.11,
+    "state": "l",
+    "type": "ester",
+    "solubility": 1.7,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体，有水果香味",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NO2/N2O4": {
+    "molar_mass": 69.01,
+    "state": "g",
+    "type": "oxide",
+    "solubility": 0.01,
+    "visual": {
+      "base_color": "红棕色/无色混合",
+      "state_solid_desc": "气体混合物",
+      "solution_rgb": [
+        200,
+        100,
+        80
+      ],
+      "intensity_factor": 0.7,
+      "is_transparent": false
+    }
+  },
+  "Ag2S": {
+    "molar_mass": 247.8,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "黑色",
+      "state_solid_desc": "黑色沉淀",
+      "solution_rgb": [
+        30,
+        30,
+        30
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "HClO": {
+    "molar_mass": 52.46,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Fe(SCN)3": {
+    "molar_mass": 325.14,
+    "state": "l",
+    "type": "salt",
+    "solubility": 100.0,
+    "visual": {
+      "base_color": "血红",
+      "state_solid_desc": "深红色溶液",
+      "solution_rgb": [
+        180,
+        0,
+        40
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": true
+    }
+  },
+  "Red_Dye": {
+    "molar_mass": 500.0,
+    "state": "l",
+    "type": "dye",
+    "solubility": -1,
+    "visual": {
+      "base_color": "红",
+      "state_solid_desc": "红色液体",
+      "solution_rgb": [
+        220,
+        0,
+        0
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": true
+    }
+  },
+  "C": {
+    "molar_mass": 12.01,
+    "state": "s",
+    "type": "element",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "黑",
+      "state_solid_desc": "黑色粉末",
+      "solution_rgb": [
+        30,
+        30,
+        30
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  },
+  "FeCl2": {
+    "molar_mass": 126.75,
+    "state": "s",
+    "type": "salt",
+    "solubility": 78.0,
+    "visual": {
+      "base_color": "浅绿色",
+      "state_solid_desc": "浅绿色结晶",
+      "solution_rgb": [
+        180,
+        255,
+        180
+      ],
+      "intensity_factor": 0.5,
+      "is_transparent": false
+    }
+  },
+  "Fe2O3": {
+    "molar_mass": 159.69,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "红褐色",
+      "state_solid_desc": "红褐色粉末",
+      "solution_rgb": [
+        180,
+        60,
+        30
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Fe3+": {
+    "molar_mass": 55.85,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "黄色",
+      "state_solid_desc": "黄色溶液",
+      "solution_rgb": [
+        255,
+        210,
+        60
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "C6H10O5": {
+    "molar_mass": 162.14,
+    "state": "s",
+    "type": "carbohydrate",
+    "solubility": 0.2,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色粉末或颗粒",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Soil": {
+    "molar_mass": 100.0,
+    "state": "s",
+    "type": "mixture",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "棕色",
+      "state_solid_desc": "棕色颗粒",
+      "solution_rgb": [
+        120,
+        72,
+        36
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Fe(OH)3": {
+    "molar_mass": 106.87,
+    "state": "s",
+    "type": "base",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "红褐色",
+      "state_solid_desc": "红褐色胶体或沉淀",
+      "solution_rgb": [
+        150,
+        60,
+        30
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "C7H6O2": {
+    "molar_mass": 122.12,
+    "state": "s",
+    "type": "acid",
+    "solubility": 0.34,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Fe3O4": {
+    "molar_mass": 231.54,
+    "state": "s",
+    "type": "oxide",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "黑色",
+      "state_solid_desc": "黑色固体",
+      "solution_rgb": [
+        30,
+        30,
+        30
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "Ba(OH)2·8H2O": {
+    "molar_mass": 315.46,
+    "state": "s",
+    "type": "base",
+    "solubility": 1.67,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Fe(OH)2": {
+    "molar_mass": 89.86,
+    "state": "s",
+    "type": "base",
+    "solubility": 0.0014,
+    "visual": {
+      "base_color": "白绿色",
+      "state_solid_desc": "白绿色沉淀，易被氧化变褐色",
+      "solution_rgb": [
+        200,
+        255,
+        200
+      ],
+      "intensity_factor": 0.5,
+      "is_transparent": false
+    }
+  },
+  "C24H48O4": {
+    "molar_mass": 384.64,
+    "state": "s",
+    "type": "organic",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "多色",
+      "state_solid_desc": "橡皮泥（红、白、黑、绿）",
+      "solution_rgb": [
+        200,
+        50,
+        50
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "C6H10": {
+    "molar_mass": 82.15,
+    "state": "l",
+    "type": "organic",
+    "solubility": 0.01,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C20H19N3Na2O7S3": {
+    "molar_mass": 585.56,
+    "state": "l",
+    "type": "salt",
+    "solubility": -1,
+    "visual": {
+      "base_color": "紫红",
+      "state_solid_desc": "绿色结晶",
+      "solution_rgb": [
+        180,
+        0,
+        90
+      ],
+      "intensity_factor": 10.0,
+      "is_transparent": false
+    }
+  },
+  "Fe(NO3)2": {
+    "molar_mass": 179.86,
+    "state": "l",
+    "type": "salt",
+    "solubility": 134.0,
+    "visual": {
+      "base_color": "浅绿",
+      "state_solid_desc": "浅绿色结晶",
+      "solution_rgb": [
+        180,
+        255,
+        180
+      ],
+      "intensity_factor": 0.5,
+      "is_transparent": true
+    }
+  },
+  "CaC2": {
+    "molar_mass": 64.1,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "灰色",
+      "state_solid_desc": "灰色块状或粉末",
+      "solution_rgb": [
+        180,
+        180,
+        180
+      ],
+      "intensity_factor": 0.2,
+      "is_transparent": false
+    }
+  },
+  "C2H2": {
+    "molar_mass": 26.04,
+    "state": "g",
+    "type": "oxide",
+    "solubility": 0.001,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色气体",
+      "solution_rgb": [
+        220,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "NaClO4": {
+    "molar_mass": 122.44,
+    "state": "s",
+    "type": "salt",
+    "solubility": 209.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        230,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Suspension": {
+    "molar_mass": 0.0,
+    "state": "l",
+    "type": "other",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "浑浊",
+      "state_solid_desc": "不透明液体",
+      "solution_rgb": [
+        180,
+        180,
+        180
+      ],
+      "intensity_factor": 0.5,
+      "is_transparent": false
+    }
+  },
+  "BaCO3": {
+    "molar_mass": 197.34,
+    "state": "s",
+    "type": "salt",
+    "solubility": 0.0024,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色沉淀",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "KI": {
+    "molar_mass": 166.0,
+    "state": "l",
+    "type": "salt",
+    "solubility": 144.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Fe(C6H5O7)3": {
+    "molar_mass": 573.11,
+    "state": "l",
+    "type": "complex",
+    "solubility": -1,
+    "visual": {
+      "base_color": "紫色",
+      "state_solid_desc": "紫色溶液",
+      "solution_rgb": [
+        120,
+        40,
+        140
+      ],
+      "intensity_factor": 5.0,
+      "is_transparent": true
+    }
+  },
+  "CnH2n+2": {
+    "molar_mass": 300.0,
+    "state": "l",
+    "type": "solvent",
+    "solubility": 0.0001,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色油状液体",
+      "solution_rgb": [
+        245,
+        245,
+        240
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "HCOOH": {
+    "molar_mass": 46.03,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C6H5COOH": {
+    "molar_mass": 122.12,
+    "state": "l",
+    "type": "acid",
+    "solubility": 0.34,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        245,
+        245,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C6H5ONa": {
+    "molar_mass": 128.09,
+    "state": "l",
+    "type": "salt",
+    "solubility": 21.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色粉末",
+      "solution_rgb": [
+        245,
+        245,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "K2Cr2O7": {
+    "molar_mass": 294.19,
+    "state": "l",
+    "type": "salt",
+    "solubility": 12.5,
+    "visual": {
+      "base_color": "橙色",
+      "state_solid_desc": "橙色结晶",
+      "solution_rgb": [
+        255,
+        140,
+        0
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "NaOEt": {
+    "molar_mass": 68.05,
+    "state": "l",
+    "type": "salt",
+    "solubility": 20.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色粉末",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "Cr3+": {
+    "molar_mass": 52.0,
+    "state": "l",
+    "type": "ion",
+    "solubility": -1,
+    "visual": {
+      "base_color": "蓝绿色",
+      "state_solid_desc": "蓝绿色溶液",
+      "solution_rgb": [
+        0,
+        180,
+        120
+      ],
+      "intensity_factor": 1.0,
+      "is_transparent": false
+    }
+  },
+  "NaHCOO": {
+    "molar_mass": 68.01,
+    "state": "l",
+    "type": "salt",
+    "solubility": 97.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C6H5COONa": {
+    "molar_mass": 144.11,
+    "state": "l",
+    "type": "salt",
+    "solubility": 62.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "白色结晶",
+      "solution_rgb": [
+        240,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "HCl": {
+    "molar_mass": 36.46,
+    "state": "l",
+    "type": "acid",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色溶液",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "MgSO4": {
+    "molar_mass": 120.37,
+    "state": "s",
+    "type": "salt",
+    "solubility": 35.0,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色晶体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "ZnCl2": {
+    "molar_mass": 136.3,
+    "state": "s",
+    "type": "salt",
+    "solubility": 432.0,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色晶体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "MgCl2": {
+    "molar_mass": 95.21,
+    "state": "l",
+    "type": "salt",
+    "solubility": 54.6,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色晶体",
+      "solution_rgb": [
+        255,
+        255,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C8H18": {
+    "molar_mass": 114.23,
+    "state": "l",
+    "type": "solvent",
+    "solubility": -1,
+    "visual": {
+      "base_color": "无色",
+      "state_solid_desc": "无色液体",
+      "solution_rgb": [
+        230,
+        240,
+        255
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C57H104O6": {
+    "molar_mass": 885.43,
+    "state": "l",
+    "type": "solvent",
+    "solubility": -1,
+    "visual": {
+      "base_color": "淡黄色",
+      "state_solid_desc": "淡黄色油状液体",
+      "solution_rgb": [
+        255,
+        255,
+        200
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": true
+    }
+  },
+  "C2H5ONa": {
+    "molar_mass": 68.05,
+    "state": "s",
+    "type": "salt",
+    "solubility": 20,
+    "visual": {
+      "base_color": "白色",
+      "state_solid_desc": "白色固体",
+      "solution_rgb": [
+        240,
+        240,
+        240
+      ],
+      "intensity_factor": 0.0,
+      "is_transparent": false
+    }
+  }
+}

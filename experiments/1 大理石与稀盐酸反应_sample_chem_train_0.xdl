@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Marble and Dilute Hydrochloric Acid Reaction to Generate Carbon Dioxide"
+    goal="Demonstrate and analyze the reaction between marble (calcium carbonate) and dilute hydrochloric acid, observing the generation of carbon dioxide gas and its effect on limewater."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="50ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Marble" state="solid"/>
+      <Reagent name="Dilute_HCl" state="liquid"/>
+      <Reagent name="Limewater" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Marble" mass="5 g"/>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Add vessel="beaker_1" reagent="Limewater" volume="30 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="beaker_1"/>
+      <Add vessel="test_tube_1" reagent="Dilute_HCl" volume="10 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

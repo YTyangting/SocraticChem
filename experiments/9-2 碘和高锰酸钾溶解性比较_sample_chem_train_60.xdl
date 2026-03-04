@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="碘和高锰酸钾在水和汽油中的溶解性实验" 
+    goal="比较碘和高锰酸钾在水和汽油中的溶解性，通过观察颜色和状态分析其溶解情况。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="15mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="15mL"/>
+      <Component id="test_tube_3" type="test_tube" capacity="15mL"/>
+      <Component id="test_tube_4" type="test_tube" capacity="15mL"/>
+      <Component id="test_tube_rack" type="test_tube_rack"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="test_tube_holder_3" type="test_tube_holder"/>
+      <Component id="test_tube_holder_4" type="test_tube_holder"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10mL"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Iodine" state="solid"/>
+      <Reagent name="Potassium_permanganate" state="solid"/>
+      <Reagent name="Distilled_water" state="liquid"/>
+      <Reagent name="Gasoline" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_3" support="test_tube_holder_3"/>
+      <Attach vessel="test_tube_4" support="test_tube_holder_4"/>
+      <Add vessel="test_tube_1" reagent="Iodine" mass="small amount"/>
+      <Add vessel="test_tube_2" reagent="Iodine" mass="small amount"/>
+      <Add vessel="test_tube_3" reagent="Potassium_permanganate" mass="small amount"/>
+      <Add vessel="test_tube_4" reagent="Potassium_permanganate" mass="small amount"/>
+      <Add vessel="test_tube_1" reagent="Distilled_water" volume="5 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_3" reagent="Distilled_water" volume="5 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_2" reagent="Gasoline" volume="5 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_4" reagent="Gasoline" volume="5 mL" tool="graduated_cylinder"/>
+      <Wait time="10s"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Stir vessel="test_tube_3"/>
+      <Stir vessel="test_tube_4"/>
+      <Wait time="30s"/>
+      <Insert tool="test_tube_1" vessel="test_tube_rack"/>
+      <Insert tool="test_tube_2" vessel="test_tube_rack"/>
+      <Insert tool="test_tube_3" vessel="test_tube_rack"/>
+      <Insert tool="test_tube_4" vessel="test_tube_rack"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

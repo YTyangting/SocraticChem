@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="石蜡熔化实验" goal="观察石蜡在加热条件下由固态逐渐熔化成液态的过程" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="paraffin" state="solid"/>
+      <Reagent name="water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="paraffin" mass="2 g"/>
+      <Add vessel="beaker_1" reagent="water" volume="100 mL"/>
+      <Heat vessel="beaker_1" target_temperature="100" tool="alcohol_lamp_1"/>
+      <Insert tool="test_tube_1" vessel="beaker_1"/>
+      <Wait time="2 min"/>
+      <Wait time="observe paraffin melting in test_tube_1"/>
+      <Wait time="record paraffin state change from solid to liquid"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

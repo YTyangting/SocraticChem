@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="氯化钙的物理性质及其溶解性观察实验" 
+    goal="观察氯化钙的颜色、物理状态及其在水中的溶解性" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="weighing_paper_1" type="weighing_paper"/>
+      <Component id="beaker_1" type="beaker" capacity="50mL"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="50mL"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Calcium_Chloride" state="solid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="weighing_paper_1" reagent="Calcium_Chloride" mass="2 g" tool="spatula_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="weighing_paper_1" to_vessel="beaker_1" volume="all"/>
+      <Add vessel="graduated_cylinder_1" reagent="Water" volume="30 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="beaker_1" volume="30 mL"/>
+      <Insert tool="glass_rod_1" vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="验证二氧化锰对过氧化氢分解的催化作用"
+    goal="通过对比实验，观察二氧化锰对过氧化氢分解产生氧气的催化效果"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10 mL"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20 mL"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="glowing_wooden_stick_1" type="wooden_stick"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="H2O2_5percent_solution" state="liquid"/>
+      <Reagent name="MnO2_powder" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="H2O2_5percent_solution" volume="5 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="5 mL"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Insert tool="glowing_wooden_stick_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_1" reagent="MnO2_powder" mass="0.1 g" tool="spatula_1"/>
+      <Insert tool="glowing_wooden_stick_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Add vessel="measuring_cylinder_1" reagent="H2O2_5percent_solution" volume="5 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="5 mL"/>
+      <Insert tool="glowing_wooden_stick_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <!-- 可重复上述操作以继续验证催化作用 -->
+    </Procedure>
+  </Synthesis>
+</XDL>

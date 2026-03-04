@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="粗苯甲酸的重结晶纯化与结晶产物质量测定"
+    goal="通过重结晶法纯化粗苯甲酸，并测定所得纯净苯甲酸晶体的质量"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="glass_rod" type="glass_rod"/>
+      <Component id="funnel_1" type="funnel"/> 
+      <Component id="filter_paper_1" type="filter_paper"/>
+      <Component id="beaker_2" type="beaker" capacity="100ml"/>
+      <Component id="funnel_2" type="funnel"/>
+      <Component id="filter_paper_2" type="filter_paper"/>
+      <Component id="watch_glass" type="watch_glass"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="crude_benzoic_acid" state="solid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 取样，观察外观和颜色 -->
+      <Add vessel="beaker_1" reagent="crude_benzoic_acid" mass="5 g"/>
+      <Wait time="30s"/>
+      <!-- 轻轻搅拌，观察杂质或沉淀 -->
+      <Insert tool="glass_rod" vessel="beaker_1"/>
+      <Wait time="20s"/>
+      <!-- 加热使苯甲酸溶解（假定已加水） -->
+      <Add vessel="beaker_1" reagent="distilled_water" volume="30 mL"/>
+      <Heat vessel="beaker_1" target_temperature="80"/>
+      <Wait time="60s"/>
+      <!-- 热过滤，收集滤液 -->
+      <Attach vessel="funnel_1" support="beaker_2"/>
+      <Insert tool="filter_paper_1" vessel="funnel_1"/>
+      <Transfer from_vessel="beaker_1" to_vessel="funnel_1" volume="35 mL"/>
+      <Wait time="60s"/>
+      <!-- 静置冷却至室温，观察结晶 -->
+      <Wait time="600s"/>
+      <!-- 轻轻搅拌促进结晶 -->
+      <Insert tool="glass_rod" vessel="beaker_2"/>
+      <Wait time="20s"/>
+      <!-- 冷过滤，收集晶体 -->
+      <Attach vessel="funnel_2" support="watch_glass"/>
+      <Insert tool="filter_paper_2" vessel="funnel_2"/>
+      <Transfer from_vessel="beaker_2" to_vessel="funnel_2" volume="30 mL"/>
+      <Wait time="60s"/>
+      <!-- 用少量冷蒸馏水洗涤晶体 -->
+      <Add vessel="funnel_2" reagent="distilled_water" volume="5 mL"/>
+      <Wait time="30s"/>
+      <!-- 晾干晶体并称量 -->
+      <Transfer from_vessel="funnel_2" to_vessel="watch_glass" volume="5 mL"/>
+      <Wait time="1800s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

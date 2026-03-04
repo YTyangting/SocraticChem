@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="白醋和肥皂水对石蕊和酚酞指示剂的作用实验" 
+    goal="比较白醋和肥皂水对紫色石蕊溶液和无色酚酞溶液的显色反应，观察颜色变化以判断其酸碱性。" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_4" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_rack" type="test_tube_rack"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="white_vinegar" state="liquid"/>
+      <Reagent name="soap_solution" state="liquid"/>
+      <Reagent name="litmus_solution" state="liquid"/>
+      <Reagent name="phenolphthalein_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+      <Attach vessel="test_tube_3" support="test_tube_rack"/>
+      <Attach vessel="test_tube_4" support="test_tube_rack"/>
+      <Add vessel="test_tube_1" reagent="white_vinegar" volume="2 ml" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_2" reagent="white_vinegar" volume="2 ml" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_3" reagent="soap_solution" volume="2 ml" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_4" reagent="soap_solution" volume="2 ml" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_1" reagent="litmus_solution" volume="0.1 ml" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="phenolphthalein_solution" volume="0.1 ml" tool="dropper"/>
+      <Add vessel="test_tube_3" reagent="litmus_solution" volume="0.1 ml" tool="dropper"/>
+      <Add vessel="test_tube_4" reagent="phenolphthalein_solution" volume="0.1 ml" tool="dropper"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

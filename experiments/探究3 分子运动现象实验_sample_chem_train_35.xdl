@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Observation of Phenolphthalein Color Change and Ammonia Diffusion" 
+    goal="To observe the color change of phenolphthalein in response to sodium hydroxide and to investigate the effect of ammonia gas diffusion on the color of phenolphthalein solution." 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_A" type="beaker" capacity="50ml"/>
+      <Component id="beaker_B" type="beaker" capacity="50ml"/>
+      <Component id="beaker_large" type="beaker" capacity="250ml"/>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Phenolphthalein_Solution" state="liquid"/>
+      <Reagent name="Sodium_Hydroxide_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_A" reagent="Distilled_Water" volume="20 mL"/>
+      <Add vessel="beaker_A" reagent="Phenolphthalein_Solution" volume="0.3 mL" tool="dropper_1"/>
+      <Insert tool="glass_rod_1" vessel="beaker_A"/>
+      <Stir vessel="beaker_A"/>
+      <Wait time="10s"/>
+      <Transfer from_vessel="beaker_A" to_vessel="test_tube_1" volume="2 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_1" reagent="Sodium_Hydroxide_Solution" volume="0.5 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <Add vessel="beaker_B" reagent="Sodium_Hydroxide_Solution" volume="5 mL"/>
+      <Wait time="5s"/>
+      <!-- Place beaker_A and beaker_B side by side, cover with beaker_large -->
+      <Wait time="180s"/>
+      <!-- Observe color change in beaker_A -->
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="NO₂/N₂O₄ Equilibrium Color Change Experiment" 
+    goal="Observe and compare the color changes of NO₂/N₂O₄ gas mixture in round-bottom flasks under hot and cold water baths to study the temperature dependence of the equilibrium 2NO₂(g) ⇌ N₂O₄(g)." 
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="flask_hot" type="round_bottom_flask" capacity="250ml"/>
+      <Component id="flask_cold" type="round_bottom_flask" capacity="250ml"/>
+      <Component id="latex_tube" type="latex_tube"/>
+      <Component id="spring_clip_1" type="spring_clip"/>
+      <Component id="spring_clip_2" type="spring_clip"/>
+      <Component id="beaker_hot" type="beaker" capacity="500ml"/>
+      <Component id="beaker_cold" type="beaker" capacity="500ml"/>
+      <Component id="stand_hot" type="stand"/>
+      <Component id="stand_cold" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NO2_N2O4_gas" state="gas"/>
+      <Reagent name="hot_water" state="liquid"/>
+      <Reagent name="ice_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="flask_hot" support="stand_hot"/>
+      <Attach vessel="flask_cold" support="stand_cold"/>
+      <Insert tool="latex_tube" vessel="flask_hot"/>
+      <Insert tool="latex_tube" vessel="flask_cold"/>
+      <Insert tool="spring_clip_1" vessel="latex_tube"/>
+      <Insert tool="spring_clip_2" vessel="latex_tube"/>
+      <Add vessel="flask_hot" reagent="NO2_N2O4_gas" volume="250ml"/>
+      <Add vessel="flask_cold" reagent="NO2_N2O4_gas" volume="250ml"/>
+      <Insert tool="spring_clip_1" vessel="latex_tube"/>
+      <Insert tool="spring_clip_2" vessel="latex_tube"/>
+      <Add vessel="beaker_hot" reagent="hot_water" volume="400 mL"/>
+      <Add vessel="beaker_cold" reagent="ice_water" volume="400 mL"/>
+      <Insert tool="flask_hot" vessel="beaker_hot"/>
+      <Insert tool="flask_cold" vessel="beaker_cold"/>
+      <Wait time="5 min"/>
+      <Wait time="observe color changes in both flasks"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

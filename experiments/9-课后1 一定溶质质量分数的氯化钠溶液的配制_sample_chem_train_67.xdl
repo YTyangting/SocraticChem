@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="配制6%氯化钠溶液" 
+    goal="配制50 g 6%氯化钠溶液，并将其转移至试剂瓶保存，贴好标签" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="50ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="reagent_bottle_1" type="reagent_bottle" capacity="50ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaCl" state="solid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="NaCl" mass="3 g" tool="spatula_1"/>
+      <Add vessel="graduated_cylinder_1" reagent="Distilled_Water" volume="47 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="beaker_1" volume="47 mL"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="2 min"/>
+      <Transfer from_vessel="beaker_1" to_vessel="reagent_bottle_1" volume="50 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

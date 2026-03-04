@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_glm-4-9b_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 7.177008773760299,
+        "ROUGE-1": 34.37898016449515,
+        "ROUGE-2": 13.1887949763538,
+        "ROUGE-L": 23.322501914621085,
+        "BERTScore_Mean": 70.41469216346741
+    }
+}

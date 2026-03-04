@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Hydrogen Combustion in Chlorine Gas" 
+    goal="To observe the combustion of hydrogen in chlorine gas and record the resulting phenomena, such as flame brightness and the formation of white smoke or other products." 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="hydrogen_generator" type="reaction_apparatus" capacity=""/>
+      <Component id="zinc_container" type="flask" capacity="100ml"/>
+      <Component id="sulfuric_acid_container" type="flask" capacity="100ml"/>
+      <Component id="delivery_tube" type="tube"/>
+      <Component id="chlorine_gas_bottle" type="gas_bottle" capacity="250ml"/>
+      <Component id="gas_collector" type="gas_bottle" capacity="250ml"/>
+      <Component id="glass_plate" type="glass_plate"/>
+      <Component id="stand" type="stand"/>
+      <Component id="ignition_source" type="igniter"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="zinc" state="solid"/>
+      <Reagent name="dilute_sulfuric_acid" state="liquid"/>
+      <Reagent name="chlorine_gas" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="zinc_container" reagent="zinc" mass="5 g"/>
+      <Add vessel="sulfuric_acid_container" reagent="dilute_sulfuric_acid" volume="20 mL"/>
+      <Attach vessel="hydrogen_generator" support="stand"/>
+      <Insert tool="zinc_container" vessel="hydrogen_generator"/>
+      <Insert tool="sulfuric_acid_container" vessel="hydrogen_generator"/>
+      <Insert tool="delivery_tube" vessel="hydrogen_generator"/>
+      <Attach vessel="chlorine_gas_bottle" support="stand"/>
+      <Insert tool="glass_plate" vessel="chlorine_gas_bottle"/>
+      <Add vessel="chlorine_gas_bottle" reagent="chlorine_gas" volume="250 mL"/>
+      <Wait time="30s"/>
+      <Insert tool="ignition_source" vessel="delivery_tube"/>
+      <Wait time="10s"/>
+      <Insert tool="delivery_tube" vessel="chlorine_gas_bottle"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

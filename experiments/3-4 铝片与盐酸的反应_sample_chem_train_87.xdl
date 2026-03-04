@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="铝与盐酸反应实验" goal="观察铝与盐酸反应生成气体的性质及其对燃着木条的影响" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="tweezers_1" type="tweezers"/>
+      <Component id="wooden_stick_1" type="wooden_stick"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="HCl_solution" state="liquid"/>
+      <Reagent name="Aluminum_piece" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="HCl_solution" volume="5 mL"/>
+      <Add vessel="test_tube_1" reagent="Aluminum_piece" mass="1 g" tool="tweezers_1"/>
+      <Wait time="30s"/>
+      <Insert tool="wooden_stick_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

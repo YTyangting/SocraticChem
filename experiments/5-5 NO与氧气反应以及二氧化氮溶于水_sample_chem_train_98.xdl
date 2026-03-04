@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="NO与水及空气反应的观察实验" 
+    goal="观察二氧化氮气体（NO）与水和空气混合时的物理和化学变化" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="syringe_1" type="syringe" capacity="50 mL"/>
+      <Component id="latex_tube_1" type="latex_tube"/>
+      <Component id="spring_clip_1" type="spring_clip"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NO_gas" state="gas"/>
+      <Reagent name="Water" state="liquid"/>
+      <Reagent name="Air" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="syringe_1" reagent="NO_gas" volume="20 mL"/>
+      <Add vessel="syringe_1" reagent="Water" volume="5 mL"/>
+      <Insert tool="latex_tube_1" vessel="syringe_1"/>
+      <Insert tool="spring_clip_1" vessel="latex_tube_1"/>
+      <Wait time="30s"/>
+      <Add vessel="syringe_1" reagent="Air" volume="10 mL"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

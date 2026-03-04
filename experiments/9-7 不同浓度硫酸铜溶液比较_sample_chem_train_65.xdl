@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="硫酸铜溶液浓度与颜色关系实验" goal="比较不同浓度硫酸铜溶液的颜色深浅，探究浓度与颜色的关系" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="50ml"/>
+      <Component id="beaker_2" type="beaker" capacity="50ml"/>
+      <Component id="beaker_3" type="beaker" capacity="50ml"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="50ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="glass_rod_2" type="glass_rod"/>
+      <Component id="glass_rod_3" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Copper_Sulfate_1" state="solid"/>
+      <Reagent name="Copper_Sulfate_2" state="solid"/>
+      <Reagent name="Copper_Sulfate_3" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="20 mL"/>
+      <Add vessel="beaker_2" reagent="Distilled_Water" volume="20 mL"/>
+      <Add vessel="beaker_3" reagent="Distilled_Water" volume="20 mL"/>
+      <Add vessel="beaker_1" reagent="Copper_Sulfate_1"/>
+      <Add vessel="beaker_2" reagent="Copper_Sulfate_2"/>
+      <Add vessel="beaker_3" reagent="Copper_Sulfate_3"/>
+      <Stir vessel="beaker_1"/>
+      <Stir vessel="beaker_2"/>
+      <Stir vessel="beaker_3"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

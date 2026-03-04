@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="光照对甲烷与氯气混合反应的影响实验" 
+    goal="比较光照和避光条件下甲烷与氯气混合气体反应的现象，观察是否有白色固体生成或气体体积变化" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="water_trough_NaCl" type="water_trough" capacity="500ml"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="stand_2" type="stand"/>
+      <Component id="aluminum_foil" type="foil"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Methane" state="gas"/>
+      <Reagent name="Chlorine" state="gas"/>
+      <Reagent name="NaCl_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Step 1: 准备NaCl水槽 -->
+      <Add vessel="water_trough_NaCl" reagent="NaCl_Solution" volume="400 mL"/>
+      <Add vessel="test_tube_1" reagent="Methane" volume="400 mL"/>
+      <Add vessel="test_tube_2" reagent="Methane" volume="400 mL"/>
+      <!-- Step 4: 固定试管于铁架台，试管口朝上 -->
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Attach vessel="test_tube_2" support="stand_2"/>
+      <!-- Step 5: 包裹试管1以避光 -->
+      <Insert tool="aluminum_foil" vessel="test_tube_1"/>
+      <!-- Step 6: 试管2置于光亮处（无需特殊操作，默认环境） -->
+      <Wait time="30min"/>
+      <!-- Step 8: 观察两支试管内的现象（如白色固体生成或气体体积变化） -->
+      <Wait time="2min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="氢气燃烧生成水的实验" 
+    goal="验证氢气燃烧生成水的产物，并观察水珠在烧杯内壁的形成" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="flask_1" type="flask" capacity="250ml"/>
+      <Component id="delivery_tube_1" type="delivery_tube"/>
+      <Component id="burette_1" type="burette" capacity="50ml"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="burner_1" type="burner"/>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="iron_clamp_1" type="iron_clamp"/>
+      <Component id="match_1" type="match"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Zinc" state="solid"/>
+      <Reagent name="Dilute_Sulfuric_Acid" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. Add zinc and dilute sulfuric acid to flask to generate hydrogen -->
+      <Add vessel="flask_1" reagent="Zinc" mass="2 g"/>
+      <Add vessel="flask_1" reagent="Dilute_Sulfuric_Acid" volume="20 mL"/>
+      <!-- 2. Connect delivery tube to flask for gas delivery -->
+      <Attach vessel="flask_1" support="stand_1"/>
+      <Insert tool="delivery_tube_1" vessel="flask_1"/>
+      <!-- 3. Wait for air to be expelled from the tube -->
+      <Wait time="30s"/>
+      <!-- 4. Ignite hydrogen at the tube outlet -->
+      <Insert tool="match_1" vessel="delivery_tube_1"/>
+      <!-- 5. Hold a dry, inverted beaker above the hydrogen flame with an iron clamp -->
+      <Attach vessel="beaker_1" support="iron_clamp_1"/>
+      <Insert tool="delivery_tube_1" vessel="beaker_1"/>
+      <Wait time="60s"/>
+      <!-- 6. Remove the beaker and observe for water droplets -->
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

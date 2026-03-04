@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="乙醇与酸性重铬酸钾溶液的氧化反应观察"
+    goal="观察乙醇与酸性重铬酸钾溶液反应过程中溶液颜色由橙色变为蓝绿色，验证乙醇被氧化。"
+    difficulty="Easy"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_holder" type="test_tube_holder"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Acidic_K2Cr2O7_Solution" state="liquid"/>
+      <Reagent name="Ethanol" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="test_tube_holder"/>
+      <Add vessel="test_tube_1" reagent="Acidic_K2Cr2O7_Solution" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="Ethanol" volume="0.2 mL" tool="dropper_2"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

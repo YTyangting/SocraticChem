@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="醋酸与碳酸钠反应气泡观察实验" 
+    goal="通过观察醋酸与碳酸钠反应产生气泡的情况，分析反应程度，并推测CH3COOH的Ka与H2CO3的Ka1的大小关系。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Acetic_Acid_Solution" state="liquid"/>
+      <Reagent name="Sodium_Carbonate_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="Acetic_Acid_Solution" volume="2 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="Sodium_Carbonate_Solution" tool="dropper_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="三种溶液与AgNO₃及稀硝酸反应现象的比较实验" 
+    goal="比较稀盐酸、NaCl溶液和Na₂CO₃溶液与AgNO₃溶液反应及加入稀硝酸后的现象差异，以鉴别三种溶液的成分"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube"/>
+      <Component id="test_tube_2" type="test_tube"/>
+      <Component id="test_tube_3" type="test_tube"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Dilute_HCl" state="liquid"/>
+      <Reagent name="NaCl_Solution" state="liquid"/>
+      <Reagent name="Na2CO3_Solution" state="liquid"/>
+      <Reagent name="AgNO3_Solution" state="liquid"/>
+      <Reagent name="Dilute_HNO3" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Dilute_HCl" volume="2 mL"/>
+      <Add vessel="test_tube_2" reagent="NaCl_Solution" volume="2 mL"/>
+      <Add vessel="test_tube_3" reagent="Na2CO3_Solution" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="AgNO3_Solution" volume="0.5 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="AgNO3_Solution" volume="0.5 mL" tool="dropper"/>
+      <Add vessel="test_tube_3" reagent="AgNO3_Solution" volume="0.5 mL" tool="dropper"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Stir vessel="test_tube_3"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_1" reagent="Dilute_HNO3" volume="0.5 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="Dilute_HNO3" volume="0.5 mL" tool="dropper"/>
+      <Add vessel="test_tube_3" reagent="Dilute_HNO3" volume="0.5 mL" tool="dropper"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Stir vessel="test_tube_3"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

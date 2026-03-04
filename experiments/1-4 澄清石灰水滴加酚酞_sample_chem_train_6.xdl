@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="澄清石灰水与稀盐酸反应实验" 
+    goal="观察澄清石灰水与稀盐酸反应时溶液颜色的变化并记录现象" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Limewater" state="liquid"/>
+      <Reagent name="Dilute_HCl" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="Limewater" volume="3 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="3 mL"/>
+      <Add vessel="test_tube_1" reagent="Dilute_HCl" volume="0.1 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

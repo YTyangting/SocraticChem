@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="Sodium Combustion in Air" goal="To observe the combustion of metallic sodium in air and the formation of sodium oxide." difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="crucible_1" type="crucible"/>
+      <Component id="crucible_tongs_1" type="tongs"/>
+      <Component id="tripod_1" type="tripod"/>
+      <Component id="pipeclay_triangle_1" type="pipeclay_triangle"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="tweezers_1" type="tweezers"/>
+      <Component id="safety_goggles_1" type="safety_goggles"/>
+      <Component id="gloves_1" type="gloves"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Metallic_Sodium" state="solid"/>
+      <Reagent name="Sodium_Oxide_Product" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="pipeclay_triangle_1" support="tripod_1"/>
+      <Attach vessel="crucible_1" support="pipeclay_triangle_1"/>
+      <Insert tool="crucible_tongs_1" vessel="crucible_1"/>
+      <Add vessel="crucible_1" reagent="Metallic_Sodium" mass="0.1 g" tool="tweezers_1"/>
+      <Heat vessel="crucible_1" tool="alcohol_lamp_1"/>
+      <Wait time="120s"/>
+      <Wait time="until sodium is fully combusted and white solid forms"/>
+      <Cool vessel="crucible_1"/>
+      <Wait time="60s"/>
+      <Add vessel="crucible_1" reagent="Sodium_Oxide_Product" mass="product"/>
+      <Wait time="observe white solid product"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,1908 @@
+types:
+  DC_power_supply:
+    capacity: 2
+    class_category: Heater
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - power_supply_tag
+    name: 直流电源
+    ports: []
+    tags: []
+  KI_starch_test_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - test_paper_tag
+    name: 碘化钾淀粉试纸
+    ports: []
+    tags: []
+  U-tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - tube_tag
+    name: U形管
+    ports: []
+    tags: []
+  alcohol_lamp:
+    capacity: 2
+    class_category: Heater
+    connectable_to: []
+    my_tags:
+    - lamp_tag
+    name: 酒精灯
+    ports: []
+    tags: []
+  ammeter:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - ammeter_tag
+    name: 电流表
+    ports: []
+    tags: []
+  background:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - background_tag
+    name: 背景
+    ports: []
+    tags: []
+  balance:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - balance_tag
+    name: 天平
+    ports: []
+    tags: []
+  balloon:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - balloon_tag
+    name: 气球
+    ports: []
+    tags: []
+    sealing_mode: "hermetic"
+  beaker:
+    capacity: 5
+    connectable_to:
+    - flat_platform_tag
+    - tripod_tag
+    - net_tag
+    my_tags:
+    - beaker_tag
+    name: 烧杯
+    ports:
+    - mouth
+    - liquid_surface
+    - liquid_deep
+    tags:
+    - glassware
+    - wide_mouth
+    - vessel
+  board:
+    capacity: 5
+    class_category: Support
+    connectable_to: []
+    my_tags:
+    - board_tag
+    name: 板
+    ports: []
+    tags: []
+  boiling_stone:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - stone_tag
+    name: 沸石
+    ports: []
+    tags: []
+  bottle:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    - trough_tag
+    - table_tag
+    my_tags:
+    - bottle_tag
+    name: 瓶子
+    ports: []
+    tags: []
+  brush:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - brush_tag
+    name: 刷子
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  bunsen_burner:
+    capacity: 2
+    class_category: Heater
+    connectable_to: []
+    my_tags:
+    - burner_tag
+    name: 本生灯
+    ports: []
+    tags: []
+  burette:
+    capacity: 2
+    connectable_to:
+    - burette_clamp_tag
+    my_tags:
+    - burette_tag
+    name: 滴定管
+    ports:
+    - top
+    - tip
+    tags:
+    - glassware
+    - precision
+    - long
+    sealing_mode: "vented"
+  burette_clamp:
+    capacity: 2
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - burette_clamp_tag
+    name: 滴定管夹
+    tags:
+    - connector
+  burner:
+    capacity: 2
+    connectable_to:
+    - table_tag
+    my_tags:
+    - burner_tag
+    name: 酒精灯
+    ports:
+    - flame
+    tags:
+    - heater
+    - heat_source
+  cabinet:
+    capacity: 5
+    class_category: Support
+    connectable_to: []
+    my_tags:
+    - cabinet_tag
+    name: 柜子
+    ports: []
+    tags: []
+  calorimeter:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - calorimeter_tag
+    name: 量热计
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  candle:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - candle_tag
+    name: 蜡烛
+    ports: []
+    tags: []
+  cap:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - vessel_tag
+    my_tags:
+    - cap_tag
+    name: 盖子
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  ceramic_net:
+    capacity: 2
+    class_category: Support
+    connectable_to:
+    - tripod_tag
+    my_tags:
+    - net_tag
+    name: 陶瓷网
+    ports: []
+    tags: []
+  charcoal:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - charcoal_tag
+    name: 木炭
+    ports: []
+    tags: []
+  clamp:
+    capacity: 1
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - clamp_tag
+    name: 铁夹
+    tags:
+    - connector
+  clay:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - clay_tag
+    name: 粘土
+    ports: []
+    tags: []
+  clay_net:
+    capacity: 2
+    class_category: Support
+    connectable_to:
+    - tripod_tag
+    my_tags:
+    - net_tag
+    name: 泥网
+    ports: []
+    tags: []
+  cloth:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - cloth_tag
+    name: 布
+    ports: []
+    tags: []
+  cobalt_blue_glass:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - glass_tag
+    name: 钴蓝玻璃
+    ports: []
+    tags: []
+  conductivity_meter:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - meter_tag
+    name: 电导率仪
+    ports: []
+    tags: []
+  container:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - container_tag
+    name: 容器
+    ports: []
+    tags: []
+  copper_wire:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - power_source_tag
+    my_tags:
+    - wire_tag
+    name: 铜线
+    ports: []
+    tags: []
+  cotton:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - cotton_tag
+    name: 棉花
+    ports: []
+    tags: []
+  cotton_ball:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - cotton_ball_tag
+    name: 棉球
+    ports: []
+    tags: []
+  crucible:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - crucible_tag
+    name: 坩埚
+    ports: []
+    tags: []
+  crucible_lid:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - crucible_tag
+    my_tags:
+    - lid_tag
+    name: 坩埚盖
+    ports: []
+    tags: []
+  crucible_tongs:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - tongs_tag
+    name: 坩埚钳
+    ports: []
+    tags: []
+  cylinder:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - cylinder_tag
+    name: 圆筒
+    ports: []
+    tags: []
+  dc_power_supply:
+    capacity: 2
+    class_category: Heater
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - power_supply_tag
+    name: 直流电源
+    ports: []
+    tags: []
+  delivery_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - flask_tag
+    my_tags:
+    - tubing_tag
+    name: 导管
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  dropper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - flask_tag
+    my_tags:
+    - dropper_tag
+    name: 滴管
+    ports: []
+    tags: []
+  dropping_funnel:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - funnel_tag
+    name: 滴液漏斗
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  drying_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - tube_tag
+    name: 干燥管
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  electrode:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - electrode_tag
+    name: 电极
+    ports: []
+    tags: []
+  erlenmeyer_flask:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - flask_tag
+    name: 锥形瓶
+    ports: []
+    tags: []
+  evaporating_dish:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - dish_tag
+    name: 蒸发皿
+    ports: []
+    tags: []
+  filter_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - filter_paper_tag
+    name: 滤纸
+    ports: []
+    tags: []
+  flask:
+    capacity: 3
+    connectable_to:
+    - clamp_tag
+    my_tags:
+    - flask_tag
+    name: 烧瓶
+    ports:
+    - mouth
+    - liquid_surface
+    - liquid_deep
+    - side_arm
+    tags:
+    - glassware
+    - narrow_mouth
+    - vessel
+  flower:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - flower_tag
+    name: 花
+    ports: []
+    tags: []
+  foil:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - foil_tag
+    name: 箔
+    ports: []
+    tags: []
+  forceps:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - forceps_tag
+    name: 镊子
+    ports: []
+    tags: []
+  funnel:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - flask_tag
+    my_tags:
+    - funnel_tag
+    name: 漏斗
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  gas:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - gas_tag
+    name: 气体
+    ports: []
+    tags: []
+  gas_bottle:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    - trough_tag
+    my_tags:
+    - bottle_tag
+    name: 气瓶
+    ports: []
+    tags: []
+  gas_collection_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - tube_tag
+    name: 集气管
+    ports: []
+    tags: []
+  gas_generator:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - generator_tag
+    name: 气体发生器
+    ports: []
+    tags: []
+  gas_jar:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - jar_tag
+    name: 集气瓶
+    ports: []
+    tags: []
+  gas_source:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - gas_source_tag
+    name: 气源
+    ports: []
+    tags: []
+  gas_washing_bottle:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - bottle_tag
+    name: 洗气瓶
+    ports: []
+    tags: []
+  glass_plate:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: ["bottle_tag", "vessel"]
+    my_tags:
+    - plate_tag
+    name: 玻璃板
+    ports: []
+    tags: ["sealing_component", "Vessel"]
+    sealing_mode: "loose"
+  glass_rod:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - rod_tag
+    name: 玻璃棒
+    ports: []
+    tags: []
+  glass_slide:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - slide_tag
+    name: 玻片
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  glass_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - flask_tag
+    my_tags:
+    - tube_tag
+    name: 玻璃管
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  gloves:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - gloves_tag
+    name: 手套
+    ports: []
+    tags: []
+  goggles:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - goggles_tag
+    name: 护目镜
+    ports: []
+    tags: []
+  graduated_cylinder:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - cylinder_tag
+    name: 量筒
+    ports: []
+    tags: []
+  graphite_electrode:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - electrode_tag
+    name: 石墨电极
+    ports: []
+    tags: []
+  hair_dryer:
+    capacity: 2
+    class_category: Heater
+    connectable_to: []
+    my_tags:
+    - dryer_tag
+    name: 吹风机
+    ports: []
+    tags: []
+  hand:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - hand_tag
+    name: 手
+    ports: []
+    tags: []
+  heater:
+    capacity: 2
+    class_category: Heater
+    connectable_to: []
+    my_tags:
+    - heater_tag
+    name: 加热器
+    ports: []
+    tags: []
+  ice_bath:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - bath_tag
+    name: 冰浴
+    ports: []
+    tags: []
+  igniter:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - igniter_tag
+    name: 点火器
+    ports: []
+    tags: []
+  iron_clamp:
+    capacity: 1
+    class_category: Support
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - clamp_tag
+    name: 铁夹
+    ports: []
+    tags: []
+  iron_nail:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - nail_tag
+    name: 铁钉
+    ports: []
+    tags: []
+  iron_rod:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - rod_tag
+    name: 铁棒
+    ports: []
+    tags: []
+  iron_stand:
+    capacity: 5
+    class_category: Support
+    connectable_to:
+    - clamp_tag
+    my_tags:
+    - stand_tag
+    name: 铁架台
+    ports: []
+    tags: []
+  iron_wire:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - wire_tag
+    name: 铁丝
+    ports: []
+    tags: []
+  knife:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - knife_tag
+    name: 刀
+    ports: []
+    tags: []
+  label:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - label_tag
+    name: 标签
+    ports: []
+    tags: []
+  lamp:
+    capacity: 2
+    class_category: Heater
+    connectable_to: []
+    my_tags:
+    - lamp_tag
+    name: 灯
+    ports: []
+    tags: []
+  laser_pointer:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - laser_pointer_tag
+    name: 激光笔
+    ports: []
+    tags: []
+  latex_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - flask_tag
+    my_tags:
+    - tubing_tag
+    name: 乳胶管
+    ports: []
+    tags: []
+  led:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - led_tag
+    name: 发光二极管
+    ports: []
+    tags: []
+  lid:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - vessel_tag
+    my_tags:
+    - lid_tag
+    name: 盖子
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  liquid:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - liquid_tag
+    name: 液体
+    ports: []
+    tags: []
+  liquid_holder:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - holder_tag
+    name: 液体容器
+    ports: []
+    tags: []
+  litmus_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - litmus_paper_tag
+    name: 石蕊试纸
+    ports: []
+    tags: []
+  manual:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - manual_tag
+    name: 手册
+    ports: []
+    tags: []
+  marker:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - marker_tag
+    name: 记号笔
+    ports: []
+    tags: []
+  match:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - match_tag
+    name: 火柴
+    ports: []
+    tags: []
+  measuring_cup:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - cup_tag
+    name: 量杯
+    ports: []
+    tags: []
+  measuring_cylinder:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - cylinder_tag
+    name: 量筒
+    ports: []
+    tags: []
+  metal_plate:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - plate_tag
+    name: 金属板
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  metal_strip:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - strip_tag
+    name: 金属条
+    ports: []
+    tags: []
+  methane_generator:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - generator_tag
+    name: 甲烷发生器
+    ports: []
+    tags: []
+  molecule_model:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - model_tag
+    name: 分子模型
+    ports: []
+    tags: []
+  mortar:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - mortar_tag
+    name: 研钵
+    ports: []
+    tags: []
+  music_box:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - music_box_tag
+    name: 音乐盒
+    ports: []
+    tags: []
+  net:
+    capacity: 1
+    connectable_to:
+    - tripod_tag
+    my_extra_tags_for_children:
+    - flat_platform_tag
+    my_tags:
+    - net_tag
+    name: 石棉网
+    tags:
+    - accessory
+  notebook:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - notebook_tag
+    name: 笔记本
+    ports: []
+    tags: []
+  pH_meter:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - pH_meter_tag
+    name: pH计
+    ports: []
+    tags: []
+  pH_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - pH_paper_tag
+    name: pH试纸
+    ports: []
+    tags: []
+  paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - paper_tag
+    name: 纸
+    ports: []
+    tags: []
+  paper_flower:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - flower_tag
+    name: 纸花
+    ports: []
+    tags: []
+  paper_towel:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - paper_towel_tag
+    name: 纸巾
+    ports: []
+    tags: []
+  pen:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - pen_tag
+    name: 笔
+    ports: []
+    tags: []
+  pestle:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - pestle_tag
+    name: 杵
+    ports: []
+    tags: []
+  ph_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - pH_paper_tag
+    name: pH试纸
+    ports: []
+    tags: []
+  pipeclay_triangle:
+    capacity: 2
+    class_category: Support
+    connectable_to:
+    - tripod_tag
+    my_tags:
+    - triangle_tag
+    name: 泥三角
+    ports: []
+    tags: []
+  pipette:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - flask_tag
+    my_tags:
+    - pipette_tag
+    name: 移液管
+    ports: []
+    tags: []
+  platinum_wire:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - wire_tag
+    name: 铂丝
+    ports: []
+    tags: []
+  porcelain_bowl:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - bowl_tag
+    name: 瓷碗
+    ports: []
+    tags: []
+  porcelain_pieces:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - porcelain_pieces_tag
+    name: 瓷片
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  porcelain_plate:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - plate_tag
+    name: 瓷板
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  powder_layer:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - powder_layer_tag
+    name: 粉末层
+    ports: []
+    tags: []
+  power_source:
+    capacity: 2
+    class_category: Heater
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - power_source_tag
+    name: 电源
+    ports: []
+    tags: []
+  power_supply:
+    capacity: 2
+    class_category: Heater
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - power_supply_tag
+    name: 电源
+    ports: []
+    tags: []
+  protractor:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - protractor_tag
+    name: 量角器
+    ports: []
+    tags: []
+  rack:
+    capacity: 5
+    class_category: Support
+    connectable_to: []
+    my_tags:
+    - rack_tag
+    name: 架子
+    ports: []
+    tags: []
+  reaction_apparatus:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - apparatus_tag
+    name: 反应装置
+    ports: []
+    tags: []
+  reagent_bottle:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - bottle_tag
+    name: 试剂瓶
+    ports: []
+    tags: []
+  record_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - record_paper_tag
+    name: 记录纸
+    ports: []
+    tags: []
+  record_sheet:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - record_sheet_tag
+    name: 记录纸
+    ports: []
+    tags: []
+  refrigerator:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - refrigerator_tag
+    name: 冰箱
+    ports: []
+    tags: []
+  ring:
+    capacity: 1
+    class_category: Support
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - ring_tag
+    name: 环
+    ports: []
+    tags: []
+  round_bottom_flask:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - flask_tag
+    name: 圆底烧瓶
+    ports: []
+    tags: []
+  rubber_stop:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopper_tag
+    name: 橡皮塞
+    ports: []
+    tags: []
+    sealing_mode: "hermetic"
+  rubber_stop_with_glass_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopper_tag
+    name: 带玻璃管的橡皮塞
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  rubber_stopper_with_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopper_tag
+    name: 带导管的橡皮塞
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  rubber_stopcock:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopcock_tag
+    name: 橡皮旋塞
+    ports: []
+    tags: []
+    sealing_mode: "hermetic"
+  rubber_stopcock_with_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopcock_tag
+    name: 带导管的橡皮旋塞
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  rubber_stopper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopper_tag
+    name: 橡皮塞
+    ports: []
+    tags: []
+    sealing_mode: "hermetic"
+  rubber_stopper_with_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopper_tag
+    name: 带导管的橡皮塞
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  rubber_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - flask_tag
+    my_tags:
+    - tubing_tag
+    name: 橡胶管
+    ports: []
+    tags: []
+    sealing_mode: "hermetic"
+  safety_goggles:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - goggles_tag
+    name: 安全护目镜
+    ports: []
+    tags: []
+  sandpaper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - sandpaper_tag
+    name: 砂纸
+    ports: []
+    tags: []
+  separatory_funnel:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - funnel_tag
+    name: 分液漏斗
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  single_hole_rubber_stop:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - tube_tag
+    - flask_tag
+    my_tags:
+    - stopper_tag
+    name: 单孔橡皮塞
+    ports: []
+    tags: []
+    sealing_mode: "vented"
+  sink:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - sink_tag
+    name: 水槽
+    ports: []
+    tags: []
+  solid:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - solid_tag
+    name: 固体
+    ports: []
+    tags: []
+  solid_holder:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - holder_tag
+    name: 固体夹
+    ports: []
+    tags: []
+  solid_sample:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - sample_tag
+    name: 固体样品
+    ports: []
+    tags: []
+  solution:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - solution_tag
+    name: 溶液
+    ports: []
+    tags: []
+  spatula:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - spatula_tag
+    name: 刮刀
+    ports: []
+    tags: []
+  splint:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - splint_tag
+    name: 火柴棒
+    ports: []
+    tags: []
+  spot_plate:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - plate_tag
+    name: 点滴板
+    ports: []
+    tags: []
+  sprayer:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - sprayer_tag
+    name: 喷雾器
+    ports: []
+    tags: []
+  spring_clamp:
+    capacity: 1
+    class_category: Support
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - clamp_tag
+    name: 弹簧夹
+    ports: []
+    tags: []
+  spring_clip:
+    capacity: 1
+    class_category: Support
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - clip_tag
+    name: 弹簧夹
+    ports: []
+    tags: []
+  stand:
+    capacity: 5
+    connectable_to:
+    - table_tag
+    my_tags:
+    - stand_tag
+    name: 铁架台
+    ports:
+    - pole
+    - base
+    tags:
+    - heavy_base
+    - support
+  stick:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - stick_tag
+    name: 棒
+    ports: []
+    tags: []
+  stirring_rod:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - rod_tag
+    name: 搅拌棒
+    ports: []
+    tags: []
+  stopper:
+    capacity: 2
+    connectable_to:
+    - small_mouth
+    - narrow_mouth
+    my_tags:
+    - stopper_tag
+    name: 塞子
+    ports:
+    - hole_1
+    - hole_2
+    tags:
+    - sealing
+    sealing_mode: "hermetic"
+  stopwatch:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - stopwatch_tag
+    name: 秒表
+    ports: []
+    tags: []
+  string:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - string_tag
+    name: 绳子
+    ports: []
+    tags: []
+  strip:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - strip_tag
+    name: 条
+    ports: []
+    tags: []
+  switch:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - wire_tag
+    my_tags:
+    - switch_tag
+    name: 开关
+    ports: []
+    tags: []
+  syringe:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - needle_tag
+    my_tags:
+    - syringe_tag
+    name: 注射器
+    ports: []
+    tags: []
+    sealing_mode: "hermetic"
+  table:
+    capacity: 5
+    class_category: Support
+    connectable_to: []
+    my_tags:
+    - table_tag
+    name: 桌子
+    ports: []
+    tags: []
+  test_tube:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    - stand_tag
+    my_tags:
+    - tube_tag
+    name: 试管
+    ports: []
+    tags: []
+  test_tube_clamp:
+    capacity: 1
+    class_category: Support
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - clamp_tag
+    name: 试管夹
+    ports: []
+    tags: []
+  test_tube_holder:
+    capacity: 1
+    class_category: Support
+    connectable_to:
+    - stand_tag
+    my_tags:
+    - holder_tag
+    name: 试管夹
+    ports: []
+    tags: []
+  test_tube_rack:
+    capacity: 5
+    class_category: Support
+    connectable_to: []
+    my_tags:
+    - rack_tag
+    name: 试管架
+    ports: []
+    tags: []
+  thermometer:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - thermometer_tag
+    name: 温度计
+    ports: []
+    tags: []
+    sealing_mode: "loose"
+  timer:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - timer_tag
+    name: 计时器
+    ports: []
+    tags: []
+  tongs:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - tongs_tag
+    name: 钳子
+    ports: []
+    tags: []
+  tripod:
+    capacity: 1
+    connectable_to:
+    - table_tag
+    my_tags:
+    - tripod_tag
+    name: 三脚架
+    tags:
+    - support
+    - platform
+  trough:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - trough_tag
+    name: 水槽
+    ports: []
+    tags: []
+  tube:
+    capacity: 3
+    connectable_to:
+    - clamp_tag
+    - rack_tag
+    - hand_tag
+    - stand_tag
+    my_tags:
+    - tube_tag
+    name: 试管
+    ports:
+    - mouth
+    - liquid_surface
+    - liquid_deep
+    - bottom
+    tags:
+    - glassware
+    - cylindrical
+    - small_mouth
+    - vessel
+  tubing:
+    capacity: 1
+    connectable_to:
+    - vessel
+    - stopper_tag
+    - tubing_tag
+    my_tags:
+    - tubing_tag
+    name: 导管
+    ports:
+    - inlet
+    - outlet
+    tags:
+    - flexible
+    - connector
+    sealing_mode: "vented"
+  tweezer:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - tweezers_tag
+    name: 镊子
+    ports: []
+    tags: []
+  tweezers:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - tweezers_tag
+    name: 镊子
+    ports: []
+    tags: []
+  u_tube:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - tube_tag
+    name: U形管
+    ports: []
+    tags: []
+  volumetric_flask:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - flask_tag
+    name: 容量瓶
+    ports: []
+    tags: []
+  wash_bottle:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - bottle_tag
+    name: 洗瓶
+    ports: []
+    tags: []
+  waste_bottle:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - bottle_tag
+    name: 废液瓶
+    ports: []
+    tags: []
+  waste_container:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - container_tag
+    name: 废物容器
+    ports: []
+    tags: []
+  watch_glass:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - glass_tag
+    name: 表面皿
+    ports: []
+    tags: []
+  water:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - water_tag
+    name: 水
+    ports: []
+    tags: []
+  water_bath:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - rack_tag
+    my_tags:
+    - bath_tag
+    name: 水浴
+    ports: []
+    tags: []
+  water_source:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - water_source_tag
+    name: 水源
+    ports: []
+    tags: []
+  water_trough:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - table_tag
+    my_tags:
+    - trough_tag
+    name: 水槽
+    ports: []
+    tags: []
+  weighing_paper:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - weighing_paper_tag
+    name: 称量纸
+    ports: []
+    tags: []
+  well:
+    capacity: 3
+    class_category: Vessel
+    connectable_to:
+    - stopper_tag
+    - rack_tag
+    my_tags:
+    - well_tag
+    name: 井
+    ports: []
+    tags: []
+  wire:
+    capacity: 2
+    class_category: Vessel
+    connectable_to:
+    - power_source_tag
+    my_tags:
+    - wire_tag
+    name: 电线
+    ports: []
+    tags: []
+  wire_gauze:
+    capacity: 2
+    class_category: Support
+    connectable_to:
+    - tripod_tag
+    my_tags:
+    - gauze_tag
+    name: 铁丝网
+    ports: []
+    tags: []
+  wood_stick:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - stick_tag
+    name: 木棒
+    ports: []
+    tags: []
+  wood_strip:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - wood_strip_tag
+    name: 木条
+    ports: []
+    tags: []
+  wooden_stick:
+    capacity: 2
+    class_category: Vessel
+    connectable_to: []
+    my_tags:
+    - stick_tag
+    name: 木棒
+    ports: []
+    tags: []
+  workbench:
+    capacity: 5
+    class_category: Support
+    connectable_to: []
+    my_tags:
+    - table_tag
+    name: 工作台
+    ports: []
+    tags: []

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="稀盐酸滴定稀氯化钠溶液中的酚酞指示剂变色实验" 
+    goal="通过滴加稀盐酸至含酚酞的稀氯化钠溶液，观察酚酞由红色变为无色的过程，演示酸碱中和反应的终点判断。" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="50ml"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="dilute_NaCl_solution" state="liquid"/>
+      <Reagent name="phenolphthalein_solution" state="liquid"/>
+      <Reagent name="dilute_HCl" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="dilute_NaCl_solution" volume="5 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="beaker_1" volume="5 mL"/>
+      <Add vessel="beaker_1" reagent="phenolphthalein_solution" volume="0.2 mL" tool="dropper_1"/>
+      <Insert tool="glass_rod_1" vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="10s"/>
+      <Add vessel="beaker_1" reagent="dilute_HCl" volume="0.5 mL" tool="dropper_2"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="10s"/>
+      <Add vessel="beaker_1" reagent="dilute_HCl" volume="0.5 mL" tool="dropper_2"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="10s"/>
+      <!-- Repeat Add/Stir/Wait as needed until colorless, but for XDL, 2-3 iterations suffice -->
+    </Procedure>
+  </Synthesis>
+</XDL>

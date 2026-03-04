@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="茶水与蒸馏水对酸性高锰酸钾溶液褪色作用的比较实验" 
+    goal="比较茶水和蒸馏水对酸性高锰酸钾溶液褪色作用的差异，通过观察颜色变化判断茶水中还原性物质的存在。"
+    difficulty="Easy"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="measuring_cylinder" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Tea" state="liquid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Acidic_KMnO4_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Tea" volume="2 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_2" reagent="Distilled_Water" volume="2 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_1" reagent="Acidic_KMnO4_Solution" volume="1 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="Acidic_KMnO4_Solution" volume="1 mL" tool="dropper"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="碳酸钠/碳酸氢钠与稀盐酸反应生成二氧化碳的验证实验" 
+    goal="验证碳酸钠和碳酸氢钠与稀盐酸反应均能产生二氧化碳气体，并通过澄清石灰水检验气体性质" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_na2co3" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_nahco3" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_limewater" type="test_tube" capacity="20ml"/>
+      <Component id="rubber_stopper_tube" type="rubber_stopper_with_tube"/>
+      <Component id="test_tube_stand" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Na2CO3" state="solid"/>
+      <Reagent name="NaHCO3" state="solid"/>
+      <Reagent name="dil_HCl" state="liquid"/>
+      <Reagent name="limewater" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Step 1: 碳酸钠实验 -->
+      <Add vessel="test_tube_na2co3" reagent="Na2CO3" mass="1 g"/>
+      <Attach vessel="test_tube_na2co3" support="test_tube_stand"/>
+      <Add vessel="test_tube_limewater" reagent="limewater" volume="5 mL"/>
+      <Attach vessel="test_tube_limewater" support="test_tube_stand"/>
+      <Add vessel="test_tube_na2co3" reagent="dil_HCl" volume="2 mL"/>
+      <Insert tool="rubber_stopper_tube" vessel="test_tube_na2co3"/>
+      <Insert tool="rubber_stopper_tube" vessel="test_tube_limewater"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

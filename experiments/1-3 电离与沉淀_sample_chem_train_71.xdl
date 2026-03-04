@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="BaCl₂与Na₂SO₄溶液反应生成沉淀的实验" 
+    goal="探究稀BaCl₂溶液与稀Na₂SO₄溶液混合后是否生成白色沉淀，并分析沉淀生成的原因及相关离子变化" 
+    difficulty="Easy"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="graduated_cylinder_2" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Na2SO4_solution" state="liquid"/>
+      <Reagent name="BaCl2_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="Na2SO4_solution" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="graduated_cylinder_2" reagent="BaCl2_solution" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="BaCl2_solution" volume="2 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="观察品红在水中的扩散现象" goal="观察固体品红在静止水中的扩散过程" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="spatula_1" type="spatula"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Water" state="liquid"/>
+      <Reagent name="Solid_Fuchsin" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Water" volume="100 mL"/>
+      <Add vessel="beaker_1" reagent="Solid_Fuchsin" mass="0.1 g" tool="spatula_1"/>
+      <Wait time="5 min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

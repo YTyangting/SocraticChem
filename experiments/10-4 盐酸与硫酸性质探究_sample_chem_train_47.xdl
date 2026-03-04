@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="盐酸与硫酸的外观和气味比较实验" 
+    goal="比较盐酸和硫酸的外观、状态及气味，观察其物理性质差异并记录现象" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="bottle_HCl" type="reagent_bottle" capacity="100ml"/>
+      <Component id="bottle_H2SO4" type="reagent_bottle" capacity="100ml"/>
+      <Component id="white_paper" type="paper" />
+    </Hardware>
+    <Reagents>
+      <Reagent name="HCl_solution" state="liquid"/>
+      <Reagent name="H2SO4_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="bottle_HCl" reagent="HCl_solution" volume="20 mL"/>
+      <Add vessel="bottle_H2SO4" reagent="H2SO4_solution" volume="20 mL"/>
+      <Transfer from_vessel="bottle_HCl" to_vessel="white_paper" volume="0 mL"/>
+      <Transfer from_vessel="bottle_H2SO4" to_vessel="white_paper" volume="0 mL"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

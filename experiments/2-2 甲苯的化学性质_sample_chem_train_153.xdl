@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="苯与甲苯与水和浓硫酸混合行为的对比实验" 
+    goal="比较苯和甲苯与水及浓硫酸混合时的分层与混溶性差异" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10mL"/>
+      <Component id="dropper" type="dropper"/>
+      <Component id="test_tube_rack" type="rack"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Benzene" state="liquid"/>
+      <Reagent name="Toluene" state="liquid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Concentrated_Sulfuric_Acid" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 取两支干净试管 -->
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+      <!-- 用量筒量取2 mL苯和2 mL甲苯，分别倒入两支试管中 -->
+      <Add vessel="test_tube_1" reagent="Benzene" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_2" reagent="Toluene" volume="2 mL" tool="graduated_cylinder"/>
+      <!-- 用滴管向每支试管中分别加入几滴蒸馏水 -->
+      <Add vessel="test_tube_1" reagent="Distilled_Water" volume="0.2 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="Distilled_Water" volume="0.2 mL" tool="dropper"/>
+      <Wait time="30s"/>
+      <!-- 观察液体是否分层 -->
+      <Wait time="10s"/>
+      <!-- 用滴管向每支试管中分别加入几滴浓硫酸 -->
+      <Add vessel="test_tube_1" reagent="Concentrated_Sulfuric_Acid" volume="0.2 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="Concentrated_Sulfuric_Acid" volume="0.2 mL" tool="dropper"/>
+      <Wait time="30s"/>
+      <!-- 观察液体是否分层 -->
+      <Wait time="10s"/>
+      <!-- 用手握住试管口，用力振荡试管，然后静置，观察液体是否分层或发生其他变化 -->
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Wait time="30s"/>
+      <!-- 观察液体是否分层或发生其他变化 -->
+    </Procedure>
+  </Synthesis>
+</XDL>

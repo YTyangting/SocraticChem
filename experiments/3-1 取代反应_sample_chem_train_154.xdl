@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="溴乙烷的水解及银镜反应实验" goal="观察溴乙烷水解生成卤化物离子的过程，并通过银镜反应检测卤化物离子" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Bromoethane" state="liquid"/>
+      <Reagent name="NaOH_5percent" state="liquid"/>
+      <Reagent name="Dilute_HNO3" state="liquid"/>
+      <Reagent name="AgNO3_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Bromoethane" volume="0.5 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="NaOH_5percent" volume="1 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Heat vessel="test_tube_1" target_temperature="60"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="test_tube_2" volume="1 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_2" reagent="Dilute_HNO3" volume="1 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_2" reagent="AgNO3_solution" volume="0.1 mL" tool="dropper_2"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

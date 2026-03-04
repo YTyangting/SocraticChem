@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_SocraticLM_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 1.4769399758725443,
+        "ROUGE-1": 11.323488674529985,
+        "ROUGE-2": 2.9858157953903306,
+        "ROUGE-L": 5.22771176320354,
+        "BERTScore_Mean": 56.38768672943115
+    }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="浓硫酸对纸张、木棍和布的作用实验" 
+    goal="观察浓硫酸对纸张、木棍和布的作用及其腐蚀性" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="glass_slide_1" type="glass_slide"/>
+      <Component id="glass_slide_2" type="glass_slide"/>
+      <Component id="glass_slide_3" type="glass_slide"/>
+      <Component id="paper_1" type="paper"/>
+      <Component id="wood_stick_1" type="wood_stick"/>
+      <Component id="wood_stick_2" type="wood_stick"/>
+      <Component id="cloth_1" type="cloth"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="conc_H2SO4" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 纸、木棍、布分别放在玻璃片上 -->
+      <Insert tool="paper_1" vessel="glass_slide_1"/>
+      <Insert tool="wood_stick_1" vessel="glass_slide_2"/>
+      <Insert tool="cloth_1" vessel="glass_slide_3"/>
+      <!-- 用玻璃棒蘸取浓硫酸，在纸上写字 -->
+      <Add vessel="glass_rod_1" reagent="conc_H2SO4" volume="1 drop"/>
+      <Insert tool="glass_rod_1" vessel="paper_1"/>
+      <Wait time="2 min"/>
+      <!-- 用小木棍蘸取浓硫酸，涂抹在另一根小木棍表面 -->
+      <Add vessel="wood_stick_2" reagent="conc_H2SO4" volume="1 drop"/>
+      <Insert tool="wood_stick_2" vessel="wood_stick_1"/>
+      <Wait time="2 min"/>
+      <!-- 用滴管滴加浓硫酸于布块中央 -->
+      <Add vessel="dropper_1" reagent="conc_H2SO4" volume="1 drop"/>
+      <Insert tool="dropper_1" vessel="cloth_1"/>
+      <Wait time="2 min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

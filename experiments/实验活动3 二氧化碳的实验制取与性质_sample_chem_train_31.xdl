@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="二氧化碳的制备与性质实验" goal="制备二氧化碳并验证其能熄灭火焰和使澄清石灰水变浑浊的性质" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="50ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube" />
+      <Component id="gas_jar_1" type="gas_jar" capacity="500ml"/>
+      <Component id="glass_plate_1" type="glass_plate" />
+      <Component id="stand_1" type="stand" />
+      <Component id="spatula_1" type="spatula" />
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="50ml"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="candle_1" type="candle" />
+      <Component id="test_tube_2" type="test_tube" capacity="50ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="limestone" state="solid"/>
+      <Reagent name="dilute_HCl" state="liquid"/>
+      <Reagent name="limewater" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Add vessel="test_tube_1" reagent="limestone" mass="5 g" tool="spatula_1"/>
+      <Add vessel="graduated_cylinder_1" reagent="dilute_HCl" volume="15 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="15 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="gas_jar_1"/>
+      <Wait time="60s"/>
+      <Insert tool="glass_plate_1" vessel="gas_jar_1"/>
+      <Insert tool="candle_1" vessel="beaker_1"/>
+      <Wait time="5s"/>
+      <Transfer from_vessel="gas_jar_1" to_vessel="beaker_1" volume="200 mL"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_2" reagent="limewater" volume="10 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_2"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

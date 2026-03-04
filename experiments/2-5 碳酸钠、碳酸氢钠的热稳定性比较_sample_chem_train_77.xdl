@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Comparative Heating of Na₂CO₃ and NaHCO₃: CO₂ Generation Test" 
+    goal="To compare the thermal stability of Na₂CO₃ and NaHCO₃ by heating each and observing whether CO₂ is produced (as indicated by limewater turbidity)." 
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="iron_stand_1" type="stand"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Na2CO3" state="solid"/>
+      <Reagent name="NaHCO3" state="solid"/>
+      <Reagent name="limewater" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Test with Na2CO3 -->
+      <Add vessel="test_tube_1" reagent="Na2CO3" mass="2 g"/>
+      <Attach vessel="test_tube_1" support="iron_stand_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Add vessel="test_tube_2" reagent="limewater" volume="10 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_2"/>
+      <Heat vessel="test_tube_1" target_temperature="100"/>
+      <Wait time="60s"/>
+      <!-- Observation: Limewater turbidity -->
+      <Wait time="10s"/>
+      <!-- Test with NaHCO3 -->
+      <Add vessel="test_tube_1" reagent="NaHCO3" mass="2 g"/>
+      <Heat vessel="test_tube_1" target_temperature="100"/>
+      <Wait time="60s"/>
+      <!-- Observation: Limewater turbidity -->
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

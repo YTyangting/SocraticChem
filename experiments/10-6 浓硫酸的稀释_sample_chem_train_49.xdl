@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="稀释浓硫酸的实验操作" 
+    goal="安全地将浓硫酸稀释为硫酸溶液，并观察温度变化，最后安全处理废液和清洗器材" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="thermometer_1" type="thermometer"/>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="50ml"/>
+      <Component id="storage_container_1" type="bottle" capacity="250ml"/>
+      <Component id="waste_container_1" type="waste_bottle" capacity="500ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Concentrated_H2SO4" state="liquid"/>
+      <Reagent name="Tap_Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="100 mL"/>
+      <Add vessel="measuring_cylinder_1" reagent="Concentrated_H2SO4" volume="20 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="beaker_1" volume="20 mL"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="beaker_1" to_vessel="storage_container_1" volume="120 mL"/>
+      <Add vessel="beaker_1" reagent="Tap_Water" volume="100 mL"/>
+      <Wait time="10s"/>
+      <Transfer from_vessel="beaker_1" to_vessel="waste_container_1" volume="100 mL"/>
+      <Add vessel="glass_rod_1" reagent="Tap_Water" volume="50 mL"/>
+      <Wait time="5s"/>
+      <Transfer from_vessel="glass_rod_1" to_vessel="waste_container_1" volume="50 mL"/>
+      <Add vessel="measuring_cylinder_1" reagent="Tap_Water" volume="50 mL"/>
+      <Wait time="5s"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="waste_container_1" volume="50 mL"/>
+      <Add vessel="thermometer_1" reagent="Tap_Water" volume="50 mL"/>
+      <Wait time="5s"/>
+      <Transfer from_vessel="thermometer_1" to_vessel="waste_container_1" volume="50 mL"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

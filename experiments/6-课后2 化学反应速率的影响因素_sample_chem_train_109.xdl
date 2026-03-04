@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="影响化学反应速率的因素——H2O2分解速率实验" 
+    goal="比较分析浓度、温度和催化剂对H2O2分解反应速率的影响，并总结实验结论。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10ml"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="test_tube_holder_3" type="test_tube_holder"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="H2O2_10pct" state="liquid"/>
+      <Reagent name="MnO2_powder" state="solid"/>
+      <Reagent name="FeCl3_1M" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="H2O2_10pct" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_2" reagent="H2O2_10pct" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_3" reagent="H2O2_10pct" volume="2 mL" tool="graduated_cylinder"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_3" support="test_tube_holder_3"/>
+      <Add vessel="test_tube_2" reagent="MnO2_powder" mass="少量"/>
+      <Add vessel="test_tube_3" reagent="FeCl3_1M" volume="2 滴" tool="dropper"/>
+      <Wait time="10s"/>
+      <Wait time="观察并用秒表记录三支试管中气泡出现的快慢"/>
+      <Wait time="记录每组实验中不同条件下出现浑浊或气泡所需的时间"/>
+      <Wait time="比较分析浓度、温度和催化剂对化学反应速率的影响，总结实验结论"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

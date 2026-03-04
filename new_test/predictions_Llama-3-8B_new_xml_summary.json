@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_Llama-3-8B_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 9.475673504479603,
+        "ROUGE-1": 33.840830506614225,
+        "ROUGE-2": 13.164817311122542,
+        "ROUGE-L": 23.3957173800781,
+        "BERTScore_Mean": 70.42807340621948
+    }
+}

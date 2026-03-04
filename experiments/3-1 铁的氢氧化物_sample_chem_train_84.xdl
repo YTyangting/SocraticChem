@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铁盐与氢氧化钠反应沉淀颜色观察实验" 
+    goal="比较FeCl₃和FeSO₄溶液与NaOH反应生成沉淀的颜色及变化，记录Fe(OH)₃和Fe(OH)₂的沉淀特征及Fe(OH)₂的氧化现象" 
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="dropper_3" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="FeCl3_solution" state="liquid"/>
+      <Reagent name="FeSO4_solution" state="liquid"/>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="Distilled_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_holder_2"/>
+      <Add vessel="test_tube_1" reagent="FeCl3_solution" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_2" reagent="FeSO4_solution" volume="2 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_1" reagent="Distilled_water" volume="5 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_2" reagent="Distilled_water" volume="5 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_1" reagent="NaOH_solution" volume="1 mL" tool="dropper_3"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_2" reagent="NaOH_solution" volume="1 mL" tool="dropper_3"/>
+      <Stir vessel="test_tube_2"/>
+      <Wait time="10s"/>
+   </Procedure>
+  </Synthesis>
+</XDL>

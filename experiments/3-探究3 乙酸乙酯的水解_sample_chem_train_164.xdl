@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Effect of Acidity, Basicity, and Temperature on Hydrolysis Rate of Ethyl Acetate"
+    goal="To investigate how acidic, basic, and neutral conditions, as well as temperature, affect the hydrolysis rate of ethyl acetate by measuring the time for phenolphthalein color disappearance."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_4" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_5" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_6" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="test_tube_holder_3" type="test_tube_holder"/>
+      <Component id="water_bath_1" type="water_bath" capacity="500ml"/>
+      <Component id="water_bath_2" type="water_bath" capacity="500ml"/>
+      <Component id="water_bath_3" type="water_bath" capacity="500ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="ethyl_acetate_solution" state="liquid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="dilute_HCl" state="liquid"/>
+      <Reagent name="dilute_NaOH" state="liquid"/>
+      <Reagent name="phenolphthalein_indicator" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- First set: Effect of acidity/basicity -->
+      <Add vessel="test_tube_1" reagent="ethyl_acetate_solution" volume="5 mL"/>
+      <Add vessel="test_tube_1" reagent="distilled_water" volume="5 mL"/>
+      <Add vessel="test_tube_1" reagent="dilute_HCl" volume="2 mL"/>
+      <Add vessel="test_tube_2" reagent="ethyl_acetate_solution" volume="5 mL"/>
+      <Add vessel="test_tube_2" reagent="distilled_water" volume="5 mL"/>
+      <Add vessel="test_tube_2" reagent="dilute_NaOH" volume="2 mL"/>
+      <Add vessel="test_tube_3" reagent="ethyl_acetate_solution" volume="5 mL"/>
+      <Add vessel="test_tube_3" reagent="distilled_water" volume="5 mL"/>
+      <!-- test_tube_3 remains neutral, no acid/base added -->
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_3" support="test_tube_holder_3"/>
+      <Add vessel="test_tube_1" reagent="phenolphthalein_indicator" volume="0.2 mL"/>
+      <Add vessel="test_tube_2" reagent="phenolphthalein_indicator" volume="0.2 mL"/>
+      <Add vessel="test_tube_3" reagent="phenolphthalein_indicator" volume="0.2 mL"/>
+      <Insert tool="test_tube_1" vessel="water_bath_1"/>
+      <Insert tool="test_tube_2" vessel="water_bath_1"/>
+      <Insert tool="test_tube_3" vessel="water_bath_1"/>
+      <Heat vessel="water_bath_1" target_temperature="60"/>
+      <Wait time="10s"/>
+      <!-- Second set: Effect of temperature -->
+      <Add vessel="test_tube_4" reagent="ethyl_acetate_solution" volume="5 mL"/>
+      <Add vessel="test_tube_4" reagent="distilled_water" volume="5 mL"/>
+      <Add vessel="test_tube_4" reagent="dilute_HCl" volume="2 mL"/>
+      <Add vessel="test_tube_5" reagent="ethyl_acetate_solution" volume="5 mL"/>
+      <Add vessel="test_tube_5" reagent="distilled_water" volume="5 mL"/>
+      <Add vessel="test_tube_5" reagent="dilute_HCl" volume="2 mL"/>
+      <Add vessel="test_tube_6" reagent="ethyl_acetate_solution" volume="5 mL"/>
+      <Add vessel="test_tube_6" reagent="distilled_water" volume="5 mL"/>
+      <Add vessel="test_tube_6" reagent="dilute_HCl" volume="2 mL"/>
+      <Attach vessel="test_tube_4" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_5" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_6" support="test_tube_holder_3"/>
+      <Add vessel="test_tube_4" reagent="phenolphthalein_indicator" volume="0.2 mL"/>
+      <Add vessel="test_tube_5" reagent="phenolphthalein_indicator" volume="0.2 mL"/>
+      <Add vessel="test_tube_6" reagent="phenolphthalein_indicator" volume="0.2 mL"/>
+      <Insert tool="test_tube_4" vessel="water_bath_1"/>
+      <Insert tool="test_tube_5" vessel="water_bath_2"/>
+      <Insert tool="test_tube_6" vessel="water_bath_3"/>
+      <Heat vessel="water_bath_1" target_temperature="25"/>
+      <Heat vessel="water_bath_2" target_temperature="40"/>
+      <Heat vessel="water_bath_3" target_temperature="60"/>
+      <Wait time="10s"/>
+      <Wait time="observe and record time for phenolphthalein color disappearance in each test tube"/>
+      <!-- Final analysis step -->
+      <Wait time="compare and analyze the results to determine the effect of acidity, basicity, and temperature on hydrolysis rate"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

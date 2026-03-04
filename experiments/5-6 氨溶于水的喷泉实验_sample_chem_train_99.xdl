@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Ammonia Fountain Demonstration" 
+    goal="Demonstrate the high solubility of ammonia gas in water and the resulting pressure drop by observing the ammonia fountain effect and color change with phenolphthalein." 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="flask_1" type="round_bottom_flask" capacity="250ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Ammonia_Gas" state="gas"/>
+      <Reagent name="Water" state="liquid"/>
+      <Reagent name="Phenolphthalein_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Fill the flask with ammonia gas -->
+      <Add vessel="flask_1" reagent="Ammonia_Gas" volume="fill"/>
+      
+      <Insert tool="rubber_stopper_with_tube" vessel="flask_1"/>
+      <!-- Fix the flask on the stand -->
+      <Attach vessel="flask_1" support="stand_1"/>
+      <!-- Prepare the beaker with water and phenolphthalein -->
+      <Add vessel="beaker_1" reagent="Water" volume="150 mL"/>
+      <Add vessel="beaker_1" reagent="Phenolphthalein_Solution" volume="2 mL"/>
+      <!-- Wait for mixing and color to turn light red -->
+      <Wait time="10s"/>
+      <!-- Invert the flask and immerse the glass tube into the beaker -->
+      <Insert tool="rubber_stopper_with_tube" vessel="beaker_1"/>
+      <!-- Ensure the tube is submerged -->
+      <Wait time="5s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

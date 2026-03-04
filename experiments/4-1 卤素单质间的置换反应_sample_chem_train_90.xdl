@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="卤素间反应与颜色变化的观察"
+    goal="比较KBr溶液和KI溶液与氯水、溴水反应后的颜色变化，并记录相应的化学反应方程式"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10mL"/>
+      <Component id="measuring_cylinder" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="KBr_solution" state="liquid"/>
+      <Reagent name="KI_solution" state="liquid"/>
+      <Reagent name="chlorine_water" state="liquid"/>
+      <Reagent name="bromine_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 第一组实验：KBr溶液与氯水 -->
+      <Add vessel="test_tube_1" reagent="KBr_solution" volume="4 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_1" reagent="chlorine_water" volume="1 mL" tool="dropper"/>
+      <Wait time="10s"/>
+      <!-- 振荡 -->
+      <Stir vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <!-- 观察并记录颜色变化 -->
+      <!-- 第二组实验：KI溶液与氯水 -->
+      <Add vessel="test_tube_2" reagent="KI_solution" volume="4 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_2" reagent="chlorine_water" volume="1 mL" tool="dropper"/>
+      <Wait time="10s"/>
+      <!-- 振荡 -->
+      <Stir vessel="test_tube_2"/>
+      <Wait time="10s"/>
+      <!-- 第三组实验：KI溶液与溴水 -->
+      <Add vessel="test_tube_3" reagent="KI_solution" volume="4 mL" tool="measuring_cylinder"/>
+      <Add vessel="test_tube_3" reagent="bromine_water" volume="1 mL" tool="dropper"/>
+      <Wait time="10s"/>
+      <!-- 振荡 -->
+      <Stir vessel="test_tube_3"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

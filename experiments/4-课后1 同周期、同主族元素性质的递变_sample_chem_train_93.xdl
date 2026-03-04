@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="卤素与卤化物离子的反应及金属性比较实验"
+    goal="比较Cl2、Br2、I2对卤化物离子的氧化性及其反应现象，探究Na、Mg、Al的金属性强弱及其与水、酸、碱的反应特性。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="drop_plate" type="spot_plate" capacity="6_wells"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="dropper_3" type="dropper"/>
+      <Component id="dropper_4" type="dropper"/>
+      <Component id="dropper_5" type="dropper"/>
+      <Component id="dropper_6" type="dropper"/>
+      <Component id="beaker_1" type="beaker" capacity="50ml"/>
+      <Component id="beaker_2" type="beaker" capacity="50ml"/>
+      <Component id="beaker_3" type="beaker" capacity="50ml"/>
+      <Component id="beaker_4" type="beaker" capacity="50ml"/>
+      <Component id="beaker_5" type="beaker" capacity="50ml"/>
+      <Component id="beaker_6" type="beaker" capacity="50ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaBr_solution" state="liquid"/>
+      <Reagent name="NaI_solution" state="liquid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="chlorine_water" state="liquid"/>
+      <Reagent name="bromine_water" state="liquid"/>
+      <Reagent name="Mg_OH2" state="solid"/>
+      <Reagent name="Al_OH3" state="solid"/>
+      <Reagent name="dilute_HCl" state="liquid"/>
+      <Reagent name="dilute_NaOH" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Step 1: 向滴板3孔分别滴加NaBr、NaI、蒸馏水 -->
+      <Add vessel="drop_plate" reagent="NaBr_solution" volume="3 drops" tool="dropper_1"/>
+      <Add vessel="drop_plate" reagent="NaI_solution" volume="3 drops" tool="dropper_2"/>
+      <Add vessel="drop_plate" reagent="distilled_water" volume="3 drops" tool="dropper_3"/>
+      <!-- Step 2: 向上述3孔分别滴加氯水 -->
+      <Add vessel="drop_plate" reagent="chlorine_water" volume="3 drops" tool="dropper_4"/>
+      <Add vessel="drop_plate" reagent="chlorine_water" volume="3 drops" tool="dropper_4"/>
+      <Add vessel="drop_plate" reagent="chlorine_water" volume="3 drops" tool="dropper_4"/>
+      <!-- Step 3: 观察颜色变化 -->
+      <Wait time="30s"/>
+      <!-- Step 4: 向两个新孔分别滴加NaI和蒸馏水 -->
+      <Add vessel="drop_plate" reagent="NaI_solution" volume="3 drops" tool="dropper_2"/>
+      <Add vessel="drop_plate" reagent="distilled_water" volume="3 drops" tool="dropper_3"/>
+      <!-- Step 5: 向上述2孔分别滴加溴水 -->
+      <Add vessel="drop_plate" reagent="bromine_water" volume="3 drops" tool="dropper_5"/>
+      <Add vessel="drop_plate" reagent="bromine_water" volume="3 drops" tool="dropper_5"/>
+      <!-- Step 6: 观察颜色变化 -->
+      <Wait time="30s"/>
+      <!-- Step 7: 取适量Mg(OH)2和Al(OH)3分别与稀盐酸、稀NaOH反应 -->
+      <Add vessel="beaker_1" reagent="Mg_OH2" mass="0.2 g" tool="dropper_6"/>
+      <Add vessel="beaker_1" reagent="dilute_HCl" volume="5 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Add vessel="beaker_2" reagent="Al_OH3" mass="0.2 g" tool="dropper_6"/>
+      <Add vessel="beaker_2" reagent="dilute_HCl" volume="5 mL" tool="dropper_2"/>
+      <Wait time="30s"/>
+      <Add vessel="beaker_3" reagent="Mg_OH2" mass="0.2 g" tool="dropper_6"/>
+      <Add vessel="beaker_3" reagent="dilute_NaOH" volume="5 mL" tool="dropper_3"/>
+      <Wait time="30s"/>
+      <Add vessel="beaker_4" reagent="Al_OH3" mass="0.2 g" tool="dropper_6"/>
+      <Add vessel="beaker_4" reagent="dilute_NaOH" volume="5 mL" tool="dropper_4"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

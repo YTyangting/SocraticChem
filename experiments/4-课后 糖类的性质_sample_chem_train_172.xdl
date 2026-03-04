@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="还原糖的检验与水解实验" 
+    goal="比较葡萄糖、蔗糖和淀粉的溶解性及其与银氨溶液和斐林试剂的反应，探究蔗糖和淀粉的水解产物是否具有还原性。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_4" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_5" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_6" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_7" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_8" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_9" type="test_tube" capacity="10ml"/>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="water_bath" type="water_bath"/>
+      <Component id="dropper" type="dropper"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="glucose" state="solid"/>
+      <Reagent name="sucrose" state="solid"/>
+      <Reagent name="starch" state="solid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="ammoniacal_silver_solution" state="liquid"/>
+      <Reagent name="NaOH_10pct" state="liquid"/>
+      <Reagent name="CuSO4_5pct" state="liquid"/>
+      <Reagent name="H2SO4_10pct" state="liquid"/>
+      <Reagent name="glucose_solution_10pct" state="liquid"/>
+      <Reagent name="sucrose_solution_10pct" state="liquid"/>
+      <Reagent name="starch_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. 溶解性实验 -->
+      <Add vessel="test_tube_1" reagent="glucose" mass="0.1 g"/>
+      <Add vessel="test_tube_1" reagent="distilled_water" volume="2 mL"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_2" reagent="sucrose" mass="0.1 g"/>
+      <Add vessel="test_tube_2" reagent="distilled_water" volume="2 mL"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_3" reagent="starch" mass="0.1 g"/>
+      <Add vessel="test_tube_3" reagent="distilled_water" volume="2 mL"/>
+      <Wait time="30s"/>
+      <!-- 2. 银镜反应（葡萄糖） -->
+      <Add vessel="test_tube_4" reagent="ammoniacal_silver_solution" volume="2 mL"/>
+      <Add vessel="test_tube_4" reagent="glucose_solution_10pct" volume="1 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_4" vessel="water_bath"/>
+      <Heat vessel="test_tube_4"/>
+      <Wait time="2 min"/>
+      <!-- 3. 斐林试剂反应（葡萄糖） -->
+      <Add vessel="test_tube_5" reagent="NaOH_10pct" volume="2 mL"/>
+      <Add vessel="test_tube_5" reagent="CuSO4_5pct" volume="0.25 mL"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_5" reagent="glucose_solution_10pct" volume="2 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_5" vessel="water_bath"/>
+      <Heat vessel="test_tube_5"/>
+      <Wait time="2 min"/>
+      <!-- 4. 斐林试剂反应（蔗糖） -->
+      <Add vessel="test_tube_6" reagent="NaOH_10pct" volume="2 mL"/>
+      <Add vessel="test_tube_6" reagent="CuSO4_5pct" volume="0.25 mL"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_6" reagent="sucrose_solution_10pct" volume="2 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_6" vessel="water_bath"/>
+      <Heat vessel="test_tube_6"/>
+      <Wait time="2 min"/>
+      <!-- 5. 蔗糖水解后斐林试剂反应 -->
+      <Add vessel="test_tube_7" reagent="sucrose_solution_10pct" volume="1 mL"/>
+      <Add vessel="test_tube_7" reagent="H2SO4_10pct" volume="0.25 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_7" vessel="water_bath"/>
+      <Heat vessel="test_tube_7"/>
+      <Wait time="2 min"/>
+      <Add vessel="test_tube_7" reagent="NaOH_10pct" volume="2 mL"/>
+      <Add vessel="test_tube_7" reagent="CuSO4_5pct" volume="0.25 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_7" vessel="water_bath"/>
+      <Heat vessel="test_tube_7"/>
+      <Wait time="2 min"/>
+      <!-- 6. 斐林试剂反应（淀粉） -->
+      <Add vessel="test_tube_8" reagent="NaOH_10pct" volume="2 mL"/>
+      <Add vessel="test_tube_8" reagent="CuSO4_5pct" volume="0.25 mL"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_8" reagent="starch_solution" volume="2 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_8" vessel="water_bath"/>
+      <Heat vessel="test_tube_8"/>
+      <Wait time="2 min"/>
+      <!-- 7. 淀粉水解后斐林试剂反应 -->
+      <Add vessel="test_tube_9" reagent="starch_solution" volume="1 mL"/>
+      <Add vessel="test_tube_9" reagent="H2SO4_10pct" volume="2 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_9" vessel="water_bath"/>
+      <Heat vessel="test_tube_9"/>
+      <Wait time="2 min"/>
+      <Add vessel="test_tube_9" reagent="NaOH_10pct" volume="2 mL"/>
+      <Add vessel="test_tube_9" reagent="CuSO4_5pct" volume="0.25 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="test_tube_9" vessel="water_bath"/>
+      <Heat vessel="test_tube_9"/>
+      <Wait time="2 min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

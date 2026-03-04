@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铁钉生锈条件的探究实验" 
+    goal="通过对比不同环境下铁钉的锈蚀情况，分析铁钉生锈所需的条件（空气、水、氧气）。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="iron_nail_1" type="iron_nail"/>
+      <Component id="iron_nail_2" type="iron_nail"/>
+      <Component id="iron_nail_3" type="iron_nail"/>
+      <Component id="test_tube_rack" type="rack"/>
+      <Component id="cotton" type="cotton"/>
+      <Component id="rubber_stop" type="rubber_stop"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="boiled_distilled_water" state="liquid"/>
+      <Reagent name="vegetable_oil" state="liquid"/>
+      <Reagent name="calcium_chloride" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 第一支试管：蒸馏水+铁钉，敞口 -->
+      <Add vessel="test_tube_1" reagent="distilled_water" volume="10 mL"/>
+      <Insert tool="iron_nail_1" vessel="test_tube_1"/>
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      
+      <!-- 第二支试管：煮沸冷却蒸馏水+铁钉+植物油覆盖，敞口 -->
+      <Add vessel="test_tube_2" reagent="boiled_distilled_water" volume="10 mL"/>
+      <Insert tool="iron_nail_2" vessel="test_tube_2"/>
+      <Add vessel="test_tube_2" reagent="vegetable_oil" volume="2 mL"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+      
+      <!-- 第三支试管：氯化钙+棉花+铁钉，橡胶塞塞紧 -->
+      <Add vessel="test_tube_3" reagent="calcium_chloride" mass="2 g"/>
+      <Insert tool="cotton" vessel="test_tube_3"/>
+      <Insert tool="iron_nail_3" vessel="test_tube_3"/>
+      <Insert tool="rubber_stop" vessel="test_tube_3"/>
+      <Attach vessel="test_tube_3" support="test_tube_rack"/>
+      
+      <!-- 静置数天，定期观察 -->
+      <Wait time="3d"/>
+      <Wait time="observe and record rust formation on iron nails in each test tube"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

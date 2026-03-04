@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Calorimetric Measurement of Neutralization Heat between HCl and NaOH" 
+    goal="Measure the temperature change during the neutralization of HCl and NaOH using a calorimeter, and calculate the enthalpy change per mole of water formed."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="50mL"/>
+      <Component id="measuring_cylinder_2" type="measuring_cylinder" capacity="50mL"/>
+      <Component id="calorimeter_inner" type="beaker" capacity="100mL"/>
+      <Component id="thermometer" type="thermometer"/>
+      <Component id="stirring_rod" type="stirring_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="HCl_solution" state="liquid"/>
+      <Reagent name="NaOH_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Repeat 3 times -->
+      <!-- Step 1: Measure 50 mL of HCl and NaOH solutions -->
+      <Add vessel="measuring_cylinder_1" reagent="HCl_solution" volume="50 mL"/>
+      <Add vessel="measuring_cylinder_2" reagent="NaOH_solution" volume="50 mL"/>
+      <!-- Step 2: Measure initial temperatures -->
+      <Insert tool="thermometer" vessel="measuring_cylinder_1"/>
+      <Wait time="30s"/>
+      <Insert tool="thermometer" vessel="measuring_cylinder_2"/>
+      <Wait time="30s"/>
+      <!-- Record t1 (average of both temperatures) -->
+      <Wait time="10s"/>
+      <!-- Step 3: Pour NaOH into calorimeter inner vessel -->
+      <Transfer from_vessel="measuring_cylinder_2" to_vessel="calorimeter_inner" volume="50 mL"/>
+      <!-- Step 4: Add HCl to calorimeter inner vessel -->
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="calorimeter_inner" volume="50 mL"/>
+      <!-- Step 5: Close calorimeter, insert thermometer, stir -->
+      <Insert tool="thermometer" vessel="calorimeter_inner"/>
+      <Insert tool="stirring_rod" vessel="calorimeter_inner"/>
+      <Wait time="10s"/>
+      <Stir vessel="calorimeter_inner"/>
+      <!-- Step 6: Monitor and record maximum temperature (t2) -->
+      <Wait time="120s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

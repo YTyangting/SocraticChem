@@ -1,0 +1,108 @@
+# database/equipment_manifest.yaml
+
+types:
+  # === 容器类 ===
+  tube:
+    name: "试管"
+    tags: ["glassware", "cylindrical", "small_mouth", "vessel"]
+    my_tags: ["tube_tag"]
+    # 规则：试管只能被夹子夹住，或者放在试管架上，或者被人手拿着
+    connectable_to: ["clamp_tag", "rack_tag", "hand_tag"]
+    ports: ["mouth", "liquid_surface", "liquid_deep", "bottom"]
+    capacity: 3 # 自身作为父级时（如插导管），最多插3个
+
+  beaker:
+    name: "烧杯"
+    tags: ["glassware", "wide_mouth", "vessel"]
+    my_tags: ["beaker_tag"]
+    # 规则：烧杯通常放在平面上（三脚架、加热板、石棉网、桌子）
+    connectable_to: ["flat_platform_tag", "tripod_tag", "net_tag"] 
+    ports: ["mouth", "liquid_surface", "liquid_deep"]
+    capacity: 5
+
+  flask:
+    name: "烧瓶"
+    tags: ["glassware", "narrow_mouth", "vessel"]
+    my_tags: ["flask_tag"]
+    # 规则：烧瓶通常被夹住
+    connectable_to: ["clamp_tag"]
+    ports: ["mouth", "liquid_surface", "liquid_deep", "side_arm"]
+    capacity: 3
+
+  # === 支撑/夹持类 ===
+  stand:
+    name: "铁架台"
+    tags: ["heavy_base", "support"]
+    my_tags: ["stand_tag"]
+    connectable_to: ["table_tag"] # 放在桌上
+    # 特有逻辑：铁架台可以挂很多夹子
+    ports: ["pole", "base"]
+    capacity: 5 
+
+  clamp:
+    name: "铁夹"
+    tags: ["connector"]
+    my_tags: ["clamp_tag"]
+    # 规则：夹子必须挂在铁架台上
+    connectable_to: ["stand_tag"] 
+    # 规则：夹子作为父级，只能夹 1 个东西
+    capacity: 1 
+
+  tripod:
+    name: "三脚架"
+    tags: ["support", "platform"]
+    my_tags: ["tripod_tag"]
+    connectable_to: ["table_tag"]
+    capacity: 1 # 上面只能放一个烧杯/网
+
+  net:
+    name: "石棉网"
+    tags: ["accessory"]
+    my_tags: ["net_tag"]
+    connectable_to: ["tripod_tag"] # 网放在三脚架上
+    my_extra_tags_for_children: ["flat_platform_tag"] # 网本身提供了平面属性
+    capacity: 1
+
+  # === 加热类 ===
+  burner:
+    name: "酒精灯"
+    tags: ["heater", "heat_source"]
+    my_tags: ["burner_tag"]
+    connectable_to: ["table_tag"]
+    ports: ["flame"]
+    capacity: 0
+
+  # === 工具/连接件 ===
+  tubing:
+    name: "导管"
+    tags: ["flexible", "connector"]
+    my_tags: ["tubing_tag"]
+    # 导管可以连：各种容器、塞子、其他导管
+    connectable_to: ["vessel", "stopper_tag", "tubing_tag"] 
+    ports: ["inlet", "outlet"]
+    capacity: 1
+
+  stopper:
+    name: "塞子"
+    tags: ["sealing"]
+    my_tags: ["stopper_tag"]
+    connectable_to: ["small_mouth", "narrow_mouth"] # 可以塞进小口/窄口容器
+    ports: ["hole_1", "hole_2"]
+    capacity: 2 # 双孔塞
+
+  # === 新增示例：滴定管 ===
+  burette:
+    name: "滴定管"
+    tags: ["glassware", "precision", "long"]
+    my_tags: ["burette_tag"]
+    # 滴定管需要专用的滴定管夹
+    connectable_to: ["burette_clamp_tag"] 
+    ports: ["top", "tip"]
+    capacity: 0
+
+  burette_clamp:
+    name: "滴定管夹"
+    tags: ["connector"]
+    my_tags: ["burette_clamp_tag"] # 这是一个专用标签
+    connectable_to: ["stand_tag"]
+    capacity: 2 # 蝴蝶夹通常可以夹两根

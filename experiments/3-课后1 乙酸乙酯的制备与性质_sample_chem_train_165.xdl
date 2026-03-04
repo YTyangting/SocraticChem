@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="乙酸乙酯的水解与产物分离实验"
+    goal="通过加热乙酸乙酯与乙醇和饱和Na2CO3溶液的混合物，观察产物分层、油状液体生成及气味，理解酯的水解反应及产物性质。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="rubber_stopcock_tube" type="rubber_stopcock_with_tube"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="stand_2" type="stand"/>
+      <Component id="dropper" type="dropper"/>
+      <Component id="heat_source" type="burner"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Ethanol" state="liquid"/>
+      <Reagent name="Saturated_Na2CO3_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Ethanol" volume="2 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="Saturated_Na2CO3_Solution" volume="3 mL" tool="dropper"/>
+      <Transfer from_vessel="test_tube_2" to_vessel="test_tube_1" volume="3 mL" tool="dropper"/>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Attach vessel="test_tube_2" support="stand_2"/>
+      <Insert tool="rubber_stopcock_tube" vessel="test_tube_1"/>
+      <Insert tool="rubber_stopcock_tube" vessel="test_tube_2"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="2 min"/>
+      <Wait time="cooling period"/>
+      <Wait time="until layers separate"/>
+      <!-- Observation: Observe the upper oily layer and smell the odor -->
+    </Procedure>
+  </Synthesis>
+</XDL>

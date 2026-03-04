@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="活性炭吸附红墨水实验" 
+    goal="观察活性炭对红墨水的吸附作用，通过颜色变化验证活性炭的吸附能力。" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="flask_1" type="flask" capacity="100ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="tweezers_1" type="tweezers"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Tap_Water" state="liquid"/>
+      <Reagent name="Red_Ink" state="liquid"/>
+      <Reagent name="Activated_Carbon" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="flask_1" reagent="Tap_Water" volume="50 mL"/>
+      <Add vessel="flask_1" reagent="Red_Ink" volume="1 drop" tool="dropper_1"/>
+      <Add vessel="flask_1" reagent="Activated_Carbon" mass="2 g" tool="tweezers_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

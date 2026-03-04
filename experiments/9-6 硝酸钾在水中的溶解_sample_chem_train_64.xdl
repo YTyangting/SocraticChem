@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="硫酸钾溶解度实验" 
+    goal="探究硫酸钾在水中的溶解度随温度变化的规律，并观察其溶解和结晶现象。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="wire_gauze_1" type="wire_gauze"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="potassium_sulfate" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 取一只烧杯 -->
+      <!-- 加入10 mL蒸馏水，用量筒量取 -->
+      <Add vessel="beaker_1" reagent="distilled_water" volume="10 mL" tool="graduated_cylinder_1"/>
+      <!-- 用天平称取3 g硫酸钾，加入烧杯中 -->
+      <Add vessel="beaker_1" reagent="potassium_sulfate" mass="3 g"/>
+      <!-- 用玻璃棒搅拌，观察是否完全溶解 -->
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <!-- 再次称取3 g硫酸钾，加入烧杯中，搅拌，观察是否有未溶解的固体 -->
+      <Add vessel="beaker_1" reagent="potassium_sulfate" mass="3 g"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <!-- 将烧杯置于铁架台上的石棉网上 -->
+      <Attach vessel="beaker_1" support="wire_gauze_1"/>
+      <Attach vessel="wire_gauze_1" support="stand_1"/>
+      <!-- 用酒精灯加热烧杯中的溶液，同时搅拌，观察剩余固体的变化 -->
+      <Heat vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="60s"/>
+      <!-- 停止加热 -->
+      <!-- 再次称取3 g硫酸钾，加入烧杯中，搅拌，观察是否还有固体继续溶解 -->
+      <Add vessel="beaker_1" reagent="potassium_sulfate" mass="3 g"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <!-- 将烧杯静置，待溶液自然冷却，观察是否有硫酸钾晶体析出 -->
+      <Cool vessel="beaker_1"/>
+      <Wait time="300s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

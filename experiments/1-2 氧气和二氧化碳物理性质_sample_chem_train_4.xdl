@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="氧气与二氧化碳对燃烧的影响实验" 
+    goal="通过观察木条在氧气和二氧化碳中燃烧情况，分析两种气体对燃烧的影响。" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="bottle_o2" type="gas_bottle" capacity="500ml"/>
+      <Component id="bottle_co2" type="gas_bottle" capacity="500ml"/>
+      <Component id="wooden_stick_1" type="wooden_stick"/>
+      <Component id="wooden_stick_2" type="wooden_stick"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Oxygen" state="gas"/>
+      <Reagent name="CarbonDioxide" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="bottle_o2" reagent="Oxygen" volume="500 mL"/>
+      <Add vessel="bottle_co2" reagent="CarbonDioxide" volume="500 mL"/>
+      <Wait time="10s"/>
+      <Insert tool="wooden_stick_1" vessel="bottle_o2"/>
+      <Wait time="10s"/>
+      <Insert tool="wooden_stick_2" vessel="bottle_co2"/>
+      <Wait time="10s"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

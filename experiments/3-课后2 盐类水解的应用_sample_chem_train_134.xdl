@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="FeCl₃溶解性与Fe(OH)₃胶体制备及其对泥土分散性的影响实验" 
+    goal="探究FeCl₃的溶解性、Fe(OH)₃胶体的制备及其对泥土分散性的影响，并比较不同处理下泥土的分散或沉降现象及Fe(OH)₃胶体的吸附作用。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20mL"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20mL"/>
+      <Component id="test_tube_4" type="test_tube" capacity="20mL"/>
+      <Component id="test_tube_5" type="test_tube" capacity="20mL"/>
+      <Component id="beaker_1" type="beaker" capacity="100mL"/>
+      <Component id="beaker_2" type="beaker" capacity="100mL"/>
+      <Component id="burette_1" type="burette" capacity="50mL"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="test_tube_rack_1" type="test_tube_rack"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="dropper_3" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="FeCl3_crystal" state="solid"/>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Concentrated_HCl" state="liquid"/>
+      <Reagent name="Saturated_FeCl3_solution" state="liquid"/>
+      <Reagent name="Al2_SO4_3_1M_solution" state="liquid"/>
+      <Reagent name="Soil_Suspension" state="liquid"/>
+      <Reagent name="Saturated_Na2CO3_solution" state="liquid"/>
+      <Reagent name="FeOH3_colloid" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. FeCl3溶解性实验 -->
+      <Add vessel="test_tube_1" reagent="FeCl3_crystal" mass="适量"/>
+      <Add vessel="test_tube_1" reagent="Distilled_Water" volume="5 mL" tool="graduated_cylinder_1"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="beaker_1" volume="全部"/>
+      <Wait time="30s"/>
+      <!-- 2. 加入浓盐酸继续溶解 -->
+      <Add vessel="test_tube_1" reagent="Concentrated_HCl" volume="2 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <!-- 观察溶解现象 -->
+      <Wait time="30s"/>
+      <!-- 3. 泥土分散性实验 -->
+      <Add vessel="test_tube_2" reagent="Soil_Suspension" volume="5 mL"/>
+      <Add vessel="test_tube_3" reagent="Soil_Suspension" volume="5 mL"/>
+      <Add vessel="test_tube_4" reagent="Soil_Suspension" volume="5 mL"/>
+      <Add vessel="test_tube_2" reagent="Saturated_FeCl3_solution" volume="2 mL" tool="dropper_2"/>
+      <Add vessel="test_tube_3" reagent="Al2_SO4_3_1M_solution" volume="2 mL" tool="dropper_3"/>
+      <Stir vessel="test_tube_2"/>
+      <Stir vessel="test_tube_3"/>
+      <Stir vessel="test_tube_4"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack_1"/>
+      <Attach vessel="test_tube_3" support="test_tube_rack_1"/>
+      <Attach vessel="test_tube_4" support="test_tube_rack_1"/>
+      <!-- 观察泥土分散或沉降现象并比较 -->
+      <Wait time="30s"/>
+      <!-- 4. Fe(OH)3胶体的制备 -->
+      <Add vessel="beaker_2" reagent="Distilled_Water" volume="40 mL"/>
+      <Heat vessel="beaker_2" target_temperature="100"/>
+      <Add vessel="beaker_2" reagent="Saturated_FeCl3_solution" volume="0.3 mL" tool="dropper_1"/>
+      <Heat vessel="beaker_2" target_temperature="100"/>
+      <!-- 观察Fe(OH)3胶体生成 -->
+      <Wait time="30s"/>
+      <!-- 5. Fe(OH)3胶体吸附作用实验 -->
+      <Add vessel="test_tube_5" reagent="Saturated_Na2CO3_solution" volume="5 mL"/>
+      <Add vessel="test_tube_1" reagent="Saturated_Na2CO3_solution" volume="5 mL"/>
+      <Add vessel="test_tube_5" reagent="FeOH3_colloid" volume="0.15 mL" tool="dropper_2"/>
+      <Stir vessel="test_tube_5"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_5" support="test_tube_holder_1"/>
+      <Heat vessel="test_tube_1" target_temperature="100"/>
+      <Heat vessel="test_tube_5" target_temperature="100"/>
+      <Wait time="30s"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_5"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="beaker_1" volume="全部"/>
+      <Transfer from_vessel="test_tube_5" to_vessel="beaker_1" volume="全部"/>
+      <Add vessel="test_tube_1" reagent="Distilled_Water" volume="5 mL"/>
+      <Add vessel="test_tube_5" reagent="Distilled_Water" volume="5 mL"/>
+      <Wait time="30s"/>
+      <!-- 比较两支试管内壁的干净程度 -->
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铁钉腐蚀实验及影响因素探究"
+    goal="探究铁钉与空气中氧气反应导致气体体积变化及不同条件下铁钉腐蚀的影响因素"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_rack" type="test_tube_rack"/>
+      <Component id="filter_paper" type="filter_paper"/>
+      <Component id="delivery_tube" type="delivery_tube"/>
+      <Component id="beaker_1" type="beaker" capacity="50ml"/>
+      <Component id="beaker_2" type="beaker" capacity="50ml"/>
+      <Component id="iron_nail_1" type="iron_nail"/>
+      <Component id="iron_nail_2" type="iron_nail"/>
+      <Component id="iron_nail_3" type="iron_nail"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="dilute_HCl" state="liquid"/>
+      <Reagent name="NaCl_solution" state="liquid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="dilute_CuSO4" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Step 1: 用稀盐酸洗涤铁钉，去锈 -->
+      <Add vessel="beaker_1" reagent="dilute_HCl" volume="10 mL"/>
+      <Insert tool="iron_nail_1" vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Insert tool="iron_nail_1" vessel="beaker_2"/>
+      <!-- Step 2: 用食盐水浸泡铁钉 -->
+      <Add vessel="beaker_2" reagent="NaCl_solution" volume="10 mL"/>
+      <Wait time="60s"/>
+      <!-- Step 3: 用滤纸擦干铁钉表面水分 -->
+      <Insert vessel="filter_paper" tool="iron_nail_1"/>
+      <Wait time="10s"/>
+      <!-- Step 4: 将铁钉放入具支试管（test_tube_1），确保铁钉完全浸没在试管底部 -->
+      <Insert tool="iron_nail_1" vessel="test_tube_1"/>
+      <!-- Step 5: 固定试管于试管架 -->
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      <!-- Step 6: 插入导管 -->
+      <Insert tool="delivery_tube" vessel="test_tube_1"/>
+      <!-- Step 7: 观察几分钟后导管中水柱的变化 -->
+      <Wait time="3min"/>
+      <!-- Step 8: 取两支干净试管分别放入等量铁钉和等体积蒸馏水 -->
+      <Insert tool="iron_nail_2" vessel="test_tube_2"/>
+      <Insert tool="iron_nail_3" vessel="test_tube_3"/>
+      <Add vessel="test_tube_2" reagent="distilled_water" volume="10 mL"/>
+      <Add vessel="test_tube_3" reagent="distilled_water" volume="10 mL"/>
+      <!-- Step 9: 固定试管于试管架 -->
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+      <Attach vessel="test_tube_3" support="test_tube_rack"/>
+      <!-- Step 10: 观察铁钉表面变化 -->
+      <Wait time="5min"/>
+      <!-- Step 11: 向test_tube_3中滴加1~2滴稀硫酸铜溶液 -->
+      <Add vessel="test_tube_3" reagent="dilute_CuSO4" volume="0.1 mL" tool="dropper"/>
+      <!-- Step 12: 继续观察两支试管中铁钉表面的变化，记录现象 -->
+      <Wait time="10min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

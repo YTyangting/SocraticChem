@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_qwen-7b_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 7.622610828568802,
+        "ROUGE-1": 35.09567482996293,
+        "ROUGE-2": 13.622155066330874,
+        "ROUGE-L": 23.37148303296861,
+        "BERTScore_Mean": 71.0313618183136
+    }
+}

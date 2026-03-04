@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="鉴别铵盐（NH₄Cl、NH₄NO₃、(NH₄)₂SO₄）实验"
+    goal="通过加热三种铵盐溶液并用湿润的红色石蕊试纸检验生成的气体，鉴别NH₄Cl、NH₄NO₃和(NH₄)₂SO₄溶液中的铵根离子。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube"/>
+      <Component id="test_tube_2" type="test_tube"/>
+      <Component id="test_tube_3" type="test_tube"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="test_tube_holder_3" type="test_tube_holder"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="litmus_paper_red" type="litmus_paper" />
+      <Component id="wash_bottle_1" type="wash_bottle"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NH4Cl_solution" state="liquid"/>
+      <Reagent name="NH4NO3_solution" state="liquid"/>
+      <Reagent name="NH4_2SO4_solution" state="liquid"/>
+      <Reagent name="NaOH_solution" state="liquid"/>
+      <Reagent name="water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="NH4Cl_solution" volume="2 mL"/>
+      <Add vessel="test_tube_2" reagent="NH4NO3_solution" volume="2 mL"/>
+      <Add vessel="test_tube_3" reagent="NH4_2SO4_solution" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="NaOH_solution" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_2" reagent="NaOH_solution" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_3" reagent="NaOH_solution" volume="2 mL" tool="dropper_1"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_3" support="test_tube_holder_3"/>
+      <Attach vessel="test_tube_holder_1" support="stand_1"/>
+      <Attach vessel="test_tube_holder_2" support="stand_1"/>
+      <Attach vessel="test_tube_holder_3" support="stand_1"/>
+      <Heat vessel="test_tube_1"/>
+      <Heat vessel="test_tube_2"/>
+      <Heat vessel="test_tube_3"/>
+      <Insert tool="litmus_paper_red" vessel="test_tube_1"/>
+      <Insert tool="litmus_paper_red" vessel="test_tube_2"/>
+      <Insert tool="litmus_paper_red" vessel="test_tube_3"/>
+      <Wait time="30s"/>
+
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="乙醛的银镜反应（斑氏试验）" 
+    goal="通过加热乙醛与氢氧化铜混合液，观察生成砖红色沉淀，验证乙醛的还原性。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaOH_10pct_solution" state="liquid"/>
+      <Reagent name="CuSO4_5pct_solution" state="liquid"/>
+      <Reagent name="Acetaldehyde_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="NaOH_10pct_solution" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="CuSO4_5pct_solution" volume="0.25 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_1" reagent="Acetaldehyde_solution" volume="0.2 mL"/>
+      <Wait time="10s"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

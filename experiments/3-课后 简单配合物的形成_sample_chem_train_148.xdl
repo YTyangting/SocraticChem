@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="多种离子反应现象观察实验" 
+    goal="观察Cu²⁺、Na⁺、Fe³⁺等离子与氨水、硝酸银、硫氰化钾、K₃[Fe(CN)₆]等试剂反应时的颜色变化和沉淀生成现象"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube"/>
+      <Component id="test_tube_2" type="test_tube"/>
+      <Component id="test_tube_3" type="test_tube"/>
+      <Component id="test_tube_4" type="test_tube"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="dropper_3" type="dropper"/>
+      <Component id="dropper_4" type="dropper"/>
+      <Component id="dropper_5" type="dropper"/>
+      <Component id="dropper_6" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="CuSO4_solution" state="liquid"/>
+      <Reagent name="NaCl_solution" state="liquid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="NH3_solution" state="liquid"/>
+      <Reagent name="ethanol" state="liquid"/>
+      <Reagent name="AgNO3_solution" state="liquid"/>
+      <Reagent name="Fe2(SO4)3_solution" state="liquid"/>
+      <Reagent name="KSCN_solution" state="liquid"/>
+      <Reagent name="K3Fe(CN)6_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- Step 1: Add CuSO4 and NaCl solutions to two test tubes -->
+      <Add vessel="test_tube_1" reagent="CuSO4_solution" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_2" reagent="NaCl_solution" volume="2 mL" tool="dropper_2"/>
+      <!-- Step 2: Prepare distilled water in two test tubes -->
+      <Add vessel="test_tube_3" reagent="distilled_water" volume="2 mL" tool="dropper_3"/>
+      <Add vessel="test_tube_4" reagent="distilled_water" volume="2 mL" tool="dropper_4"/>
+      <!-- Step 3: Add NH3 to CuSO4 (test_tube_1), observe color -->
+      <Add vessel="test_tube_1" reagent="NH3_solution" volume="0.5 mL" tool="dropper_5"/>
+      <Wait time="10s"/>
+      <!-- Continue adding NH3 to excess, then add ethanol, observe -->
+      <Add vessel="test_tube_1" reagent="NH3_solution" volume="1 mL" tool="dropper_5"/>
+      <Add vessel="test_tube_1" reagent="ethanol" volume="0.2 mL" tool="dropper_6"/>
+      <Wait time="10s"/>
+      <!-- Step 4: Add AgNO3 to NaCl (test_tube_2), observe precipitate -->
+      <Add vessel="test_tube_2" reagent="AgNO3_solution" volume="0.2 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <!-- Step 5: Add Fe2(SO4)3 and KSCN to distilled water (test_tube_3), observe color -->
+      <Add vessel="test_tube_3" reagent="Fe2(SO4)3_solution" volume="2 drops" tool="dropper_2"/>
+      <Add vessel="test_tube_3" reagent="KSCN_solution" volume="2 drops" tool="dropper_3"/>
+      <Wait time="10s"/>
+      <!-- Step 6: Add K3Fe(CN)6 and Fe2(SO4)3 to distilled water (test_tube_4), observe color -->
+      <Add vessel="test_tube_4" reagent="K3Fe(CN)6_solution" volume="2 drops" tool="dropper_4"/>
+      <Add vessel="test_tube_4" reagent="Fe2(SO4)3_solution" volume="2 drops" tool="dropper_2"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

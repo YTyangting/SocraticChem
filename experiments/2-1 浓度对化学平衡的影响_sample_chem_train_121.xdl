@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铁粉与KSCN对混合溶液颜色影响的比较实验"
+    goal="比较铁粉和KSCN对混合溶液颜色的影响，并观察三支试管中溶液颜色的变化与深浅"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10 mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+      <Component id="glass_rod_2" type="glass_rod"/>
+      <Component id="test_tube_a" type="test_tube"/>
+      <Component id="test_tube_b" type="test_tube"/>
+      <Component id="test_tube_c" type="test_tube"/>
+      <Component id="white_paper" type="background"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="FeCl3_solution" state="liquid"/>
+      <Reagent name="iron_powder" state="solid"/>
+      <Reagent name="KSCN_solution_1M" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="FeCl3_solution" volume="2.5 mL" tool="dropper_1"/>
+      <Add vessel="graduated_cylinder_1" reagent="KSCN_solution_1M" volume="2.5 mL" tool="dropper_1"/>
+
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_a" volume="1.7 mL" tool="dropper_1"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_b" volume="1.7 mL" tool="dropper_1"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_c" volume="1.6 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_b" reagent="iron_powder" tool="spatula_1"/>
+      <Stir vessel="test_tube_b"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_c" reagent="KSCN_solution_1M" volume="4 滴" tool="dropper_1"/>
+      <Stir vessel="test_tube_c"/>
+      <Wait time="10s"/>
+      <Wait time="30s"/>
+      <Attach vessel="test_tube_a" support="white_paper"/>
+      <Attach vessel="test_tube_b" support="white_paper"/>
+      <Attach vessel="test_tube_c" support="white_paper"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

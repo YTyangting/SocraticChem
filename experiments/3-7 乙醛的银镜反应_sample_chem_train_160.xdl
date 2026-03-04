@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="银镜反应的制备与观察"
+    goal="制备银氨溶液并通过乙醛还原生成银镜，观察银镜的形成过程"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="test_tube_clamp_1" type="clamp"/>
+      <Component id="waste_container_1" type="container"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="AgNO3_solution_2pct" state="liquid"/>
+      <Reagent name="NH3_H2O_2pct" state="liquid"/>
+      <Reagent name="CH3CHO" state="liquid"/>
+      <Reagent name="tap_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="AgNO3_solution_2pct" volume="1 mL" tool="graduated_cylinder_1"/>
+      <Add vessel="test_tube_1" reagent="NH3_H2O_2pct" volume="dropwise" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_1" reagent="CH3CHO" volume="3 drops" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Attach vessel="test_tube_1" support="test_tube_clamp_1"/>
+      <Transfer from_vessel="beaker_1" to_vessel="test_tube_1" volume="sufficient for water bath"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="waste_container_1" volume="all"/>
+      <Add vessel="test_tube_1" reagent="tap_water" volume="sufficient for rinsing"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

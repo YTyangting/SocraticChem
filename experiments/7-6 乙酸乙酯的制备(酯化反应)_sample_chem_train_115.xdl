@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="乙酸乙酯的制备与鉴别" goal="制备乙酸乙酯并通过油状液滴的生成进行鉴别" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="dropper" type="dropper"/>
+      <Component id="porcelain_pieces" type="porcelain_pieces"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="iron_stand" type="stand"/>
+      <Component id="alcohol_lamp" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="ethanol" state="liquid"/>
+      <Reagent name="concentrated_sulfuric_acid" state="liquid"/>
+      <Reagent name="acetic_acid" state="liquid"/>
+      <Reagent name="saturated_sodium_carbonate_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder" reagent="ethanol" volume="3 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_1" volume="3 mL"/>
+      <Add vessel="test_tube_1" reagent="concentrated_sulfuric_acid" volume="2 mL" tool="dropper"/>
+      <Add vessel="test_tube_1" reagent="acetic_acid" volume="2 mL" tool="dropper"/>
+      <Insert tool="porcelain_pieces" vessel="test_tube_1"/>
+      <Attach vessel="test_tube_1" support="iron_stand"/>
+      <Add vessel="test_tube_2" reagent="saturated_sodium_carbonate_solution" volume="10 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_2"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="5 min"/>
+      <Wait time="observation: 观察test_tube_2液面上是否有油状液滴生成，并记录现象"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

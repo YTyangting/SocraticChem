@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_gpt4o_chem_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 9.226018589998976,
+        "ROUGE-1": 37.437185343448334,
+        "ROUGE-2": 14.963797356067937,
+        "ROUGE-L": 24.47202989796126,
+        "BERTScore_Mean": 71.70941233634949
+    }
+}

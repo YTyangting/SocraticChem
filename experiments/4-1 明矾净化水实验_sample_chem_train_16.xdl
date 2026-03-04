@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="明矾净水实验" goal="比较加入明矾前后天然水的澄清效果" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="beaker_2" type="beaker" capacity="250ml"/>
+      <Component id="stirrer_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Natural_Water" state="liquid"/>
+      <Reagent name="Alum_Powder" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Natural_Water" volume="125 mL"/>
+      <Add vessel="beaker_2" reagent="Natural_Water" volume="125 mL"/>
+      <Add vessel="beaker_1" reagent="Alum_Powder" mass="3 g"/>
+      <Insert tool="stirrer_1" vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Transfer from_vessel="beaker_1" to_vessel="beaker_2" volume="62.5 mL"/>
+      <Wait time="20 min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

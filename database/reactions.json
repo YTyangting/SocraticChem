@@ -1,0 +1,1267 @@
+[
+  {
+    "id": "decomposition_kmno4",
+    "equation": "2KMnO4 -> K2MnO4 + MnO2 + O2",
+    "type": "decomposition",
+    "temp_threshold": 200.0,
+    "exothermic": -10.0,
+    "phenomena": "固体粉末翻滚，有大量气泡产生"
+  },
+  {
+    "id": "neutralization_hcl_naoh",
+    "equation": "HCl + NaOH -> NaCl + H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 57.3,
+    "phenomena": "溶液温度明显升高"
+  },
+  {
+    "id": "iron_combustion",
+    "equation": "3Fe + 2O2 -> Fe3O4",
+    "type": "combustion",
+    "temp_threshold": 500.0,
+    "exothermic": 800.0,
+    "phenomena": "剧烈燃烧，火星四射，生成黑色固体"
+  },
+  {
+    "equation": "2Na + 2H2O -> 2NaOH + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 184.0,
+    "phenomena": "剧烈反应，产生气泡，溶液变热，表面有银白色变暗"
+  },
+  {
+    "equation": "4Na + O2 -> 2Na2O",
+    "type": "combustion",
+    "temp_threshold": 25.0,
+    "exothermic": 414.2,
+    "phenomena": "表面变暗，生成白色固体"
+  },
+  {
+    "equation": "2Na + O2 -> Na2O2",
+    "type": "combustion",
+    "temp_threshold": 100.0,
+    "exothermic": 375.0,
+    "phenomena": "表面变黄，生成淡黄色固体"
+  },
+  {
+    "equation": "AgCl + 2NH3 -> [Ag(NH3)2]Cl",
+    "type": "complexation",
+    "temp_threshold": -273.0,
+    "exothermic": 30.0,
+    "phenomena": "白色沉淀溶解，溶液变澄清"
+  },
+  {
+    "equation": "C17H35COONa + H2O -> C17H35COOH + NaOH",
+    "type": "hydrolysis",
+    "temp_threshold": 25.0,
+    "exothermic": -1.0,
+    "phenomena": "溶液呈碱性"
+  },
+  {
+    "equation": "2H2O2 -> 2H2O + O2",
+    "type": "decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 98.2,
+    "phenomena": "产生大量气泡，放出氧气"
+  },
+  {
+    "equation": "C4H8O2 + H2O -> CH3COOH + C2H5OH",
+    "type": "hydrolysis",
+    "temp_threshold": 60.0,
+    "exothermic": -2.2,
+    "phenomena": "酚酞颜色逐渐消失，溶液变无色"
+  },
+  {
+    "equation": "C4H8O2 + NaOH -> CH3COONa + C2H5OH",
+    "type": "saponification",
+    "temp_threshold": 20.0,
+    "exothermic": 3.0,
+    "phenomena": "酚酞颜色逐渐消失，溶液变无色"
+  },
+  {
+    "equation": "C4H8O2 + HCl + H2O -> CH3COOH + C2H5OH + Cl^-",
+    "type": "hydrolysis",
+    "temp_threshold": 20.0,
+    "exothermic": -2.2,
+    "phenomena": "酚酞颜色迅速消失，溶液变无色"
+  },
+  {
+    "equation": "Na2CO3 + 2HCl -> 2NaCl + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": 20.0,
+    "exothermic": 28.0,
+    "phenomena": "产生大量气泡，溶液无色"
+  },
+  {
+    "equation": "C2H5OH + Cu -> CH3CHO + Cu2O + H2O",
+    "type": "oxidation",
+    "temp_threshold": 200.0,
+    "exothermic": -49.0,
+    "phenomena": "铜丝由红色变为黑色，液体有刺激性气味"
+  },
+  {
+    "equation": "C2H4 + Br2 -> C2H4Br2",
+    "type": "addition",
+    "temp_threshold": -273.0,
+    "exothermic": 120.0,
+    "phenomena": "溴的橙色逐渐褪色至无色"
+  },
+  {
+    "equation": "C6H12O6 + 2[Ag(NH3)2]OH -> 2Ag + C6H12O7 + 2NH3 + 2H2O",
+    "type": "reduction",
+    "temp_threshold": 60.0,
+    "exothermic": 50.0,
+    "phenomena": "试管壁生成银镜"
+  },
+  {
+    "equation": "C6H12O6 + 2CuSO4 + 4NaOH -> Cu2O + Na2SO4 + C6H12O7 + 2H2O",
+    "type": "reduction",
+    "temp_threshold": 80.0,
+    "exothermic": 30.0,
+    "phenomena": "生成砖红色沉淀"
+  },
+  {
+    "equation": "C12H22O11 + H2O -> C6H12O6 + C6H12O6",
+    "type": "hydrolysis",
+    "temp_threshold": 80.0,
+    "exothermic": -10.0,
+    "phenomena": "溶液无明显变化，后续可检验还原性"
+  },
+  {
+    "equation": "C6H10O5 + H2O -> C6H12O6",
+    "type": "hydrolysis",
+    "temp_threshold": 100.0,
+    "exothermic": -10.0,
+    "phenomena": "溶液无明显变化，后续可检验还原性"
+  },
+  {
+    "equation": "C20H14O4 + 2NaOH -> C20H12O4Na2 + 2H2O",
+    "type": "acid-base",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "溶液由无色变为粉红色"
+  },
+  {
+    "equation": "NH3 + H2O + C20H14O4 -> NH4^+ + OH^- + C20H12O4^{2-}",
+    "type": "base formation",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "氨气扩散后溶液变为粉红色"
+  },
+  {
+    "equation": "NaCl + AgNO3 -> AgCl + NaNO3",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.8,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "Na2CO3 + 2AgNO3 -> Ag2CO3 + 2NaNO3",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 1.5,
+    "phenomena": "生成浅黄色沉淀"
+  },
+  {
+    "equation": "AgCl + 2HNO3 -> AgNO3 + HCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": -1.0,
+    "phenomena": "白色沉淀溶解"
+  },
+  {
+    "equation": "Na2CO3 + 2HNO3 -> 2NaNO3 + CO2 + H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "有气泡产生"
+  },
+  {
+    "equation": "CuSO4 + 2NaOH -> Cu(OH)2 + Na2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "生成浅蓝色沉淀"
+  },
+  {
+    "equation": "CH3CHO + 2Cu(OH)2 + NaOH -> CH3COONa + Cu2O + 3H2O",
+    "type": "redox",
+    "temp_threshold": 60.0,
+    "exothermic": 10.0,
+    "phenomena": "生成砖红色沉淀"
+  },
+  {
+    "equation": "Zn + H2SO4 -> ZnSO4 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 50.0,
+    "phenomena": "有气泡产生"
+  },
+  {
+    "equation": "2H2 + O2 -> 2H2O",
+    "type": "combustion",
+    "temp_threshold": 500.0,
+    "exothermic": 572.0,
+    "phenomena": "火焰，烧杯壁有水珠生成"
+  },
+  {
+    "equation": "CuSO4 + 4NH3 + H2O -> [Cu(NH3)4]2+ + SO4^2- + 2H2O",
+    "type": "complexation",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "溶液变深蓝色"
+  },
+  {
+    "equation": "Fe2(SO4)3 + 6KSCN -> 2FeSCN2+ + 3K2SO4",
+    "type": "complexation",
+    "temp_threshold": -273.0,
+    "exothermic": 3.0,
+    "phenomena": "溶液变血红色"
+  },
+  {
+    "equation": "2Fe2(SO4)3 + 3K4[Fe(CN)6] -> Fe4[Fe(CN)6]3 + 6K2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "生成蓝色沉淀"
+  },
+  {
+    "equation": "2Al + 6HCl -> 2AlCl3 + 3H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 50.0,
+    "phenomena": "有气泡产生，可使燃着木条熄灭"
+  },
+  {
+    "equation": "BaCl2 + CuSO4 -> BaSO4 + CuCl2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "2NaOH + CuSO4 -> Cu(OH)2 + Na2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 1.0,
+    "phenomena": "生成天蓝色沉淀"
+  },
+  {
+    "equation": "Cu(OH)2 + 4NH3 -> [Cu(NH3)4]^2+ + 2OH^-",
+    "type": "complexation",
+    "temp_threshold": -273.0,
+    "exothermic": -5.0,
+    "phenomena": "沉淀溶解，溶液变深蓝色"
+  },
+  {
+    "equation": "Albumin + H2O -> Albumin",
+    "type": "dissolution",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "沉淀重新溶解"
+  },
+  {
+    "equation": "NH4Cl + NaOH -> NH3 + NaCl + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": 60.0,
+    "exothermic": 1.0,
+    "phenomena": "加热产生无色气体，使湿润红色石蕊试纸变蓝"
+  },
+  {
+    "equation": "NH4NO3 + NaOH -> NH3 + NaNO3 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": 60.0,
+    "exothermic": 1.0,
+    "phenomena": "加热产生无色气体，使湿润红色石蕊试纸变蓝"
+  },
+  {
+    "equation": "(NH4)2SO4 + 2NaOH -> 2NH3 + Na2SO4 + 2H2O",
+    "type": "double_decomposition",
+    "temp_threshold": 60.0,
+    "exothermic": 2.0,
+    "phenomena": "加热产生无色气体，使湿润红色石蕊试纸变蓝"
+  },
+  {
+    "equation": "AgNO3 + NaCl -> AgCl + NaNO3",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 1.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "AgCl + 2NH3 -> [Ag(NH3)2]^+ + Cl^-",
+    "type": "complexation",
+    "temp_threshold": -273.0,
+    "exothermic": -5.0,
+    "phenomena": "白色沉淀溶解"
+  },
+  {
+    "equation": "Fe(NO3)3 + 3KSCN -> 3KNO3 + [Fe(SCN)]2+",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "溶液变为血红色"
+  },
+  {
+    "equation": "2NO + O2 -> 2NO2",
+    "type": "combustion",
+    "temp_threshold": -273.0,
+    "exothermic": 113.1,
+    "phenomena": "生成红棕色气体"
+  },
+  {
+    "equation": "3NO2 + H2O -> 2 HNO3 + NO",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": -117.0,
+    "phenomena": "红棕色气体溶于水，溶液变为无色"
+  },
+  {
+    "equation": "Fe + 2HCl -> FeCl2 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 87.9,
+    "phenomena": "有气泡产生，溶液温度升高"
+  },
+  {
+    "equation": "CH4 + 2O2 -> CO2 + 2H2O",
+    "type": "combustion",
+    "temp_threshold": 400.0,
+    "exothermic": 802.0,
+    "phenomena": "有火焰，生成水和无色气体"
+  },
+  {
+    "equation": "CO2 + Ca(OH)2 -> CaCO3 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15.1,
+    "phenomena": "溶液变浑浊，生成白色沉淀"
+  },
+  {
+    "equation": "Na2S + 2H2SO3 -> 2NaHSO3 + H2S",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 10.0,
+    "phenomena": "有臭鸡蛋气味的气体（H2S）产生，溶液无明显颜色变化"
+  },
+  {
+    "equation": "5Na2S + 2KMnO4 + 8H2SO4 -> K2SO4 + 2MnSO4 + 5Na2SO4 + 8H2O + 5S",
+    "type": "redox",
+    "temp_threshold": -273.0,
+    "exothermic": 50.0,
+    "phenomena": "溶液紫色逐渐褪去，生成黄色沉淀（S）"
+  },
+  {
+    "equation": "Na2S + H2SO4 -> Na2SO4 + H2S",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15.0,
+    "phenomena": "有臭鸡蛋气味的气体（H2S）产生"
+  },
+  {
+    "equation": "Na2S + CuSO4 -> CuS + Na2SO4",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "生成黑色沉淀（CuS）"
+  },
+  {
+    "equation": "2CH3COOH + Na2CO3 -> 2NaCH3COO + H2O + CO2",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 28.0,
+    "phenomena": "产生大量气泡（CO2），溶液无色"
+  },
+  {
+    "equation": "2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2",
+    "type": "redox",
+    "temp_threshold": 25.0,
+    "exothermic": 50.0,
+    "phenomena": "产生大量气泡（H2），溶液无色"
+  },
+  {
+    "equation": "2H2O2 + MnO2 -> 2H2O + O2 + MnO2",
+    "type": "decomposition",
+    "temp_threshold": 20.0,
+    "exothermic": 98.0,
+    "phenomena": "催化分解，产生大量气泡（O2），MnO2不溶"
+  },
+  {
+    "equation": "2H2O2 + 2FeCl3 -> 2FeCl2 + 2H2O + O2 + 2HCl",
+    "type": "redox",
+    "temp_threshold": 25.0,
+    "exothermic": 80.0,
+    "phenomena": "溶液颜色由黄棕变浅，产生气泡（O2）"
+  },
+
+  {
+    "equation": "Mg + 2H2O -> Mg(OH)2 + H2",
+    "type": "replacement",
+    "temp_threshold": 60.0,
+    "exothermic": 62.0,
+    "phenomena": "有气泡产生，生成白色沉淀"
+  },
+  {
+    "equation": "AlCl3 + 3NaOH -> Al(OH)3 + 3NaCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 10.0,
+    "phenomena": "生成白色胶状沉淀"
+  },
+  {
+    "equation": "Al(OH)3 + NaOH -> Na[Al(OH)4]",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 8.0,
+    "phenomena": "白色沉淀溶解，溶液澄清"
+  },
+  {
+    "equation": "Cl2 + 2NaBr -> 2NaCl + Br2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 47.0,
+    "phenomena": "溶液由无色变为橙棕色，有刺激性气味"
+  },
+  {
+    "equation": "Cl2 + 2NaI -> 2NaCl + I2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 96.0,
+    "phenomena": "溶液由无色变为紫色，有紫黑色沉淀析出"
+  },
+  {
+    "equation": "Br2 + 2NaI -> 2NaBr + I2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 49.0,
+    "phenomena": "溶液由无色变为紫色，有紫黑色沉淀析出"
+  },
+  {
+    "equation": "Mg + 2HCl -> MgCl2 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 148.0,
+    "phenomena": "有气泡产生，溶液变为无色"
+  },
+  {
+    "equation": "MgO + 2HCl -> MgCl2 + H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 120.0,
+    "phenomena": "白色固体溶解，溶液变为无色"
+  },
+  {
+    "equation": "CuCl2  -> Cu  + Cl2",
+    "type": "decomposition",
+    "temp_threshold": 25.0,
+    "exothermic": -250.0,
+    "phenomena": "阴极析出红色铜，阳极有黄绿色气体逸出"
+  },
+  {
+    "equation": "CuSO4 + 2KBr -> CuBr2 + K2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "溶液颜色由蓝色变为棕色"
+  },
+  {
+    "equation": "CuSO4 + 2NaCl -> CuCl2 + Na2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "溶液颜色由蓝色变为蓝绿色"
+  },
+  {
+    "equation": "CuCl2·2H2O  -> CuCl2  + 2H2O ",
+    "type": "decomposition",
+    "temp_threshold": 100.0,
+    "exothermic": 0.0,
+    "phenomena": "加热失水，颜色由蓝绿色变为黄棕色"
+  },
+  {
+    "equation": "Ca(OH)2 + 2HCl -> CaCl2 + 2H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 57.3,
+    "phenomena": "溶液由澄清变浑浊，后恢复澄清"
+  },
+  {
+    "equation": "BaCl2 + Na2SO4 -> BaSO4  + 2NaCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "CaO + H2O -> Ca(OH)2",
+    "type": "combination",
+    "temp_threshold": -273.0,
+    "exothermic": 63.7,
+    "phenomena": "放热，溶液变热，生成白色悬浊液"
+  },
+  {
+    "equation": "2Cu + O2 -> 2CuO",
+    "type": "combustion",
+    "temp_threshold": 200.0,
+    "exothermic": 156,
+    "phenomena": "铜粉变黑，质量增加"
+  },
+  {
+    "equation": "CH3COOC2H5 + H2O -> CH3COOH + C2H5OH",
+    "type": "double_decomposition",
+    "temp_threshold": 60.0,
+    "exothermic": -2,
+    "phenomena": "混合液分层，生成油状液体，有水果香味"
+  },
+  {
+    "equation": "Fe + CuSO4 -> FeSO4 + Cu",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 50,
+    "phenomena": "铁丝表面析出红色铜，蓝色溶液褪色变浅绿色"
+  },
+  {
+    "equation": "NaOH + HCl -> NaCl + H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 57,
+    "phenomena": "溶液温度升高，指示剂变色"
+  },
+  {
+    "equation": "NaCl + HCl + C20H14O4 -> NaCl + HCl + C20H14O4",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 55.0,
+    "phenomena": "溶液由红色变为无色"
+  },
+  {
+    "equation": "Ca(OH)2 + Na2CO3 -> CaCO3 + 2NaOH",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15.0,
+    "phenomena": "生成白色沉淀，溶液变浑浊"
+  },
+  {
+    "equation": "2[Ag(NH3)2]OH + C6H12O6 -> 2Ag + C6H12O7 + 4NH3 + H2O",
+    "type": "replacement",
+    "temp_threshold": 60.0,
+    "exothermic": 10.0,
+    "phenomena": "试管壁生成明亮银镜，溶液无明显颜色变化"
+  },
+  {
+    "equation": "2CuSO4 + 2NaOH + C6H12O6 + 2H2O -> 2Cu(OH)2 + Na2SO4 + C6H12O7",
+    "type": "double_decomposition",
+    "temp_threshold": 20.0,
+    "exothermic": 5.0,
+    "phenomena": "生成天蓝色Cu(OH)2絮状沉淀，溶液颜色变浅"
+  },
+  {
+    "equation": "C2H5Br + NaOH -> C2H5OH + NaBr",
+    "type": "replacement",
+    "temp_threshold": 60.0,
+    "exothermic": 20.0,
+    "phenomena": "加热后无色液体生成，有酒精气味"
+  },
+  {
+    "equation": "C2H5Br + AgNO3 -> AgBr + C2H5NO3",
+    "type": "double_decomposition",
+    "temp_threshold": 20.0,
+    "exothermic": 5.0,
+    "phenomena": "生成淡黄色AgBr沉淀"
+  },
+  {
+    "equation": "NaBr + AgNO3 -> AgBr + NaNO3",
+    "type": "double_decomposition",
+    "temp_threshold": 20.0,
+    "exothermic": 5.0,
+    "phenomena": "生成淡黄色AgBr沉淀"
+  },
+  {
+    "equation": "NaHCO3 -> Na2CO3 + CO2 + H2O",
+    "type": "decomposition",
+    "temp_threshold": 100.0,
+    "exothermic": -15.0,
+    "phenomena": "加热产生气泡，澄清石灰水变浑浊"
+  },
+
+  {
+    "equation": "Zn + 2HCl -> ZnCl2 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 153.0,
+    "phenomena": "锌片表面有气泡产生，铁片附近颜色变化"
+  },
+  {
+    "equation": "3Fe2+ + 2K3[Fe(CN)6] -> Fe3[Fe(CN)6]2 + 6K+",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成蓝色沉淀"
+  },
+  {
+    "equation": "SO2 + H2O -> H2SO3",
+    "type": "combination",
+    "temp_threshold": -273.0,
+    "exothermic": 19.0,
+    "phenomena": "气体溶解，溶液变酸"
+  },
+  {
+    "equation": "2K + 2H2O -> 2KOH + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 196.0,
+    "phenomena": "剧烈反应，产生气泡，溶液变红（酚酞变色）"
+  },
+  {
+    "equation": "4K + O2 -> 2K2O",
+    "type": "combustion",
+    "temp_threshold": 100.0,
+    "exothermic": 239.0,
+    "phenomena": "钾燃烧，火焰呈淡紫色"
+  },
+  {
+    "equation": "NH3 + H2O -> NH4OH",
+    "type": "combination",
+    "temp_threshold": -273.0,
+    "exothermic": 33.0,
+    "phenomena": "气体迅速溶解，溶液变红（酚酞变色），喷泉现象"
+  },
+  {
+    "equation": "MgCl2 + 2NaOH -> Mg(OH)2 + 2NaCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成白色絮状沉淀"
+  },
+  {
+    "equation": "2CH3COOH + CaCO3 -> Ca(CH3COO)2 + CO2 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15.0,
+    "phenomena": "产生气泡，溶液无色"
+  },
+  {
+    "equation": "CaCO3 + 2H2SO4 -> CaSO4 + CO2 + 2H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 20.0,
+    "phenomena": "产生气泡，白色沉淀"
+  },
+  {
+    "equation": "2Al + 3CuSO4 -> Al2(SO4)3 + 3Cu",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 200.0,
+    "phenomena": "溶液颜色由蓝变浅，生成红色铜"
+  },
+  {
+    "equation": "Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 130.0,
+    "phenomena": "溶液变蓝，生成银白色金属"
+  },
+  {
+    "equation": "C4H9Br + C2H5OH + NaOH -> C4H9OC2H5 + NaBr + H2O",
+    "type": "substitution",
+    "temp_threshold": 80.0,
+    "exothermic": 10.0,
+    "phenomena": "有机层分层，产物有特殊气味"
+  },
+  {
+    "equation": "3C4H9Br + KMnO4 + 4H2O -> 3C4H9OH + MnO2 + KBr + 4HBr",
+    "type": "oxidation",
+    "temp_threshold": 80.0,
+    "exothermic": 50.0,
+    "phenomena": "紫色褪色，生成棕色沉淀"
+  },
+  {
+    "equation": "H2 + Cl2 -> 2HCl",
+    "type": "combustion",
+    "temp_threshold": 250.0,
+    "exothermic": 184.6,
+    "phenomena": "有明亮火焰，生成白色烟雾"
+  },
+  {
+    "equation": "C25H52 + 38O2 -> 25CO2 + 26H2O",
+    "type": "combustion",
+    "temp_threshold": 200.0,
+    "exothermic": 16400.0,
+    "phenomena": "火焰明亮，生成水蒸气和二氧化碳"
+  },
+  {
+    "equation": "CaCO3 + 2HCl -> CaCl2 + CO2 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15.0,
+    "phenomena": "产生气泡，生成白色沉淀溶解"
+  },
+  {
+    "equation": "AgNO3 + Cl- -> AgCl + NO3-",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "Cl2 + H2O -> HCl + HClO",
+    "type": "other",
+    "temp_threshold": -273.0,
+    "exothermic": -10.0,
+    "phenomena": "溶液略带黄色，略有刺激性气味"
+  },
+  {
+    "equation": "FeCl3 + 3KSCN -> Fe(SCN)3 + 3KCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "溶液变为血红色"
+  },
+  {
+    "equation": "2CuO + C -> 2Cu + CO2",
+    "type": "reduction",
+    "temp_threshold": 400.0,
+    "exothermic": 159.7,
+    "phenomena": "黑色粉末变为红棕色，生成气泡"
+  },
+  {
+    "equation": "2H2O -> 2H2 + O2",
+    "type": "decomposition",
+    "temp_threshold": 0.0,
+    "exothermic": -286.0,
+    "phenomena": "通电后产生气泡，正负极分别有气体生成"
+  },
+  {
+    "equation": "Fe + 2FeCl3 -> 3FeCl2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 20.0,
+    "phenomena": "溶液颜色由黄色变浅绿色，有铁粉消失"
+  },
+  {
+    "equation": "FeCl3 + 3KSCN -> Fe(SCN)3 + 3KCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "溶液变为血红色"
+  },
+  {
+    "equation": "2Fe2+ + Cl2 + 2H2O -> 2Fe3+ + 4Cl^- + 4H^+",
+    "type": "oxidation",
+    "temp_threshold": -273.0,
+    "exothermic": 10.0,
+    "phenomena": "溶液颜色由浅绿色变黄色"
+  },
+  {
+    "equation": "Na2CO3 + H2O -> Na2CO3",
+    "type": "dissolution",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "固体溶解，溶液呈碱性，酚酞变红"
+  },
+  {
+    "equation": "C6H10O5 + H2SO4 + H2O -> C6H12O6 + H2SO4",
+    "type": "decomposition",
+    "temp_threshold": 80.0,
+    "exothermic": 5.0,
+    "phenomena": "加热后溶液变澄清，生成葡萄糖"
+  },
+  {
+    "equation": "C6H12O6 + 2Cu(OH)2 -> Cu2O + 2H2O + C6H12O7",
+    "type": "redox",
+    "temp_threshold": 60.0,
+    "exothermic": 10.0,
+    "phenomena": "生成砖红色沉淀"
+  },
+  {
+    "equation": "FeCl3 + 3Na2CO3 + 3H2O -> Fe(OH)3 + 6NaCl + 3CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "生成红褐色沉淀并有气泡产生"
+  },
+  {
+    "equation": "4Fe + 3O2 -> 2Fe2O3",
+    "type": "combustion",
+    "temp_threshold": 400.0,
+    "exothermic": 1644.0,
+    "phenomena": "铁丝剧烈燃烧，火星四射，生成黑色固体"
+  },
+  {
+    "equation": "Ba(OH)2·8H2O + 2NH4Cl -> BaCl2 + 2NH3 + 10H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": -32.0,
+    "phenomena": "吸热，生成氨气，有刺激性气味，水结冰"
+  },
+  {
+    "equation": "FeCl3 + 3NaOH -> Fe(OH)3 + 3NaCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成红褐色沉淀"
+  },
+  {
+    "equation": "FeSO4 + 2NaOH -> Fe(OH)2 + Na2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成白绿色沉淀，易被空气氧化变褐色"
+  },
+  {
+    "equation": "4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3",
+    "type": "oxidation",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "白绿色沉淀变为红褐色"
+  },
+  {
+    "equation": "2KMnO4 + 3H2SO4 + 5H2O -> 2MnSO4 + K2SO4 + 8H2O + 5[O]",
+    "type": "decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "紫红色溶液保持颜色"
+  },
+  {
+    "equation": "FeCl3 + 3H2O -> Fe(OH)3 + 3HCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成红褐色胶体沉淀"
+  },
+  {
+    "equation": "Cu + H2SO4 -> CuSO4 + H2",
+    "type": "replacement",
+    "temp_threshold": 80.0,
+    "exothermic": 0.0,
+    "phenomena": "需加热，溶液变蓝，产生气泡"
+  },
+  {
+    "equation": "CuSO4·5H2O -> CuSO4 + 5H2O",
+    "type": "decomposition",
+    "temp_threshold": 100.0,
+    "exothermic": -78.2,
+    "phenomena": "加热脱水，蓝色晶体变为白色粉末"
+  },
+  {
+    "equation": "C2H5OH + CuSO4 -> [Cu(C2H5OH)2] + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5,
+    "phenomena": "溶液由蓝色变为天蓝色"
+  },
+  {
+    "equation": "CH3COOH + NaHCO3 -> CH3COONa + CO2 + H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 15,
+    "phenomena": "产生大量气泡，溶液无色"
+  },
+  {
+    "equation": "CH3CHO + 2[Ag(NH3)2]OH -> CH3COOH + 2Ag + 4NH3 + H2O",
+    "type": "oxidation",
+    "temp_threshold": 60.0,
+    "exothermic": 20,
+    "phenomena": "试管壁出现银镜"
+  },
+  {
+    "equation": "C6H10 + KMnO4 + H2SO4 -> C6H12O2 + MnSO4 + K2SO4 + H2O",
+    "type": "oxidation",
+    "temp_threshold": 25.0,
+    "exothermic": 30,
+    "phenomena": "紫色溶液褪色"
+  },
+  {
+    "equation": "3C6H5OH + FeCl3 -> Fe(C6H5O)3 + 3HCl",
+    "type": "complexation",
+    "temp_threshold": -273.0,
+    "exothermic": 5,
+    "phenomena": "溶液呈紫色"
+  },
+  {
+    "equation": "HCl + CaCO3 -> CaCl2 + CO2 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15,
+    "phenomena": "产生气泡，固体逐渐消失"
+  },
+  {
+    "equation": "2Cu + 2H2SO4(conc.) -> CuSO4 + SO2 + 2H2O",
+    "type": "replacement",
+    "temp_threshold": 80.0,
+    "exothermic": -66.0,
+    "phenomena": "有刺激性气体逸出，溶液变蓝"
+  },
+  {
+    "equation": "Zn + CuSO4 -> ZnSO4 + Cu",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 210.0,
+    "phenomena": "有红色铜析出"
+  },
+  {
+    "equation": "2KMnO4 -> K2MnO4 + MnO2 + O2",
+    "type": "decomposition",
+    "temp_threshold": 200.0,
+    "exothermic": -47.0,
+    "phenomena": "加热后产生氧气气泡，固体颜色由紫黑变为黑色"
+  },
+  {
+    "equation": "FeCl2 + 2KSCN -> Fe(SCN)2 + 2KCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "溶液颜色变化不明显"
+  },
+  {
+    "equation": "Fe + H2SO4 -> FeSO4 + H2",
+    "type": "replacement",
+    "temp_threshold": 20.0,
+    "exothermic": 30.0,
+    "phenomena": "有气泡产生，铁逐渐溶解"
+  },
+  {
+    "equation": "Fe + 2HNO3 -> Fe(NO3)2 + H2",
+    "type": "replacement",
+    "temp_threshold": 20.0,
+    "exothermic": 20.0,
+    "phenomena": "有气泡产生，铁逐渐溶解"
+  },
+  {
+    "equation": "Fe + 2AgNO3 -> Fe(NO3)2 + 2Ag",
+    "type": "replacement",
+    "temp_threshold": 20.0,
+    "exothermic": 80.0,
+    "phenomena": "生成银白色银沉淀"
+  },
+  {
+    "equation": "CaC2 + 2H2O -> C2H2 + Ca(OH)2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 130.0,
+    "phenomena": "产生气泡，生成无色气体（乙炔），放热"
+  },
+  {
+    "equation": "Cu + 2H2SO4(conc) -> CuSO4 + SO2 + 2H2O",
+    "type": "replacement",
+    "temp_threshold": 80.0,
+    "exothermic": 50.0,
+    "phenomena": "溶液变蓝，产生刺激性气体（SO2），铜丝逐渐消失"
+  },
+  {
+    "equation": "C2H2 + 2KMnO4 + 2H2O -> 2MnO2 + 2KOH + C2H2O4",
+    "type": "oxidation",
+    "temp_threshold": -273.0,
+    "exothermic": 120.0,
+    "phenomena": "紫色溶液褪色，生成黑色沉淀"
+  },
+  {
+    "equation": "C2H2 + Br2 -> C2H2Br2",
+    "type": "addition",
+    "temp_threshold": -273.0,
+    "exothermic": 80.0,
+    "phenomena": "红棕色溴消失，溶液变为无色"
+  },
+  {
+    "equation": "Mg(OH)2 + 2HCl -> MgCl2 + 2H2O",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 56.0,
+    "phenomena": "白色沉淀溶解，溶液变澄清"
+  },
+  {
+    "equation": "2KMnO4 -> K2MnO4 + MnO2 + O2",
+    "type": "decomposition",
+    "temp_threshold": 200.0,
+    "exothermic": 0.0,
+    "phenomena": "加热后有气泡逸出，紫色消退，生成黑色沉淀"
+  },
+  {
+    "equation": "Na2CO3 + CaCl2 -> 2 NaCl + CaCO3",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "Na2CO3 + 2HCl -> 2NaCl + H2O + CO2",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 28.0,
+    "phenomena": "有气泡产生，溶液变澄清"
+  },
+  {
+    "equation": "NaHCO3 + HCl -> NaCl + H2O + CO2",
+    "type": "neutralization",
+    "temp_threshold": -273.0,
+    "exothermic": 15.0,
+    "phenomena": "有气泡产生"
+  },
+  {
+    "equation": "BaCl2 + Na2SO4 -> 2NaCl + BaSO4",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "CO2 + Ca(OH)2 -> CaCO3 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "澄清石灰水变浑浊，生成白色沉淀"
+  },
+  {
+    "equation": "BaCl2 + Na2SO4 -> BaSO4 + 2NaCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 2.0,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "BaCl2 + Na2CO3 -> BaCO3 + 2NaCl",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 1.5,
+    "phenomena": "生成白色沉淀"
+  },
+  {
+    "equation": "BaSO4 + 2HCl -> BaCl2 + H2SO4",
+    "type": "double_decomposition",
+    "temp_threshold": 60.0,
+    "exothermic": -2.0,
+    "phenomena": "沉淀溶解，溶液变澄清"
+  },
+  {
+    "equation": "BaCO3 + 2HCl -> BaCl2 + CO2 + H2O",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "有气泡产生，沉淀消失"
+  },
+  {
+    "equation": "Cl2 + 2KBr -> 2KCl + Br2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 3.0,
+    "phenomena": "溶液颜色由淡黄绿色变为红棕色"
+  },
+  {
+    "equation": "Cl2 + 2KI -> 2KCl + I2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 3.5,
+    "phenomena": "溶液颜色由淡黄绿色变为紫黑色"
+  },
+  {
+    "equation": "Br2 + 2KI -> 2KBr + I2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 2.5,
+    "phenomena": "溶液颜色由红棕色变为紫黑色"
+  },
+  {
+    "equation": "C6H5OH + FeCl3 -> Fe(C6H5O7)3 + 3HCl",
+    "type": "complex",
+    "temp_threshold": -273.0,
+    "exothermic": 1.0,
+    "phenomena": "溶液显紫色"
+  },
+  {
+    "equation": "CaCO3 + 2HCl -> CaCl2 + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 15.0,
+    "phenomena": "产生大量气泡，有气体逸出"
+  },
+  {
+    "equation": "KAl(SO4)2·12H2O + 3H2O -> K+ + Al3+ + 2SO4^2- + 15H2O",
+    "type": "decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "明矾溶解，溶液无明显变化"
+  },
+  {
+    "equation": "Al3+ + 3H2O -> Al(OH)3 + 3H+",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": -10.0,
+    "phenomena": "生成白色絮状沉淀，使水变澄清"
+  },
+  {
+    "equation": "2Na + 2C2H5OH -> 2C2H5ONa + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 150.0,
+    "phenomena": "有气泡产生，液体温度升高，钠逐渐消失"
+  },
+  {
+    "equation": "HCOOH + Na2CO3 -> 2HCOONa + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 30.0,
+    "phenomena": "有气泡产生，溶液无明显颜色变化"
+  },
+  {
+    "equation": "C6H5COOH + Na2CO3 -> 2C6H5COONa + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 25.0,
+    "phenomena": "有气泡产生，溶液无明显颜色变化"
+  },
+  {
+    "equation": "CH3COOH + Na2CO3 -> 2CH3COONa + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 28.0,
+    "phenomena": "有气泡产生，溶液无明显颜色变化"
+  },
+  {
+    "equation": "HCOOH + NaHCO3 -> HCOONa + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 20.0,
+    "phenomena": "有气泡产生"
+  },
+  {
+    "equation": "C6H5COOH + NaHCO3 -> C6H5COONa + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 18.0,
+    "phenomena": "有气泡产生"
+  },
+  {
+    "equation": "CH3COOH + NaHCO3 -> CH3COONa + H2O + CO2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 19.0,
+    "phenomena": "有气泡产生"
+  },
+  {
+    "equation": "HCOOH + C6H5ONa -> HCOONa + C6H5OH",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 5.0,
+    "phenomena": "无明显现象"
+  },
+  {
+    "equation": "C6H5COOH + C6H5ONa -> C6H5COONa + C6H5OH",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 3.0,
+    "phenomena": "无明显现象"
+  },
+  {
+    "equation": "CH3COOH + C6H5ONa -> CH3COONa + C6H5OH",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 4.0,
+    "phenomena": "无明显现象"
+  },
+  {
+    "equation": "HCl + Fe -> FeCl2 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 90.0,
+    "phenomena": "有气泡产生，铁逐渐溶解"
+  },
+  {
+    "equation": "CH3COOH + Fe -> (CH3COO)2Fe + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 60.0,
+    "phenomena": "有气泡产生，铁逐渐溶解"
+  },
+  {
+    "equation": "2AgNO3 + 2NH3 + H2O + CH3CHO -> 2Ag + CH3COOH + 2NH4NO3",
+    "type": "redox",
+    "temp_threshold": 40.0,
+    "exothermic": 50.0,
+    "phenomena": "生成银镜，溶液变浑浊"
+  },
+  {
+    "equation": "3C2H5OH + 2K2Cr2O7 + 8H2SO4 -> 3CH3COOH + 2Cr2(SO4)3 + 2K2SO4 + 11H2O",
+    "type": "redox",
+    "temp_threshold": 60.0,
+    "exothermic": 200.0,
+    "phenomena": "溶液由橙色变为蓝绿色"
+  },
+  {
+    "equation": "CH4 + Cl2 -> CH3Cl + HCl",
+    "type": "replacement",
+    "temp_threshold": 25.0,
+    "exothermic": 104.0,
+    "phenomena": "有光照时产生刺激性气味，有白色烟雾，生成白色固体（NaCl）"
+  },
+  {
+    "equation": "CH4 + 2Cl2 -> CH2Cl2 + 2HCl",
+    "type": "replacement",
+    "temp_threshold": 25.0,
+    "exothermic": 68.0,
+    "phenomena": "有光照时产生刺激性气味，生成更多白色固体（NaCl）"
+  },
+  {
+    "equation": "CO2 + H2O -> H2CO3",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": -19.0,
+    "phenomena": "气体溶解，瓶体瘪缩"
+  },
+  {
+    "equation": "Na2O2 + 2H2O -> 2NaOH + H2O2",
+    "type": "double_decomposition",
+    "temp_threshold": -273.0,
+    "exothermic": 62.0,
+    "phenomena": "剧烈反应，放热，产生气泡"
+  },
+  {
+    "equation": "CuSO4 + Fe -> FeSO4 + Cu",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 50.0,
+    "phenomena": "铁表面析出红色铜，溶液颜色由蓝变浅绿色"
+  },
+  {
+    "equation": "Zn + 2HCl -> ZnCl2 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 153.0,
+    "phenomena": "产生大量气泡，放热"
+  },
+  {
+    "equation": "Mg + H2SO4 -> MgSO4 + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 146.0,
+    "phenomena": "剧烈反应，产生大量气泡"
+  },
+  {
+    "equation": "I2 + C8H18 -> I2(C8H18)",
+    "type": "dissolution",
+    "temp_threshold": -273.0,
+    "exothermic": 0.0,
+    "phenomena": "汽油层呈紫红色，水层无色"
+  },
+  {
+    "equation": "Fe + O2 + H2O -> Fe2O3",
+    "type": "oxidation",
+    "temp_threshold": 0.0,
+    "exothermic": 824.2,
+    "phenomena": "铁钉表面生成红褐色锈斑"
+  },
+  {
+    "equation": "C + O2 -> CO2",
+    "type": "combustion",
+    "temp_threshold": 300.0,
+    "exothermic": 393.5,
+    "phenomena": "剧烈燃烧，火焰明亮，放热"
+  },
+  {
+    "equation": "2Na + 2C2H5OH -> 2C2H5ONa + H2",
+    "type": "replacement",
+    "temp_threshold": -273.0,
+    "exothermic": 120.0,
+    "phenomena": "产生气泡，钠在乙醇中缓慢反应，可能出现黄色火焰"
+  }
+]

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="红墨水在水和乙醇中的混溶性实验" 
+    goal="观察红墨水在水和乙醇中的混溶性及分层现象" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Red_Ink" state="liquid"/>
+      <Reagent name="Ethanol" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="Distilled_Water" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="Red_Ink" volume="0.1 mL" tool="dropper_1"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Insert tool="dropper_2" vessel="test_tube_2"/>
+      <Transfer from_vessel="test_tube_2" to_vessel="test_tube_1" volume="2 mL" tool="dropper_2"/>
+      <Wait time="10s"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="180s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

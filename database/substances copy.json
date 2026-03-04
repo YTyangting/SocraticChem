@@ -1,0 +1,7298 @@
+{
+  "Marble": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "Marble is primarily composed of calcium carbonate, a white or grayish solid mineral."
+  },
+  "Dilute_HCl": {
+    "formula": "HCl(aq)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Dilute hydrochloric acid solution; colorless, strongly acidic."
+  },
+  "Limewater": {
+    "formula": "Ca(OH)2(aq)",
+    "molar_mass": 74.1,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      230,
+      255,
+      0
+    ],
+    "description": "Clear, colorless aqueous solution of calcium hydroxide. Used to test for carbon dioxide."
+  },
+  "CO2": {
+    "formula": "CO2",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Carbon dioxide, colorless gas."
+  },
+  "CaCl2": {
+    "formula": "CaCl2(aq)",
+    "molar_mass": 110.98,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Calcium chloride is a white, water-soluble salt formed in the reaction."
+  },
+  "H2O": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Water, colorless liquid."
+  },
+  "CaCO3_precipitate": {
+    "formula": "CaCO3(s)",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Calcium carbonate precipitate, white solid."
+  },
+  "NaOH_solution": {
+    "formula": "NaOH",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium hydroxide solution."
+  },
+  "CuSO4_solution": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      112,
+      192,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) sulfate, typically blue in color."
+  },
+  "Cu(OH)2_precipitate": {
+    "formula": "Cu(OH)2",
+    "molar_mass": 97.56,
+    "state": "s",
+    "color_rgb": [
+      0,
+      180,
+      255,
+      255
+    ],
+    "description": "Blue gelatinous precipitate of copper(II) hydroxide."
+  },
+  "Na2SO4_solution": {
+    "formula": "Na2SO4(aq)",
+    "molar_mass": 142.04,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium sulfate, colorless and clear."
+  },
+  "Water": {
+    "formula": "H2O",
+    "molar_mass": 18.015,
+    "state": "l",
+    "color_rgb": [
+      173,
+      216,
+      230,
+      255
+    ],
+    "description": "A colorless, odorless liquid at room temperature, essential for life. Used as the electrolyte in this experiment."
+  },
+  "Cold_Water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      173,
+      216,
+      230,
+      255
+    ],
+    "description": "Water at a lower temperature, used here to condense water vapor."
+  },
+  "Water_Vapor": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Gaseous form of water, invisible under normal conditions, produced when water is boiled."
+  },
+  "paraffin": {
+    "formula": "C25H52",
+    "molar_mass": 352.7,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, odorless, waxy solid; insoluble in water; main component of candle wax."
+  },
+  "water": {
+    "formula": "H2O",
+    "molar_mass": 18.0,
+    "state": "l",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Colorless, odorless liquid; universal solvent."
+  },
+  "liquid_paraffin": {
+    "formula": "C_nH_{2n+2} (n≈20-40)",
+    "molar_mass": 350.0,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      180
+    ],
+    "description": "Liquid paraffin is the melted form of paraffin wax, appearing as a clear, colorless to slightly white viscous liquid."
+  },
+  "Distilled_Water": {
+    "formula": "H2O",
+    "molar_mass": 18.015,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Pure water, colorless liquid, used as solvent."
+  },
+  "NaCl_Solution": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      120
+    ],
+    "description": "Aqueous solution of sodium chloride (table salt); colorless liquid."
+  },
+  "FeCl3_Saturated_Solution": {
+    "formula": "FeCl3(aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      120,
+      40,
+      255
+    ],
+    "description": "Saturated aqueous solution of ferric chloride, yellow-brown color."
+  },
+  "Fe(OH)3_Colloid": {
+    "formula": "Fe(OH)3(colloid)",
+    "molar_mass": 106.87,
+    "state": "colloid",
+    "color_rgb": [
+      150,
+      60,
+      30,
+      255
+    ],
+    "description": "Ferric hydroxide colloid, reddish-brown, forms upon hydrolysis of FeCl3 in boiling water."
+  },
+  "Anhydrous_Ethanol": {
+    "formula": "C2H5OH",
+    "molar_mass": 46.07,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, volatile liquid; commonly known as ethanol or ethyl alcohol. Used as a solvent and reagent."
+  },
+  "Sodium_1": {
+    "formula": "Na",
+    "molar_mass": 22.99,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Metallic sodium, soft, silvery-white solid, highly reactive."
+  },
+  "Sodium_2": {
+    "formula": "Na",
+    "molar_mass": 22.99,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Metallic sodium, soft, silvery-white solid, highly reactive."
+  },
+  "Petroleum": {
+    "formula": "Petroleum",
+    "molar_mass": null,
+    "state": "l",
+    "color_rgb": [
+      60,
+      60,
+      40,
+      255
+    ],
+    "description": "Petroleum (mineral oil), colorless to pale yellow, used to store reactive metals."
+  },
+  "Sodium_Hydroxide": {
+    "formula": "NaOH",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      248,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium hydroxide, colorless, strongly basic."
+  },
+  "Hydrogen": {
+    "formula": "H2",
+    "molar_mass": 2.02,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      0
+    ],
+    "description": "Colorless, odorless gas; highly flammable. Produced in reactions of sodium with ethanol or water."
+  },
+  "Sodium_Ethoxide": {
+    "formula": "C2H5ONa",
+    "molar_mass": 68.05,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "White solid; sodium salt of ethanol, formed by reaction of sodium with ethanol."
+  },
+  "Oxygen": {
+    "formula": "O2",
+    "molar_mass": 32.0,
+    "state": "g",
+    "color_rgb": [
+      200,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, odorless gas, supports combustion."
+  },
+  "CarbonDioxide": {
+    "formula": "CO2",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, odorless gas. Does not support combustion. Denser than air."
+  },
+  "NaCl": {
+    "formula": "NaCl",
+    "molar_mass": 58.44,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium chloride, a white crystalline solid, commonly known as table salt."
+  },
+  "KNO3": {
+    "formula": "KNO3",
+    "molar_mass": 101.1,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Potassium nitrate, white crystalline solid, used in fertilizers."
+  },
+  "NaCl_solution": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride, colorless and clear."
+  },
+  "KNO3_solution": {
+    "formula": "KNO3(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of potassium nitrate, colorless."
+  },
+  "marble": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "White or grayish solid, naturally occurring as a mineral (marble)."
+  },
+  "sodium_carbonate": {
+    "formula": "Na2CO3",
+    "molar_mass": 105.99,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, odorless powder or crystalline solid, commonly known as soda ash."
+  },
+  "BaCl2_solution": {
+    "formula": "BaCl2(aq)",
+    "molar_mass": 208.23,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of barium chloride, colorless."
+  },
+  "BaSO4_precipitate": {
+    "formula": "BaSO4(s)",
+    "molar_mass": 233.39,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Barium sulfate precipitate, white solid."
+  },
+  "CaCl2(aq)": {
+    "formula": "CaCl2(aq)",
+    "molar_mass": 110.98,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A colorless, transparent, aqueous solution of calcium chloride."
+  },
+  "H2O(l)": {
+    "formula": "H2O(l)",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Liquid water, colorless and transparent."
+  },
+  "Sodium_Carbonate": {
+    "formula": "Na2CO3",
+    "molar_mass": 105.99,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, odorless, crystalline solid; soluble in water."
+  },
+  "Sodium_Chloride": {
+    "formula": "NaCl",
+    "molar_mass": 58.44,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White crystalline solid, common table salt, soluble in water."
+  },
+  "Carbon_Dioxide": {
+    "formula": "CO2",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, odorless gas; produced in acid-carbonate reactions."
+  },
+  "CuCl2": {
+    "formula": "CuCl2",
+    "molar_mass": 134.45,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      255,
+      255,
+      0
+    ],
+    "description": "Copper(II) chloride; greenish-blue solution when dissolved in water."
+  },
+  "Na2SO4": {
+    "formula": "Na2SO4",
+    "molar_mass": 142.04,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Sodium sulfate; colorless solution when dissolved in water."
+  },
+  "Detergent": {
+    "formula": "Detergent",
+    "molar_mass": 300.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A generic cleaning agent, typically a mixture of surfactants used for removing dirt and grease. Appears as a clear or slightly cloudy liquid."
+  },
+  "Tap_Water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Tap water, a mixture primarily of liquid water with trace dissolved minerals and impurities."
+  },
+  "Detergent_Solution": {
+    "formula": "Detergent(aq)",
+    "molar_mass": 300.0,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      250,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of detergent in tap water, used for cleaning glassware. Slightly foamy, clear to slightly cloudy."
+  },
+  "Dirt_Removed": {
+    "formula": "Dirt_Removed",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      120,
+      100,
+      80,
+      255
+    ],
+    "description": "Represents the removed contaminants (organic/inorganic residues) from the glassware. Heterogeneous solid."
+  },
+  "HCl_solution": {
+    "formula": "HCl(aq)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of hydrochloric acid, colorless, strongly acidic."
+  },
+  "crude_benzoic_acid": {
+    "formula": "C7H6O2",
+    "molar_mass": 122.12,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Crude benzoic acid is a white to off-white solid, possibly containing impurities, used as the starting material in purification experiments."
+  },
+  "distilled_water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Clear, colorless liquid; purified water with no dissolved ions."
+  },
+  "purified_benzoic_acid": {
+    "formula": "C7H6O2",
+    "molar_mass": 122.12,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Purified benzoic acid is a white crystalline solid obtained after recrystallization, with most impurities removed."
+  },
+  "impurities": {
+    "formula": "impurities",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Non-volatile solid impurities separated from crude benzoic acid during hot filtration."
+  },
+  "Calcium_Carbide": {
+    "formula": "CaC2",
+    "molar_mass": 64.1,
+    "state": "s",
+    "color_rgb": [
+      120,
+      120,
+      120,
+      255
+    ],
+    "description": "Grayish-black solid, reacts with water to produce acetylene gas."
+  },
+  "Saturated_NaCl_Solution": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Clear, colorless aqueous solution of sodium chloride at saturation."
+  },
+  "Copper_Sulfate_Solution": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      150,
+      255,
+      255
+    ],
+    "description": "Blue aqueous solution of copper(II) sulfate."
+  },
+  "Anhydrous_CaCl2": {
+    "formula": "CaCl2",
+    "molar_mass": 110.98,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, hygroscopic solid used as a drying agent."
+  },
+  "Acidic_KMnO4_Solution": {
+    "formula": "KMnO4 (acidic, aq)",
+    "molar_mass": 158.04,
+    "state": "aq",
+    "color_rgb": [
+      150,
+      0,
+      200,
+      255
+    ],
+    "description": "Acidified aqueous solution of potassium permanganate, purple color."
+  },
+  "Bromine_CCl4_Solution": {
+    "formula": "Br2/CCl4",
+    "molar_mass": 159.81,
+    "state": "l",
+    "color_rgb": [
+      255,
+      102,
+      0,
+      255
+    ],
+    "description": "A solution of bromine (Br2) dissolved in carbon tetrachloride (CCl4), appearing orange."
+  },
+  "Acetylene": {
+    "formula": "C2H2",
+    "molar_mass": 26.04,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      0
+    ],
+    "description": "Colorless, flammable gas with a faint odor, produced from calcium carbide and water."
+  },
+  "Calcium_Hydroxide": {
+    "formula": "Ca(OH)2",
+    "molar_mass": 74.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White solid, slightly soluble in water, formed as a byproduct in acetylene generation."
+  },
+  "Manganese(II)_Sulfate": {
+    "formula": "MnSO4",
+    "molar_mass": 151.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless to pale pink solution, product of KMnO4 reduction."
+  },
+  "Potassium_Sulfate": {
+    "formula": "K2SO4",
+    "molar_mass": 174.26,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless solution, product of KMnO4 reaction."
+  },
+  "Water_gas": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      180,
+      220,
+      255,
+      255
+    ],
+    "description": "Water formed in oxidation reactions."
+  },
+  "Dibromoethene": {
+    "formula": "C2H2Br2",
+    "molar_mass": 201.85,
+    "state": "l",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "Colorless to pale yellow liquid, product of acetylene addition to bromine."
+  },
+  "white_vinegar": {
+    "formula": "CH3COOH(aq)",
+    "molar_mass": 60.05,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of acetic acid, clear and colorless, weakly acidic."
+  },
+  "soap_solution": {
+    "formula": "C17H35COONa(aq)",
+    "molar_mass": 306.48,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium stearate (soap), clear and colorless, weakly basic."
+  },
+  "litmus_solution": {
+    "formula": "C40H32N10O16S4Na4",
+    "molar_mass": 1250.0,
+    "state": "aq",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Aqueous solution of litmus, a pH indicator that is purple in neutral conditions, red in acidic, and blue in alkaline."
+  },
+  "phenolphthalein_solution": {
+    "formula": "C20H14O4(aq)",
+    "molar_mass": 318.32,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of phenolphthalein, colorless in acidic/neutral, pink in basic."
+  },
+  "litmus_red_solution": {
+    "formula": "Litmus_red(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      0,
+      0,
+      255
+    ],
+    "description": "Litmus turns red in acidic solution."
+  },
+  "litmus_blue_solution": {
+    "formula": "Litmus_blue(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      0,
+      255,
+      255
+    ],
+    "description": "Litmus turns blue in basic solution."
+  },
+  "phenolphthalein_pink_solution": {
+    "formula": "C20H14O4_pink(aq)",
+    "molar_mass": 318.33,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      192,
+      203,
+      255
+    ],
+    "description": "Phenolphthalein turns pink in basic solution."
+  },
+  "dilute_NaCl_solution": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride, colorless and transparent."
+  },
+  "dilute_HCl": {
+    "formula": "HCl(aq)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Dilute hydrochloric acid, a colorless aqueous solution of hydrogen chloride."
+  },
+  "NaCl_solution_with_phenolphthalein": {
+    "formula": "NaCl(aq) + C20H14O4(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      192,
+      203,
+      255
+    ],
+    "description": "Mixture of sodium chloride solution and phenolphthalein; appears pink due to weakly basic conditions."
+  },
+  "NaCl_solution_with_phenolphthalein_and_HCl": {
+    "formula": "NaCl(aq) + C20H14O4(aq) + HCl(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Mixture after addition of HCl; phenolphthalein turns colorless in acidic medium."
+  },
+  "Na2CO3": {
+    "formula": "Na2CO3",
+    "molar_mass": 105.99,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium carbonate, white powder, also known as soda ash."
+  },
+  "NaHCO3": {
+    "formula": "NaHCO3",
+    "molar_mass": 84.01,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium bicarbonate, a white crystalline powder, commonly known as baking soda."
+  },
+  "dil_HCl": {
+    "formula": "HCl",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Dilute hydrochloric acid solution; colorless, pungent, aqueous."
+  },
+  "limewater": {
+    "formula": "Ca(OH)2(aq)",
+    "molar_mass": 74.09,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      255,
+      255,
+      255
+    ],
+    "description": "Limewater is a clear, colorless aqueous solution of calcium hydroxide."
+  },
+  "CaCO3": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Calcium carbonate, a white insoluble solid that forms as a precipitate."
+  },
+  "Limewater_CaOH2": {
+    "formula": "Ca(OH)2(aq)",
+    "molar_mass": 74.09,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "A clear, colorless aqueous solution of calcium hydroxide, commonly known as limewater."
+  },
+  "Sodium_Carbonate_Solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium carbonate, colorless, basic."
+  },
+  "Calcium_Carbonate_Precipitate": {
+    "formula": "CaCO3(s)",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A white, insoluble solid precipitate of calcium carbonate."
+  },
+  "Sodium_Hydroxide_Solution": {
+    "formula": "NaOH (in H2O)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of sodium hydroxide, colorless, strongly basic."
+  },
+  "H2SO4_solution": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous sulfuric acid; colorless, transparent, viscous liquid, odorless."
+  },
+  "NH4Cl_white_fume": {
+    "formula": "NH4Cl(s)",
+    "molar_mass": 53.49,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Ammonium chloride; white solid, appears as white fume when formed in air from HCl vapor and ammonia."
+  },
+  "conc_H2SO4": {
+    "formula": "H2SO4",
+    "molar_mass": 98.08,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Concentrated sulfuric acid, a colorless, oily, corrosive liquid."
+  },
+  "charred_paper": {
+    "formula": "C_x",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      40,
+      40,
+      40,
+      255
+    ],
+    "description": "Charred cellulose residue formed by dehydration of paper (cellulose) with concentrated sulfuric acid; appears black or brown."
+  },
+  "charred_wood": {
+    "formula": "C_x",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      40,
+      40,
+      40,
+      255
+    ],
+    "description": "Charred wood residue formed by dehydration of wood (cellulose/lignin) with concentrated sulfuric acid; appears black or brown."
+  },
+  "charred_cloth": {
+    "formula": "C_x",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      40,
+      40,
+      40,
+      255
+    ],
+    "description": "Charred cloth residue formed by dehydration of cloth (cellulose/fiber) with concentrated sulfuric acid; appears black or brown."
+  },
+  "Concentrated_H2SO4": {
+    "formula": "H2SO4(l)",
+    "molar_mass": 98.08,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Concentrated sulfuric acid, colorless, highly corrosive liquid."
+  },
+  "Dilute_H2SO4_Solution": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.079,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      240,
+      255,
+      255
+    ],
+    "description": "Dilute aqueous solution of sulfuric acid, colorless, highly acidic, used in various laboratory applications."
+  },
+  "Dilute_H2SO4": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      248,
+      255,
+      255
+    ],
+    "description": "Dilute sulfuric acid; a colorless aqueous solution of sulfuric acid, strong acid, conducts electricity."
+  },
+  "Ethanol": {
+    "formula": "C2H5OH",
+    "molar_mass": 46.07,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Ethanol, a colorless, volatile, flammable liquid; miscible with water."
+  },
+  "H2": {
+    "formula": "H2",
+    "molar_mass": 2.02,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      0
+    ],
+    "description": "Hydrogen gas, colorless and odorless."
+  },
+  "Cl2": {
+    "formula": "Cl2(g)",
+    "molar_mass": 70.9,
+    "state": "g",
+    "color_rgb": [
+      200,
+      255,
+      0,
+      255
+    ],
+    "description": "Chlorine gas; yellow-green gas, produced at the anode during electrolysis of hydrochloric acid."
+  },
+  "O2": {
+    "formula": "O2(g)",
+    "molar_mass": 32.0,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "Oxygen gas, colorless and odorless."
+  },
+  "NaCl (aq)": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      230,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride; clear and colorless."
+  },
+  "Calcium_Chloride": {
+    "formula": "CaCl2",
+    "molar_mass": 110.98,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White crystalline solid, highly soluble in water."
+  },
+  "Calcium_Chloride_Solution": {
+    "formula": "CaCl2(aq)",
+    "molar_mass": 110.98,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Clear, colorless aqueous solution of calcium chloride."
+  },
+  "iron_nail_1": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_2": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_3": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_4": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_5": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_6": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_7": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_8": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_9": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_10": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_11": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_12": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_13": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_14": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_15": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "iron_nail_16": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      150,
+      150,
+      150,
+      255
+    ],
+    "description": "Solid iron nail, metallic, gray."
+  },
+  "dilute_sulfuric_acid": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      100
+    ],
+    "description": "A colorless, odorless, aqueous solution of sulfuric acid."
+  },
+  "dilute_hydrochloric_acid": {
+    "formula": "HCl(aq)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      230,
+      255,
+      100
+    ],
+    "description": "Dilute hydrochloric acid, colorless aqueous solution."
+  },
+  "dilute_nitric_acid": {
+    "formula": "HNO3(aq)",
+    "molar_mass": 63.01,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      230,
+      255,
+      100
+    ],
+    "description": "Dilute nitric acid, colorless aqueous solution."
+  },
+  "copper_piece": {
+    "formula": "Cu",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper piece, reddish metallic solid."
+  },
+  "zinc_granule": {
+    "formula": "Zn",
+    "molar_mass": 65.38,
+    "state": "s",
+    "color_rgb": [
+      180,
+      180,
+      180,
+      255
+    ],
+    "description": "Zinc granule, bluish-gray metallic solid."
+  },
+  "aluminum_piece": {
+    "formula": "Al",
+    "molar_mass": 26.98,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Aluminum piece, silver metallic solid."
+  },
+  "magnesium_strip": {
+    "formula": "Mg",
+    "molar_mass": 24.305,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Silvery solid metal strip, reacts slowly with water, more rapidly when heated."
+  },
+  "graphite_block": {
+    "formula": "C(graphite)",
+    "molar_mass": 12.01,
+    "state": "s",
+    "color_rgb": [
+      50,
+      50,
+      50,
+      255
+    ],
+    "description": "Graphite block, black solid."
+  },
+  "iron(II)_sulfate_solution": {
+    "formula": "FeSO4(aq)",
+    "molar_mass": 151.91,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Iron(II) sulfate solution, pale green aqueous solution."
+  },
+  "hydrogen_gas": {
+    "formula": "H2",
+    "molar_mass": 2.016,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "Colorless, odorless gas, forms bubbles in water."
+  },
+  "iron(II)_chloride_solution": {
+    "formula": "FeCl2(aq)",
+    "molar_mass": 126.75,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Iron(II) chloride solution, pale green aqueous solution."
+  },
+  "iron(III)_chloride_solution": {
+    "formula": "FeCl3(aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      180,
+      80,
+      100
+    ],
+    "description": "Iron(III) chloride solution, yellow-brown aqueous solution."
+  },
+  "iron(III)_nitrate_solution": {
+    "formula": "Fe(NO3)3(aq)",
+    "molar_mass": 241.86,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      180,
+      80,
+      100
+    ],
+    "description": "Iron(III) nitrate solution, yellow-brown aqueous solution."
+  },
+  "copper(II)_sulfate_solution": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      180,
+      220,
+      100
+    ],
+    "description": "Copper(II) sulfate solution, blue aqueous solution."
+  },
+  "copper(II)_chloride_solution": {
+    "formula": "CuCl2(aq)",
+    "molar_mass": 134.45,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      180,
+      220,
+      100
+    ],
+    "description": "Copper(II) chloride solution, blue-green aqueous solution."
+  },
+  "zinc_sulfate_solution": {
+    "formula": "ZnSO4(aq)",
+    "molar_mass": 161.47,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Zinc sulfate solution, colorless aqueous solution."
+  },
+  "zinc_chloride_solution": {
+    "formula": "ZnCl2(aq)",
+    "molar_mass": 136.29,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Zinc chloride solution, colorless aqueous solution."
+  },
+  "aluminum_sulfate_solution": {
+    "formula": "Al2(SO4)3(aq)",
+    "molar_mass": 342.15,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Aluminum sulfate solution, colorless aqueous solution."
+  },
+  "aluminum_chloride_solution": {
+    "formula": "AlCl3(aq)",
+    "molar_mass": 133.34,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Aluminum chloride solution, colorless aqueous solution."
+  },
+  "magnesium_sulfate_solution": {
+    "formula": "MgSO4(aq)",
+    "molar_mass": 120.37,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Magnesium sulfate solution, colorless aqueous solution."
+  },
+  "magnesium_chloride_solution": {
+    "formula": "MgCl2(aq)",
+    "molar_mass": 95.21,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      100
+    ],
+    "description": "Magnesium chloride solution, colorless aqueous solution."
+  },
+  "clay_red": {
+    "formula": "clay_red",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      220,
+      20,
+      60,
+      255
+    ],
+    "description": "Red modeling clay, used to represent hydrogen atoms in molecular models."
+  },
+  "clay_white": {
+    "formula": "clay_white",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White modeling clay, used to represent oxygen atoms in molecular models."
+  },
+  "clay_black": {
+    "formula": "clay_black",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      30,
+      30,
+      30,
+      255
+    ],
+    "description": "Black modeling clay, used to represent carbon atoms in molecular models."
+  },
+  "clay_green": {
+    "formula": "clay_green",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      0,
+      128,
+      0,
+      255
+    ],
+    "description": "Green modeling clay, used to represent chlorine atoms in molecular models."
+  },
+  "toothpick": {
+    "formula": "toothpick",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      222,
+      184,
+      135,
+      255
+    ],
+    "description": "Wooden toothpick, used to represent chemical bonds between atoms in molecular models."
+  },
+  "H2_model": {
+    "formula": "clay_red2_toothpick1",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      220,
+      20,
+      60,
+      255
+    ],
+    "description": "Molecular model of H₂: two red clay spheres connected by one toothpick."
+  },
+  "Cl2_model": {
+    "formula": "clay_green2_toothpick1",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      0,
+      128,
+      0,
+      255
+    ],
+    "description": "Molecular model of Cl₂: two green clay spheres connected by one toothpick."
+  },
+  "H2O_model": {
+    "formula": "clay_red2_clay_white1_toothpick2",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      220,
+      20,
+      60,
+      255
+    ],
+    "description": "Molecular model of H₂O: one white clay sphere (O) connected to two red clay spheres (H) by two toothpicks at 105°."
+  },
+  "CO2_model": {
+    "formula": "clay_black1_clay_white2_toothpick2",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      30,
+      30,
+      30,
+      255
+    ],
+    "description": "Molecular model of CO₂: one black clay sphere (C) connected linearly to two white clay spheres (O) by two toothpicks (180°)."
+  },
+  "NH3_model": {
+    "formula": "clay_white1_clay_red3_toothpick3",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Molecular model of NH₃: one white clay sphere (N) connected to three red clay spheres (H) by three toothpicks in a trigonal pyramidal geometry."
+  },
+  "CH4_model": {
+    "formula": "clay_black1_clay_red4_toothpick4",
+    "molar_mass": 0.0,
+    "state": "s",
+    "color_rgb": [
+      30,
+      30,
+      30,
+      255
+    ],
+    "description": "Molecular model of CH₄: one black clay sphere (C) connected to four red clay spheres (H) by four toothpicks in a tetrahedral geometry."
+  },
+  "Sodium": {
+    "formula": "Na",
+    "molar_mass": 22.99,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "A soft, silvery-white, highly reactive metal. Freshly cut surfaces are shiny but quickly tarnish in air."
+  },
+  "Kerosene": {
+    "formula": "C12H26",
+    "molar_mass": 170.34,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      224,
+      255
+    ],
+    "description": "A clear, colorless to pale yellow liquid hydrocarbon mixture used as a solvent and fuel."
+  },
+  "Sodium Oxide": {
+    "formula": "Na2O",
+    "molar_mass": 61.98,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A white solid formed when sodium reacts with oxygen in air."
+  },
+  "Oxygen_Gas": {
+    "formula": "O2",
+    "molar_mass": 32.0,
+    "state": "g",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      0
+    ],
+    "description": "Oxygen gas, colorless, odorless, supports combustion."
+  },
+  "Wood_Char": {
+    "formula": "C",
+    "molar_mass": 12.01,
+    "state": "s",
+    "color_rgb": [
+      40,
+      40,
+      40,
+      0
+    ],
+    "description": "Charred carbon residue from partially burned wood, black solid."
+  },
+  "Carbon_Dioxide_Gas": {
+    "formula": "CO2",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "A colorless, odorless gas produced by combustion and respiration."
+  },
+  "mixed_solution": {
+    "formula": "Fe(NO3)3(aq)",
+    "molar_mass": 241.86,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      153,
+      255
+    ],
+    "description": "Aqueous solution of iron(III) nitrate, pale yellow color."
+  },
+  "iron_powder": {
+    "formula": "Fe(s)",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      180,
+      180,
+      180,
+      255
+    ],
+    "description": "Metallic iron powder, gray color."
+  },
+  "KSCN_solution_1M": {
+    "formula": "KSCN(aq)",
+    "molar_mass": 97.18,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of potassium thiocyanate, colorless."
+  },
+  "Fe2+": {
+    "formula": "Fe^{2+}",
+    "molar_mass": 55.85,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      230,
+      255,
+      128
+    ],
+    "description": "Iron(II) ion in aqueous solution; very pale green, almost colorless."
+  },
+  "Fe3+": {
+    "formula": "Fe^{3+}(aq)",
+    "molar_mass": 55.85,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      153,
+      255
+    ],
+    "description": "Aqueous iron(III) ion, pale yellow."
+  },
+  "[Fe(SCN)]2+": {
+    "formula": "[Fe(SCN)]^{2+}(aq)",
+    "molar_mass": 114.93,
+    "state": "aq",
+    "color_rgb": [
+      160,
+      0,
+      0,
+      255
+    ],
+    "description": "Aqueous solution of the blood-red iron(III) thiocyanate complex ion."
+  },
+  "Tea": {
+    "formula": "Tea",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      90,
+      60,
+      30,
+      255
+    ],
+    "description": "Aqueous extract of tea leaves, contains polyphenols (e.g., catechins, tannins), yellow-brown color."
+  },
+  "Mn2+": {
+    "formula": "Mn^{2+}",
+    "molar_mass": 54.94,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      180
+    ],
+    "description": "Manganese(II) ion, a nearly colorless to pale pink ion formed upon reduction of permanganate."
+  },
+  "Oxidized_Tea_Polyphenols": {
+    "formula": "Oxidized_Tea_Polyphenols",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      60,
+      40,
+      20,
+      255
+    ],
+    "description": "Oxidized products of tea polyphenols, may appear brown or colorless depending on concentration."
+  },
+  "NO2_gas": {
+    "formula": "NO2",
+    "molar_mass": 46.01,
+    "state": "g",
+    "color_rgb": [
+      150,
+      75,
+      0,
+      255
+    ],
+    "description": "Nitrogen dioxide, a reddish-brown toxic gas, formed by oxidation of NO."
+  },
+  "N2O4_gas": {
+    "formula": "N2O4",
+    "molar_mass": 92.011,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "Dinitrogen tetroxide gas; colorless to pale yellow, toxic."
+  },
+  "Charcoal": {
+    "formula": "C",
+    "molar_mass": 12.01,
+    "state": "s",
+    "color_rgb": [
+      54,
+      54,
+      54,
+      255
+    ],
+    "description": "Porous black solid, mainly carbon, used as fuel."
+  },
+  "Carbon Dioxide": {
+    "formula": "CO2",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, odorless gas; turns limewater milky due to formation of calcium carbonate."
+  },
+  "Benzene": {
+    "formula": "C6H6",
+    "molar_mass": 78.11,
+    "state": "l",
+    "color_rgb": [
+      230,
+      230,
+      250,
+      255
+    ],
+    "description": "A colorless, volatile, flammable liquid with a sweet odor. Immiscible with water, less dense than water."
+  },
+  "Toluene": {
+    "formula": "C7H8",
+    "molar_mass": 92.14,
+    "state": "l",
+    "color_rgb": [
+      230,
+      230,
+      250,
+      255
+    ],
+    "description": "A colorless, volatile, flammable liquid with a characteristic aromatic odor. Immiscible with water, less dense than water."
+  },
+  "Concentrated_Sulfuric_Acid": {
+    "formula": "H2SO4",
+    "molar_mass": 98.08,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, oily, highly corrosive liquid; strong acid and dehydrating agent."
+  },
+  "Biphenyl": {
+    "formula": "C12H10",
+    "molar_mass": 154.21,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A white crystalline solid, formed as a minor product in the sulfonation of benzene or toluene under strong conditions."
+  },
+  "Benzenesulfonic_Acid": {
+    "formula": "C6H5SO3H",
+    "molar_mass": 158.17,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      240,
+      255,
+      255
+    ],
+    "description": "A colorless to white crystalline solid, highly soluble in water, formed by sulfonation of benzene."
+  },
+  "Toluenesulfonic_Acid": {
+    "formula": "C7H7SO3H",
+    "molar_mass": 172.2,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      240,
+      255,
+      255
+    ],
+    "description": "A colorless to white crystalline solid, highly soluble in water, formed by sulfonation of toluene."
+  },
+  "Metallic_Sodium": {
+    "formula": "Na",
+    "molar_mass": 22.99,
+    "state": "s",
+    "color_rgb": [
+      194,
+      193,
+      185,
+      255
+    ],
+    "description": "Soft, silvery-white, highly reactive metal."
+  },
+  "Sodium_Oxide_Product": {
+    "formula": "Na2O",
+    "molar_mass": 61.98,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A white, ionic solid formed by the combustion of sodium in air. Reacts with water to form sodium hydroxide."
+  },
+  "NO2_N2O4_gas": {
+    "formula": "NO2 + N2O4",
+    "molar_mass": 46.01,
+    "state": "g",
+    "color_rgb": [
+      120,
+      60,
+      20,
+      180
+    ],
+    "description": "A gaseous mixture of nitrogen dioxide (NO₂, brown) and dinitrogen tetroxide (N₂O₄, colorless)."
+  },
+  "hot_water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      200,
+      230,
+      255,
+      180
+    ],
+    "description": "Liquid water at elevated temperature, used as a heat bath."
+  },
+  "ice_water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      180,
+      220,
+      255,
+      180
+    ],
+    "description": "Liquid water with ice, used as a cold bath."
+  },
+  "Sodium_Peroxide": {
+    "formula": "Na2O2",
+    "molar_mass": 77.98,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White to pale yellow solid, strong oxidizer, reacts with water to release oxygen."
+  },
+  "Phenolphthalein_solution": {
+    "formula": "C20H14O4 (in ethanol/water)",
+    "molar_mass": 318.33,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless solution; turns pink in alkaline solutions (pH > 8.2)."
+  },
+  "Na2CO3_aq": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Sodium carbonate dissolved in water, colorless solution, basic."
+  },
+  "NaHCO3_aq": {
+    "formula": "NaHCO3(aq)",
+    "molar_mass": 84.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Clear, colorless aqueous solution, weakly alkaline."
+  },
+  "Iron_wire": {
+    "formula": "Fe(s)",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      128,
+      128,
+      128,
+      255
+    ],
+    "description": "Solid iron wire, metallic gray."
+  },
+  "Iron(III)_oxide": {
+    "formula": "Fe2O3",
+    "molar_mass": 159.69,
+    "state": "s",
+    "color_rgb": [
+      180,
+      60,
+      30,
+      255
+    ],
+    "description": "A reddish-brown solid formed from the combustion of iron in oxygen."
+  },
+  "Na2O": {
+    "formula": "Na2O",
+    "molar_mass": 61.98,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium oxide, a white solid formed at very high temperatures."
+  },
+  "potassium_permanganate": {
+    "formula": "KMnO4",
+    "molar_mass": 158.04,
+    "state": "s",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Potassium permanganate is a deep purple crystalline solid, strong oxidizer, used here as the oxygen source."
+  },
+  "potassium_manganate": {
+    "formula": "K2MnO4",
+    "molar_mass": 197.14,
+    "state": "s",
+    "color_rgb": [
+      34,
+      139,
+      34,
+      255
+    ],
+    "description": "Potassium manganate is a green solid, formed as a product in the thermal decomposition of potassium permanganate."
+  },
+  "manganese_dioxide": {
+    "formula": "MnO2",
+    "molar_mass": 86.94,
+    "state": "s",
+    "color_rgb": [
+      60,
+      60,
+      60,
+      255
+    ],
+    "description": "Manganese dioxide is a brown-black solid, also produced in the decomposition reaction."
+  },
+  "oxygen": {
+    "formula": "O2",
+    "molar_mass": 32.0,
+    "state": "g",
+    "color_rgb": [
+      200,
+      255,
+      255,
+      255
+    ],
+    "description": "Diatomic oxygen gas, colorless, essential for rusting."
+  },
+  "Dilute_Na2CO3": {
+    "formula": "Na2CO3",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Dilute aqueous solution of sodium carbonate, colorless, weakly basic."
+  },
+  "zinc": {
+    "formula": "Zn",
+    "molar_mass": 65.38,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "A bluish-silver metal, solid at room temperature."
+  },
+  "chlorine_gas": {
+    "formula": "Cl2",
+    "molar_mass": 70.9,
+    "state": "g",
+    "color_rgb": [
+      200,
+      255,
+      0,
+      180
+    ],
+    "description": "A yellow-green, toxic gas with a pungent odor."
+  },
+  "zinc_sulfate": {
+    "formula": "ZnSO4(aq)",
+    "molar_mass": 161.47,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Zinc sulfate, colorless aqueous solution."
+  },
+  "hydrogen_chloride_gas": {
+    "formula": "HCl",
+    "molar_mass": 36.46,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      100
+    ],
+    "description": "A colorless, pungent gas that forms white fumes in moist air."
+  },
+  "Na2CO3_Solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of sodium carbonate, colorless."
+  },
+  "AgNO3_Solution": {
+    "formula": "AgNO3(aq)",
+    "molar_mass": 169.87,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of silver nitrate, colorless."
+  },
+  "Dilute_HNO3": {
+    "formula": "HNO3(aq)",
+    "molar_mass": 63.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Dilute nitric acid solution, colorless, corrosive."
+  },
+  "AgCl_Precipitate": {
+    "formula": "AgCl(s)",
+    "molar_mass": 143.32,
+    "state": "s",
+    "color_rgb": [
+      230,
+      230,
+      230,
+      255
+    ],
+    "description": "Silver chloride, white precipitate, insoluble in water."
+  },
+  "Ag2CO3_Precipitate": {
+    "formula": "Ag2CO3(s)",
+    "molar_mass": 275.75,
+    "state": "s",
+    "color_rgb": [
+      245,
+      245,
+      220,
+      255
+    ],
+    "description": "Silver carbonate, pale yellow precipitate, insoluble in water."
+  },
+  "CO2_Gas": {
+    "formula": "CO2(g)",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "Carbon dioxide gas, colorless and odorless."
+  },
+  "Zn_granules": {
+    "formula": "Zn",
+    "molar_mass": 65.38,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Metallic zinc granules, silver-gray solid."
+  },
+  "H2SO4_1M": {
+    "formula": "H2SO4",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "1 mol/L aqueous sulfuric acid solution, colorless liquid."
+  },
+  "H2SO4_4M": {
+    "formula": "H2SO4",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "4 mol/L aqueous sulfuric acid solution, colorless liquid."
+  },
+  "ZnSO4": {
+    "formula": "ZnSO4",
+    "molar_mass": 161.47,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      240,
+      255,
+      255
+    ],
+    "description": "Zinc sulfate, colorless aqueous solution."
+  },
+  "Phenolphthalein_Solution": {
+    "formula": "C20H14O4 (in H2O)",
+    "molar_mass": 318.32,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of phenolphthalein, colorless in neutral/acidic, pink in basic."
+  },
+  "Hydrogen_Gas": {
+    "formula": "H2",
+    "molar_mass": 2.016,
+    "state": "g",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      0
+    ],
+    "description": "Hydrogen gas, colorless, odorless, highly flammable."
+  },
+  "NO2_N2O4_Mixture": {
+    "formula": "NO2 + N2O4",
+    "molar_mass": null,
+    "state": "g",
+    "color_rgb": [
+      150,
+      75,
+      0,
+      128
+    ],
+    "description": "Mixture of nitrogen dioxide (brown gas) and dinitrogen tetroxide (colorless gas)."
+  },
+  "NO2": {
+    "formula": "NO2",
+    "molar_mass": 46.0055,
+    "state": "g",
+    "color_rgb": [
+      150,
+      75,
+      0,
+      255
+    ],
+    "description": "Nitrogen dioxide, brown gas."
+  },
+  "N2O4": {
+    "formula": "N2O4",
+    "molar_mass": 92.011,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Dinitrogen tetroxide, colorless gas."
+  },
+  "Bromoethane": {
+    "formula": "C2H5Br",
+    "molar_mass": 108.97,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, volatile liquid with an ether-like odor. Used as an alkylating agent."
+  },
+  "NaOH_5percent": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "5% aqueous sodium hydroxide solution, colorless, strongly alkaline."
+  },
+  "AgNO3_solution": {
+    "formula": "AgNO3(aq)",
+    "molar_mass": 169.87,
+    "state": "aq",
+    "color_rgb": [
+      192,
+      192,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of silver nitrate, colorless."
+  },
+  "Sodium_bromide_solution": {
+    "formula": "NaBr(aq)",
+    "molar_mass": 102.89,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous sodium bromide, colorless, formed from nucleophilic substitution."
+  },
+  "Ethanol_solution": {
+    "formula": "C2H5OH(aq)",
+    "molar_mass": 46.07,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous ethanol, colorless, formed as a product in the reaction."
+  },
+  "Silver_bromide_precipitate": {
+    "formula": "AgBr(s)",
+    "molar_mass": 187.77,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      160,
+      255
+    ],
+    "description": "Pale yellow, insoluble precipitate of silver bromide."
+  },
+  "AcOH_solution": {
+    "formula": "CH3COOH(aq)",
+    "molar_mass": 60.05,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      240,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of acetic acid (ethanoic acid), weak acid, colorless, with a characteristic vinegar odor."
+  },
+  "Fe": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      180,
+      180,
+      180,
+      255
+    ],
+    "description": "Iron metal; gray solid."
+  },
+  "FeCl2": {
+    "formula": "FeCl2(aq)",
+    "molar_mass": 126.75,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Iron(II) chloride in aqueous solution, pale green."
+  },
+  "Fe(CH3COO)2": {
+    "formula": "Fe(CH3COO)2(aq)",
+    "molar_mass": 173.93,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      200,
+      255
+    ],
+    "description": "Iron(II) acetate in aqueous solution, colorless to pale green."
+  },
+  "Solid_Fuchsin": {
+    "formula": "C20H19N3·HCl",
+    "molar_mass": 337.85,
+    "state": "s",
+    "color_rgb": [
+      180,
+      0,
+      120,
+      255
+    ],
+    "description": "Dark purple-red crystalline solid; dye known as fuchsin."
+  },
+  "Fuchsin_Solution": {
+    "formula": "C20H19N3·HCl (aq)",
+    "molar_mass": 337.85,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      0,
+      90,
+      255
+    ],
+    "description": "Aqueous solution of fuchsin (rosaniline hydrochloride); vivid magenta color, used as an indicator for SO2."
+  },
+  "FeCl3_solution": {
+    "formula": "FeCl3(aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      204,
+      0,
+      255
+    ],
+    "description": "Aqueous solution of ferric chloride, yellow color."
+  },
+  "FeSO4_solution": {
+    "formula": "FeSO4(aq)",
+    "molar_mass": 151.91,
+    "state": "aq",
+    "color_rgb": [
+      176,
+      224,
+      230,
+      255
+    ],
+    "description": "Aqueous solution of iron(II) sulfate, pale green in color."
+  },
+  "Distilled_water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Colorless, odorless liquid. Universal solvent."
+  },
+  "Fe(OH)3_precipitate": {
+    "formula": "Fe(OH)3",
+    "molar_mass": 106.87,
+    "state": "s",
+    "color_rgb": [
+      150,
+      80,
+      40,
+      255
+    ],
+    "description": "Iron(III) hydroxide, reddish-brown precipitate."
+  },
+  "Fe(OH)2_precipitate": {
+    "formula": "Fe(OH)2(s)",
+    "molar_mass": 89.86,
+    "state": "s",
+    "color_rgb": [
+      180,
+      255,
+      180,
+      255
+    ],
+    "description": "Ferrous hydroxide precipitate, pale green solid, easily oxidized in air."
+  },
+  "Acetic_Acid_Solution": {
+    "formula": "CH3COOH(aq)",
+    "molar_mass": 60.05,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of acetic acid (vinegar), colorless, weakly acidic."
+  },
+  "Sodium_Acetate_Solution": {
+    "formula": "CH3COONa(aq)",
+    "molar_mass": 82.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium acetate, colorless, formed as a product."
+  },
+  "FeCl2_solution": {
+    "formula": "FeCl2(aq)",
+    "molar_mass": 126.75,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ferrous chloride, colorless to pale green."
+  },
+  "KSCN_solution": {
+    "formula": "KSCN(aq)",
+    "molar_mass": 97.18,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous potassium thiocyanate solution, colorless."
+  },
+  "Fe(SCN)3_solution": {
+    "formula": "Fe(SCN)3(aq)",
+    "molar_mass": 245.14,
+    "state": "aq",
+    "color_rgb": [
+      178,
+      34,
+      34,
+      255
+    ],
+    "description": "Aqueous solution of ferric thiocyanate, deep blood-red color."
+  },
+  "CuSO4": {
+    "formula": "CuSO4",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      153,
+      255,
+      255
+    ],
+    "description": "Copper(II) sulfate, blue aqueous solution."
+  },
+  "CuCl2_2H2O": {
+    "formula": "CuCl2·2H2O",
+    "molar_mass": 170.48,
+    "state": "s",
+    "color_rgb": [
+      80,
+      200,
+      120,
+      255
+    ],
+    "description": "Copper(II) chloride dihydrate, greenish crystalline solid, soluble in water to form a blue-green solution."
+  },
+  "CuBr2": {
+    "formula": "CuBr2",
+    "molar_mass": 223.36,
+    "state": "s",
+    "color_rgb": [
+      139,
+      69,
+      19,
+      255
+    ],
+    "description": "Copper(II) bromide, brown solid, soluble in water to form a pale blue solution."
+  },
+  "K2SO4": {
+    "formula": "K2SO4",
+    "molar_mass": 174.26,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Potassium sulfate, white crystalline solid, soluble in water to form a colorless solution."
+  },
+  "KBr": {
+    "formula": "KBr",
+    "molar_mass": 119.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Potassium bromide, white crystalline solid, soluble in water to form a colorless solution."
+  },
+  "CuSO4_aq": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      191,
+      255,
+      255
+    ],
+    "description": "Aqueous copper(II) sulfate solution, bright blue color due to [Cu(H2O)6]2+."
+  },
+  "CuCl2_2H2O_aq": {
+    "formula": "CuCl2(aq)",
+    "molar_mass": 170.48,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      191,
+      255,
+      255
+    ],
+    "description": "Aqueous copper(II) chloride solution, blue-green color due to [Cu(H2O)6]2+ and [CuCl4]2-."
+  },
+  "CuBr2_aq": {
+    "formula": "CuBr2(aq)",
+    "molar_mass": 223.36,
+    "state": "aq",
+    "color_rgb": [
+      135,
+      206,
+      250,
+      255
+    ],
+    "description": "Aqueous copper(II) bromide solution, pale blue color due to [Cu(H2O)6]2+."
+  },
+  "NaCl_aq": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride; colorless solution."
+  },
+  "K2SO4_aq": {
+    "formula": "K2SO4(aq)",
+    "molar_mass": 174.26,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous potassium sulfate solution, colorless."
+  },
+  "KBr_aq": {
+    "formula": "KBr(aq)",
+    "molar_mass": 119.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous potassium bromide solution, colorless."
+  },
+  "Mg(OH)2": {
+    "formula": "Mg(OH)2",
+    "molar_mass": 58.32,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, slightly soluble solid; magnesium hydroxide."
+  },
+  "MgCl2": {
+    "formula": "MgCl2",
+    "molar_mass": 95.21,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Magnesium chloride, colorless and highly soluble in water (aqueous solution)."
+  },
+  "Acidic_K2Cr2O7_Solution": {
+    "formula": "K2Cr2O7(aq) + H2SO4(aq)",
+    "molar_mass": 294.18,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      140,
+      0,
+      255
+    ],
+    "description": "Aqueous solution of potassium dichromate in sulfuric acid; orange color, strong oxidizing agent."
+  },
+  "Cr3+_Solution": {
+    "formula": "Cr^{3+}(aq)",
+    "molar_mass": 51.996,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      128,
+      128,
+      255
+    ],
+    "description": "Aqueous chromium(III) ion; blue-green color."
+  },
+  "Acetaldehyde": {
+    "formula": "CH3CHO",
+    "molar_mass": 44.05,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Acetaldehyde, a colorless liquid, product of ethanol oxidation."
+  },
+  "Potassium_Sulfate_Solution": {
+    "formula": "K2SO4(aq)",
+    "molar_mass": 174.26,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous potassium sulfate, colorless solution."
+  },
+  "Fe_powder": {
+    "formula": "Fe(s)",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      128,
+      128,
+      128,
+      255
+    ],
+    "description": "Iron powder, metallic gray solid."
+  },
+  "chlorine_water": {
+    "formula": "Cl2(aq)",
+    "molar_mass": 70.9,
+    "state": "aq",
+    "color_rgb": [
+      204,
+      255,
+      255,
+      128
+    ],
+    "description": "Aqueous chlorine, pale yellow-green solution."
+  },
+  "Fe(SCN)2_solution": {
+    "formula": "Fe(SCN)2(aq)",
+    "molar_mass": 187.09,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      0,
+      0,
+      255
+    ],
+    "description": "Aqueous solution of ferrous thiocyanate, red color."
+  },
+  "Cu2plus_solution": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) sulfate, containing Cu2+ ions, blue color."
+  },
+  "Ammonia_solution_1M": {
+    "formula": "NH3(aq)",
+    "molar_mass": 17.03,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "1 mol/L aqueous ammonia (ammonium hydroxide), colorless."
+  },
+  "Ethanol_95percent": {
+    "formula": "C2H5OH(aq)",
+    "molar_mass": 46.07,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "95% ethanol in water, colorless liquid."
+  },
+  "Cu(NH3)4_2plus_complex": {
+    "formula": "[Cu(NH3)4]^{2+}(aq)",
+    "molar_mass": 170.71,
+    "state": "aq",
+    "color_rgb": [
+      60,
+      0,
+      180,
+      255
+    ],
+    "description": "Tetraamminecopper(II) complex ion, deep blue solution."
+  },
+  "Solution_A": {
+    "formula": "Solution_A",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution labeled Solution_A; exact composition unspecified."
+  },
+  "Solution_B": {
+    "formula": "Solution_B",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution labeled Solution_B; exact composition unspecified."
+  },
+  "Solution_C": {
+    "formula": "Solution_C",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution labeled Solution_C; exact composition unspecified."
+  },
+  "Product_X": {
+    "formula": "Product_X",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Product formed from the reaction of Solution_A, Solution_B, and Solution_C; exact identity unspecified."
+  },
+  "Fe3_solution": {
+    "formula": "Fe^{3+}(aq)",
+    "molar_mass": 55.85,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ferric ions (Fe3+), typically colorless to pale yellow."
+  },
+  "SCN_solution": {
+    "formula": "SCN^{-}(aq)",
+    "molar_mass": 58.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of thiocyanate ions (SCN-), colorless."
+  },
+  "NaOH_solution_5_percent": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "5% sodium hydroxide aqueous solution; colorless, caustic, alkaline."
+  },
+  "Aluminum_piece": {
+    "formula": "Al(s)",
+    "molar_mass": 26.98,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Solid aluminum metal, silver-gray, lightweight."
+  },
+  "AlCl3_solution": {
+    "formula": "AlCl3(aq)",
+    "molar_mass": 133.34,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      248,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of aluminum chloride, colorless."
+  },
+  "H2_gas": {
+    "formula": "H2(g)",
+    "molar_mass": 2.02,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrogen gas, colorless, odorless."
+  },
+  "Sample_Liquid": {
+    "formula": "Sample_Liquid",
+    "molar_mass": 0.0,
+    "state": "l",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "A generic sample liquid used in the experiment. Exact composition unspecified."
+  },
+  "Al_piece_1": {
+    "formula": "Al(s)",
+    "molar_mass": 26.98,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Solid aluminum metal, silvery-gray, may have a thin oxide layer."
+  },
+  "Al_piece_2": {
+    "formula": "Al(s)",
+    "molar_mass": 26.98,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Solid aluminum metal, silvery-gray, surface oxide layer removed by sanding."
+  },
+  "NaAlO2_solution": {
+    "formula": "NaAlO2(aq)",
+    "molar_mass": 81.97,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium aluminate, colorless."
+  },
+  "Phenol_Solution": {
+    "formula": "C6H5OH(aq)",
+    "molar_mass": 94.11,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of phenol; typically colorless or very pale yellow."
+  },
+  "Bromine_Water": {
+    "formula": "Br2(aq)",
+    "molar_mass": 159.81,
+    "state": "aq",
+    "color_rgb": [
+      150,
+      60,
+      0,
+      128
+    ],
+    "description": "Aqueous solution of bromine, typically reddish-brown in color."
+  },
+  "2,4,6-Tribromophenol": {
+    "formula": "C6H2Br3OH(s)",
+    "molar_mass": 330.8,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White solid precipitate formed by bromination of phenol."
+  },
+  "Hydrobromic_Acid": {
+    "formula": "HBr(aq)",
+    "molar_mass": 80.91,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrobromic acid, colorless solution formed as a byproduct."
+  },
+  "AgCl_precipitate": {
+    "formula": "AgCl(s)",
+    "molar_mass": 143.32,
+    "state": "s",
+    "color_rgb": [
+      230,
+      230,
+      230,
+      255
+    ],
+    "description": "Silver chloride, white precipitate."
+  },
+  "Ammonia_solution_1mol_L": {
+    "formula": "NH3(aq)",
+    "molar_mass": 17.03,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ammonia at 1 mol/L concentration, colorless with a pungent odor."
+  },
+  "Diamminesilver_complex_aq": {
+    "formula": "[Ag(NH3)2]Cl(aq)",
+    "molar_mass": 181.58,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous diamminesilver(I) chloride complex, colorless, formed when AgCl dissolves in excess ammonia."
+  },
+  "FeCl3_Solution": {
+    "formula": "FeCl3 (aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      204,
+      0,
+      255
+    ],
+    "description": "Ferric chloride aqueous solution; yellow-brown."
+  },
+  "Purple_Complex_Solution": {
+    "formula": "[Fe(C6H5O)6]3-(aq)",
+    "molar_mass": 637.41,
+    "state": "aq",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Aqueous solution containing the iron(III)-phenol complex; exhibits a purple coloration."
+  },
+  "AgNO3_solution_2pct": {
+    "formula": "AgNO3(aq), 2%",
+    "molar_mass": 169.87,
+    "state": "aq",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "2% aqueous solution of silver nitrate; colorless, transparent liquid."
+  },
+  "NH3_H2O_2pct": {
+    "formula": "NH3·H2O(aq), 2%",
+    "molar_mass": 35.05,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "2% aqueous ammonia solution; colorless, transparent liquid with pungent odor."
+  },
+  "CH3CHO": {
+    "formula": "CH3CHO",
+    "molar_mass": 44.05,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Acetaldehyde; colorless, volatile liquid with pungent, fruity odor."
+  },
+  "tap_water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      200,
+      225,
+      255,
+      255
+    ],
+    "description": "Tap water; clear, colorless liquid."
+  },
+  "Ag(NH3)2NO3_solution": {
+    "formula": "[Ag(NH3)2]NO3(aq)",
+    "molar_mass": 204.91,
+    "state": "aq",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Diamminesilver(I) nitrate solution; colorless, transparent liquid, also known as Tollens' reagent."
+  },
+  "Ag_mirror": {
+    "formula": "Ag",
+    "molar_mass": 107.87,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Silver metal, forms a mirror-like coating on glass."
+  },
+  "NaOH_10pct_solution": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "10% (w/v) aqueous sodium hydroxide solution, colorless, strongly basic."
+  },
+  "CuSO4_5pct_solution": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "5% (w/v) aqueous copper(II) sulfate solution, blue color."
+  },
+  "Acetaldehyde_solution": {
+    "formula": "CH3CHO(aq)",
+    "molar_mass": 44.05,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of acetaldehyde (ethanal), colorless, pungent odor."
+  },
+  "Cu2O_precipitate": {
+    "formula": "Cu2O",
+    "molar_mass": 143.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      100,
+      0,
+      255
+    ],
+    "description": "Copper(I) oxide, brick-red precipitate formed in the Benedict's/Biuret test for reducing sugars."
+  },
+  "Sodium_sulfate_solution": {
+    "formula": "Na2SO4(aq)",
+    "molar_mass": 142.04,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium sulfate, colorless solution."
+  },
+  "Sodium_acetate_solution": {
+    "formula": "CH3COONa(aq)",
+    "molar_mass": 82.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium acetate, colorless solution."
+  },
+  "Ethanol_anhydrous": {
+    "formula": "C2H5OH",
+    "molar_mass": 46.07,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A clear, colorless, volatile liquid; anhydrous ethanol is used as a solvent and reactant."
+  },
+  "Bromobutane_1": {
+    "formula": "C4H9Br",
+    "molar_mass": 137.02,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "1-Bromobutane, a colorless liquid, is a primary alkyl halide used in organic synthesis."
+  },
+  "Boiling_Stones": {
+    "formula": "SiO2",
+    "molar_mass": 60.08,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Inert porous stones (usually silica) added to liquids to ensure smooth boiling."
+  },
+  "Acidic_KMnO4": {
+    "formula": "KMnO4 (aq, acidic)",
+    "molar_mass": 158.04,
+    "state": "aq",
+    "color_rgb": [
+      150,
+      0,
+      200,
+      180
+    ],
+    "description": "A purple solution of potassium permanganate in acidic medium, used as an oxidizing agent."
+  },
+  "Butene_1": {
+    "formula": "C4H8",
+    "molar_mass": 56.11,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "1-Butene, a colorless flammable gas with a faint odor, is an alkene produced by elimination reactions."
+  },
+  "Hydrogen_Bromide": {
+    "formula": "HBr",
+    "molar_mass": 80.91,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrogen bromide, a colorless gas with a pungent smell, forms hydrobromic acid in water."
+  },
+  "NH4Cl": {
+    "formula": "NH4Cl",
+    "molar_mass": 53.49,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Ammonium chloride, white crystalline solid, soluble in water."
+  },
+  "CH3COONa": {
+    "formula": "CH3COONa",
+    "molar_mass": 82.03,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium acetate, white crystalline solid, used as buffer."
+  },
+  "(NH4)2SO4": {
+    "formula": "(NH4)2SO4",
+    "molar_mass": 132.14,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Ammonium sulfate, white crystalline solid, used as fertilizer."
+  },
+  "NH4Cl_aq": {
+    "formula": "NH4Cl(aq)",
+    "molar_mass": 53.49,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Ammonium chloride dissolved in water, colorless solution, acidic."
+  },
+  "KNO3_aq": {
+    "formula": "KNO3(aq)",
+    "molar_mass": 101.1,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Potassium nitrate dissolved in water, colorless solution, neutral."
+  },
+  "CH3COONa_aq": {
+    "formula": "CH3COONa(aq)",
+    "molar_mass": 82.03,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Sodium acetate dissolved in water, colorless solution, basic."
+  },
+  "(NH4)2SO4_aq": {
+    "formula": "(NH4)2SO4(aq)",
+    "molar_mass": 132.14,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Ammonium sulfate dissolved in water, colorless solution, acidic."
+  },
+  "Fe2_SO4_3_solution": {
+    "formula": "Fe2(SO4)3(aq)",
+    "molar_mass": 399.88,
+    "state": "aq",
+    "color_rgb": [
+      204,
+      102,
+      0,
+      255
+    ],
+    "description": "Aqueous solution of ferric sulfate, typically pale yellow to brown, acidic, hydrolyzes in water."
+  },
+  "dilute_H2SO4": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Dilute sulfuric acid, colorless aqueous solution."
+  },
+  "FeOH3_precipitate": {
+    "formula": "Fe(OH)3(s)",
+    "molar_mass": 106.87,
+    "state": "s",
+    "color_rgb": [
+      153,
+      102,
+      51,
+      255
+    ],
+    "description": "Ferric hydroxide, reddish-brown precipitate, forms upon hydrolysis of Fe3+ in water."
+  },
+  "H_plus": {
+    "formula": "H+(aq)",
+    "molar_mass": 1.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrogen ion (proton) in aqueous solution, responsible for acidity."
+  },
+  "SO4_2_minus": {
+    "formula": "SO4^{2-}(aq)",
+    "molar_mass": 96.06,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      0
+    ],
+    "description": "Sulfate ion in aqueous solution."
+  },
+  "formic_acid_solution": {
+    "formula": "HCOOH(aq)",
+    "molar_mass": 46.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of formic acid, a colorless liquid with a pungent odor."
+  },
+  "benzoic_acid_solution": {
+    "formula": "C6H5COOH(aq)",
+    "molar_mass": 122.12,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of benzoic acid, a colorless or white crystalline solid, slightly soluble in water."
+  },
+  "acetic_acid_solution": {
+    "formula": "CH3COOH(aq)",
+    "molar_mass": 60.05,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of acetic acid, a colorless liquid with a strong vinegar odor."
+  },
+  "sodium_carbonate_solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium carbonate, a colorless solution of a white crystalline solid."
+  },
+  "sodium_bicarbonate_solution": {
+    "formula": "NaHCO3(aq)",
+    "molar_mass": 84.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium bicarbonate, a colorless solution of a white crystalline solid."
+  },
+  "sodium_phenoxide_solution": {
+    "formula": "C6H5ONa(aq)",
+    "molar_mass": 116.09,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium phenoxide, a colorless to pale yellow solution."
+  },
+  "carbon_dioxide_gas": {
+    "formula": "CO2(g)",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "Carbon dioxide gas, colorless and odorless."
+  },
+  "sodium_formate_solution": {
+    "formula": "HCOONa(aq)",
+    "molar_mass": 68.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium formate, a colorless solution."
+  },
+  "sodium_benzoate_solution": {
+    "formula": "C6H5COONa(aq)",
+    "molar_mass": 144.11,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium benzoate, a colorless solution."
+  },
+  "sodium_acetate_solution": {
+    "formula": "CH3COONa(aq)",
+    "molar_mass": 82.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium acetate, a colorless solution."
+  },
+  "sodium_carbonate_solid": {
+    "formula": "Na2CO3(s)",
+    "molar_mass": 105.99,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Solid sodium carbonate, white crystalline powder."
+  },
+  "sodium_bicarbonate_solid": {
+    "formula": "NaHCO3(s)",
+    "molar_mass": 84.01,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Solid sodium bicarbonate, white crystalline powder."
+  },
+  "phenol_solution": {
+    "formula": "C6H5OH(aq)",
+    "molar_mass": 94.11,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of phenol, colorless to pale pink."
+  },
+  "ethyl_acetate_solution": {
+    "formula": "C4H8O2(aq)",
+    "molar_mass": 88.11,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of ethyl acetate, a colorless, volatile ester with a characteristic sweet smell."
+  },
+  "dilute_NaOH": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Dilute sodium hydroxide solution, colorless."
+  },
+  "phenolphthalein_indicator": {
+    "formula": "C20H14O4(aq)",
+    "molar_mass": 318.33,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      0,
+      255,
+      128
+    ],
+    "description": "Phenolphthalein indicator, colorless in acidic/neutral solution, pink in basic solution."
+  },
+  "ethanol": {
+    "formula": "C2H5OH",
+    "molar_mass": 46.07,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, volatile, flammable liquid; common alcohol used as a solvent and in beverages."
+  },
+  "acetic_acid": {
+    "formula": "CH3COOH",
+    "molar_mass": 60.05,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless liquid with a pungent smell; main component of vinegar."
+  },
+  "sodium_acetate": {
+    "formula": "CH3COONa(aq)",
+    "molar_mass": 82.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Sodium acetate, a colorless, water-soluble salt."
+  },
+  "sodium_chloride": {
+    "formula": "NaCl(aq)",
+    "molar_mass": 58.44,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Sodium chloride, common salt, soluble in water."
+  },
+  "Potassium_Alum": {
+    "formula": "KAl(SO4)2·12H2O",
+    "molar_mass": 474.39,
+    "state": "s",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Potassium alum, colorless or white crystalline solid, used for crystal growing."
+  },
+  "Chrome_Alum": {
+    "formula": "KCr(SO4)2·12H2O",
+    "molar_mass": 499.41,
+    "state": "s",
+    "color_rgb": [
+      90,
+      0,
+      120,
+      255
+    ],
+    "description": "Chrome alum, dark purple crystalline solid, used for crystal coating."
+  },
+  "Potassium_Alum_Crystal": {
+    "formula": "KAl(SO4)2·12H2O (crystal)",
+    "molar_mass": 474.39,
+    "state": "s",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Large, well-formed potassium alum crystal grown from solution."
+  },
+  "Chrome_Alum_Coated_Crystal": {
+    "formula": "KAl(SO4)2·12H2O@KCr(SO4)2·12H2O",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      120,
+      60,
+      160,
+      255
+    ],
+    "description": "Composite crystal with a potassium alum core and a chrome alum coating."
+  },
+  "Composite_Alum_Crystal": {
+    "formula": "KAl(SO4)2·12H2O@KCr(SO4)2·12H2O@KAl(SO4)2·12H2O",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      180,
+      120,
+      200,
+      255
+    ],
+    "description": "Composite crystal with alternating layers of potassium alum and chrome alum."
+  },
+  "NH3_solution": {
+    "formula": "NH3(aq)",
+    "molar_mass": 17.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous ammonia solution, colorless."
+  },
+  "Fe2(SO4)3_solution": {
+    "formula": "Fe2(SO4)3(aq)",
+    "molar_mass": 399.88,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous ferric sulfate solution, pale yellow."
+  },
+  "K3Fe(CN)6_solution": {
+    "formula": "K3[Fe(CN)6](aq)",
+    "molar_mass": 329.24,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous potassium ferricyanide solution, yellow."
+  },
+  "Cu(NH3)4^2+_complex": {
+    "formula": "[Cu(NH3)4]^2+(aq)",
+    "molar_mass": 170.71,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      0,
+      255,
+      255
+    ],
+    "description": "Tetraamminecopper(II) complex ion, deep blue solution."
+  },
+  "Fe(SCN)3_complex": {
+    "formula": "[Fe(SCN)3](aq)",
+    "molar_mass": 325.14,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      0,
+      0,
+      255
+    ],
+    "description": "Ferric thiocyanate complex, blood red solution."
+  },
+  "Prussian_blue": {
+    "formula": "Fe4[Fe(CN)6]3(s)",
+    "molar_mass": 859.23,
+    "state": "s",
+    "color_rgb": [
+      0,
+      51,
+      102,
+      255
+    ],
+    "description": "Prussian blue, deep blue precipitate."
+  },
+  "Saturated_Na2CO3_Solution": {
+    "formula": "Na2CO3(aq, sat)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      0
+    ],
+    "description": "A clear, colorless, saturated aqueous solution of sodium carbonate."
+  },
+  "Ethyl_Acetate": {
+    "formula": "CH3COOC2H5",
+    "molar_mass": 88.11,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless liquid with a pleasant, fruity odor; commonly used as a solvent; an ester."
+  },
+  "Sodium_Hydrogen_Carbonate": {
+    "formula": "NaHCO3",
+    "molar_mass": 84.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A white, crystalline, water-soluble solid; also known as baking soda."
+  },
+  "HCl_Solution": {
+    "formula": "HCl(aq)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of hydrochloric acid, colorless, strong acid."
+  },
+  "NaOH_Solution": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium hydroxide, strong base."
+  },
+  "Indicator": {
+    "formula": "Phenolphthalein",
+    "molar_mass": 318.32,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      0,
+      0,
+      255
+    ],
+    "description": "Phenolphthalein indicator, colorless in acid, pink/red in base."
+  },
+  "Unknown_Organic_1": {
+    "formula": "C2H5OH",
+    "molar_mass": 46.07,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Ethanol; colorless liquid, miscible with water."
+  },
+  "CuSO4_Solution_5percent": {
+    "formula": "CuSO4·5H2O (aq, 5%)",
+    "molar_mass": 249.68,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      128,
+      255,
+      255
+    ],
+    "description": "5% aqueous solution of copper(II) sulfate pentahydrate; blue solution."
+  },
+  "Unknown_Organic_2": {
+    "formula": "CH3COOH",
+    "molar_mass": 60.05,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Acetic acid; colorless liquid with pungent odor."
+  },
+  "NaHCO3_Solution": {
+    "formula": "NaHCO3 (aq)",
+    "molar_mass": 84.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium bicarbonate solution; colorless."
+  },
+  "Unknown_Organic_3": {
+    "formula": "CH3CHO",
+    "molar_mass": 44.05,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Acetaldehyde; colorless, volatile liquid."
+  },
+  "Tollens_Reagent": {
+    "formula": "[Ag(NH3)2]OH (aq)",
+    "molar_mass": 156.91,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Tollens' reagent; colorless, freshly prepared ammoniacal silver solution."
+  },
+  "Unknown_Organic_4": {
+    "formula": "C6H10",
+    "molar_mass": 82.15,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Cyclohexene; colorless liquid, faint odor."
+  },
+  "Acidified_KMnO4_Solution": {
+    "formula": "KMnO4 (aq, acidic)",
+    "molar_mass": 158.04,
+    "state": "aq",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Acidified potassium permanganate solution; deep purple."
+  },
+  "Unknown_Organic_5": {
+    "formula": "C6H5OH",
+    "molar_mass": 94.11,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Phenol; colorless to pale pink solid/liquid, distinctive odor."
+  },
+  "CO2_gas": {
+    "formula": "CO2",
+    "molar_mass": 44.01,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Carbon dioxide gas; colorless, odorless gas at room temperature."
+  },
+  "Ag_silver_mirror": {
+    "formula": "Ag",
+    "molar_mass": 107.87,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Silver metal; shiny, forms mirror on glass."
+  },
+  "MnO2_precipitate": {
+    "formula": "MnO2",
+    "molar_mass": 86.94,
+    "state": "s",
+    "color_rgb": [
+      80,
+      60,
+      20,
+      255
+    ],
+    "description": "Manganese dioxide; brown precipitate."
+  },
+  "Colored_Complex_Phenol_FeCl3": {
+    "formula": "[Fe(C6H5O)6]3-",
+    "molar_mass": 682.71,
+    "state": "aq",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Ferric phenolate complex; purple/violet color in solution."
+  },
+  "FeCl3_crystal": {
+    "formula": "FeCl3",
+    "molar_mass": 162.2,
+    "state": "s",
+    "color_rgb": [
+      180,
+      120,
+      40,
+      255
+    ],
+    "description": "Iron(III) chloride, orange-brown crystalline solid, highly soluble in water."
+  },
+  "Concentrated_HCl": {
+    "formula": "HCl (conc)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Concentrated hydrochloric acid, colorless, pungent odor."
+  },
+  "Saturated_FeCl3_solution": {
+    "formula": "FeCl3(aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      120,
+      40,
+      180
+    ],
+    "description": "Saturated aqueous solution of iron(III) chloride, yellow-brown color."
+  },
+  "Al2_SO4_3_1M_solution": {
+    "formula": "Al2(SO4)3(aq)",
+    "molar_mass": 342.15,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      220,
+      255
+    ],
+    "description": "1 mol/L aluminum sulfate solution, colorless to slightly cloudy."
+  },
+  "Soil_Suspension": {
+    "formula": "Soil",
+    "molar_mass": null,
+    "state": "s/l",
+    "color_rgb": [
+      120,
+      80,
+      40,
+      255
+    ],
+    "description": "Suspension of soil particles in water, brown and opaque."
+  },
+  "Saturated_Na2CO3_solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 106.0,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      240,
+      255
+    ],
+    "description": "Saturated sodium carbonate solution, colorless."
+  },
+  "FeOH3_colloid": {
+    "formula": "Fe(OH)3(colloid)",
+    "molar_mass": 106.87,
+    "state": "aq",
+    "color_rgb": [
+      150,
+      80,
+      40,
+      180
+    ],
+    "description": "Iron(III) hydroxide colloid, reddish-brown, forms in water upon hydrolysis of FeCl3."
+  },
+  "KBr_solution": {
+    "formula": "KBr(aq)",
+    "molar_mass": 119.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of potassium bromide; colorless and transparent."
+  },
+  "KI_solution": {
+    "formula": "KI(aq)",
+    "molar_mass": 166.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of potassium iodide; colorless and transparent."
+  },
+  "bromine_water": {
+    "formula": "Br2(aq)",
+    "molar_mass": 159.81,
+    "state": "aq",
+    "color_rgb": [
+      204,
+      102,
+      0,
+      128
+    ],
+    "description": "Aqueous bromine, orange-brown solution."
+  },
+  "Br2_solution": {
+    "formula": "Br2(aq)",
+    "molar_mass": 159.8,
+    "state": "aq",
+    "color_rgb": [
+      204,
+      102,
+      0,
+      255
+    ],
+    "description": "Bromine dissolved in water; orange-brown color."
+  },
+  "I2_solution": {
+    "formula": "I2(aq)",
+    "molar_mass": 253.8,
+    "state": "aq",
+    "color_rgb": [
+      102,
+      0,
+      102,
+      255
+    ],
+    "description": "Iodine dissolved in water; brown color."
+  },
+  "Natural_Water": {
+    "formula": "H2O + impurities",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      180,
+      210,
+      255,
+      255
+    ],
+    "description": "Natural water, such as lake or river water, typically contains suspended particles, colloids, and dissolved substances."
+  },
+  "Alum_Powder": {
+    "formula": "KAl(SO4)2·12H2O",
+    "molar_mass": 474.39,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "Alum powder, potassium aluminum sulfate dodecahydrate, commonly used as a coagulant in water purification."
+  },
+  "Flocculated_Impurities": {
+    "formula": "Impurity_flocs",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      120,
+      120,
+      120,
+      255
+    ],
+    "description": "Aggregated and precipitated impurities formed after alum-induced flocculation."
+  },
+  "silver_ammonia_solution": {
+    "formula": "[Ag(NH3)2]OH (aq)",
+    "molar_mass": 141.91,
+    "state": "aq",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Colorless, clear aqueous solution of diamminesilver(I) hydroxide, commonly called Tollens' reagent."
+  },
+  "glucose_solution_10_percent": {
+    "formula": "C6H12O6 (aq)",
+    "molar_mass": 180.16,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "10% (w/v) aqueous solution of D-glucose, colorless and clear."
+  },
+  "NaOH_solution_10_percent": {
+    "formula": "NaOH (aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "10% (w/v) aqueous solution of sodium hydroxide, colorless and clear."
+  },
+  "CuSO4_solution_5_percent": {
+    "formula": "CuSO4 (aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      128,
+      255,
+      255
+    ],
+    "description": "5% (w/v) aqueous solution of copper(II) sulfate, blue and clear."
+  },
+  "silver_mirror": {
+    "formula": "Ag (s)",
+    "molar_mass": 107.87,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Metallic silver deposited on the inner wall of the test tube, forming a mirror-like layer."
+  },
+  "copper_oxide": {
+    "formula": "Cu2O (s)",
+    "molar_mass": 143.09,
+    "state": "s",
+    "color_rgb": [
+      178,
+      34,
+      34,
+      255
+    ],
+    "description": "Red precipitate of copper(I) oxide."
+  },
+  "CuCl2_solution_25pct": {
+    "formula": "CuCl2(aq)",
+    "molar_mass": 134.45,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      128,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) chloride at 25% mass fraction; blue-green color."
+  },
+  "Cu(s)": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Solid copper metal; reddish color, deposited at cathode."
+  },
+  "Cl2(g)": {
+    "formula": "Cl2(g)",
+    "molar_mass": 70.9,
+    "state": "g",
+    "color_rgb": [
+      153,
+      204,
+      255,
+      128
+    ],
+    "description": "Chlorine gas; pale green, evolved at anode."
+  },
+  "Degreased_Cotton": {
+    "formula": "Protein (in cotton)",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Degreased cotton, mainly cellulose, but contains trace proteins for biuret test."
+  },
+  "CuSO4_Solution_5pct": {
+    "formula": "CuSO4·5H2O(aq)",
+    "molar_mass": 249.68,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "5% aqueous copper(II) sulfate pentahydrate, blue solution."
+  },
+  "Biuret_Complex": {
+    "formula": "[Cu(Protein)(OH)2]",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      150,
+      0,
+      200,
+      255
+    ],
+    "description": "Purple-colored biuret complex formed by reaction of protein peptide bonds with Cu2+ in alkaline solution."
+  },
+  "sample_liquid": {
+    "formula": "sample_liquid",
+    "molar_mass": 100.0,
+    "state": "l",
+    "color_rgb": [
+      180,
+      180,
+      180,
+      255
+    ],
+    "description": "A turbid or impure water sample containing suspended solids and/or other impurities; appears cloudy or colored depending on contamination."
+  },
+  "filtered_sample_liquid": {
+    "formula": "filtered_sample_liquid",
+    "molar_mass": 100.0,
+    "state": "l",
+    "color_rgb": [
+      220,
+      240,
+      255,
+      255
+    ],
+    "description": "The filtrate obtained after filtering the sample liquid; contains fewer suspended solids and appears clearer than the original sample."
+  },
+  "residue_on_filter_paper": {
+    "formula": "residue_on_filter_paper",
+    "molar_mass": 1.0,
+    "state": "s",
+    "color_rgb": [
+      120,
+      120,
+      120,
+      255
+    ],
+    "description": "Solid impurities or suspended particles retained on the filter paper after filtration; may appear as a gray or brown residue."
+  },
+  "dilute_CuSO4": {
+    "formula": "CuSO4",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "Dilute aqueous solution of copper(II) sulfate, pale blue."
+  },
+  "Fe2O3": {
+    "formula": "Fe2O3",
+    "molar_mass": 159.69,
+    "state": "s",
+    "color_rgb": [
+      180,
+      60,
+      30,
+      255
+    ],
+    "description": "Iron(III) oxide, reddish-brown solid (rust)."
+  },
+  "Cu": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Solid copper, reddish-brown metal deposited on the iron wire."
+  },
+  "FeSO4": {
+    "formula": "FeSO4",
+    "molar_mass": 151.91,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      220,
+      220,
+      255
+    ],
+    "description": "Iron(II) sulfate, pale green solution when dissolved."
+  },
+  "Saturated_Ammonium_Sulfate_Solution": {
+    "formula": "(NH4)2SO4 (sat'd aq)",
+    "molar_mass": 132.14,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "A clear, colorless to slightly cloudy saturated aqueous solution of ammonium sulfate."
+  },
+  "Egg_White_Solution": {
+    "formula": "Egg_White_Protein(aq)",
+    "molar_mass": 40000.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      180
+    ],
+    "description": "Aqueous solution of egg white proteins (mainly albumin), typically colorless to slightly cloudy."
+  },
+  "Protein_Precipitate": {
+    "formula": "Protein(s)",
+    "molar_mass": 40000.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, amorphous precipitate of denatured egg white protein formed by salting out."
+  },
+  "Zinc": {
+    "formula": "Zn",
+    "molar_mass": 65.38,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "A bluish-silver, lustrous metal, solid at room temperature."
+  },
+  "Dilute_Sulfuric_Acid": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.079,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sulfuric acid, colorless, strong electrolyte."
+  },
+  "Zinc_Sulfate": {
+    "formula": "ZnSO4(aq)",
+    "molar_mass": 161.47,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      100
+    ],
+    "description": "A colorless, water-soluble salt, present as an aqueous solution."
+  },
+  "Acidified_NaCl_solution": {
+    "formula": "NaCl(aq) + HCl(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Aqueous solution of 3% sodium chloride acidified with hydrochloric acid; clear and colorless."
+  },
+  "K3FeCN6_solution": {
+    "formula": "K3[Fe(CN)6](aq)",
+    "molar_mass": 329.24,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      0,
+      128
+    ],
+    "description": "Aqueous solution of potassium ferricyanide; pale yellow."
+  },
+  "Zn": {
+    "formula": "Zn",
+    "molar_mass": 65.38,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Zinc metal, bluish-silver solid."
+  },
+  "Fe3[Fe(CN)6]2": {
+    "formula": "Fe3[Fe(CN)6]2",
+    "molar_mass": 859.24,
+    "state": "s",
+    "color_rgb": [
+      0,
+      70,
+      173,
+      255
+    ],
+    "description": "Turnbull's blue (ferrous ferricyanide); deep blue precipitate."
+  },
+  "Dilute_Silver_Nitrate_Solution": {
+    "formula": "AgNO3(aq)",
+    "molar_mass": 169.87,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "Dilute aqueous solution of silver nitrate, colorless."
+  },
+  "Denatured_Protein": {
+    "formula": "Denatured_Protein",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Denatured egg white protein, forms white precipitate upon heating or addition of ethanol."
+  },
+  "Silver_Protein_Complex": {
+    "formula": "Ag-Protein_Complex",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Silver-protein complex, forms grayish-white precipitate when silver nitrate reacts with egg white protein."
+  },
+  "Concentrated_Nitric_Acid": {
+    "formula": "HNO3(conc)",
+    "molar_mass": 63.01,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      224,
+      255
+    ],
+    "description": "Concentrated nitric acid, a strong oxidizing acid, colorless to pale yellow liquid."
+  },
+  "Xanthoproteic_Product": {
+    "formula": "Nitrated_Protein(aq)",
+    "molar_mass": 41000.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      204,
+      51,
+      200
+    ],
+    "description": "Yellow to orange-yellow solution containing nitrated aromatic amino acids (xanthoproteic reaction product)."
+  },
+  "Potassium": {
+    "formula": "K",
+    "molar_mass": 39.1,
+    "state": "s",
+    "color_rgb": [
+      170,
+      82,
+      0,
+      255
+    ],
+    "description": "A soft, silvery metal stored under kerosene to prevent reaction with air or water."
+  },
+  "Potassium_Oxide": {
+    "formula": "K2O",
+    "molar_mass": 94.2,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A white solid formed when potassium burns in air."
+  },
+  "Potassium_Hydroxide_Solution": {
+    "formula": "KOH (aq)",
+    "molar_mass": 56.11,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A colorless, strongly basic aqueous solution formed when potassium reacts with water."
+  },
+  "AlCl3_solution_1mol_L": {
+    "formula": "AlCl3 (aq)",
+    "molar_mass": 133.34,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless aqueous solution of aluminum chloride."
+  },
+  "NaOH_solution_2mol_L": {
+    "formula": "NaOH (aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless aqueous solution of sodium hydroxide, strongly basic."
+  },
+  "MgCl2_solution_1mol_L": {
+    "formula": "MgCl2 (aq)",
+    "molar_mass": 95.21,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless aqueous solution of magnesium chloride."
+  },
+  "Al(OH)3_precipitate": {
+    "formula": "Al(OH)3",
+    "molar_mass": 78.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White gelatinous precipitate of aluminum hydroxide."
+  },
+  "magnesium_hydroxide_precipitate": {
+    "formula": "Mg(OH)2",
+    "molar_mass": 58.32,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White, slightly soluble precipitate of magnesium hydroxide."
+  },
+  "sodium_aluminate_solution": {
+    "formula": "Na[Al(OH)4] (aq)",
+    "molar_mass": 118.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless solution of sodium aluminate, forms when Al(OH)3 dissolves in excess NaOH."
+  },
+  "glucose": {
+    "formula": "C6H12O6",
+    "molar_mass": 180.16,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Glucose, a simple sugar produced by hydrolysis of starch."
+  },
+  "sucrose": {
+    "formula": "C12H22O11",
+    "molar_mass": 342.3,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White crystalline disaccharide, soluble in water."
+  },
+  "starch": {
+    "formula": "(C6H10O5)n",
+    "molar_mass": 162.14,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White amorphous polysaccharide, insoluble in cold water."
+  },
+  "ammoniacal_silver_solution": {
+    "formula": "[Ag(NH3)2]OH (aq)",
+    "molar_mass": 169.91,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Colorless to pale yellow solution of silver ammonia complex in water."
+  },
+  "NaOH_10pct": {
+    "formula": "NaOH (aq, 10%)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "10% sodium hydroxide aqueous solution, colorless."
+  },
+  "CuSO4_5pct": {
+    "formula": "CuSO4·5H2O (aq, 5%)",
+    "molar_mass": 249.68,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "5% copper(II) sulfate pentahydrate solution, blue."
+  },
+  "H2SO4_10pct": {
+    "formula": "H2SO4 (aq, 10%)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "10% sulfuric acid aqueous solution, colorless."
+  },
+  "glucose_solution_10pct": {
+    "formula": "C6H12O6 (aq, 10%)",
+    "molar_mass": 180.16,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "10% glucose aqueous solution, colorless."
+  },
+  "sucrose_solution_10pct": {
+    "formula": "C12H22O11 (aq, 10%)",
+    "molar_mass": 342.3,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "10% sucrose aqueous solution, colorless."
+  },
+  "starch_solution": {
+    "formula": "(C6H10O5)n (aq)",
+    "molar_mass": 162.14,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Starch aqueous solution, slightly turbid."
+  },
+  "NaBr_solution": {
+    "formula": "NaBr(aq)",
+    "molar_mass": 102.89,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of sodium bromide, colorless."
+  },
+  "NaI_solution": {
+    "formula": "NaI(aq)",
+    "molar_mass": 149.89,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of sodium iodide, colorless."
+  },
+  "Mg_OH2": {
+    "formula": "Mg(OH)2(s)",
+    "molar_mass": 58.32,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Magnesium hydroxide, white solid."
+  },
+  "Al_OH3": {
+    "formula": "Al(OH)3(s)",
+    "molar_mass": 78.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aluminum hydroxide, white solid."
+  },
+  "Br2_aq": {
+    "formula": "Br2(aq)",
+    "molar_mass": 159.81,
+    "state": "aq",
+    "color_rgb": [
+      204,
+      102,
+      0,
+      128
+    ],
+    "description": "Aqueous bromine, orange-brown solution."
+  },
+  "NaBr_aq": {
+    "formula": "NaBr(aq)",
+    "molar_mass": 102.89,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous sodium bromide, colorless."
+  },
+  "I2_aq": {
+    "formula": "I2(aq)",
+    "molar_mass": 253.8,
+    "state": "aq",
+    "color_rgb": [
+      102,
+      51,
+      153,
+      128
+    ],
+    "description": "Aqueous iodine, brown solution."
+  },
+  "NaI_aq": {
+    "formula": "NaI(aq)",
+    "molar_mass": 149.89,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous sodium iodide, colorless."
+  },
+  "NaOH_aq": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium hydroxide; colorless, strongly basic solution."
+  },
+  "MgCl2_aq": {
+    "formula": "MgCl2(aq)",
+    "molar_mass": 95.21,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous magnesium chloride, colorless."
+  },
+  "AlCl3_aq": {
+    "formula": "AlCl3(aq)",
+    "molar_mass": 133.34,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous aluminum chloride, colorless."
+  },
+  "H2O_l": {
+    "formula": "H2O(l)",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Liquid water, colorless."
+  },
+  "NaAlO2_aq": {
+    "formula": "NaAlO2(aq)",
+    "molar_mass": 81.97,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous sodium aluminate, colorless."
+  },
+  "H2_g": {
+    "formula": "H2(g)",
+    "molar_mass": 2.02,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrogen gas, colorless."
+  },
+  "NaOH_s": {
+    "formula": "NaOH(s)",
+    "molar_mass": 40.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Solid sodium hydroxide, white solid."
+  },
+  "Mg_a": {
+    "formula": "Mg(s)",
+    "molar_mass": 24.31,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Magnesium metal, silvery solid."
+  },
+  "Al_a": {
+    "formula": "Al(s)",
+    "molar_mass": 26.98,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Aluminum metal, silvery solid."
+  },
+  "CuSO4_plating_solution": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) sulfate, blue in color, used for electroplating."
+  },
+  "Fe2Cl6_solution": {
+    "formula": "FeCl3(aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      120,
+      60,
+      255
+    ],
+    "description": "Aqueous solution of iron(III) chloride, yellow-brown color, formed during rust removal."
+  },
+  "Cu_metal": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper metal, reddish-brown solid, deposited on the iron-nickel piece during electroplating."
+  },
+  "NaOH": {
+    "formula": "NaOH",
+    "molar_mass": 40.0,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium hydroxide, white solid, caustic, highly soluble in water."
+  },
+  "H2SO4": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sulfuric acid solution, colorless and transparent, turns phenolphthalein colorless."
+  },
+  "SO2_gas": {
+    "formula": "SO2(g)",
+    "molar_mass": 64.07,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Sulfur dioxide gas, colorless, pungent odor."
+  },
+  "sulfurous_acid_solution": {
+    "formula": "H2SO3(aq)",
+    "molar_mass": 82.07,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Sulfurous acid solution; colorless, weakly acidic aqueous solution formed by dissolving SO2 in water."
+  },
+  "Phenol": {
+    "formula": "C6H5OH",
+    "molar_mass": 94.11,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White crystalline solid, aromatic compound, slightly soluble in water."
+  },
+  "Formaldehyde_40pct": {
+    "formula": "CH2O (aq, 40%)",
+    "molar_mass": 30.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of formaldehyde, 40% by mass, clear and colorless."
+  },
+  "Novolac_Resin": {
+    "formula": "(C6H4OH)n(CH2)n",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      120,
+      60,
+      20,
+      255
+    ],
+    "description": "Novolac resin, reddish-brown solid, thermoplastic phenol-formaldehyde polymer formed under acidic conditions."
+  },
+  "Phenol_Formaldehyde_Resin_Base": {
+    "formula": "(C6H4OH)n(CH2)n",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      180,
+      120,
+      60,
+      255
+    ],
+    "description": "Phenol-formaldehyde resin (base-catalyzed), pale yellow to light brown solid, thermosetting polymer."
+  },
+  "Exp5_1_Solution": {
+    "formula": "Exp5_1_Solution",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution obtained from experiment 5-1; likely contains sodium sulfite (Na2SO3) or similar reducing agent."
+  },
+  "Decolorized_Fuchsin_Solution": {
+    "formula": "C20H19N3·HCl (reduced)",
+    "molar_mass": 337.85,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Colorless reduced form of fuchsin after reaction with reducing agent (e.g., sodium sulfite)."
+  },
+  "Magnesium_Strip": {
+    "formula": "Mg",
+    "molar_mass": 24.305,
+    "state": "s",
+    "color_rgb": [
+      211,
+      211,
+      211,
+      255
+    ],
+    "description": "A shiny, silver-gray solid metal strip. Used as a reactant in combustion experiments."
+  },
+  "Clay_Net": {
+    "formula": "—",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      180,
+      140,
+      100,
+      255
+    ],
+    "description": "A porous ceramic (clay) mesh used to support materials during heating. Chemically inert under experiment conditions."
+  },
+  "Magnesium_Oxide": {
+    "formula": "MgO",
+    "molar_mass": 40.304,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "A white, powdery solid formed by the combustion of magnesium in air. Product of the reaction."
+  },
+  "Copper": {
+    "formula": "Cu",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper metal; reddish-brown solid wire."
+  },
+  "Sulfur_Dioxide": {
+    "formula": "SO2",
+    "molar_mass": 64.07,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      0
+    ],
+    "description": "Sulfur dioxide gas; colorless, pungent odor, turns fuchsin solution colorless."
+  },
+  "Copper(II)_Sulfate": {
+    "formula": "CuSO4",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      120,
+      255,
+      255
+    ],
+    "description": "Copper(II) sulfate; blue solution when dissolved in water."
+  },
+  "Na2CO3_solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 106.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium carbonate solution, colorless aqueous solution."
+  },
+  "BaCO3_precipitate": {
+    "formula": "BaCO3(s)",
+    "molar_mass": 197.34,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Barium carbonate, white insoluble precipitate."
+  },
+  "Na2SO4_solution_dilute": {
+    "formula": "Na2SO4(aq)",
+    "molar_mass": 142.04,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium sulfate solution, colorless aqueous solution (from reaction)."
+  },
+  "Na2CO3_solution_dilute": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 106.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Sodium carbonate solution, colorless aqueous solution (from reaction)."
+  },
+  "H2O_liquid": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      220,
+      240,
+      255,
+      255
+    ],
+    "description": "Water; colorless, odorless liquid."
+  },
+  "NO_gas": {
+    "formula": "NO",
+    "molar_mass": 30.01,
+    "state": "g",
+    "color_rgb": [
+      128,
+      128,
+      128,
+      255
+    ],
+    "description": "Nitric oxide, a colorless gas under standard conditions, slightly soluble in water."
+  },
+  "Air": {
+    "formula": "Air",
+    "molar_mass": 28.97,
+    "state": "g",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Air, a mixture of gases (mainly N2 and O2), colorless."
+  },
+  "HNO2_aq": {
+    "formula": "HNO2",
+    "molar_mass": 47.01,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Nitrous acid, weak acid, formed in solution."
+  },
+  "HNO3_aq": {
+    "formula": "HNO3",
+    "molar_mass": 63.01,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Nitric acid, strong acid, formed in solution."
+  },
+  "Ammonia_Gas": {
+    "formula": "NH3",
+    "molar_mass": 17.03,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, pungent gas; highly soluble in water; basic."
+  },
+  "Ammonia_Solution": {
+    "formula": "NH3(aq)",
+    "molar_mass": 17.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Aqueous solution of ammonia; colorless; strongly basic."
+  },
+  "Phenolphthalein_in_Ammonia_Solution": {
+    "formula": "C20H14O4 (in NH3(aq))",
+    "molar_mass": 318.33,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      0,
+      0,
+      128
+    ],
+    "description": "Phenolphthalein in basic ammonia solution; vivid red color due to high pH."
+  },
+  "NH4Cl_solution": {
+    "formula": "NH4Cl(aq)",
+    "molar_mass": 53.49,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ammonium chloride, colorless and clear."
+  },
+  "NH4NO3_solution": {
+    "formula": "NH4NO3(aq)",
+    "molar_mass": 80.04,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ammonium nitrate, colorless and clear."
+  },
+  "NH4_2SO4_solution": {
+    "formula": "(NH4)2SO4(aq)",
+    "molar_mass": 132.14,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ammonium sulfate, colorless and clear."
+  },
+  "NH3_gas": {
+    "formula": "NH3(g)",
+    "molar_mass": 17.03,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      0
+    ],
+    "description": "Ammonia gas, colorless with a pungent odor."
+  },
+  "NaNO3_solution": {
+    "formula": "NaNO3(aq)",
+    "molar_mass": 85.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium nitrate, colorless and clear."
+  },
+  "dil_H2SO4": {
+    "formula": "H2SO4(aq)",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Dilute sulfuric acid, a colorless aqueous solution of H2SO4."
+  },
+  "SO2": {
+    "formula": "SO2",
+    "molar_mass": 64.07,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      255
+    ],
+    "description": "Sulfur dioxide, colorless gas with a pungent odor."
+  },
+  "crude_salt_solution": {
+    "formula": "NaCl(aq) + impurities",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride containing impurities such as Ca2+, SO4^2-, and others."
+  },
+  "NaOH_solution_20pct": {
+    "formula": "NaOH(aq)",
+    "molar_mass": 40.0,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "20% aqueous sodium hydroxide solution, colorless."
+  },
+  "Na2CO3_saturated_solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      255
+    ],
+    "description": "Saturated aqueous solution of sodium carbonate, colorless."
+  },
+  "purified_salt_crystals": {
+    "formula": "NaCl(s)",
+    "molar_mass": 58.44,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Purified sodium chloride crystals, white solid."
+  },
+  "Na2S_solution": {
+    "formula": "Na2S(aq)",
+    "molar_mass": 78.04,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous sodium sulfide solution, colorless, smells of rotten eggs due to H2S."
+  },
+  "H2SO3_solution": {
+    "formula": "H2SO3(aq)",
+    "molar_mass": 82.07,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous sulfurous acid solution, colorless, weak acid."
+  },
+  "Acidic_KMnO4_solution": {
+    "formula": "KMnO4(aq) + H2SO4(aq)",
+    "molar_mass": 158.04,
+    "state": "aq",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Acidified potassium permanganate solution, purple color."
+  },
+  "Copper_piece": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Solid copper metal, reddish-brown."
+  },
+  "Fuchsin_solution": {
+    "formula": "C20H19N3·HCl(aq)",
+    "molar_mass": 337.85,
+    "state": "aq",
+    "color_rgb": [
+      204,
+      0,
+      102,
+      255
+    ],
+    "description": "Aqueous fuchsin (rosaniline hydrochloride) solution, magenta color."
+  },
+  "H2S_gas": {
+    "formula": "H2S(g)",
+    "molar_mass": 34.08,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrogen sulfide gas, colorless, toxic, smells like rotten eggs."
+  },
+  "MnSO4_solution": {
+    "formula": "MnSO4(aq)",
+    "molar_mass": 151.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous manganese(II) sulfate solution, colorless to pale pink."
+  },
+  "K2SO4_solution": {
+    "formula": "K2SO4(aq)",
+    "molar_mass": 174.26,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous potassium sulfate solution, colorless."
+  },
+  "S_precipitate": {
+    "formula": "S(s)",
+    "molar_mass": 32.07,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      0,
+      255
+    ],
+    "description": "Sulfur precipitate, yellow solid."
+  },
+  "Fuchsin_decolorized": {
+    "formula": "C20H19N3·HCl(aq), reduced",
+    "molar_mass": 337.85,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Fuchsin solution after reduction, colorless."
+  },
+  "Red_Ink": {
+    "formula": "Red_Ink",
+    "molar_mass": null,
+    "state": "l",
+    "color_rgb": [
+      220,
+      20,
+      60,
+      255
+    ],
+    "description": "A red-colored ink, typically a water-based solution containing red dye."
+  },
+  "Activated_Carbon": {
+    "formula": "C*",
+    "molar_mass": 12.01,
+    "state": "s",
+    "color_rgb": [
+      30,
+      30,
+      30,
+      255
+    ],
+    "description": "Activated carbon, a highly porous form of carbon used for adsorption of impurities."
+  },
+  "Decolorized_Water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Water from which most of the red dye has been removed by adsorption onto activated carbon."
+  },
+  "Dye_Saturated_Activated_Carbon": {
+    "formula": "C*(Red_Dye)",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      60,
+      20,
+      30,
+      255
+    ],
+    "description": "Activated carbon with adsorbed red dye molecules."
+  },
+  "HCl_2M": {
+    "formula": "HCl(aq)",
+    "molar_mass": 36.46,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      240,
+      255,
+      255
+    ],
+    "description": "2 mol/L aqueous hydrochloric acid solution, colorless, pungent odor."
+  },
+  "Iron_strip": {
+    "formula": "Fe(s)",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      180,
+      180,
+      180,
+      255
+    ],
+    "description": "Metallic iron strip, silvery-gray, solid."
+  },
+  "FeCl2_aq": {
+    "formula": "FeCl2(aq)",
+    "molar_mass": 126.75,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      220,
+      255
+    ],
+    "description": "Aqueous iron(II) chloride, pale green solution."
+  },
+  "Ba(OH)2_8H2O": {
+    "formula": "Ba(OH)2·8H2O",
+    "molar_mass": 315.46,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Barium hydroxide octahydrate, colorless crystalline solid, highly soluble in water."
+  },
+  "BaCl2_2H2O": {
+    "formula": "BaCl2·2H2O",
+    "molar_mass": 244.26,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Barium chloride dihydrate, white crystalline solid."
+  },
+  "NH3": {
+    "formula": "NH3",
+    "molar_mass": 17.03,
+    "state": "g",
+    "color_rgb": [
+      220,
+      220,
+      255,
+      0
+    ],
+    "description": "Ammonia, colorless gas with pungent odor."
+  },
+  "charcoal_powder": {
+    "formula": "C",
+    "molar_mass": 12.01,
+    "state": "s",
+    "color_rgb": [
+      40,
+      40,
+      40,
+      255
+    ],
+    "description": "Finely powdered charcoal, a form of carbon, black solid."
+  },
+  "copper_oxide_powder": {
+    "formula": "CuO",
+    "molar_mass": 79.55,
+    "state": "s",
+    "color_rgb": [
+      60,
+      60,
+      60,
+      255
+    ],
+    "description": "Copper(II) oxide powder, black solid."
+  },
+  "copper_powder": {
+    "formula": "Cu",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper metal powder, reddish-brown solid."
+  },
+  "carbon_dioxide": {
+    "formula": "CO2",
+    "molar_mass": 44.0,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "Colorless, odorless gas; produced during combustion; turns limewater milky."
+  },
+  "calcium_carbonate": {
+    "formula": "CaCO3",
+    "molar_mass": 100.1,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White solid; forms as precipitate when CO2 reacts with limewater."
+  },
+  "CO2_aq": {
+    "formula": "CO2(aq)",
+    "molar_mass": 44.01,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      80
+    ],
+    "description": "Carbon dioxide dissolved in water; forms a weakly acidic solution."
+  },
+  "carbonic_acid_solution": {
+    "formula": "H2CO3(aq)",
+    "molar_mass": 62.03,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of carbonic acid formed when CO2 dissolves in water; weak acid."
+  },
+  "red_litmus": {
+    "formula": "C40H32N10O16S4Na4_red",
+    "molar_mass": 1250.0,
+    "state": "s",
+    "color_rgb": [
+      220,
+      20,
+      60,
+      255
+    ],
+    "description": "Litmus in acidic form, red color."
+  },
+  "purple_litmus": {
+    "formula": "C40H32N10O16S4Na4_purple",
+    "molar_mass": 1250.0,
+    "state": "s",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Litmus in neutral form, purple color."
+  },
+  "C_graphite": {
+    "formula": "C",
+    "molar_mass": 12.01,
+    "state": "s",
+    "color_rgb": [
+      50,
+      50,
+      50,
+      255
+    ],
+    "description": "Graphite rod, black solid form of carbon."
+  },
+  "H2O2_10pct": {
+    "formula": "H2O2(aq)",
+    "molar_mass": 34.01,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "10% aqueous hydrogen peroxide solution, colorless liquid, oxidizer."
+  },
+  "MnO2_powder": {
+    "formula": "MnO2",
+    "molar_mass": 86.94,
+    "state": "s",
+    "color_rgb": [
+      54,
+      69,
+      79,
+      255
+    ],
+    "description": "Manganese dioxide powder; black solid, used as a catalyst."
+  },
+  "FeCl3_1M": {
+    "formula": "FeCl3(aq)",
+    "molar_mass": 162.2,
+    "state": "aq",
+    "color_rgb": [
+      180,
+      120,
+      40,
+      255
+    ],
+    "description": "1 mol/L aqueous ferric chloride solution, yellow-brown liquid, catalyst."
+  },
+  "O2_gas": {
+    "formula": "O2",
+    "molar_mass": 32.0,
+    "state": "g",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      0
+    ],
+    "description": "Oxygen gas; colorless, odorless gas."
+  },
+  "H2O_liq": {
+    "formula": "H2O(l)",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Water, colorless liquid, product of hydrogen peroxide decomposition."
+  },
+  "CaO": {
+    "formula": "CaO",
+    "molar_mass": 56.08,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "Calcium oxide, also known as quicklime, is a white, caustic, alkaline, crystalline solid at room temperature."
+  },
+  "Ca(OH)2": {
+    "formula": "Ca(OH)2",
+    "molar_mass": 74.09,
+    "state": "s",
+    "color_rgb": [
+      230,
+      230,
+      230,
+      255
+    ],
+    "description": "Calcium hydroxide, also known as slaked lime, is a white powdery solid, slightly soluble in water."
+  },
+  "Methane": {
+    "formula": "CH4",
+    "molar_mass": 16.04,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, odorless, flammable gas; main component of natural gas."
+  },
+  "Chlorine": {
+    "formula": "Cl2",
+    "molar_mass": 70.9,
+    "state": "g",
+    "color_rgb": [
+      120,
+      190,
+      32,
+      255
+    ],
+    "description": "Greenish-yellow, toxic gas with a pungent odor."
+  },
+  "Carbon_Tetrachloride": {
+    "formula": "CCl4",
+    "molar_mass": 153.82,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, heavy, nonflammable liquid with a sweet odor; used as a solvent."
+  },
+  "Hydrogen_Chloride": {
+    "formula": "HCl",
+    "molar_mass": 36.46,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, pungent gas; forms white fumes in moist air due to reaction with water vapor."
+  },
+  "Calcium Carbonate": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A white, insoluble solid that forms as a precipitate when carbon dioxide reacts with limewater."
+  },
+  "Ethylene_Gas": {
+    "formula": "C2H4",
+    "molar_mass": 28.05,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Ethylene gas, a colorless, flammable hydrocarbon with a faint sweet odor."
+  },
+  "1,2-Dibromoethane": {
+    "formula": "C2H4Br2",
+    "molar_mass": 187.86,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "1,2-Dibromoethane, a colorless to pale yellow liquid formed by the addition of bromine to ethylene."
+  },
+  "CCl4": {
+    "formula": "CCl4",
+    "molar_mass": 153.82,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Carbon tetrachloride, a colorless, volatile liquid used as a solvent."
+  },
+  "Sodium_Metal": {
+    "formula": "Na",
+    "molar_mass": 22.99,
+    "state": "s",
+    "color_rgb": [
+      200,
+      200,
+      200,
+      0
+    ],
+    "description": "Soft, silvery-white, highly reactive metal. Stored under paraffin oil to prevent oxidation."
+  },
+  "Paraffin_Oil": {
+    "formula": "C_nH_{2n+2}",
+    "molar_mass": 300.0,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Colorless, odorless mineral oil. Used for storing reactive metals like sodium."
+  },
+  "Calcium_Carbonate": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "White solid; forms as a precipitate when carbon dioxide reacts with limewater."
+  },
+  "acetaldehyde": {
+    "formula": "CH3CHO",
+    "molar_mass": 44.05,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "A colorless, volatile liquid with a pungent, fruity odor; produced by oxidation of ethanol."
+  },
+  "copper(II) oxide": {
+    "formula": "CuO",
+    "molar_mass": 79.55,
+    "state": "s",
+    "color_rgb": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "description": "A black solid formed on copper surface when heated in air."
+  },
+  "copper": {
+    "formula": "Cu",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "A reddish-brown metal, solid at room temperature."
+  },
+  "concentrated_sulfuric_acid": {
+    "formula": "H2SO4",
+    "molar_mass": 98.08,
+    "state": "l",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      0
+    ],
+    "description": "A dense, oily, colorless to slightly yellow liquid; strong acid and dehydrating agent."
+  },
+  "saturated_sodium_carbonate_solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 105.99,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      0
+    ],
+    "description": "A clear, colorless aqueous solution of sodium carbonate at saturation."
+  },
+  "ethyl_acetate": {
+    "formula": "CH3COOC2H5",
+    "molar_mass": 88.11,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, volatile liquid with a fruity odor; an ester formed from ethanol and acetic acid."
+  },
+  "mantou_or_potato": {
+    "formula": "(C6H10O5)n",
+    "molar_mass": 162.14,
+    "state": "s",
+    "color_rgb": [
+      245,
+      222,
+      179,
+      255
+    ],
+    "description": "Starch-rich food sample (mantou or potato), primarily composed of starch (amylose/amylopectin)."
+  },
+  "iodine_solution": {
+    "formula": "I2(aq) + KI(aq)",
+    "molar_mass": 253.81,
+    "state": "aq",
+    "color_rgb": [
+      60,
+      60,
+      120,
+      255
+    ],
+    "description": "Aqueous iodine solution (often with potassium iodide), used as a starch indicator."
+  },
+  "dilute_H2SO4_2M": {
+    "formula": "H2SO4",
+    "molar_mass": 98.08,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "2 mol/L dilute sulfuric acid solution."
+  },
+  "fresh_CuOH2_precipitate": {
+    "formula": "Cu(OH)2",
+    "molar_mass": 97.56,
+    "state": "s",
+    "color_rgb": [
+      70,
+      180,
+      220,
+      255
+    ],
+    "description": "Freshly prepared copper(II) hydroxide precipitate, light blue solid."
+  },
+  "Acetic_Acid": {
+    "formula": "CH3COOH",
+    "molar_mass": 60.05,
+    "state": "l",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless liquid with a pungent, vinegar-like odor; miscible with water; weak acid."
+  },
+  "Eggshell_Fragments": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "White solid fragments, mainly composed of calcium carbonate."
+  },
+  "Saturated_Sodium_Carbonate_Solution": {
+    "formula": "Na2CO3(aq)",
+    "molar_mass": 106.0,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A clear, colorless aqueous solution of sodium carbonate at saturation."
+  },
+  "Sodium_Acetate": {
+    "formula": "CH3COONa",
+    "molar_mass": 82.03,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, odorless salt; soluble in water."
+  },
+  "iron": {
+    "formula": "Fe",
+    "molar_mass": 55.85,
+    "state": "s",
+    "color_rgb": [
+      180,
+      180,
+      180,
+      255
+    ],
+    "description": "Metallic iron, gray solid, main component of iron nails."
+  },
+  "magnesium": {
+    "formula": "Mg",
+    "molar_mass": 24.31,
+    "state": "s",
+    "color_rgb": [
+      211,
+      211,
+      211,
+      255
+    ],
+    "description": "A silvery-white metal, solid at room temperature."
+  },
+  "hydrogen": {
+    "formula": "H2",
+    "molar_mass": 2.02,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Hydrogen gas, colorless and odorless."
+  },
+  "zinc_chloride": {
+    "formula": "ZnCl2(aq)",
+    "molar_mass": 136.29,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Zinc chloride, colorless aqueous solution."
+  },
+  "iron_chloride": {
+    "formula": "FeCl2(aq)",
+    "molar_mass": 126.75,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Iron(II) chloride, pale green aqueous solution."
+  },
+  "magnesium_chloride": {
+    "formula": "MgCl2(aq)",
+    "molar_mass": 95.21,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Magnesium chloride, colorless aqueous solution."
+  },
+  "iron_sulfate": {
+    "formula": "FeSO4(aq)",
+    "molar_mass": 151.91,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Iron(II) sulfate, pale green aqueous solution."
+  },
+  "magnesium_sulfate": {
+    "formula": "MgSO4(aq)",
+    "molar_mass": 120.37,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      128
+    ],
+    "description": "Magnesium sulfate, colorless aqueous solution."
+  },
+  "Al2(SO4)3_solution": {
+    "formula": "Al2(SO4)3(aq)",
+    "molar_mass": 342.15,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of aluminum sulfate, colorless."
+  },
+  "Al_wire": {
+    "formula": "Al(s)",
+    "molar_mass": 26.98,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Aluminum wire, silver-white solid."
+  },
+  "Cu_wire_1": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper wire, reddish-brown solid."
+  },
+  "Cu_wire_2": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper wire, reddish-brown solid."
+  },
+  "Cu_solid": {
+    "formula": "Cu(s)",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper metal deposited on aluminum wire."
+  },
+  "Al3+_aq": {
+    "formula": "Al^{3+}(aq)",
+    "molar_mass": 26.98,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Aluminum ion in aqueous solution, colorless."
+  },
+  "Ag_solid": {
+    "formula": "Ag(s)",
+    "molar_mass": 107.87,
+    "state": "s",
+    "color_rgb": [
+      192,
+      192,
+      192,
+      255
+    ],
+    "description": "Silver metal deposited on copper wire, gray-white."
+  },
+  "SO4_2-_aq": {
+    "formula": "SO4^{2-}(aq)",
+    "molar_mass": 96.06,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Sulfate ion in aqueous solution, colorless."
+  },
+  "NO3-_aq": {
+    "formula": "NO3^{-}(aq)",
+    "molar_mass": 62.0,
+    "state": "aq",
+    "color_rgb": [
+      200,
+      200,
+      255,
+      255
+    ],
+    "description": "Nitrate ion in aqueous solution, colorless."
+  },
+  "boiled_distilled_water": {
+    "formula": "H2O",
+    "molar_mass": 18.02,
+    "state": "l",
+    "color_rgb": [
+      230,
+      242,
+      255,
+      255
+    ],
+    "description": "Distilled water that has been boiled to remove dissolved gases (mainly oxygen), then cooled; colorless and odorless liquid."
+  },
+  "vegetable_oil": {
+    "formula": "C57H104O6",
+    "molar_mass": 885.43,
+    "state": "l",
+    "color_rgb": [
+      255,
+      242,
+      153,
+      255
+    ],
+    "description": "A generic triglyceride-based oil derived from plants, pale yellow liquid, immiscible with water."
+  },
+  "calcium_chloride": {
+    "formula": "CaCl2",
+    "molar_mass": 110.98,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Calcium chloride is a white, water-soluble ionic compound formed in the reaction."
+  },
+  "iron(III)_oxide_hydrate": {
+    "formula": "Fe2O3·xH2O",
+    "molar_mass": 177.7,
+    "state": "s",
+    "color_rgb": [
+      180,
+      80,
+      20,
+      255
+    ],
+    "description": "Hydrated iron(III) oxide (rust), reddish-brown solid formed during iron corrosion in the presence of water and oxygen."
+  },
+  "calcium_chloride_solution": {
+    "formula": "CaCl2(aq)",
+    "molar_mass": 110.98,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      242,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of calcium chloride, formed after absorbing water."
+  },
+  "Sucrose": {
+    "formula": "C12H22O11",
+    "molar_mass": 342.3,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "White crystalline solid, common table sugar, soluble in water."
+  },
+  "Sucrose_Solution": {
+    "formula": "C12H22O11(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "Homogeneous, transparent aqueous solution of sucrose in water."
+  },
+  "Iodine": {
+    "formula": "I2",
+    "molar_mass": 253.81,
+    "state": "s",
+    "color_rgb": [
+      76,
+      40,
+      130,
+      255
+    ],
+    "description": "Dark violet-black solid with a metallic luster. Slightly soluble in water, more soluble in organic solvents like gasoline, forming a violet solution."
+  },
+  "Potassium_permanganate": {
+    "formula": "KMnO4",
+    "molar_mass": 158.04,
+    "state": "s",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Dark purple crystalline solid. Soluble in water to give a purple solution. Strong oxidizer."
+  },
+  "Gasoline": {
+    "formula": "C8H18 (approx.)",
+    "molar_mass": 114.23,
+    "state": "l",
+    "color_rgb": [
+      245,
+      245,
+      220,
+      200
+    ],
+    "description": "Colorless to pale yellow, volatile, flammable organic solvent. Nonpolar."
+  },
+  "Iodine_solution_in_water": {
+    "formula": "I2(aq)",
+    "molar_mass": 253.81,
+    "state": "aq",
+    "color_rgb": [
+      100,
+      100,
+      180,
+      180
+    ],
+    "description": "Very pale yellow-brown solution due to low solubility of iodine in water."
+  },
+  "Iodine_solution_in_gasoline": {
+    "formula": "I2 in C8H18",
+    "molar_mass": 253.81,
+    "state": "l",
+    "color_rgb": [
+      148,
+      0,
+      211,
+      180
+    ],
+    "description": "Violet solution formed by dissolution of iodine in gasoline (organic solvent)."
+  },
+  "Potassium_permanganate_solution_in_water": {
+    "formula": "KMnO4(aq)",
+    "molar_mass": 158.04,
+    "state": "aq",
+    "color_rgb": [
+      186,
+      85,
+      211,
+      200
+    ],
+    "description": "Purple solution formed by dissolution of potassium permanganate in water."
+  },
+  "Potassium_permanganate_suspension_in_gasoline": {
+    "formula": "KMnO4(s) in C8H18",
+    "molar_mass": 158.04,
+    "state": "s/l",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Purple solid particles suspended in colorless gasoline; potassium permanganate is insoluble in gasoline."
+  },
+  "Red_Ink_Ethanol_Water_Mixture": {
+    "formula": "Red_Ink/Ethanol/H2O",
+    "molar_mass": null,
+    "state": "l",
+    "color_rgb": [
+      220,
+      20,
+      60,
+      120
+    ],
+    "description": "A homogeneous mixture of red ink, ethanol, and water; appears as a diluted red solution."
+  },
+  "NH4NO3": {
+    "formula": "NH4NO3",
+    "molar_mass": 80.04,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Ammonium nitrate, white crystalline solid, highly soluble in water."
+  },
+  "NH4NO3_aq": {
+    "formula": "NH4NO3(aq)",
+    "molar_mass": 80.04,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of ammonium nitrate; colorless solution."
+  },
+  "Sodium_Chloride_Solution": {
+    "formula": "NaCl(aq)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride, clear and colorless."
+  },
+  "potassium_sulfate": {
+    "formula": "K2SO4",
+    "molar_mass": 174.26,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "White crystalline solid; soluble in water."
+  },
+  "potassium_sulfate_solution": {
+    "formula": "K2SO4(aq)",
+    "molar_mass": 174.26,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Clear, colorless aqueous solution of potassium sulfate."
+  },
+  "Copper_Sulfate_1": {
+    "formula": "CuSO4·5H2O",
+    "molar_mass": 249.68,
+    "state": "s",
+    "color_rgb": [
+      0,
+      191,
+      255,
+      255
+    ],
+    "description": "Copper(II) sulfate pentahydrate, blue crystalline solid, used as solute in solution 1."
+  },
+  "Copper_Sulfate_2": {
+    "formula": "CuSO4·5H2O",
+    "molar_mass": 249.68,
+    "state": "s",
+    "color_rgb": [
+      0,
+      191,
+      255,
+      255
+    ],
+    "description": "Copper(II) sulfate pentahydrate, blue crystalline solid, used as solute in solution 2."
+  },
+  "Copper_Sulfate_3": {
+    "formula": "CuSO4·5H2O",
+    "molar_mass": 249.68,
+    "state": "s",
+    "color_rgb": [
+      0,
+      191,
+      255,
+      255
+    ],
+    "description": "Copper(II) sulfate pentahydrate, blue crystalline solid, used as solute in solution 3."
+  },
+  "Copper_Sulfate_Solution_1": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      136,
+      204,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) sulfate from Copper_Sulfate_1, blue solution."
+  },
+  "Copper_Sulfate_Solution_2": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      136,
+      204,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) sulfate from Copper_Sulfate_2, blue solution."
+  },
+  "Copper_Sulfate_Solution_3": {
+    "formula": "CuSO4(aq)",
+    "molar_mass": 159.61,
+    "state": "aq",
+    "color_rgb": [
+      0,
+      136,
+      204,
+      255
+    ],
+    "description": "Aqueous solution of copper(II) sulfate from Copper_Sulfate_3, blue solution."
+  },
+  "NaCl_Solution_6%": {
+    "formula": "NaCl(aq, 6%)",
+    "molar_mass": null,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      245,
+      255,
+      255
+    ],
+    "description": "Aqueous solution of sodium chloride at 6% mass concentration, clear and colorless."
+  },
+  "crude_salt_mixture": {
+    "formula": "NaCl + insoluble_impurities",
+    "molar_mass": null,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "A solid mixture containing sodium chloride (NaCl) and insoluble impurities, typically grayish or off-white."
+  },
+  "purified_salt": {
+    "formula": "NaCl",
+    "molar_mass": 58.44,
+    "state": "s",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "description": "Purified sodium chloride, a white crystalline solid."
+  },
+  "Potassium_Permanganate": {
+    "formula": "KMnO4",
+    "molar_mass": 158.04,
+    "state": "s",
+    "color_rgb": [
+      128,
+      0,
+      128,
+      255
+    ],
+    "description": "Dark purple crystalline solid, strong oxidizer."
+  },
+  "Potassium_Manganate": {
+    "formula": "K2MnO4",
+    "molar_mass": 197.13,
+    "state": "s",
+    "color_rgb": [
+      34,
+      139,
+      34,
+      255
+    ],
+    "description": "Green solid, intermediate in KMnO4 decomposition."
+  },
+  "Manganese_Dioxide": {
+    "formula": "MnO2",
+    "molar_mass": 86.94,
+    "state": "s",
+    "color_rgb": [
+      60,
+      60,
+      60,
+      255
+    ],
+    "description": "Brown-black solid, insoluble in water."
+  },
+  "limestone": {
+    "formula": "CaCO3",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "Limestone, primarily composed of calcium carbonate, is a white or grayish solid mineral."
+  },
+  "calcium_carbonate_precipitate": {
+    "formula": "CaCO3(s)",
+    "molar_mass": 100.09,
+    "state": "s",
+    "color_rgb": [
+      220,
+      220,
+      220,
+      255
+    ],
+    "description": "Calcium carbonate precipitate, a white solid formed when carbon dioxide is bubbled into limewater."
+  },
+  "limewater_solution": {
+    "formula": "Ca(OH)2(aq)",
+    "molar_mass": 74.1,
+    "state": "aq",
+    "color_rgb": [
+      230,
+      240,
+      255,
+      255
+    ],
+    "description": "Clear, colorless aqueous solution of calcium hydroxide; used to test for carbon dioxide."
+  },
+  "water_vapor": {
+    "formula": "H2O(g)",
+    "molar_mass": 18.0,
+    "state": "g",
+    "color_rgb": [
+      200,
+      220,
+      255,
+      0
+    ],
+    "description": "Colorless gas; produced during combustion; condenses as white smoke when cooled."
+  },
+  "H2O2_5percent_solution": {
+    "formula": "H2O2(aq)",
+    "molar_mass": 34.01,
+    "state": "aq",
+    "color_rgb": [
+      240,
+      248,
+      255,
+      255
+    ],
+    "description": "5% aqueous solution of hydrogen peroxide; colorless, clear liquid."
+  },
+  "Phenolphthalein_Pink_Anion": {
+    "formula": "C20H13O4^-",
+    "molar_mass": 317.31,
+    "state": "aq",
+    "color_rgb": [
+      255,
+      105,
+      180,
+      128
+    ],
+    "description": "Deprotonated phenolphthalein, pink in basic solution."
+  },
+  "Hydrogen gas": {
+    "formula": "H2",
+    "molar_mass": 2.016,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, odorless, flammable gas produced at the cathode during water electrolysis."
+  },
+  "Oxygen gas": {
+    "formula": "O2",
+    "molar_mass": 32.0,
+    "state": "g",
+    "color_rgb": [
+      255,
+      255,
+      255,
+      0
+    ],
+    "description": "A colorless, odorless gas produced at the anode during water electrolysis. Supports combustion."
+  },
+  "Cu_powder": {
+    "formula": "Cu",
+    "molar_mass": 63.55,
+    "state": "s",
+    "color_rgb": [
+      184,
+      115,
+      51,
+      255
+    ],
+    "description": "Copper powder; a reddish-brown metallic solid."
+  },
+  "CuO": {
+    "formula": "CuO",
+    "molar_mass": 79.55,
+    "state": "s",
+    "color_rgb": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "description": "Copper(II) oxide; a black solid formed by the oxidation of copper."
+  }
+}

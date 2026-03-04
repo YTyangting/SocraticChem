@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Copper and Concentrated Sulfuric Acid Reaction: Gas Collection and Identification"
+    goal="To investigate the reaction between copper and concentrated sulfuric acid, collect the generated gas, and identify its properties by observing its effect on fuchsin solution and water."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="spiral_copper_wire" type="wire" />
+      <Component id="rubber_stopper_with_groove" type="stopper" />
+      <Component id="iron_stand" type="stand" />
+      <Component id="alcohol_lamp" type="heater" />
+      <Component id="graduated_cylinder" type="cylinder" capacity="10ml"/>
+      <Component id="delivery_tube" type="tube" />
+    </Hardware>
+    <Reagents>
+      <Reagent name="Concentrated_H2SO4" state="liquid"/>
+      <Reagent name="Fuchsin_Solution" state="liquid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Insert tool="spiral_copper_wire" vessel="test_tube_1"/>
+      <Attach vessel="test_tube_1" support="iron_stand"/>
+      <Add vessel="graduated_cylinder" reagent="Concentrated_H2SO4" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder" to_vessel="test_tube_1" volume="2 mL"/>
+      <Insert tool="delivery_tube" vessel="rubber_stopper_with_groove"/>
+      <Insert tool="rubber_stopper_with_groove" vessel="test_tube_1"/>
+      <Wait time="5s"/>
+      <Heat vessel="test_tube_1"/>
+      <Wait time="60s"/>
+      <CollectGas source_vessel="test_tube_1" collector="test_tube_2"/>
+      <Add vessel="test_tube_2" reagent="Fuchsin_Solution" volume="2 mL"/>
+      <Insert tool="delivery_tube" vessel="test_tube_2"/>
+      <Wait time="30s"/>
+      <Cool vessel="test_tube_1"/>
+      <Wait time="60s"/>
+      <Add vessel="test_tube_3" reagent="Water" volume="2 mL"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="test_tube_3" volume="2 mL"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

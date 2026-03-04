@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_chem_lab_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 39.83110021089872,
+        "ROUGE-1": 58.167792224413304,
+        "ROUGE-2": 35.693527493407586,
+        "ROUGE-L": 45.27919114178019,
+        "BERTScore_Mean": 81.83989524841309
+    }
+}

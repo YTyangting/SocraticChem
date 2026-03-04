@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata
+    title="Fe₂(SO₄)₃水解平衡中温度与浓度对pH的影响"
+    goal="通过测量不同温度和不同浓度条件下Fe₂(SO₄)₃溶液的pH值，分析温度、反应物浓度和生成物浓度对Fe₂(SO₄)₃水解平衡的影响。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_4" type="test_tube" capacity="10ml"/>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="pH_meter_1" type="pH_meter"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Fe2_SO4_3_solution" state="liquid"/>
+      <Reagent name="dilute_H2SO4" state="liquid"/>
+      <Reagent name="water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 取一只干净的试管，加入Fe₂(SO₄)₃溶液 -->
+      <Add vessel="test_tube_1" reagent="Fe2_SO4_3_solution" volume="8 mL" tool="dropper_1"/>
+      <!-- 测量pH -->
+      <Insert tool="pH_meter_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <!-- 分成两份 -->
+      <Transfer from_vessel="test_tube_1" to_vessel="test_tube_2" volume="4 mL"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="test_tube_3" volume="4 mL"/>
+      <!-- test_tube_2常温，test_tube_3加热 -->
+      <Add vessel="beaker_1" reagent="water" volume="150 mL"/>
+      <Attach vessel="beaker_1" support="stand_1"/>
+      <Insert tool="alcohol_lamp_1" vessel="beaker_1"/>
+      <Heat vessel="beaker_1" target_temperature="80"/>
+      <Wait time="60s"/>
+      <Insert tool="test_tube_3" vessel="beaker_1"/>
+      <Wait time="120s"/>
+      <!-- 分别测量pH -->
+      <Insert tool="pH_meter_1" vessel="test_tube_2"/>
+      <Wait time="10s"/>
+      <Insert tool="pH_meter_1" vessel="test_tube_3"/>
+      <Wait time="10s"/>
+      <!-- 取两只试管，分别加入Fe₂(SO₄)₃溶液 -->
+      <Add vessel="test_tube_4" reagent="Fe2_SO4_3_solution" volume="4 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="Fe2_SO4_3_solution" volume="4 mL" tool="dropper_1"/>
+      <!-- 分别加入不同体积稀硫酸 -->
+      <Add vessel="test_tube_4" reagent="dilute_H2SO4" volume="1 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="dilute_H2SO4" volume="5 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <!-- 测量pH -->
+      <Insert tool="pH_meter_1" vessel="test_tube_4"/>
+      <Wait time="10s"/>
+      <Insert tool="pH_meter_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <!-- 对照组pH已在test_tube_2, test_tube_3测量 -->
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

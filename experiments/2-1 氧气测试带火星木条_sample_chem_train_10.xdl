@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="氧气的鉴别实验" goal="通过木条复燃实验鉴别集气瓶中的气体是否为氧气" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="wood_strip_1" type="wood_strip"/>
+      <Component id="tweezer_1" type="tweezer"/>
+      <Component id="gas_jar_1" type="gas_jar" capacity="500ml"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Oxygen_Gas" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="gas_jar_1" reagent="Oxygen_Gas" volume="0.5 L"/>
+      <Insert tool="tweezer_1" vessel="wood_strip_1"/>
+      <Attach vessel="gas_jar_1" support="stand_1"/>
+      <Insert tool="wood_strip_1" vessel="gas_jar_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铜离子与氨水及乙醇的反应实验"
+    goal="探究铜离子与氨水反应生成蓝色沉淀及其在过量氨水和乙醇中的变化，观察沉淀的溶解性和溶液颜色、分层等现象。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10mL"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Cu2plus_solution" state="liquid"/>
+      <Reagent name="Ammonia_solution_1M" state="liquid"/>
+      <Reagent name="Ethanol_95percent" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Cu2plus_solution" volume="4 mL"/>
+      <Add vessel="test_tube_1" reagent="Ammonia_solution_1M" volume="0.2 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_1" reagent="Ammonia_solution_1M" volume="1 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+      <Add vessel="graduated_cylinder_1" reagent="Ethanol_95percent" volume="8 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="8 mL"/>
+      <Insert tool="glass_rod_1" vessel="test_tube_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

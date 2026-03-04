@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="蛋白质的硝酸反应实验" goal="观察蛋白质（鸡蛋清溶液）与浓硝酸反应的显色现象" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="test_tube_clamp_1" type="test_tube_clamp"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Egg_White_Solution" state="liquid"/>
+      <Reagent name="Concentrated_Nitric_Acid" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="Egg_White_Solution" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="Concentrated_Nitric_Acid" volume="5 drops" tool="dropper_1"/>
+      <Attach vessel="test_tube_1" support="test_tube_clamp_1"/>
+      <Attach vessel="test_tube_clamp_1" support="stand_1"/>
+      <Heat vessel="test_tube_1" />
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

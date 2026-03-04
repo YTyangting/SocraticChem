@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Sodium Reaction with Water and Phenolphthalein Observation" 
+    goal="To observe and analyze the reaction of metallic sodium with water containing phenolphthalein, identify the products formed, and record the physical and chemical changes including gas evolution and color change."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="100ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="tweezers_1" type="tweezers"/>
+      <Component id="filter_paper_1" type="filter_paper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Phenolphthalein_Solution" state="liquid"/>
+      <Reagent name="Metallic_Sodium" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="Distilled_Water" volume="50 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="beaker_1" volume="50 mL"/>
+      <Add vessel="beaker_1" reagent="Phenolphthalein_Solution" volume="2 mL" tool="dropper_1"/>
+      <Wait time="10s"/>
+      <MeasureMass reagent="Metallic_Sodium"/>
+      <Add vessel="filter_paper_1" reagent="Metallic_Sodium" mass="0.05 g"/>
+      <Wait time="10s"/>
+      <Transfer from_vessel="filter_paper_1" to_vessel="beaker_1" tool="tweezers_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="氯化钠溶液与硫酸铜溶液反应及加热实验" goal="观察氯化钠溶液与硫酸铜溶液反应及加热过程中的现象" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10 mL"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20 mL"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="test_tube_clamp_1" type="clamp"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaCl_solution" state="liquid"/>
+      <Reagent name="CuSO4_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="graduated_cylinder_1" reagent="NaCl_solution" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="CuSO4_solution" volume="0.5 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+      <Attach vessel="test_tube_1" support="test_tube_clamp_1"/>
+      <Attach vessel="test_tube_clamp_1" support="stand_1"/>
+      <Heat vessel="test_tube_1" target_temperature="100" tool="alcohol_lamp_1"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="酸碱滴定法测定NaOH溶液的物质的量浓度" 
+    goal="通过酸碱滴定法，使用已知浓度的HCl溶液滴定NaOH溶液，准确测定NaOH溶液的物质的量浓度，并记录实验数据。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="acid_burette" type="burette" capacity="50mL"/>
+      <Component id="base_burette" type="burette" capacity="50mL"/>
+      <Component id="stand" type="stand"/>
+      <Component id="pipette" type="pipette" capacity="25mL"/>
+      <Component id="conical_flask" type="flask" capacity="250mL"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="HCl_Solution" state="liquid"/>
+      <Reagent name="NaOH_Solution" state="liquid"/>
+      <Reagent name="Indicator" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 冲洗酸式滴定管 -->
+      <Wash vessel="acid_burette"/>
+      <!-- 冲洗碱式滴定管 -->
+      <Wash vessel="base_burette"/>
+      <!-- 装配滴定管 -->
+      <Attach vessel="acid_burette" support="stand"/>
+      <Attach vessel="base_burette" support="stand"/>
+      <!-- 装入溶液 -->
+      <Add vessel="acid_burette" reagent="HCl_Solution" volume="50 mL"/>
+      <Add vessel="base_burette" reagent="NaOH_Solution" volume="50 mL"/>
+      <!-- 用移液管吸取NaOH溶液到锥形瓶 -->
+      <Add vessel="conical_flask" reagent="NaOH_Solution" volume="25 mL"/>
+      <!-- 加入指示剂 -->
+      <Add vessel="conical_flask" reagent="Indicator" volume="2 mL"/>
+      <!-- 滴定过程 -->
+      <Transfer from_vessel="acid_burette" to_vessel="conical_flask" volume="10 mL" tool="dropwise"/>
+      <Stir vessel="conical_flask"/>
+      <Wait time="30s"/>
+
+      <Transfer from_vessel="acid_burette" to_vessel="conical_flask" volume="15 mL" tool="dropwise"/>
+      <Stir vessel="conical_flask"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

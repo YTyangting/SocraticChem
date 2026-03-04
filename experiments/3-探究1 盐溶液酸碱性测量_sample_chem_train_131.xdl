@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="pH测试与盐溶液酸碱性类型归纳实验" 
+    goal="配制六种常见盐的水溶液，通过pH试纸测试并观察其酸碱性，归纳不同类型盐溶液的酸碱性规律。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="100ml"/>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="beaker_2" type="beaker" capacity="100ml"/>
+      <Component id="beaker_3" type="beaker" capacity="100ml"/>
+      <Component id="beaker_4" type="beaker" capacity="100ml"/>
+      <Component id="beaker_5" type="beaker" capacity="100ml"/>
+      <Component id="beaker_6" type="beaker" capacity="100ml"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="stirrer_1" type="glass_rod"/>
+      <Component id="stirrer_2" type="glass_rod"/>
+      <Component id="stirrer_3" type="glass_rod"/>
+      <Component id="stirrer_4" type="glass_rod"/>
+      <Component id="stirrer_5" type="glass_rod"/>
+      <Component id="stirrer_6" type="glass_rod"/>
+      <Component id="ph_paper_1" type="ph_paper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="NaCl" state="solid"/>
+      <Reagent name="Na2CO3" state="solid"/>
+      <Reagent name="NH4Cl" state="solid"/>
+      <Reagent name="KNO3" state="solid"/>
+      <Reagent name="CH3COONa" state="solid"/>
+      <Reagent name="(NH4)2SO4" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. 量取蒸馏水，分别倒入六个烧杯 -->
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="50 mL" tool="measuring_cylinder_1"/>
+      <Add vessel="beaker_2" reagent="Distilled_Water" volume="50 mL" tool="measuring_cylinder_1"/>
+      <Add vessel="beaker_3" reagent="Distilled_Water" volume="50 mL" tool="measuring_cylinder_1"/>
+      <Add vessel="beaker_4" reagent="Distilled_Water" volume="50 mL" tool="measuring_cylinder_1"/>
+      <Add vessel="beaker_5" reagent="Distilled_Water" volume="50 mL" tool="measuring_cylinder_1"/>
+      <Add vessel="beaker_6" reagent="Distilled_Water" volume="50 mL" tool="measuring_cylinder_1"/>
+      <!-- 2. 称取各固体盐，分别加入各自烧杯 -->
+      <Add vessel="beaker_1" reagent="NaCl" mass="2 g" tool="spatula_1"/>
+      <Add vessel="beaker_2" reagent="Na2CO3" mass="2 g" tool="spatula_1"/>
+      <Add vessel="beaker_3" reagent="NH4Cl" mass="2 g" tool="spatula_1"/>
+      <Add vessel="beaker_4" reagent="KNO3" mass="2 g" tool="spatula_1"/>
+      <Add vessel="beaker_5" reagent="CH3COONa" mass="2 g" tool="spatula_1"/>
+      <Add vessel="beaker_6" reagent="(NH4)2SO4" mass="2 g" tool="spatula_1"/>
+      <!-- 3. 搅拌至溶解 -->
+      <Insert tool="stirrer_1" vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Insert tool="stirrer_2" vessel="beaker_2"/>
+      <Stir vessel="beaker_2"/>
+      <Insert tool="stirrer_3" vessel="beaker_3"/>
+      <Stir vessel="beaker_3"/>
+      <Insert tool="stirrer_4" vessel="beaker_4"/>
+      <Stir vessel="beaker_4"/>
+      <Insert tool="stirrer_5" vessel="beaker_5"/>
+      <Stir vessel="beaker_5"/>
+      <Insert tool="stirrer_6" vessel="beaker_6"/>
+      <Stir vessel="beaker_6"/>
+      <Wait time="2 min"/>
+      <!-- 4. 用玻璃棒蘸取溶液，滴在pH试纸上，观察颜色变化 -->
+      <Insert tool="ph_paper_1" vessel="beaker_1"/>
+      <Wait time="10 s"/>
+      <Insert tool="ph_paper_1" vessel="beaker_2"/>
+      <Wait time="10 s"/>
+      <Insert tool="ph_paper_1" vessel="beaker_3"/>
+      <Wait time="10 s"/>
+      <Insert tool="ph_paper_1" vessel="beaker_4"/>
+      <Wait time="10 s"/>
+      <Insert tool="ph_paper_1" vessel="beaker_5"/>
+      <Wait time="10 s"/>
+      <Insert tool="ph_paper_1" vessel="beaker_6"/>
+      <Wait time="10 s"/>
+      <!-- 5. 记录pH试纸颜色，判断酸碱性，填写表格（实验者操作，非自动化步骤，等待模拟） -->
+      <Wait time="5 min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

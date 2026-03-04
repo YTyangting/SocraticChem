@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="水的蒸发与冷凝实验" goal="观察水加热蒸发后在冷表面冷凝形成水滴的现象" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="iron_stand_1" type="stand"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="glass_plate_1" type="glass_plate"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Water" state="liquid"/>
+      <Reagent name="Cold_Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Water" volume="5 mL"/>
+      <Attach vessel="test_tube_1" support="iron_stand_1"/>
+      <Heat vessel="test_tube_1" target_temperature="100" tool="alcohol_lamp_1"/>
+      <Wait time="60s"/>
+      <Insert tool="glass_plate_1" vessel="test_tube_1"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

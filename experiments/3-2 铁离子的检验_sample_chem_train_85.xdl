@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="FeCl₃与FeCl₂溶液分别与KSCN反应的对比实验" 
+    goal="比较FeCl₃和FeCl₂溶液与KSCN溶液反应时的颜色变化，观察Fe³⁺与SCN⁻反应生成血红色络合物的现象。" 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_rack" type="test_tube_rack"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10mL"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="FeCl3_solution" state="liquid"/>
+      <Reagent name="FeCl2_solution" state="liquid"/>
+      <Reagent name="KSCN_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+      <Add vessel="test_tube_1" reagent="FeCl3_solution" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_2" reagent="FeCl2_solution" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_1" reagent="KSCN_solution" volume="0.2 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="KSCN_solution" volume="0.2 mL" tool="dropper"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

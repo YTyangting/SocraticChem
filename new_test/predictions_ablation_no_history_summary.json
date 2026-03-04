@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_ablation_no_history.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 36.838337846263784,
+        "ROUGE-1": 56.63099397991049,
+        "ROUGE-2": 33.95447423439526,
+        "ROUGE-L": 43.62309278022291,
+        "BERTScore_Mean": 80.72804808616638
+    }
+}

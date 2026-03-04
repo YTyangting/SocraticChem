@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_MathDial_new_xml.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 2.104083422596304,
+        "ROUGE-1": 14.4494969701808,
+        "ROUGE-2": 4.110770742455702,
+        "ROUGE-L": 5.930875424392861,
+        "BERTScore_Mean": 60.452693700790405
+    }
+}

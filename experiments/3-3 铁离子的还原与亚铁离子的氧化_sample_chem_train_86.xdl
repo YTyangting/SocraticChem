@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="FeCl₃与铁粉反应及产物鉴定实验" 
+    goal="研究FeCl₃与铁粉反应生成物，并通过KSCN和氯水检验反应产物中的Fe²⁺和Fe³⁺离子" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="measuring_cylinder_1" type="measuring_cylinder" capacity="10mL"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20mL"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="pipette_1" type="pipette"/>
+      <Component id="stopper_1" type="stopper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="FeCl3_solution" state="liquid"/>
+      <Reagent name="Fe_powder" state="solid"/>
+      <Reagent name="KSCN_solution" state="liquid"/>
+      <Reagent name="chlorine_water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="measuring_cylinder_1" reagent="FeCl3_solution" volume="2 mL"/>
+      <Transfer from_vessel="measuring_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="Fe_powder" tool="spatula_1"/>
+      <Insert tool="stopper_1" vessel="test_tube_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="20s"/>
+      <Add vessel="test_tube_1" reagent="KSCN_solution" tool="dropper_1"/>
+      <Wait time="observe color change and record"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="test_tube_2" tool="pipette_1"/>
+      <Add vessel="test_tube_2" reagent="chlorine_water" tool="dropper_1"/>
+      <Wait time="observe color change and record"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

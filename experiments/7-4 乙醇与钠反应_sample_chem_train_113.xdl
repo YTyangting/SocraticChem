@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="金属钠与无水乙醇反应及气体检验"
+    goal="研究金属钠与无水乙醇反应，收集并检验产生的气体，与钠与水反应气体进行对比分析。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="beaker_1" type="beaker" capacity="50ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="tweezers_1" type="tweezers"/>
+      <Component id="filter_paper_1" type="filter_paper"/>
+      <Component id="match_1" type="match"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Anhydrous_Ethanol" state="liquid"/>
+      <Reagent name="Sodium_Metal" state="solid"/>
+      <Reagent name="Limewater" state="liquid"/>
+      <Reagent name="Paraffin_Oil" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Add vessel="test_tube_1" reagent="Anhydrous_Ethanol" volume="2 mL"/>
+      <Add vessel="filter_paper_1" reagent="Sodium_Metal" mass="~0.1 g"/>
+      <Add vessel="filter_paper_1" reagent="Paraffin_Oil" volume="a few drops"/>
+      <Wait time="10s"/>
+      <Transfer from_vessel="filter_paper_1" to_vessel="test_tube_1" volume="all" tool="tweezers_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Insert tool="match_1" vessel="delivery_tube_1"/>
+      <Wait time="10s"/>
+      <Add vessel="beaker_1" reagent="Limewater" volume="2 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="beaker_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

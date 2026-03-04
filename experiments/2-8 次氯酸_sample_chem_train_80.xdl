@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="干燥氧气对有色纸条和鲜花颜色的影响实验" goal="观察干燥氧气对干燥/湿润有色纸条和有色鲜花颜色的影响" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="gas_bottle_1" type="gas_bottle" capacity="500ml"/>
+      <Component id="gas_bottle_2" type="gas_bottle" capacity="500ml"/>
+      <Component id="gas_bottle_3" type="gas_bottle" capacity="500ml"/>
+      <Component id="glass_plate_1" type="glass_plate"/>
+      <Component id="glass_plate_2" type="glass_plate"/>
+      <Component id="glass_plate_3" type="glass_plate"/>
+      <Component id="dry_colored_strip" type="strip"/>
+      <Component id="wet_colored_strip" type="strip"/>
+      <Component id="colored_flower" type="flower"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Oxygen" state="gas"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="gas_bottle_1" reagent="Oxygen" volume="500 mL"/>
+      <Add vessel="gas_bottle_2" reagent="Oxygen" volume="500 mL"/>
+      <Add vessel="gas_bottle_3" reagent="Oxygen" volume="500 mL"/>
+      <Insert tool="dry_colored_strip" vessel="gas_bottle_1"/>
+      <Insert tool="wet_colored_strip" vessel="gas_bottle_2"/>
+      <Insert tool="colored_flower" vessel="gas_bottle_3"/>
+      <Insert tool="glass_plate_1" vessel="gas_bottle_1"/>
+      <Insert tool="glass_plate_2" vessel="gas_bottle_2"/>
+      <Insert tool="glass_plate_3" vessel="gas_bottle_3"/>
+      <Wait time="30min"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

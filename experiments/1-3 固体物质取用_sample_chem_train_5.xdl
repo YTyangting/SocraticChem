@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Preparation of Marble and Sodium Carbonate Samples in Test Tubes" 
+    goal="To prepare and fix marble pieces and sodium carbonate powder in separate clean test tubes for subsequent experiments." 
+    difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_rack" type="test_tube_rack"/>
+      <Component id="spatula" type="spatula"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="marble" state="solid"/>
+      <Reagent name="sodium_carbonate" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="marble" mass="a small amount" tool="spatula"/>
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      <Add vessel="test_tube_2" reagent="sodium_carbonate" mass="a small amount" tool="spatula"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

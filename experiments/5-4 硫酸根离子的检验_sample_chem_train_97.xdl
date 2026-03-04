@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Ba²⁺与SO₄²⁻、CO₃²⁻反应实验" 
+    goal="通过向含SO₄²⁻和CO₃²⁻的溶液中加入BaCl₂，观察沉淀的生成及其与稀盐酸的反应，分析Ba²⁺与SO₄²⁻、CO₃²⁻的反应类型，并写出离子方程式，总结实验结论。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10ml"/>
+      <Component id="test_tube_rack" type="rack"/>
+      <Component id="test_tube_clamp_1" type="clamp"/>
+      <Component id="test_tube_clamp_2" type="clamp"/>
+      <Component id="test_tube_clamp_3" type="clamp"/>
+      <Component id="graduated_cylinder" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="dilute_H2SO4" state="liquid"/>
+      <Reagent name="Na2SO4_solution" state="liquid"/>
+      <Reagent name="Na2CO3_solution" state="liquid"/>
+      <Reagent name="BaCl2_solution" state="liquid"/>
+      <Reagent name="dilute_HCl" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Attach vessel="test_tube_1" support="test_tube_clamp_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_clamp_2"/>
+      <Attach vessel="test_tube_3" support="test_tube_clamp_3"/>
+      <Add vessel="test_tube_1" reagent="dilute_H2SO4" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_2" reagent="Na2SO4_solution" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_3" reagent="Na2CO3_solution" volume="2 mL" tool="graduated_cylinder"/>
+      <Add vessel="test_tube_1" reagent="BaCl2_solution" volume="0.2 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="BaCl2_solution" volume="0.2 mL" tool="dropper"/>
+      <Add vessel="test_tube_3" reagent="BaCl2_solution" volume="0.2 mL" tool="dropper"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Stir vessel="test_tube_3"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_1" reagent="dilute_HCl" volume="1 mL" tool="dropper"/>
+      <Add vessel="test_tube_2" reagent="dilute_HCl" volume="1 mL" tool="dropper"/>
+      <Add vessel="test_tube_3" reagent="dilute_HCl" volume="1 mL" tool="dropper"/>
+      <Stir vessel="test_tube_1"/>
+      <Stir vessel="test_tube_2"/>
+      <Stir vessel="test_tube_3"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

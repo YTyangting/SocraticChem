@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="氯化钠溶解性实验" goal="探究氯化钠在蒸馏水中的溶解性及其溶解过程的现象" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="100ml"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="25ml"/>
+      <Component id="stirring_rod_1" type="stirring_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Sodium_Chloride" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="10 mL" tool="graduated_cylinder_1"/>
+      <Add vessel="beaker_1" reagent="Sodium_Chloride" mass="2 g"/>
+      <Insert tool="stirring_rod_1" vessel="beaker_1"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Add vessel="beaker_1" reagent="Sodium_Chloride" mass="2 g"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+      <Add vessel="beaker_1" reagent="Distilled_Water" volume="10 mL" tool="graduated_cylinder_1"/>
+      <Stir vessel="beaker_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

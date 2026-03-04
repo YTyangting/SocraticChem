@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="过氧化钠与水反应及产物性质检验实验" 
+    goal="检验过氧化钠与水反应生成的气体及溶液的酸碱性，并观察反应的放热现象" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="wooden_stick_1" type="wooden_stick"/>
+      <Component id="ph_paper_1" type="ph_paper"/>
+      <Component id="glass_rod_1" type="glass_rod"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Sodium_Peroxide" state="solid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Sodium_Peroxide" mass="1.5 g" tool="spatula_1"/>
+      <Add vessel="test_tube_1" reagent="Water" volume="1.5 mL" tool="graduated_cylinder_1"/>
+      <Insert tool="wooden_stick_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Wait time="10s"/>
+      <Insert tool="glass_rod_1" vessel="test_tube_1"/>
+      <Wait time="5s"/>
+      <Transfer from_vessel="glass_rod_1" to_vessel="ph_paper_1" volume="0.05 mL"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

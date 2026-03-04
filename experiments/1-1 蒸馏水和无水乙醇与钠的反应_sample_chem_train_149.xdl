@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Observation of Sodium Reaction with Water and Ethanol" 
+    goal="To observe and compare the reaction phenomena of metallic sodium with distilled water and anhydrous ethanol, including gas evolution, sodium movement, and flame production."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_water" type="beaker" capacity="100ml"/>
+      <Component id="beaker_ethanol" type="beaker" capacity="100ml"/>
+      <Component id="tweezers" type="tweezers"/>
+      <Component id="filter_paper" type="filter_paper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Distilled_Water" state="liquid"/>
+      <Reagent name="Anhydrous_Ethanol" state="liquid"/>
+      <Reagent name="Sodium_1" state="solid"/>
+      <Reagent name="Sodium_2" state="solid"/>
+      <Reagent name="Petroleum" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_water" reagent="Distilled_Water" volume="50 mL"/>
+      <Add vessel="beaker_ethanol" reagent="Anhydrous_Ethanol" volume="50 mL"/>
+      <Add vessel="filter_paper" reagent="Sodium_1" mass="~0.1 g" tool="tweezers"/>
+      <Add vessel="filter_paper" reagent="Sodium_2" mass="~0.1 g" tool="tweezers"/>
+      <Wait time="10s"/>
+      <Add vessel="beaker_water" reagent="Sodium_1" mass="~0.1 g" tool="tweezers"/>
+      <Add vessel="beaker_ethanol" reagent="Sodium_2" mass="~0.1 g" tool="tweezers"/>
+      <Wait time="30s"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

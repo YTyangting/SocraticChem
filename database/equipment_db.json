@@ -1,0 +1,43 @@
+{
+  "types": {
+    "tube": {
+      "name_cn": "试管",
+      "class_name": "Vessel",  
+      "default_args": {
+        "capacity": 50.0,
+        "sealed": false
+      },
+      "topology": {
+        "tags": ["glassware", "vessel", "heatable"],
+        "my_tags": ["tube_tag"],
+        "connectable_to": ["clamp_tag", "rack_tag"],
+        "ports": ["mouth"]
+      }
+    },
+    "burner": {
+      "name_cn": "酒精灯",
+      "class_name": "Heater",
+      "default_args": {
+        "target_temp": 500.0
+      },
+      "topology": {
+        "tags": ["heater", "source"],
+        "my_tags": ["burner_tag"],
+        "connectable_to": ["table_tag"],
+        "ports": ["wick"]
+      }
+    },
+    "stand": {
+      "name_cn": "铁架台",
+      "class_name": "Support",
+      "default_args": {},
+      "topology": {
+        "tags": ["support"],
+        "my_tags": ["stand_tag"],
+        "connectable_to": ["table_tag"],
+        "ports": ["pole", "base"],
+        "capacity": 5
+      }
+    }
+  }
+}

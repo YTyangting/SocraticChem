@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="木炭与氧化铜反应制备并检验二氧化碳"
+    goal="通过加热木炭与氧化铜混合物，制备二氧化碳，并用澄清石灰水检验其生成，同时观察反应前后粉末颜色变化以判断反应是否成功。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="rubber_stopper_with_tube" type="rubber_stopper_with_tube"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="spring_clip_1" type="spring_clip"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="charcoal_powder" state="solid"/>
+      <Reagent name="copper_oxide_powder" state="solid"/>
+      <Reagent name="limewater" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 检查气密性 -->
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <!-- 配制混合粉末 -->
+      <Add vessel="test_tube_1" reagent="charcoal_powder" mass="0.5 g"/>
+      <Add vessel="test_tube_1" reagent="copper_oxide_powder" mass="0.5 g"/>
+      <Wait time="30s"/>
+      <!-- 铺放混合粉末于试管底部 -->
+      <!-- 组装装置 -->
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_1"/>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Add vessel="test_tube_2" reagent="limewater" volume="10 mL"/>
+      <Insert tool="rubber_stopper_with_tube" vessel="test_tube_2"/>
+      <!-- 加热反应 -->
+      <Heat vessel="test_tube_1" target_temperature="200"/>
+      <Wait time="5m"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

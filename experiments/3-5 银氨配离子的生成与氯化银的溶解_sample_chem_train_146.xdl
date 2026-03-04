@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="AgCl沉淀在氨水中的溶解性实验"
+    goal="观察并分析AgCl沉淀在1 mol/L氨水中的变化，判断其是否溶解"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="stand_1" type="stand"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="AgCl_precipitate" state="solid"/>
+      <Reagent name="Ammonia_solution_1mol_L" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="AgCl_precipitate" mass="0.2 g"/>
+      <Add vessel="test_tube_1" reagent="Ammonia_solution_1mol_L" volume="5 mL" tool="dropper_1"/>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

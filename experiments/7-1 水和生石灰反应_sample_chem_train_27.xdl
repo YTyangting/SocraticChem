@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="生石灰与水反应实验" goal="观察生石灰（CaO）与水反应过程中的现象及温度变化" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="thermometer_1" type="thermometer"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="CaO" state="solid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="CaO" mass="1 g" tool="spatula_1"/>
+      <Add vessel="graduated_cylinder_1" reagent="Water" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Insert tool="thermometer_1" vessel="test_tube_1"/>
+      <Wait time="30s"/>
+      <MeasureTemperature vessel="test_tube_1"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

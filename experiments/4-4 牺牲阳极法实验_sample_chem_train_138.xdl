@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="铁片与锌片在酸化NaCl溶液中的电化学反应实验"
+    goal="观察铁片（Fe）和锌片（Zn）在酸化3% NaCl溶液中通电后的电流变化、电极附近气泡或颜色变化，并用铁氰化钾溶液检测Fe电极区域溶液的变化，分析相关反应。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="beaker_1" type="beaker" capacity="250ml"/>
+      <Component id="fe_strip" type="metal_strip" capacity="N/A"/>
+      <Component id="zn_strip" type="metal_strip" capacity="N/A"/>
+      <Component id="ammeter_1" type="ammeter"/>
+      <Component id="wire_1" type="wire"/>
+      <Component id="wire_2" type="wire"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Acidified_NaCl_solution" state="liquid"/>
+      <Reagent name="K3FeCN6_solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="beaker_1" reagent="Acidified_NaCl_solution" volume="100 mL"/>
+      <Insert tool="fe_strip" vessel="beaker_1"/>
+      <Insert tool="zn_strip" vessel="beaker_1"/>
+      <Attach vessel="fe_strip" support="wire_1"/>
+      <Attach vessel="zn_strip" support="wire_2"/>
+      <Attach vessel="wire_1" support="ammeter_1"/>
+      <Attach vessel="wire_2" support="ammeter_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="beaker_1" to_vessel="test_tube_1" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="K3FeCN6_solution" volume="0.1 mL" tool="dropper_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

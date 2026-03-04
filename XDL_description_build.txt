@@ -1,0 +1,107 @@
+XDL Language Specification v3.0 (Code-Aligned)
+============================================================
+1. GENERAL STRUCTURE
+============================================================
+Root Element: <XDL>
+Children:
+1. <Metadata>: Experiment context.
+2. <Synthesis>: Execution logic containing <Hardware>, <Reagents>, <Procedure>.
+
+Example:
+<XDL>
+  <Metadata title="..." goal="..." difficulty="Normal"/>
+  <Synthesis>
+      <Hardware>...</Hardware>
+      <Reagents>...</Reagents>
+      <Procedure>...</Procedure>
+  </Synthesis>
+</XDL>
+
+============================================================
+2. METADATA
+============================================================
+Tag: <Metadata>
+Attributes:
+- title (required): Name of the experiment.
+- goal (required): The specific objective (critical for evaluation).
+- difficulty (optional): "Easy", "Normal", "Hard".
+
+============================================================
+3. HARDWARE & REAGENTS
+============================================================
+Tag: <Hardware> -> <Component>
+Attributes:
+- id (required): Unique ID (e.g., "flask_1").
+- type (required): e.g., "flask", "burette", "stand".
+- capacity (optional): e.g., "250ml".
+
+Tag: <Reagents> -> <Reagent>
+Attributes:
+- name (required): Variable name (e.g., "Unknown_HCl").
+- state (required): "solid" (or "powder") vs "liquid" (or "solution").
+  * This determines if 'mass' or 'volume' is used in Add action.
+
+============================================================
+4. PROCEDURE ACTIONS
+============================================================
+Only the following actions are allowed in <Procedure>.
+
+[GROUP 1] FLUID & REAGENT MANIPULATION
+------------------------------------------------------------
+4.1 Add
+Description: Add reagent to a vessel.
+Attributes:
+- vessel: Target vessel ID.
+- reagent: Reagent Name.
+- volume: Required if state is LIQUID (e.g., "10 mL").
+- mass: Required if state is SOLID (e.g., "5 g").
+- tool: Optional (e.g., "dropper").
+
+4.2 Transfer
+Description: Move liquid between vessels (includes titration).
+Attributes:
+- from_vessel: Source ID.
+- to_vessel: Destination ID.
+- volume: Amount (e.g., "15 mL").
+- tool: Optional.
+
+[GROUP 2] HARDWARE TOPOLOGY
+------------------------------------------------------------
+4.5 Attach
+Description: Clamp/Fix a vessel to a support.
+Attributes:
+- vessel: Child object (e.g., burette).
+- support: Parent object (e.g., stand).
+
+4.6 Insert
+Description: Place a tool/object inside a vessel.
+Attributes:
+- tool: Object ID (e.g., thermometer).
+- vessel: Container ID.
+
+[GROUP 3] ENVIRONMENT & OBSERVATION
+------------------------------------------------------------
+4.7 Heat
+Attributes:
+- vessel: Target ID.
+- target_temperature: Optional float (e.g., "100").
+
+4.8 Cool / Stir / MeasureTemperature
+Attributes:
+- vessel: Target ID.
+
+4.9 MeasureMass
+Attributes:
+- vessel: OR - reagent: (One is required).
+
+4.10 Wait
+Attributes:
+- time: Duration (e.g., "30s").
+
+[GROUP 4] SEPARATION
+------------------------------------------------------------
+4.11 Filter
+Attributes: - from_vessel, - to_vessel.
+
+4.12 CollectGas
+Attributes: - source_vessel, - collector.

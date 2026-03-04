@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="苯酚与溴水反应实验" goal="观察苯酚溶液与溴水反应生成白色沉淀的现象" difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="dropper_1" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Phenol_Solution" state="liquid"/>
+      <Reagent name="Bromine_Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Phenol_Solution" volume="5 mL"/>
+      <Add vessel="test_tube_1" reagent="Bromine_Water" volume="1 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Add vessel="test_tube_1" reagent="Bromine_Water" volume="1 mL" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

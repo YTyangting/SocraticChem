@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="有机化合物的鉴别实验" 
+    goal="通过与特定试剂反应，鉴别乙醇、乙酸、乙醛、环己烯和苯酚等有机化合物的种类，依据反应现象判断其结构特征。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_2" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_3" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_4" type="test_tube" capacity="10mL"/>
+      <Component id="test_tube_5" type="test_tube" capacity="10mL"/>
+      <Component id="water_bath" type="water_bath"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Unknown_Organic_1" state="liquid"/> <!-- 例如乙醇 -->
+      <Reagent name="CuSO4_Solution_5percent" state="liquid"/>
+      <Reagent name="Unknown_Organic_2" state="liquid"/> <!-- 例如乙酸 -->
+      <Reagent name="NaHCO3_Solution" state="liquid"/>
+      <Reagent name="Unknown_Organic_3" state="liquid"/> <!-- 例如乙醛 -->
+      <Reagent name="Tollens_Reagent" state="liquid"/>
+      <Reagent name="Unknown_Organic_4" state="liquid"/> <!-- 例如环己烯 -->
+      <Reagent name="Acidified_KMnO4_Solution" state="liquid"/>
+      <Reagent name="Unknown_Organic_5" state="liquid"/> <!-- 例如苯酚 -->
+      <Reagent name="FeCl3_Solution" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 1. 乙醇的鉴别（与CuSO4反应） -->
+      <Add vessel="test_tube_1" reagent="Unknown_Organic_1" volume="2 mL"/>
+      <Add vessel="test_tube_1" reagent="CuSO4_Solution_5percent" volume="2 mL"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+
+      <!-- 2. 乙酸的鉴别（与NaHCO3反应） -->
+      <Add vessel="test_tube_2" reagent="Unknown_Organic_2" volume="2 mL"/>
+      <Add vessel="test_tube_2" reagent="NaHCO3_Solution" volume="2 mL" tool="dropper"/>
+      <Wait time="30s"/>
+
+      <!-- 3. 乙醛的鉴别（Tollens试剂，银镜反应） -->
+      <Add vessel="test_tube_3" reagent="Unknown_Organic_3" volume="2 mL"/>
+      <Add vessel="test_tube_3" reagent="Tollens_Reagent" volume="2 mL"/>
+      <Transfer from_vessel="test_tube_3" to_vessel="water_bath" volume="4 mL"/>
+      <Heat vessel="test_tube_3" target_temperature="40"/>
+      <Wait time="2min"/>
+
+      <!-- 4. 环己烯的鉴别（与酸性高锰酸钾反应） -->
+      <Add vessel="test_tube_4" reagent="Unknown_Organic_4" volume="2 mL"/>
+      <Add vessel="test_tube_4" reagent="Acidified_KMnO4_Solution" volume="1 mL" tool="dropper"/>
+      <Wait time="30s"/>
+
+      <!-- 5. 苯酚的鉴别（与FeCl3反应） -->
+      <Add vessel="test_tube_5" reagent="Unknown_Organic_5" volume="2 mL"/>
+      <Add vessel="test_tube_5" reagent="FeCl3_Solution" volume="1 mL" tool="dropper"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

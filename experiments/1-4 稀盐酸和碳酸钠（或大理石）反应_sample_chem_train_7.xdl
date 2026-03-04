@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="碳酸钠与稀盐酸反应实验" goal="观察碳酸钠（或大理石）与稀盐酸反应产生气体的现象" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="spatula_1" type="spatula"/>
+      <Component id="graduated_cylinder_1" type="graduated_cylinder" capacity="10ml"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Sodium_Carbonate" state="solid"/>
+      <Reagent name="Dilute_HCl" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="Sodium_Carbonate" mass="2 g" tool="spatula_1"/>
+      <Add vessel="graduated_cylinder_1" reagent="Dilute_HCl" volume="2 mL"/>
+      <Transfer from_vessel="graduated_cylinder_1" to_vessel="test_tube_1" volume="2 mL"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

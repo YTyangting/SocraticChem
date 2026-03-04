@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="乙醇与灼热铜丝反应实验" 
+    goal="观察乙醇与灼热铜丝反应时铜丝颜色变化及液体和气味的变化，探究乙醇的还原性和反应现象。" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="10ml"/>
+      <Component id="copper_wire_1" type="copper_wire"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="ethanol" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="ethanol" volume="2 mL"/>
+      <Wait time="5s"/>
+      <Insert vessel="test_tube_holder_1" tool="copper_wire_1"/>
+      <Heat vessel="copper_wire_1" target_temperature="500"/>
+      <Wait time="10s"/>
+      <Insert vessel="test_tube_1" tool="copper_wire_1"/>
+      <Wait time="10s"/>
+      <Wait time="repeat heating and insertion several times, observe each reaction"/>
+      <Wait time="fan gas at test tube mouth and smell carefully (do not inhale directly)"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata title="NaOH与稀盐酸反应现象观察" goal="观察NaOH溶液与稀盐酸在试管中的反应现象" difficulty="Easy"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="NaOH_solution_5_percent" state="liquid"/>
+      <Reagent name="Dilute_HCl" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="NaOH_solution_5_percent" volume="few drops" tool="dropper_1"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Add vessel="test_tube_1" reagent="Dilute_HCl" volume="few drops" tool="dropper_2"/>
+      <Stir vessel="test_tube_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

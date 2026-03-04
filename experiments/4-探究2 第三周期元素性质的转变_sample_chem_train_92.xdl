@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="镁条与水及氢氧化铝沉淀的反应实验"
+    goal="探究镁与水反应及氢氧化铝沉淀的两性，观察反应现象，并结合含氧酸酸性强弱分析非金属性变化规律。"
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_4" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_5" type="test_tube" capacity="20ml"/>
+      <Component id="sandpaper_1" type="sandpaper"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="thermometer_1" type="thermometer"/>
+      <Component id="dropper_1" type="dropper"/>
+      <Component id="dropper_2" type="dropper"/>
+      <Component id="dropper_3" type="dropper"/>
+      <Component id="dropper_4" type="dropper"/>
+      <Component id="dropper_5" type="dropper"/>
+      <Component id="bunsen_burner_1" type="bunsen_burner"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="magnesium_strip" state="solid"/>
+      <Reagent name="distilled_water" state="liquid"/>
+      <Reagent name="phenolphthalein_solution" state="liquid"/>
+      <Reagent name="AlCl3_solution_1mol_L" state="liquid"/>
+      <Reagent name="NaOH_solution_2mol_L" state="liquid"/>
+      <Reagent name="MgCl2_solution_1mol_L" state="liquid"/>
+      <Reagent name="Al(OH)3_precipitate" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="test_tube_1" reagent="magnesium_strip" mass="0.2 g"/>
+      <Insert tool="sandpaper_1" vessel="test_tube_1"/>
+      <Wait time="30s"/>
+      <Add vessel="test_tube_1" reagent="distilled_water" volume="2 mL" tool="dropper_1"/>
+      <Add vessel="test_tube_1" reagent="phenolphthalein_solution" volume="2 drops" tool="dropper_2"/>
+      <Wait time="60s"/>
+      <Insert tool="thermometer_1" vessel="test_tube_1"/>
+      <Heat vessel="test_tube_1" target_temperature="100"/>
+      <Wait time="60s"/>
+      <Attach vessel="test_tube_1" support="stand_1"/>
+      <Add vessel="test_tube_2" reagent="AlCl3_solution_1mol_L" volume="2 mL" tool="dropper_3"/>
+      <Add vessel="test_tube_2" reagent="distilled_water" volume="2 mL" tool="dropper_4"/>
+      <Wait time="30s"/>
+      <Filter from_vessel="test_tube_2" to_vessel="test_tube_3"/>
+      <Add vessel="test_tube_3" reagent="Al(OH)3_precipitate" mass="appropriate"/>
+      <Transfer from_vessel="test_tube_3" to_vessel="test_tube_4" volume="1 mL"/>
+      <Transfer from_vessel="test_tube_3" to_vessel="test_tube_5" volume="1 mL"/>
+      <Add vessel="test_tube_4" reagent="NaOH_solution_2mol_L" volume="2 mL" tool="dropper_5"/>
+      <Add vessel="test_tube_5" reagent="MgCl2_solution_1mol_L" volume="2 mL" tool="dropper_5"/>
+      <Wait time="60s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

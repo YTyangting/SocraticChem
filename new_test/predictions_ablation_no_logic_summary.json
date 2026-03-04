@@ -1,0 +1,11 @@
+{
+    "filename": "predictions_ablation_no_logic.jsonl",
+    "sample_count": 1302,
+    "metrics": {
+        "BLEU-4": 38.12165518797585,
+        "ROUGE-1": 56.933486651112,
+        "ROUGE-2": 33.56552715428355,
+        "ROUGE-L": 42.676783080070855,
+        "BERTScore_Mean": 80.78703284263611
+    }
+}

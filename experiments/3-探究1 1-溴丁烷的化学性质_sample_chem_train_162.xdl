@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="1-溴丁烷与无水乙醇反应气密性与产物检验实验" 
+    goal="检验装置气密性，混合1-溴丁烷与无水乙醇加热反应，收集并分析产生的气体对酸性高锰酸钾溶液的褪色作用，判断反应类型及生成物。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="flask_1" type="round_bottom_flask" capacity="100ml"/>
+      <Component id="rubber_stop_1" type="rubber_stop_with_tube"/>
+      <Component id="stand_1" type="iron_stand"/>
+      <Component id="burner_1" type="alcohol_lamp"/>
+      <Component id="water_1" type="liquid_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Ethanol_anhydrous" state="liquid"/>
+      <Reagent name="Bromobutane_1" state="liquid"/>
+      <Reagent name="Boiling_Stones" state="solid"/>
+      <Reagent name="Water" state="liquid"/>
+      <Reagent name="Acidic_KMnO4" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <!-- 检查气密性 -->
+      <Insert tool="rubber_stop_1" vessel="flask_1"/>
+      <!-- 量取并加入无水乙醇 -->
+      <Add vessel="flask_1" reagent="Ethanol_anhydrous" volume="15 mL"/>
+      <!-- 量取并加入1-溴丁烷 -->
+      <Add vessel="flask_1" reagent="Bromobutane_1" volume="5 mL"/>
+      <!-- 加入沸石 -->
+      <Add vessel="flask_1" reagent="Boiling_Stones" mass="0.2 g"/>
+      <!-- 固定烧瓶 -->
+      <Attach vessel="flask_1" support="stand_1"/>
+
+      <Insert tool="rubber_stop_1" vessel="water_1"/>
+      <!-- 加热至微沸 -->
+      <Heat vessel="flask_1" target_temperature="80"/>
+      <!-- 将导管末端插入盛水试管 -->
+      <Wait time="30s"/>
+      <!-- 结束 -->
+    </Procedure>
+  </Synthesis>
+</XDL>
