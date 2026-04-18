@@ -6,9 +6,9 @@ from vllm import LLM, SamplingParams
 # [注意] 请确保 TENSOR_PARALLEL_SIZE 能整除模型词表大小 (如 4, 6, 8)
 # 且小于等于实际显卡数量
 TENSOR_PARALLEL_SIZE = 4            
-MODEL_PATH = "/home/yjh/chatglm3-6b"   # 您的模型路径
-TEST_FILE = "/home/yjh/socChemlab/chemlab_safety_eval_set.json" # 新数据路径
-OUTPUT_FILE = "new_test/predictions_chatglm3-6b_new_safety.jsonl" 
+MODEL_PATH = "/home/yjh/soclm_v5"   # 您的模型路径
+TEST_FILE = "/home/yjh/socChem_final/distribution_shift.json" # 新数据路径
+OUTPUT_FILE = "new_test/predictions_soclm_v5_distribution_shift.jsonl" 
 
 # [关键修改] 新数据的逻辑链起始标签
 FORCE_PREFIX = "<FindcurrentNode>\n" 

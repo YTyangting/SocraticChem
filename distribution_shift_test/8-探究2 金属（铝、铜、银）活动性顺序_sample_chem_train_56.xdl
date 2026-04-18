@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="金属活动性顺序的探究"
+    goal="通过将铝丝和铜丝分别与硫酸铜溶液、硝酸银溶液和硫酸铝溶液反应，观察金属表面和溶液的变化，从而探究金属的活动性顺序。"
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_rack" type="test_tube_rack"/>
+      <Component id="tongs" type="tongs"/>
+      <Component id="sandpaper" type="sandpaper"/>
+      <Component id="al_wire" type="wire" capacity="1g"/>
+      <Component id="cu_wire_1" type="wire" capacity="1g"/>
+      <Component id="cu_wire_2" type="wire" capacity="1g"/>
+      <Component id="test_tube_holder_1" type="test_tube_holder"/>
+      <Component id="test_tube_holder_2" type="test_tube_holder"/>
+      <Component id="test_tube_holder_3" type="test_tube_holder"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="CuSO4_solution" state="liquid"/>
+      <Reagent name="AgNO3_solution" state="liquid"/>
+      <Reagent name="Al2(SO4)3_solution" state="liquid"/>
+      <Reagent name="Al_wire" state="solid"/>
+      <Reagent name="Cu_wire_1" state="solid"/>
+      <Reagent name="Cu_wire_2" state="solid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="al_wire" reagent="Al_wire" mass="1 g"/>
+      <Insert tool="sandpaper" vessel="al_wire"/>
+      <Wait time="30s"/>
+      <Add vessel="cu_wire_1" reagent="Cu_wire_1" mass="1 g"/>
+      <Add vessel="cu_wire_2" reagent="Cu_wire_2" mass="1 g"/>
+      <Add vessel="test_tube_1" reagent="CuSO4_solution" volume="10 mL"/>
+      <Add vessel="test_tube_2" reagent="AgNO3_solution" volume="10 mL"/>
+      <Add vessel="test_tube_3" reagent="Al2(SO4)3_solution" volume="10 mL"/>
+      <Attach vessel="test_tube_1" support="test_tube_rack"/>
+      <Attach vessel="test_tube_2" support="test_tube_rack"/>
+      <Attach vessel="test_tube_3" support="test_tube_rack"/>
+      <Attach vessel="test_tube_1" support="test_tube_holder_1"/>
+      <Attach vessel="test_tube_2" support="test_tube_holder_2"/>
+      <Attach vessel="test_tube_3" support="test_tube_holder_3"/>
+      <Insert tool="tongs" vessel="al_wire"/>
+      <Transfer from_vessel="al_wire" to_vessel="test_tube_1" volume="wire"/>
+      <Wait time="2min"/>
+      <Transfer from_vessel="test_tube_1" to_vessel="al_wire" volume="wire"/>
+      <Wait time="30s"/>
+      <Insert tool="tongs" vessel="cu_wire_1"/>
+      <Transfer from_vessel="cu_wire_1" to_vessel="test_tube_2" volume="wire"/>
+      <Wait time="2min"/>
+      <Transfer from_vessel="test_tube_2" to_vessel="cu_wire_1" volume="wire"/>
+      <Wait time="30s"/>
+      <Insert tool="tongs" vessel="cu_wire_2"/>
+      <Transfer from_vessel="cu_wire_2" to_vessel="test_tube_3" volume="wire"/>
+      <Wait time="2min"/>
+      <Transfer from_vessel="test_tube_3" to_vessel="cu_wire_2" volume="wire"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

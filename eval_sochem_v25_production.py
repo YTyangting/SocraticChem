@@ -390,7 +390,7 @@ def generate_report(df, filename):
     print("-" * 60 + "\n")
 
 def main():
-    files = glob.glob("/home/yjh/socChemlab/new_test/*.jsonl") # Update path if needed
+    files = glob.glob("/home/yjh/socChem_final/dis_test_result/*.jsonl") # Update path if needed
     if not files:
         print("❌ No files found in data/")
         return

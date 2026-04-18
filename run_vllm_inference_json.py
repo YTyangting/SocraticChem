@@ -3,9 +3,9 @@ import os
 from vllm import LLM, SamplingParams
 
 # ================= 配置区域 =================
-MODEL_PATH = "/home/yjh/soclm_v3"  # 模型路径
-TEST_FILE = "/home/yjh/socChemlab/sft_finetune_chemlab_test.json"  # 测试文件
-OUTPUT_FILE = "new_test/predictions_chem_lab_xml.jsonl"  # 输出文件
+MODEL_PATH = "/home/yjh/soclm_v5"  # 模型路径
+TEST_FILE = "/home/yjh/socChem_final/sft_finetune_chemlab_test_noisy.json"  # 测试文件
+OUTPUT_FILE = "new_test/predictions_soclm_v5_noisy.jsonl"  # 输出文件
 
 TENSOR_PARALLEL_SIZE = 4  # 显卡数量
 

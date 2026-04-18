@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Preparation and Purification of Acetylene Gas (C₂H₂) via Reaction of Calcium Carbide with Saturated Sodium Chloride Solution"
+    goal="Generate acetylene gas by reacting calcium carbide with saturated sodium chloride solution, purify the gas using copper sulfate and anhydrous calcium chloride, collect and test its purity, and observe its reactions with acidic potassium permanganate and bromine in carbon tetrachloride."
+    difficulty="Normal"
+  />
+  <Synthesis>
+    <Hardware>
+      <Component id="flask_1" type="flask" capacity="250ml"/>
+      <Component id="stopper_1" type="rubber_stopper"/>
+      <Component id="tube_1" type="glass_tube"/>
+      <Component id="dropping_funnel_1" type="dropping_funnel" capacity="100ml"/>
+      <Component id="stand_1" type="stand"/>
+      <Component id="bottle_1" type="gas_washing_bottle" capacity="100ml"/>
+      <Component id="bottle_2" type="drying_tube" capacity="50ml"/>
+      <Component id="collector_1" type="gas_collection_tube" capacity="100ml"/>
+      <Component id="test_tube_1" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_2" type="test_tube" capacity="20ml"/>
+      <Component id="test_tube_3" type="test_tube" capacity="20ml"/>
+      <Component id="alcohol_lamp_1" type="alcohol_lamp"/>
+      <Component id="match_1" type="match"/>
+      <Component id="rubber_tube_1" type="rubber_tube"/>
+      <Component id="rubber_tube_2" type="rubber_tube"/>
+      <Component id="rubber_tube_3" type="rubber_tube"/>
+      <Component id="thermometer_1" type="thermometer"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Calcium_Carbide" state="solid"/>
+      <Reagent name="Saturated_NaCl_Solution" state="liquid"/>
+      <Reagent name="Copper_Sulfate_Solution" state="liquid"/>
+      <Reagent name="Anhydrous_CaCl2" state="solid"/>
+      <Reagent name="Acidic_KMnO4_Solution" state="liquid"/>
+      <Reagent name="Bromine_CCl4_Solution" state="liquid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Add vessel="flask_1" reagent="Calcium_Carbide" mass="5 g"/>
+      <Attach vessel="flask_1" support="stand_1"/>
+      <Insert tool="stopper_1" vessel="flask_1"/>
+      <Insert tool="tube_1" vessel="stopper_1"/>
+      <Attach vessel="dropping_funnel_1" support="stand_1"/>
+      <Add vessel="dropping_funnel_1" reagent="Saturated_NaCl_Solution" volume="30 mL"/>
+      <Transfer from_vessel="dropping_funnel_1" to_vessel="flask_1" volume="1 mL" tool="dropping_funnel_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="flask_1" to_vessel="bottle_1" volume="10 mL" tool="tube_1"/>
+      <Add vessel="bottle_1" reagent="Copper_Sulfate_Solution" volume="20 mL"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="bottle_1" to_vessel="bottle_2" volume="10 mL" tool="rubber_tube_1"/>
+      <Add vessel="bottle_2" reagent="Anhydrous_CaCl2" mass="2 g"/>
+      <Wait time="30s"/>
+      <CollectGas source_vessel="bottle_2" collector="collector_1"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="collector_1" to_vessel="test_tube_1" volume="10 mL" tool="rubber_tube_2"/>
+      <Wait time="10s"/>
+      <Insert tool="match_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+      <Transfer from_vessel="collector_1" to_vessel="test_tube_2" volume="10 mL" tool="rubber_tube_3"/>
+      <Add vessel="test_tube_2" reagent="Acidic_KMnO4_Solution" volume="5 mL"/>
+      <Wait time="30s"/>
+      <Transfer from_vessel="collector_1" to_vessel="test_tube_3" volume="10 mL" tool="rubber_tube_3"/>
+      <Add vessel="test_tube_3" reagent="Bromine_CCl4_Solution" volume="5 mL"/>
+      <Wait time="30s"/>
+      <CollectGas source_vessel="bottle_2" collector="test_tube_1"/>
+      <Insert tool="match_1" vessel="test_tube_1"/>
+      <Wait time="10s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

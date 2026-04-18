@@ -3,8 +3,11 @@ import os
 import glob
 
 # --- 配置常量 ---
-INPUT_DIR = "/home/yjh/socChemlab/dataset_experiment_split/train"  # 请确保路径正确
-OUTPUT_FILE = "sft_finetune_chemlab_train_1.json"
+# INPUT_DIR = "/home/yjh/socChemlab/dataset_experiment_split/train"  # 请确保路径正确
+# OUTPUT_FILE = "sft_finetune_chemlab_train_1.json"
+
+INPUT_DIR = "/home/yjh/socChem_final/distribution_shift_test_result"  # 请确保路径正确
+OUTPUT_FILE = "distribution_shift.json"
 
 # 🔥 SFT指令：强调基于观察(Observation)进行推导 🔥
 SFT_INSTRUCTION = (

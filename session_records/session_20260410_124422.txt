@@ -1,0 +1,44 @@
+🔴 [System] Console output is being recorded to: session_records/session_20260410_124422.txt
+
+========================================
+欢迎来到 Socratic ChemLab (真实交互平台)
+========================================
+请选择你要进行的实验：
+1. 高锰酸钾制取氧气
+2. 大理石与稀盐酸反应
+3. 水的沸腾
+4. 光束通过溶液和胶体
+5. 蒸馏水和无水乙醇与钠的反应
+6. 氢氧化钠滴加硫酸铜溶液
+7. 重结晶方法提纯苯甲酸
+8. 木炭分别在空气和 氧气中燃烧
+9. 钠的燃烧
+10. 石蜡的融化
+
+请输入实验编号 (1-10) [默认选1]: 
+>> 已选择实验，正在加载实验环境: /home/yjh/socChem_final/experiments/1 石蜡的融化_sample_chem_train_3.xdl
+>> 提示：你可以开始实验了！
+
+🚀 [System] Initializing Session: 2ca6ccd4...
+🚀 [Loader] Compiling experiment from XDL: /home/yjh/socChem_final/experiments/1 石蜡的融化_sample_chem_train_3.xdl...
+✅ Loaded 188 equipment types from manifest.
+🧠 [LLM] Generating logical DAG nodes...
+✅ [Loader] Experiment '石蜡熔化实验' loaded.
+💾 [DataGen] Experiment metadata saved to real_student_session.jsonl
+🚀 [System] 真实交互模式启动 Session: 2ca6ccd4
+⚙️ [Hybrid Gen] Calculating Ground Truth for: '准备实验材料：向试管中加入石蜡，向烧杯中加入水。'...
+✅ Loaded 188 equipment types from manifest.
+⚡ [System] Pre-compiling chemical reactions (One-time Init)...
+✅ Compiled 163 reactions successfully.
+
+[Teacher]: 欢迎你来到实验室！我们要开始准备实验材料了。你觉得，试管和烧杯分别适合用来盛放哪种物质呢？你打算先从哪一步开始？
+
+==================== 第 1 轮操作 ====================
+【当前器材状态与连接】:
+【器材清单 (student view)】:
+- test_tube (test_tube_1): 是空的
+- beaker (beaker_1): 是空的
+- alcohol_lamp (alcohol_lamp_1): 是空的
+【当前实验节点】: 准备实验材料：向试管中加入石蜡，向烧杯中加入水。
+--------------------------------------------------
+👨‍🎓 请输入你的回答 (Language): 

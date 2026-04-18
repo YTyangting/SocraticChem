@@ -14,8 +14,8 @@ BASE_URL = Config.OPENAI_BASE_URL
 MODEL_NAME = "gpt-4o" 
 
 # 文件路径 (根据您的 vLLM 示例更新)
-TEST_FILE = "/home/yjh/socChemlab/chemlab_safety_eval_set.json"
-OUTPUT_FILE = "new_test/predictions_gpt4o_chem_safety.jsonl" 
+TEST_FILE = "/home/yjh/socChem_final/distribution_shift.json"
+OUTPUT_FILE = "new_test/predictions_gpt4o_distribution_shift.jsonl" 
 
 MAX_WORKERS = 8 # 根据您的 API Rate Limit 调整
 # ===========================================

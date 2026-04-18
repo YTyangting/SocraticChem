@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Sodium Handling and Surface Observation" 
+    goal="Safely handle sodium metal, remove kerosene, cut the surface, and observe changes in luster and color due to reaction with air." 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="reagent_bottle_1" type="bottle" capacity="100ml"/>
+      <Component id="filter_paper_1" type="filter_paper"/>
+      <Component id="tweezers_1" type="tweezers"/>
+      <Component id="knife_1" type="knife"/>
+      <Component id="gloves_1" type="gloves"/>
+      <Component id="goggles_1" type="goggles"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Sodium" state="solid"/>
+      <Reagent name="Kerosene" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <Insert tool="gloves_1" vessel="reagent_bottle_1"/>
+      <Insert tool="goggles_1" vessel="reagent_bottle_1"/>
+      <Insert tool="tweezers_1" vessel="reagent_bottle_1"/>
+      <Add vessel="reagent_bottle_1" reagent="Kerosene" volume="50 mL"/>
+      <Add vessel="reagent_bottle_1" reagent="Sodium" mass="2 g"/>
+      <Transfer from_vessel="reagent_bottle_1" to_vessel="filter_paper_1" volume="N/A" tool="tweezers_1"/>
+      <Wait time="10s"/>
+      <Insert tool="knife_1" vessel="filter_paper_1"/>
+      <Wait time="5s"/>
+      <Wait time="30s"/>
+    </Procedure>
+  </Synthesis>
+</XDL>

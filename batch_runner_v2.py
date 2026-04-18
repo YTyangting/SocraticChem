@@ -30,7 +30,7 @@ if not logger.handlers:
 # 0. 配置：选定探针角色
 # ==========================================
 # 选定一个操作最规范的角色作为“探路者”
-STABLE_PROFILE_NAME = "标准-学霸"
+STABLE_PROFILE_NAME = "标准-普通"
 
 # 【新增开关】 严格模式 / 熔断机制
 # True: 只要有一个探针失败，立即终止整个程序（适合调试代码 Bug）
@@ -255,9 +255,15 @@ def run_batch_job(
     logger.info(f"Data directory: {os.path.abspath(output_folder)}")
 
 if __name__ == "__main__":
+    # run_batch_job(
+    #     xdl_folder="experiments",
+    #     output_folder="finetune_data_dataset", # 修改输出目录
+    #     max_turns=40, # 用户指定的上限
+    #     max_workers=10 # 建议不要开太高，防止 OOM
+    # )
     run_batch_job(
-        xdl_folder="experiments",
-        output_folder="finetune_data_dataset", # 修改输出目录
+        xdl_folder="/home/yjh/socChem_final/distribution_shift_test",
+        output_folder="/home/yjh/socChem_final/distribution_shift_test_result", # 修改输出目录
         max_turns=40, # 用户指定的上限
         max_workers=10 # 建议不要开太高，防止 OOM
     )

@@ -1,0 +1,44 @@
+🔴 [System] Console output is being recorded to: session_records/session_20260410_114710.txt
+
+========================================
+欢迎来到 Socratic ChemLab (真实交互平台)
+========================================
+请选择你要进行的实验：
+1. 高锰酸钾制取氧气
+2. 配制氯化钠溶液
+3. 酸碱中和滴定
+
+请输入实验编号 (1/2/3) [默认选1]: 
+>> 已选择实验，正在加载实验环境: /home/yjh/socChem_final/experiments/2-5 高锰酸钾制取氧气_sample_chem_train_14.xdl
+>> 提示：你可以开始实验了！
+
+🚀 [System] Initializing Session: ece747b1...
+🚀 [Loader] Compiling experiment from XDL: /home/yjh/socChem_final/experiments/2-5 高锰酸钾制取氧气_sample_chem_train_14.xdl...
+✅ Loaded 188 equipment types from manifest.
+🧠 [LLM] Generating logical DAG nodes...
+✅ [Loader] Experiment '实验室制取和收集氧气' loaded.
+💾 [DataGen] Experiment metadata saved to real_student_session.jsonl
+🚀 [System] 真实交互模式启动 Session: ece747b1
+⚙️ [Hybrid Gen] Calculating Ground Truth for: '组装实验装置，包括连接橡皮塞与导管，准备水槽和铁架台，为后续反应做准备。'...
+✅ Loaded 188 equipment types from manifest.
+⚡ [System] Pre-compiling chemical reactions (One-time Init)...
+✅ Compiled 180 reactions successfully.
+
+[Teacher]: 欢迎来到实验室！我们要开始组装实验装置了。你觉得第一步应该先将橡皮塞和导管连接起来，还是先准备水槽和铁架台？为什么呢？
+
+==================== 第 1 轮操作 ====================
+【当前器材状态与连接】:
+【器材清单 (student view)】:
+- test_tube (test_tube): 是空的
+- rubber_stopper_with_tube (rubber_stop_tube): 是空的
+- water_trough (water_trough): 是空的
+- stand (iron_stand): 是空的
+- spatula (spatula): 是空的
+- cotton_ball (cotton_ball): 是空的
+- bottle (gas_bottle): 是空的
+- glass_plate (glass_plate): 是空的
+- alcohol_lamp (alcohol_lamp): 是空的
+- wood_strip (burning_wood_strip): 是空的
+【当前实验节点】: 组装实验装置，包括连接橡皮塞与导管，准备水槽和铁架台，为后续反应做准备。
+--------------------------------------------------
+👨‍🎓 请输入你的回答 (Language): 

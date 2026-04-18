@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDL>
+  <Metadata 
+    title="Ba(OH)₂·8H₂O与NH₄Cl反应吸热及生成氨气的实验" 
+    goal="观察Ba(OH)₂·8H₂O与NH₄Cl混合反应吸热现象及氨气生成，验证反应为吸热反应并能使水结冰" 
+    difficulty="Normal"/>
+  <Synthesis>
+    <Hardware>
+      <Component id="mortar" type="mortar"/>
+      <Component id="pestle" type="pestle"/>
+      <Component id="beaker" type="flask" capacity="100ml"/>
+      <Component id="stirring_rod" type="stirring_rod"/>
+      <Component id="watch_glass" type="watch_glass"/>
+      <Component id="wood_piece" type="board"/>
+      <Component id="dropper" type="dropper"/>
+    </Hardware>
+    <Reagents>
+      <Reagent name="Ba(OH)2_8H2O" state="solid"/>
+      <Reagent name="NH4Cl" state="solid"/>
+      <Reagent name="Water" state="liquid"/>
+    </Reagents>
+    <Procedure>
+      <MeasureMass reagent="Ba(OH)2_8H2O"/>
+      <Add vessel="mortar" reagent="Ba(OH)2_8H2O" mass="20 g"/>
+      <MeasureMass reagent="NH4Cl"/>
+      <Add vessel="mortar" reagent="NH4Cl" mass="10 g"/>
+      <Insert tool="pestle" vessel="mortar"/>
+      <Wait time="60s"/>
+      <Transfer from_vessel="mortar" to_vessel="beaker" volume="all"/>
+      <Add vessel="wood_piece" reagent="Water" volume="2 mL" tool="dropper"/>
+      <Transfer from_vessel="beaker" to_vessel="wood_piece" volume="all"/>
+      <Insert tool="stirring_rod" vessel="beaker"/>
+      <Stir vessel="beaker"/>
+      <Wait time="30s"/>
+      <Wait time="observe ammonia odor"/>
+      <Insert tool="watch_glass" vessel="beaker"/>
+      <Wait time="10s"/>
+      <Wait time="touch beaker wall and attempt to lift; observe ice formation between beaker and wood"/>
+    </Procedure>
+  </Synthesis>
+</XDL>
