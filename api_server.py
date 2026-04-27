@@ -12,7 +12,7 @@ from soc_chem_dia_Interactive_Platform import (
 
 app = FastAPI()
 
-# 建立一个全局对象来保存“单例”状态（如果是给单机 Unity 游戏提供服务，全局变量足够了）
+# 建立一个全局对象来保存“单例”状态
 class SessionState:
     def __init__(self):
         self.platform: InteractivePlatform = None
@@ -45,15 +45,15 @@ async def init_experiment(exp_id: str = "1"):
     # 你的实验路径配置
     experiment_paths = {
         "1": "/home/yjh/socChem_final/experiments/2-5 高锰酸钾制取氧气_sample_chem_train_14.xdl",
-        "2": "/home/yjh/socChem_final/experiments/1 大理石与稀盐酸反应_sample_chem_train_0.xdl",  # 示例路径，需替换
-        "3": "/home/yjh/socChem_final/experiments/1 水的沸腾_sample_chem_train_2.xdl",  # 示例路径，需替换
-        "4": "/home/yjh/socChem_final/experiments/1-1 光束通过溶液和胶体_sample_chem_train_69.xdl",  # 示例路径，需替换
-        "5": "/home/yjh/socChem_final/experiments/1-1 蒸馏水和无水乙醇与钠的反应_sample_chem_train_149.xdl",  # 示例路径，需替换
-        "6": "/home/yjh/socChem_final/experiments/1-5 氢氧化钠滴加硫酸铜溶液_sample_chem_train_8.xdl",  # 示例路径，需替换
-        "7": "/home/yjh/socChem_final/experiments/1-探究1 重结晶方法提纯苯甲酸_sample_chem_train_150.xdl",  # 示例路径，需替换
-        "8": "/home/yjh/socChem_final/experiments/2-2 木炭分别在空气和 氧气中燃烧_sample_chem_train_11.xdl",  # 示例路径，需替换
-        "9": "/home/yjh/socChem_final/experiments/2-2 钠的燃烧_sample_chem_train_74.xdl",  # 示例路径，需替换
-        "10": "/home/yjh/socChem_final/experiments/1 石蜡的融化_sample_chem_train_3.xdl"       # 示例路径，需替换
+        "2": "/home/yjh/socChem_final/experiments/1 大理石与稀盐酸反应_sample_chem_train_0.xdl",
+        "3": "/home/yjh/socChem_final/experiments/1 水的沸腾_sample_chem_train_2.xdl",
+        "4": "/home/yjh/socChem_final/experiments/1-1 光束通过溶液和胶体_sample_chem_train_69.xdl",
+        "5": "/home/yjh/socChem_final/experiments/1-1 蒸馏水和无水乙醇与钠的反应_sample_chem_train_149.xdl",
+        "6": "/home/yjh/socChem_final/experiments/1-5 氢氧化钠滴加硫酸铜溶液_sample_chem_train_8.xdl",
+        "7": "/home/yjh/socChem_final/experiments/1-探究1 重结晶方法提纯苯甲酸_sample_chem_train_150.xdl",
+        "8": "/home/yjh/socChem_final/experiments/2-2 木炭分别在空气和 氧气中燃烧_sample_chem_train_11.xdl",
+        "9": "/home/yjh/socChem_final/experiments/2-2 钠的燃烧_sample_chem_train_74.xdl",
+        "10": "/home/yjh/socChem_final/experiments/1 石蜡的融化_sample_chem_train_3.xdl"
     }
 
     xdl_path = experiment_paths.get(exp_id, experiment_paths["1"])
@@ -74,6 +74,13 @@ async def init_experiment(exp_id: str = "1"):
     
     session.platform.memory.add_turn("system", scenario_intro)
     session.last_fail_reasons = []
+
+    # [新增日志] 打印初始化状态与当前目标
+    print(f"\n============== [初始化实验 {exp_id}] ==============")
+    print(f"🥼 加载XDL文件: {xdl_path}")
+    print(f"🎯 初始目标 (Current Task): {session.current_task_desc}")
+    print(f"📋 任务约束 (Constraints): {session.constraint_str}")
+    print(f"=================================================\n")
     
     # 获取老师的开场白
     god_view_str_0 = ObservationEngine.describe_full_state(session.obs, "god")
@@ -97,7 +104,7 @@ async def init_experiment(exp_id: str = "1"):
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat_step(request: ChatRequest):
     """
-    处理玩家每一次发言/动作的执行闭环（对应原 run_interactive 的 while 循环）
+    处理玩家每一次发言/动作的执行闭环
     """
     p = session.platform # 简写
     if not p:
@@ -116,6 +123,12 @@ async def chat_step(request: ChatRequest):
             
     p.memory.add_turn("student", s_speak if s_speak else "（静默操作）")
 
+    # [新增日志] 打印玩家输入
+    print(f"\n============== [玩家回合开始] ==============")
+    print(f"🗣️ 玩家发言: {s_speak if s_speak else '无'}")
+    print(f"🎮 玩家动作: {json.dumps(pending_actions, ensure_ascii=False) if pending_actions else '无动作'}")
+    print(f"🎯 当前执行目标: {session.current_task_desc}")
+
     # 2. 意图分析与 Policy 拦截 (Ghost Sim)
     obs_before = session.obs
     short_env_summary = describe_snapshot_briefly(obs_before)
@@ -127,6 +140,8 @@ async def chat_step(request: ChatRequest):
             session.task_selector.current_focus_id = target_node.id
             (session.current_task_desc, _, 
              session.xdl_context_info, session.constraint_str) = p._resolve_task_info(target_node, session.task_selector)
+            # [新增日志] 意图分支更新
+            print(f"🔄 [意图匹配] 识别到分支意图，更新目标为: {session.current_task_desc}")
 
     ghost_report = p.sim.fork_and_predict(pending_actions, steps=20)
     policy_ctx_text = f"{session.current_task_desc}\n【环境】:{short_env_summary}\n【标准】:{session.constraint_str}"
@@ -145,19 +160,35 @@ async def chat_step(request: ChatRequest):
         final_focus_goal = "[最高优先级] 阻止危险行为"
         final_policy_instr = f"【拦截模式】{intercept_reason}"
         final_ref_info = session.xdl_context_info 
+        
+        # [新增日志]
+        print(f"⛔ [动作拦截] 被 Policy 拦截！原因: {intercept_reason}")
     else:
         # 执行物理动作
         if pending_actions:
             real_exec_info, obs_after = p.sim.execute_batch(pending_actions)
             p.memory.add_turn("system", f"【系统反馈】观察结果: {real_exec_info}")
+            # [新增日志]
+            print(f"⚙️ [物理执行] 成功应用动作，环境反馈: {real_exec_info}")
         else:
             wait_log, obs_after = p.sim.execute_batch([], duration=3.0)
             real_exec_info = wait_log if "观测到" in wait_log else "(环境静止)"
             p.memory.add_turn("system", f"【系统反馈】{wait_log}")
+            # [新增日志]
+            print(f"⏳ [物理静置] 环境反馈: {real_exec_info}")
 
         search_scope = list({act['vessel'] for act in pending_actions if act.get('vessel')}) if pending_actions else None
         is_goal_met, fail_reasons = p.validator.validate_state(obs_after, p.current_constraints, focus_ids=search_scope)
         session.last_fail_reasons = fail_reasons if not is_goal_met else []
+
+        # [新增日志] 打印目标校验结果与未完成原因
+        print(f"🔎 [状态校验] 目标是否达成: {is_goal_met}")
+        if not is_goal_met and fail_reasons:
+            print(f"❌ [当前未完成的原因]:")
+            for fr in fail_reasons:
+                print(f"   - {fr}")
+        elif is_goal_met:
+            print(f"✅ [校验通过] 玩家成功完成了当前任务节点。")
 
         if is_goal_met and session.node_or_list and not isinstance(session.node_or_list, list):
             p.oracle.mark_node_complete(session.node_or_list.id)
@@ -190,7 +221,8 @@ async def chat_step(request: ChatRequest):
     hist_context_str = p.memory.get_context_for_prompt()
 
     # === (5) 执行后：给出新器材状态，并触发 Teacher 反馈 ===
-    print(f"\n【执行后器材状态与连接】:\n{ObservationEngine.describe_full_state(obs_after, 'student')}")
+    # [强化日志] 使用你原有的调用，但增加了清晰的装饰，突出“连接状态”
+    print(f"\n🔌 [操作后的物体的连接状态与物理环境]:\n{ObservationEngine.describe_full_state(obs_after, 'student')}")
     
     t_resp = p.teacher.respond(
         history_str=hist_context_str,
@@ -206,6 +238,8 @@ async def chat_step(request: ChatRequest):
 
     t_content = t_resp.get("response", "系统老师暂时无响应。")
     p.memory.add_turn("teacher", t_content)
+    # [新增日志] 打印系统老师的回复
+    print(f"👩‍🏫 [教师回复]: {t_content}")
 
     # 5. 更新状态留给下一轮
     session.obs = obs_after
@@ -217,13 +251,21 @@ async def chat_step(request: ChatRequest):
     # 检查实验是否全剧终
     if not selection_result and dag_status.get('completed_nodes'):
          t_content += "\n\n🎉 恭喜！所有实验步骤已完成！"
+         print("\n🎉 [实验进度]: 所有实验步骤已完成！")
+    else:
+         # [新增日志] 打印下一轮分配的任务
+         print(f"\n➡️ [下一轮当前目标] (Next Task): {session.current_task_desc}")
 
+    print(f"============== [玩家回合结束] ==============\n")
+
+    # === 修改后的代码 ===
     student_view_str = ObservationEngine.describe_full_state(obs_after, 'student')
 
     return ChatResponse(
         teacher_response=t_content,
         env_state_desc=student_view_str,
-        is_crashed=session.obs.get("status") == "CRASHED"
+        is_crashed=is_intercepted  # 修改点：传入已有的 is_intercepted 变量
+        # 如果你上面模型里没改名，这里就写: is_crashed=is_intercepted
     )
 
 if __name__ == "__main__":

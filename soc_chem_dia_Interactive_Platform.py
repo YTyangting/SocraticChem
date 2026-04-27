@@ -1377,11 +1377,11 @@ class PedagogicalPolicyAgent:
         - **Definition**: Actions that cause immediate danger to the **STUDENT** (burns, cuts, poisoning) or the LAB, even if the physics engine doesn't report a crash.
         - **Triggers (Check These Explicitly)**:
           1. **Simulation Failure**: `Ghost Report` says CRASH/EXPLOSION.
-          2. **Unsecured Heating**: Heating a vessel that is not fixed (e.g., on the table, holding with hands). *Hint: If Current Goal is 'Assemble' or 'Fix', the vessel is likely loose.*
+          2. **Unsecured Heating**: Heating a vessel that is not fixed. **CRITICAL: You MUST read the [环境] Topology data. If it says "A 固定/连在 B" (e.g., test_tube clamped to stand), it IS SECURED, do NOT intercept for this reason.**
           3. **Dangerous Contact**: Touching hot apparatus or corrosive chemicals directly.
         - **Decision**: **INTERCEPT**.
         - **Reasoning**: "此操作存在严重的人身伤害风险（如烫伤、炸裂），必须立即制止。"
-        - **Instruction**: Stop the action. Sternly warn about the specific physical harm (e.g., "You will burn your hands!").
+        - **Instruction**: Stop the action. Sternly warn about the specific physical harm.
 
         ## Priority 3: 🧩 Procedural/Logical Deviation (The "Teachable Moment")
         - **Scenario**: The action is physically **SAFE**, but sub-optimal or out of order (e.g., adding chemicals before fixing the tube, or using a wrong but safe container).
@@ -2505,6 +2505,9 @@ class ContainerComponent:
         # 溶剂 (目前简化为只有水/通用溶剂)
         self.solvent_volume: float = 0.0 
         self.is_dirty: bool = False
+        # 假设室温 298K，1atm 下，根据 n = PV/RT 算一下默认空气的摩尔数
+        default_air_moles = (1.0 * (500 / 1000.0)) / (0.082 * 298.15)
+        self.gas["Air"] = default_air_moles
 
     @property
     def solid_volume(self) -> float:
@@ -2805,8 +2808,8 @@ class Vessel(LabObject):
 
     @property
     def pressure(self) -> float:
-        # 压强计算需要用到温度
-        return self.storage.pressure(self.thermal.temperature)
+        # 【修正】将摄氏度转换为开尔文
+        return self.storage.pressure(self.thermal.temperature + 273.15)
 
     @property
     def capacity(self) -> float:
@@ -3420,6 +3423,13 @@ class EquipmentFactory:
             is_sealed = str(config.get("sealed", "false")).lower() == "true"
             
             obj = target_class(oid, capacity=cap, name=final_name, is_sealed=is_sealed)
+
+            # 🌟🌟🌟 新增：如果是水槽，默认装满 80% 的水！ 🌟🌟🌟
+            if "trough" in raw_type.lower() or "basin" in raw_type.lower():
+                # 加入 H2O，量为容量的 80%
+                water_vol = cap * 0.8
+                obj.add_chemical("H2O", water_vol, "ml")
+                # print(f"自动为水槽 {oid} 注入了 {water_vol}ml 水")
             
         elif issubclass(target_class, Heater):
             obj = target_class(oid, name=final_name)
@@ -4608,7 +4618,7 @@ class ChemSimEngine:
             # =========================================
             # Case 1: 压力炸裂 (Explosion)
             # =========================================
-            if obj.pressure > 5.0: # 阈值
+            if obj.pressure > 2.5: # 阈值
                 chain = CausalChain(
                     event_type="EXPLOSION",
                     target_id=vid,
@@ -4620,6 +4630,19 @@ class ChemSimEngine:
                     chain.root_causes.append(CausalFactor(
                         "PHYSICAL_STATE", "容器处于密封状态 (Sealed)", 1.0
                     ))
+
+                # =========================================
+                # Case 1.5: 密封空烧红线 (Teacher's Safety Rule)
+                # =========================================
+                if obj.is_sealed and obj.dynamics.is_heating and obj.storage.total_volume < 1e-9:
+                    chain = CausalChain(
+                        event_type="EXPLOSION_RISK",
+                        target_id=vid,
+                        critical_value=f"Temp={obj.temperature:.1f}C"
+                    )
+                    chain.root_causes.append(CausalFactor("PHYSICAL_STATE", "密封的空容器被持续加热", 1.0))
+                    chain.root_causes.append(CausalFactor("THERMAL", "气体剧烈膨胀存在极高炸裂风险", 0.9))
+                    accidents.append(chain)
                 
                 # --- Root Cause 2: 动力学来源 (气体是从哪来的?) ---
                 # A. 化学反应生成
@@ -4644,26 +4667,33 @@ class ChemSimEngine:
             # =========================================
             # Case 2: 倒吸 (Back-Suction)
             # =========================================
-            # 复用之前的倒吸检测逻辑，但封装为对象
-            # 简化重写检测逻辑：
-            # 1. 本容器很热 2. 正在降温(没有在加热) 3. 内部负压 4. 连着液体
-            if obj.temperature > 80.0 and obj.pressure < 0.95 and not obj.dynamics.is_heating:
-                # 检查连接
+            if obj.temperature > 80.0 and not obj.dynamics.is_heating:
+                is_in_liquid = False
+                
+                # 1. 找到所有插在当前试管上的流体连接件 (如导管 u)
                 in_edges = self.hw_manager.graph.in_edges(vid, data=True)
-                for u, _, data in in_edges:
-                    if data.get("type") == "fluid" and data.get("dst_port") == "liquid_deep":
-                        # 找到了插入液面下的管子，且内部负压
-                        neighbor = self.containers.get(u) # 这里简化，通常管子是u，还要找管子的另一头
-                        # 假设 u 就是水源 (或者通过 Tubing 找到了水源)
-                        # 为了演示，直接生成因果链
-                        
-                        chain = CausalChain("BACK_SUCTION", vid, f"P={obj.pressure:.2f}atm")
-                        chain.root_causes.append(CausalFactor("THERMAL", "热源移除/停止加热，导致内部温度降低", 1.0))
-                        chain.root_causes.append(CausalFactor("PHYSICAL", "内部气体收缩产生负压", 0.8))
-                        chain.root_causes.append(CausalFactor("OPERATION", "导管口处于液面以下，未及时撤出", 1.0))
-                        
-                        accidents.append(chain)
-                        break # 一个容器报一次即可
+                for u, _, in_data in in_edges:
+                    if in_data.get("type") == "fluid":
+                        # 2. 顺藤摸瓜，看这个导管 u 还连着哪里？
+                        out_edges = self.hw_manager.graph.out_edges(u, data=True)
+                        for _, remote_parent, out_data in out_edges:
+                            # 3. 检查导管的另一头是否插在某个容器的液面下
+                            if out_data.get("dst_port") in ["liquid_deep", "deep", "bottom"]:
+                                is_in_liquid = True
+                                break
+                    if is_in_liquid: break
+                
+                if is_in_liquid:
+                    chain = CausalChain(
+                        event_type="BACK_SUCTION", 
+                        target_id=vid, 
+                        critical_value=f"P={obj.pressure:.2f}atm"
+                    )
+                    chain.root_causes.append(CausalFactor("THERMAL", "热源移除，内部温度骤降", 1.0))
+                    chain.root_causes.append(CausalFactor("PHYSICAL", "内部气体收缩产生负压", 0.8))
+                    chain.root_causes.append(CausalFactor("OPERATION", "导管口仍处于液面以下，未及时撤出", 1.0))
+                    
+                    accidents.append(chain)
 
         return accidents
 
@@ -5170,25 +5200,47 @@ class ChemSimEngine:
         return parse_quantity(value, default)
 
     def _handle_cool(self, action: Dict) -> str:
-        vessel_id = action.get("vessel")
+        # 支持前端传 vessel 或 object 作为目标
+        vessel_id = action.get("vessel") or action.get("object")
         target = self._get_object_or_raise(vessel_id)
         
-        # [Fix] 显式关闭加热状态
-        if hasattr(target, 'dynamics'):
-            target.dynamics.is_heating = False
+        # === 情况 1：明确针对加热器操作 (例如：熄灭酒精灯) ===
+        if isinstance(target, Heater):
+            if not target.is_on:
+                return f"{vessel_id} 已经是熄灭状态。"
             
-        # === [核心逻辑修改] 自动熄灭加热器 ===
-        heater_log = ""
-        # 寻找场景中所有开启的加热器，并将其关闭
-        # (简化逻辑：假设Cool动作意味着停止实验加热步骤)
-        active_heaters = [obj for obj in self.containers.values() if isinstance(obj, Heater) and obj.is_on]
-        
-        for heater in active_heaters:
-            heater.turn_off()
-            heater_log += f" 同时熄灭了 {heater.name}。"
+            target.turn_off()
+            
+            # 联动：既然热源熄灭了，把场景中所有正依赖"fire"模式加热的容器状态也关掉
+            for obj in self.containers.values():
+                if isinstance(obj, Vessel) and getattr(obj.dynamics, 'is_heating', False):
+                    obj.dynamics.is_heating = False
+                    
+            return f"已熄灭 {vessel_id}。相关的受热容器开始自然冷却。"
 
-        target.temperature = max(25.0, target.temperature - 15.0)
-        return f"{vessel_id} 停止加热并冷却中。{heater_log} 当前温度 {target.temperature:.1f}°C。"
+        # === 情况 2：针对容器操作 (例如：停止加热试管 / 将试管移开热源) ===
+        elif isinstance(target, Vessel):
+            was_heating = getattr(target.dynamics, 'is_heating', False)
+            
+            if hasattr(target, 'dynamics'):
+                target.dynamics.is_heating = False
+                
+            heater_log = ""
+            # 为了适配当前的单线实验逻辑，如果我们移开了试管，我们顺便把酒精灯也灭了
+            # 但这里我们只关闭处于开启状态的加热器，并明确记录
+            active_heaters = [obj for obj in self.containers.values() if isinstance(obj, Heater) and obj.is_on]
+            for heater in active_heaters:
+                heater.turn_off()
+                heater_log += f"并顺便熄灭了 {heater.name}。"
+
+            if was_heating:
+                # 注意：去掉了瞬间 -15 度的硬编码，温度将由 _run_micro_step 自然冷却
+                return f"{vessel_id} 已撤去热源开始自然冷却。{heater_log} 当前温度 {target.temperature:.1f}°C。"
+            else:
+                return f"{vessel_id} 当前并受热。当前温度 {target.temperature:.1f}°C。"
+                
+        else:
+             raise ValueError(f"无法对 {type(target).__name__} 执行冷却操作。")
 
     # --- Group 3: Topology Ops ---
 

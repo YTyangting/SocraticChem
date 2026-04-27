@@ -13,6 +13,7 @@
       <Component id="glass_plate" type="glass_plate"/>
       <Component id="alcohol_lamp" type="alcohol_lamp"/>
       <Component id="burning_wood_strip" type="wood_strip"/>
+      <Component id="rubber_stopper" type="rubber_stopper"/>
     </Hardware>
     <Reagents>
       <Reagent name="potassium_permanganate" state="solid"/>
