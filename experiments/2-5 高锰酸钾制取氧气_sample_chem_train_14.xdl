@@ -9,10 +9,10 @@
       <Component id="iron_stand" type="stand"/>
       <Component id="spatula" type="spatula"/>
       <Component id="cotton_ball" type="cotton_ball"/>
-      <Component id="gas_bottle" type="bottle" capacity="100ml"/>
+      <Component id="gas_bottle" type="gas_bottle" capacity="100ml"/>
       <Component id="glass_plate" type="glass_plate"/>
       <Component id="alcohol_lamp" type="alcohol_lamp"/>
-      <Component id="burning_wood_strip" type="wood_strip"/>
+      <Component id="burning_wood_strip" type="burning_wood_strip"/>
       <Component id="rubber_stopper" type="rubber_stopper"/>
     </Hardware>
     <Reagents>
@@ -23,23 +23,17 @@
       <!-- 检查气密性 -->
       <Insert tool="rubber_stop_tube" vessel="test_tube"/>
       <Insert tool="rubber_stop_tube" vessel="water_trough"/>
-      <Heat vessel="test_tube" target_temperature="30"/>
-      <Wait time="10s"/>
       <!-- 加入高锰酸钾和棉花，重新组装 -->
       <Add vessel="test_tube" reagent="potassium_permanganate" mass="2 g" tool="spatula"/>
       <Insert tool="cotton_ball" vessel="test_tube"/>
       <Insert tool="rubber_stop_tube" vessel="test_tube"/>
       <Attach vessel="test_tube" support="iron_stand"/>
       <!-- 集气瓶准备 -->
-      <Add vessel="gas_bottle" reagent="water" volume="100 mL"/>
-      <Insert tool="glass_plate" vessel="gas_bottle"/>
-      <Insert tool="gas_bottle" vessel="gas_bottle"/>
+      <Insert tool="gas_bottle" vessel="rubber_stop_tube"/>
       <Wait time="5s"/>
       <!-- 加热试管，收集氧气 -->
       <Heat vessel="test_tube" target_temperature="150"/>
       <Wait time="30s"/>
-      <CollectGas source_vessel="test_tube" collector="gas_bottle"/>
-      <Wait time="5s"/>
       <Insert tool="glass_plate" vessel="gas_bottle"/>
       <!-- 验证氧气 -->
       <Insert tool="burning_wood_strip" vessel="gas_bottle"/>

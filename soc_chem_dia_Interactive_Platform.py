@@ -4630,19 +4630,6 @@ class ChemSimEngine:
                     chain.root_causes.append(CausalFactor(
                         "PHYSICAL_STATE", "容器处于密封状态 (Sealed)", 1.0
                     ))
-
-                # =========================================
-                # Case 1.5: 密封空烧红线 (Teacher's Safety Rule)
-                # =========================================
-                if obj.is_sealed and obj.dynamics.is_heating and obj.storage.total_volume < 1e-9:
-                    chain = CausalChain(
-                        event_type="EXPLOSION_RISK",
-                        target_id=vid,
-                        critical_value=f"Temp={obj.temperature:.1f}C"
-                    )
-                    chain.root_causes.append(CausalFactor("PHYSICAL_STATE", "密封的空容器被持续加热", 1.0))
-                    chain.root_causes.append(CausalFactor("THERMAL", "气体剧烈膨胀存在极高炸裂风险", 0.9))
-                    accidents.append(chain)
                 
                 # --- Root Cause 2: 动力学来源 (气体是从哪来的?) ---
                 # A. 化学反应生成
@@ -4662,6 +4649,19 @@ class ChemSimEngine:
                         0.6
                     ))
                 
+                accidents.append(chain)
+
+            # =========================================
+            # Case 1.5: 密封空烧红线 (Teacher's Safety Rule)
+            # =========================================
+            if obj.is_sealed and obj.dynamics.is_heating and obj.storage.total_volume < 1e-9:
+                chain = CausalChain(
+                    event_type="EXPLOSION_RISK",
+                    target_id=vid,
+                    critical_value=f"Temp={obj.temperature:.1f}C"
+                )
+                chain.root_causes.append(CausalFactor("PHYSICAL_STATE", "密封的空容器被持续加热", 1.0))
+                chain.root_causes.append(CausalFactor("THERMAL", "气体剧烈膨胀存在极高炸裂风险", 0.9))
                 accidents.append(chain)
 
             # =========================================
