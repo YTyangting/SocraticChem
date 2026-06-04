@@ -910,17 +910,17 @@ class PromptManager:
         )
 
     @classmethod
-    def get_teacher_prompt(cls, history_json, cognitive_diagnosis, focus_goal, 
+    def get_teacher_prompt(cls, history_json, cognitive_diagnosis, focus_goal,
                            scaffold_ctx: dict, env_state: str, reference_info: str,
-                           policy_instruction: str, causal_insight=None):
+                           policy_instruction: str, causal_insight=None, language: str = "zh"):
         """
         [修改] 参数列表大幅更新，支持细粒度插槽
         """
         insight_block = ""
         if causal_insight:
             insight_block = f"{causal_insight}\n(Use this logic to guide your questioning, but do not reveal the answer directly.)"
-            
-        return cls.TEACHER_BASE.format(
+
+        prompt = cls.TEACHER_BASE.format(
             history_json=history_json,
             cognitive_diagnosis=cognitive_diagnosis,
             focus_goal=focus_goal,
@@ -931,6 +931,15 @@ class PromptManager:
             policy_instruction=policy_instruction,
             causal_insight=insight_block
         )
+
+        if language == "en":
+            prompt += """
+<language_instruction>
+IMPORTANT: You MUST write ALL fields (analysis, strategy, thought_process, response) in English. Use proper chemistry terminology in English.
+</language_instruction>
+"""
+
+        return prompt
 
 # ==========================================
 # 2. 通用 Helper 函数
@@ -1898,17 +1907,18 @@ class TeacherAgent:
     def __init__(self, client):
         self.client = client
     
-    def respond(self, 
+    def respond(self,
                 history_str: str,            # 注意：参数名已从 history 改为 history_str
-                policy_decision: Dict, 
-                focus_goal: str, 
-                cognitive_state: str, 
-                scaffold_ctx: Dict, 
+                policy_decision: Dict,
+                focus_goal: str,
+                cognitive_state: str,
+                scaffold_ctx: Dict,
                 # === 新增/拆分的参数 ===
                 env_state: str = "",
                 reference_info: str = "",
                 policy_instruction: str = "", # <--- 报错就是因为缺了这个
-                causal_insight: str = None) -> Dict:
+                causal_insight: str = None,
+                language: str = "zh") -> Dict:
         
         # 1. 提取 Policy 指令 (兼容性处理：如果没传参数，尝试从 policy_decision 拿)
         if not policy_instruction:
@@ -1923,7 +1933,8 @@ class TeacherAgent:
             env_state=env_state,            # 独立传入环境
             reference_info=reference_info,  # 独立传入参考答案
             policy_instruction=policy_instruction, # 独立传入指令
-            causal_insight=causal_insight
+            causal_insight=causal_insight,
+            language=language
         )
         
         try:

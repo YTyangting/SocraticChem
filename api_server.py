@@ -1,4 +1,5 @@
 import json
+import argparse
 import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -23,6 +24,7 @@ class SessionState:
         self.xdl_context_info = ""
         self.constraint_str = ""
         self.last_fail_reasons = []
+        self.language: str = "zh"  # "zh" 或 "en"
 
 session = SessionState()
 
@@ -93,7 +95,8 @@ async def init_experiment(exp_id: str = "1"):
         env_state=god_view_str_0,
         reference_info=session.xdl_context_info,
         policy_instruction="热情欢迎学生，引导其开始第一步。",
-        causal_insight="（实验刚开始，物理状态平稳）"
+        causal_insight="（实验刚开始，物理状态平稳）",
+        language=session.language
     )
     
     teacher_msg = t0_resp.get("response", "你好，请开始实验。")
@@ -233,7 +236,8 @@ async def chat_step(request: ChatRequest):
         env_state=full_env_state_str,
         reference_info=final_ref_info,
         policy_instruction=final_policy_instr,
-        causal_insight=""
+        causal_insight="",
+        language=session.language
     )
 
     t_content = t_resp.get("response", "系统老师暂时无响应。")
@@ -269,5 +273,13 @@ async def chat_step(request: ChatRequest):
     )
 
 if __name__ == "__main__":
-    print("启动服务器... 监听 http://localhost:8000")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    parser = argparse.ArgumentParser(description="化学实验教学平台 API 服务器")
+    parser.add_argument("--lang", choices=["zh", "en"], default="zh",
+                        help="教师回复语言: zh=中文(默认), en=英文")
+    parser.add_argument("--host", default="0.0.0.0", help="监听地址 (默认 0.0.0.0)")
+    parser.add_argument("--port", type=int, default=8000, help="监听端口 (默认 8000)")
+    args = parser.parse_args()
+
+    session.language = args.lang
+    print(f"启动服务器... 监听 http://{args.host}:{args.port} [语言: {args.lang}]")
+    uvicorn.run(app, host=args.host, port=args.port)
