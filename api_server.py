@@ -1,9 +1,15 @@
+import io
 import json
 import argparse
 import uvicorn
+import networkx as nx
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 from fastapi import FastAPI
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
-from typing import List, Dict, Any
 
 # 导入你原有的核心模块库 (确保文件名正确)
 from soc_chem_dia_Interactive_Platform import (
@@ -38,6 +44,106 @@ class ChatResponse(BaseModel):
     teacher_response: str
     env_state_desc: str # 物理环境的文字描述（可选，方便在 Unity 显示状态）
     is_crashed: bool    # 实验室是否炸了
+
+def render_dag_image() -> bytes:
+    """将当前 DAG 状态渲染为 PNG 图片，返回字节流"""
+    p = session.platform
+    G = p.oracle.graph
+    nodes = p.oracle.nodes
+    completed = p.oracle.force_completed_nodes
+    focus_id = session.task_selector.current_focus_id if session.task_selector else None
+
+    # 配置中文字体
+    plt.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei', 'Noto Sans CJK JP', 'SimHei']
+    plt.rcParams['axes.unicode_minus'] = False
+
+    fig, ax = plt.subplots(figsize=(max(12, len(nodes) * 1.8), 8))
+
+    # 按拓扑层级布局：用 topological_generations 分层
+    try:
+        layers = list(nx.topological_generations(G))
+    except nx.NetworkXError:
+        layers = [list(G.nodes)]
+
+    pos = {}
+    for layer_idx, layer in enumerate(layers):
+        for node_idx, node_id in enumerate(layer):
+            x = layer_idx
+            y = -(node_idx - (len(layer) - 1) / 2)
+            pos[node_id] = (x, y)
+
+    # 按状态分组
+    node_ids = list(nodes.keys())
+    completed_ids = [nid for nid in node_ids if nid in completed]
+    focus_ids = [nid for nid in node_ids if nid == focus_id and nid not in completed]
+    pending_ids = [nid for nid in node_ids if nid not in completed and nid != focus_id]
+
+    # 绘制边（箭头）
+    nx.draw_networkx_edges(G, pos, ax=ax, arrows=True, arrowsize=20,
+                           edge_color='#888888', width=1.5, alpha=0.7,
+                           connectionstyle="arc3,rad=0.05")
+
+    # 绘制各类节点
+    node_kwargs = dict(node_size=3000, ax=ax)
+
+    if completed_ids:
+        nx.draw_networkx_nodes(G, pos, nodelist=completed_ids,
+                               node_color='#4CAF50', **node_kwargs)
+    if focus_ids:
+        nx.draw_networkx_nodes(G, pos, nodelist=focus_ids,
+                               node_color='#FF9800', **node_kwargs)
+    if pending_ids:
+        nx.draw_networkx_nodes(G, pos, nodelist=pending_ids,
+                               node_color='#BDBDBD', **node_kwargs)
+
+    # 节点标签：使用 desc（中文描述），截断过长文本
+    labels = {}
+    for nid in node_ids:
+        desc = nodes[nid].desc
+        labels[nid] = desc if len(desc) <= 15 else desc[:14] + "…"
+
+    # 分别绘制标签以保证颜色区分
+    font_kwargs = dict(font_family='WenQuanYi Zen Hei', font_size=9, ax=ax)
+    if completed_ids:
+        nx.draw_networkx_labels(G, pos, labels={n: labels[n] for n in completed_ids},
+                                font_color='white', **font_kwargs)
+    if focus_ids:
+        nx.draw_networkx_labels(G, pos, labels={n: labels[n] for n in focus_ids},
+                                font_color='black', **font_kwargs)
+    if pending_ids:
+        nx.draw_networkx_labels(G, pos, labels={n: labels[n] for n in pending_ids},
+                                font_color='#555555', **font_kwargs)
+
+    # 图例
+    legend_elements = [
+        Patch(facecolor='#4CAF50', label='已完成'),
+        Patch(facecolor='#FF9800', label='进行中'),
+        Patch(facecolor='#BDBDBD', label='待完成'),
+    ]
+    ax.legend(handles=legend_elements, loc='upper left', fontsize=10)
+
+    ax.set_title("实验任务流程图 (DAG)", fontsize=14, fontweight='bold')
+    ax.axis('off')
+    plt.tight_layout()
+
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png', dpi=120, bbox_inches='tight')
+    plt.close(fig)
+    buf.seek(0)
+    return buf.getvalue()
+
+
+@app.get("/api/dag")
+async def get_dag():
+    """
+    返回完整的 DAG 任务图图片：绿色=已完成，橙色=进行中，灰色=待完成
+    """
+    p = session.platform
+    if not p:
+        return StreamingResponse(io.BytesIO(b""), status_code=404, media_type="text/plain")
+
+    image_bytes = render_dag_image()
+    return StreamingResponse(io.BytesIO(image_bytes), media_type="image/png")
 
 @app.post("/api/init_experiment")
 async def init_experiment(exp_id: str = "1"):
