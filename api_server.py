@@ -1,5 +1,6 @@
 import io
 import json
+import base64
 import argparse
 import uvicorn
 import networkx as nx
@@ -31,6 +32,7 @@ class SessionState:
         self.constraint_str = ""
         self.last_fail_reasons = []
         self.language: str = "zh"  # "zh" 或 "en"
+        self.img_client: OpenAI = None  # 图片生成专用客户端
 
 session = SessionState()
 
@@ -45,21 +47,80 @@ class ChatResponse(BaseModel):
     env_state_desc: str # 物理环境的文字描述（可选，方便在 Unity 显示状态）
     is_crashed: bool    # 实验室是否炸了
 
-def render_dag_image() -> bytes:
-    """将当前 DAG 状态渲染为 PNG 图片，返回字节流"""
+def _build_dag_prompt() -> str:
+    """从当前 DAG 状态构建图片生成 prompt"""
     p = session.platform
     G = p.oracle.graph
     nodes = p.oracle.nodes
     completed = p.oracle.force_completed_nodes
     focus_id = session.task_selector.current_focus_id if session.task_selector else None
 
-    # 配置中文字体
+    node_lines = []
+    for nid, node in nodes.items():
+        if nid in completed:
+            status = "已完成 ✅"
+        elif nid == focus_id:
+            status = "进行中 🟠"
+        else:
+            status = "待完成 ⬜"
+        deps = ", ".join(node.dependencies) if node.dependencies else "无"
+        node_lines.append(f"- [{nid}] {node.desc}（状态：{status}，依赖：{deps}）")
+
+    edge_lines = [f"  {u} → {v}" for u, v in G.edges()]
+
+    lang = session.language
+    if lang == "en":
+        title = "Experiment Task Flow Chart (DAG)"
+        legend = "Legend: ✅ = Completed, 🟠 = In Progress, ⬜ = Pending"
+        instruction = "Generate a clean, professional directed flowchart diagram. Use GREEN for completed nodes, ORANGE for in-progress nodes, GRAY for pending nodes. Show arrows for dependencies. Use white background. All text must be clearly readable at large font size."
+    else:
+        title = "实验任务流程图 (DAG)"
+        legend = "图例：✅ = 已完成，🟠 = 进行中，⬜ = 待完成"
+        instruction = "请生成一张清晰、专业的有向流程图。已完成节点用绿色，进行中节点用橙色，待完成节点用灰色。用箭头表示依赖方向。白色背景。所有文字必须大号且清晰可读，使用中文。"
+
+    prompt = f"""{instruction}
+
+标题：{title}
+{legend}
+
+节点列表：
+{chr(10).join(node_lines)}
+
+依赖边：
+{chr(10).join(edge_lines) if edge_lines else "  （无依赖，所有节点独立）"}
+"""
+    return prompt
+
+
+def render_dag_image() -> bytes:
+    """将当前 DAG 状态渲染为 PNG 图片，返回字节流"""
+    # 优先使用 gpt-image-2 生成
+    if session.img_client:
+        try:
+            prompt = _build_dag_prompt()
+            response = session.img_client.images.generate(
+                model="gpt-image-2",
+                prompt=prompt,
+                size="1536x1024",
+                n=1,
+            )
+            img_data = base64.b64decode(response.data[0].b64_json)
+            return img_data
+        except Exception as e:
+            print(f"⚠️ [DAG图片生成] gpt-image-2 调用失败，回退到 matplotlib: {e}")
+
+    # 回退：matplotlib 渲染
+    p = session.platform
+    G = p.oracle.graph
+    nodes = p.oracle.nodes
+    completed = p.oracle.force_completed_nodes
+    focus_id = session.task_selector.current_focus_id if session.task_selector else None
+
     plt.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei', 'Noto Sans CJK JP', 'SimHei']
     plt.rcParams['axes.unicode_minus'] = False
 
-    fig, ax = plt.subplots(figsize=(max(12, len(nodes) * 1.8), 8))
+    fig, ax = plt.subplots(figsize=(max(16, len(nodes) * 2.5), 10))
 
-    # 按拓扑层级布局：用 topological_generations 分层
     try:
         layers = list(nx.topological_generations(G))
     except nx.NetworkXError:
@@ -68,42 +129,27 @@ def render_dag_image() -> bytes:
     pos = {}
     for layer_idx, layer in enumerate(layers):
         for node_idx, node_id in enumerate(layer):
-            x = layer_idx
-            y = -(node_idx - (len(layer) - 1) / 2)
-            pos[node_id] = (x, y)
+            pos[node_id] = (layer_idx, -(node_idx - (len(layer) - 1) / 2))
 
-    # 按状态分组
     node_ids = list(nodes.keys())
     completed_ids = [nid for nid in node_ids if nid in completed]
     focus_ids = [nid for nid in node_ids if nid == focus_id and nid not in completed]
     pending_ids = [nid for nid in node_ids if nid not in completed and nid != focus_id]
 
-    # 绘制边（箭头）
     nx.draw_networkx_edges(G, pos, ax=ax, arrows=True, arrowsize=20,
                            edge_color='#888888', width=1.5, alpha=0.7,
                            connectionstyle="arc3,rad=0.05")
 
-    # 绘制各类节点
-    node_kwargs = dict(node_size=3000, ax=ax)
-
+    node_kwargs = dict(node_size=5000, ax=ax)
     if completed_ids:
-        nx.draw_networkx_nodes(G, pos, nodelist=completed_ids,
-                               node_color='#4CAF50', **node_kwargs)
+        nx.draw_networkx_nodes(G, pos, nodelist=completed_ids, node_color='#4CAF50', **node_kwargs)
     if focus_ids:
-        nx.draw_networkx_nodes(G, pos, nodelist=focus_ids,
-                               node_color='#FF9800', **node_kwargs)
+        nx.draw_networkx_nodes(G, pos, nodelist=focus_ids, node_color='#FF9800', **node_kwargs)
     if pending_ids:
-        nx.draw_networkx_nodes(G, pos, nodelist=pending_ids,
-                               node_color='#BDBDBD', **node_kwargs)
+        nx.draw_networkx_nodes(G, pos, nodelist=pending_ids, node_color='#BDBDBD', **node_kwargs)
 
-    # 节点标签：使用 desc（中文描述），截断过长文本
-    labels = {}
-    for nid in node_ids:
-        desc = nodes[nid].desc
-        labels[nid] = desc if len(desc) <= 15 else desc[:14] + "…"
-
-    # 分别绘制标签以保证颜色区分
-    font_kwargs = dict(font_family='WenQuanYi Zen Hei', font_size=9, ax=ax)
+    labels = {nid: node.desc for nid, node in nodes.items()}
+    font_kwargs = dict(font_family='WenQuanYi Zen Hei', font_size=13, ax=ax)
     if completed_ids:
         nx.draw_networkx_labels(G, pos, labels={n: labels[n] for n in completed_ids},
                                 font_color='white', **font_kwargs)
@@ -114,20 +160,18 @@ def render_dag_image() -> bytes:
         nx.draw_networkx_labels(G, pos, labels={n: labels[n] for n in pending_ids},
                                 font_color='#555555', **font_kwargs)
 
-    # 图例
     legend_elements = [
         Patch(facecolor='#4CAF50', label='已完成'),
         Patch(facecolor='#FF9800', label='进行中'),
         Patch(facecolor='#BDBDBD', label='待完成'),
     ]
-    ax.legend(handles=legend_elements, loc='upper left', fontsize=10)
-
-    ax.set_title("实验任务流程图 (DAG)", fontsize=14, fontweight='bold')
+    ax.legend(handles=legend_elements, loc='upper left', fontsize=13)
+    ax.set_title("实验任务流程图 (DAG)", fontsize=18, fontweight='bold')
     ax.axis('off')
     plt.tight_layout()
 
     buf = io.BytesIO()
-    fig.savefig(buf, format='png', dpi=120, bbox_inches='tight')
+    fig.savefig(buf, format='png', dpi=150, bbox_inches='tight')
     plt.close(fig)
     buf.seek(0)
     return buf.getvalue()
@@ -165,10 +209,20 @@ async def init_experiment(exp_id: str = "1"):
     }
 
     xdl_path = experiment_paths.get(exp_id, experiment_paths["1"])
-    
+
     # 实例化大模型客户端与平台
     client = OpenAI(api_key=Config.OPENAI_API_KEY, base_url=Config.OPENAI_BASE_URL)
     session.platform = InteractivePlatform(client=client, yaml_path=xdl_path)
+
+    # 初始化图片生成专用客户端
+    try:
+        session.img_client = OpenAI(
+            api_key=Config.OPENAI_API_KEY,
+            base_url="https://api.vveai.com/v1"
+        )
+    except Exception as e:
+        print(f"⚠️ [图片生成] img_client 初始化失败，DAG 图片将使用 matplotlib 渲染: {e}")
+        session.img_client = None
     
     # 初始化场景与状态
     session.obs = session.platform.sim.get_snapshot()
