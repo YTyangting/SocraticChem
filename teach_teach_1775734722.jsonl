@@ -1,6 +1,0 @@
-{"type": "start", "id": "teach_1775734722", "time": "2026-04-09T11:38:42.922068"}
-{"type": "exp_chosen", "step": 0, "time": "2026-04-09T11:38:44.996804", "data": {"name": "\u5236\u53d6\u6c27\u6c14"}}
-{"type": "intent", "step": 1, "time": "2026-04-09T11:38:53.103155", "data": {"text": "\u6211\u60f3\u7ec4\u88c5\u5b9e\u9a8c\u88c5\u7f6e"}}
-{"type": "action", "step": 1, "time": "2026-04-09T11:39:00.722002", "data": {"action": "Attach", "vessel": "clamp1", "support": "stand1"}}
-{"type": "result", "step": 1, "time": "2026-04-09T11:39:00.722701", "data": {"ok": true, "msg": "\u6210\u529f\u5c06 clamp1 \u8fde\u63a5\u5230 stand1 [center->pole]\u3002"}}
-{"type": "guide", "step": 1, "time": "2026-04-09T11:39:00.723259", "data": {"text": "\u4e0d\u9519\uff01\n\n\ud83d\udcad \u64cd\u4f5c\u524d\u9700\u8981\u8003\u8651\u54ea\u4e9b\u5b89\u5168\u4e8b\u9879\uff1f"}}

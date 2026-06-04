@@ -21,13 +21,13 @@
     </Reagents>
     <Procedure>
       <!-- 检查气密性 -->
+      <Attach vessel="test_tube" support="iron_stand"/>
       <Insert tool="rubber_stop_tube" vessel="test_tube"/>
       <Insert tool="rubber_stop_tube" vessel="water_trough"/>
       <!-- 加入高锰酸钾和棉花，重新组装 -->
       <Add vessel="test_tube" reagent="potassium_permanganate" mass="2 g" tool="spatula"/>
       <Insert tool="cotton_ball" vessel="test_tube"/>
       <Insert tool="rubber_stop_tube" vessel="test_tube"/>
-      <Attach vessel="test_tube" support="iron_stand"/>
       <!-- 集气瓶准备 -->
       <Insert tool="gas_bottle" vessel="rubber_stop_tube"/>
       <Wait time="5s"/>

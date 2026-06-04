@@ -1,2 +1,0 @@
-{"type": "session_start", "time": "2026-04-09T11:16:46.984209", "session": "session_1775733406", "experiment": "\u5316\u5b66\u5b9e\u9a8c\u5e73\u53f0"}
-{"type": "operation", "time": "2026-04-09T11:17:17.161673", "command": "{\"action\":\"Add\",\"vessel\":\"tube1\",\"reagent\":\"water\",\"volume\":\"10ml\"}", "result": {"ok": true, "msg": "\u5411 tube1 \u52a0\u5165\u4e86 10.0ml water (\u610f\u56fe: 10.0ml)\u3002"}}
