@@ -48,7 +48,7 @@ class ChatResponse(BaseModel):
     is_crashed: bool    # 实验室是否炸了
 
 def _build_dag_prompt() -> str:
-    """从当前 DAG 状态构建图片生成 prompt"""
+    """从当前 DAG 状态构建图片生成 prompt（全英文）"""
     p = session.platform
     G = p.oracle.graph
     nodes = p.oracle.nodes
@@ -58,36 +58,35 @@ def _build_dag_prompt() -> str:
     node_lines = []
     for nid, node in nodes.items():
         if nid in completed:
-            status = "已完成 ✅"
+            status = "Completed"
         elif nid == focus_id:
-            status = "进行中 🟠"
+            status = "In Progress"
         else:
-            status = "待完成 ⬜"
-        deps = ", ".join(node.dependencies) if node.dependencies else "无"
-        node_lines.append(f"- [{nid}] {node.desc}（状态：{status}，依赖：{deps}）")
+            status = "Pending"
+        deps = ", ".join(node.dependencies) if node.dependencies else "None"
+        node_lines.append(f"- [{nid}] {node.desc} (status: {status}, depends on: {deps})")
 
-    edge_lines = [f"  {u} → {v}" for u, v in G.edges()]
+    edge_lines = [f"  {u} -> {v}" for u, v in G.edges()]
 
-    lang = session.language
-    if lang == "en":
-        title = "Experiment Task Flow Chart (DAG)"
-        legend = "Legend: ✅ = Completed, 🟠 = In Progress, ⬜ = Pending"
-        instruction = "Generate a clean, professional directed flowchart diagram. Use GREEN for completed nodes, ORANGE for in-progress nodes, GRAY for pending nodes. Show arrows for dependencies. Use white background. All text must be clearly readable at large font size."
-    else:
-        title = "实验任务流程图 (DAG)"
-        legend = "图例：✅ = 已完成，🟠 = 进行中，⬜ = 待完成"
-        instruction = "请生成一张清晰、专业的有向流程图。已完成节点用绿色，进行中节点用橙色，待完成节点用灰色。用箭头表示依赖方向。白色背景。所有文字必须大号且清晰可读，使用中文。"
+    instruction = (
+        "Generate a clean, professional directed flowchart diagram for a chemistry experiment. "
+        "Use GREEN color for completed nodes, ORANGE for in-progress nodes, GRAY for pending nodes. "
+        "Show directed arrows for dependency relationships. White background. "
+        "ALL TEXT in the image MUST be in English. "
+        "If any node description below is in Chinese, translate it to English in the diagram. "
+        "All text must be clearly readable at a large font size."
+    )
 
     prompt = f"""{instruction}
 
-标题：{title}
-{legend}
+Title: Experiment Task Flow Chart (DAG)
+Legend: Completed (green), In Progress (orange), Pending (gray)
 
-节点列表：
+Nodes:
 {chr(10).join(node_lines)}
 
-依赖边：
-{chr(10).join(edge_lines) if edge_lines else "  （无依赖，所有节点独立）"}
+Dependency edges:
+{chr(10).join(edge_lines) if edge_lines else "  (no dependencies, all nodes are independent)"}
 """
     return prompt
 
