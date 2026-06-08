@@ -2041,7 +2041,7 @@ Use the EXACT JSON templates below. Do not invent parameters.
   
 - **Attach** (External): For Clamps, Stands, Holders.
   - Template: `{{"action": "Attach", "vessel": "ChildID", "support": "ParentID"}}`
-  - *Example*: Attach `test_tube` to `iron_stand`.
+soclm_v3  - *Example*: Attach `test_tube` to `iron_stand`.
 
 - **Detach**: Remove any connection.
   - Template: `{{"action": "Detach", "object": "ID"}}`
