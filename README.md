@@ -474,9 +474,3 @@ The simulation engine (`soc_chem_dia_refactored.py`) provides:
 * **Visual simulation**: solution color mixing via Beer-Lambert law (RGB interpolation)
 * **Safety checks**: sealed container heating, incompatible reagent mixing, burn risks
 
----
-This project is licensed under [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-
-```
-
-```
